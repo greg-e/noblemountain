@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="c8babd53-8035-4670-a8dd-4d7913345295" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="RealTime.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="RealTime_Feature1\Feature.xml" />
+    <FeatureManifest Location="RealTime_Feature2\Feature.xml" />
+    <FeatureManifest Location="RealTime_Feature3\Feature.xml" />
+    <FeatureManifest Location="RealTime_Feature4\Feature.xml" />
+    <FeatureManifest Location="RealTime_Feature5\Feature.xml" />
+    <FeatureManifest Location="RealTime_Feature6\Feature.xml" />
+  </FeatureManifests>
+</Solution>

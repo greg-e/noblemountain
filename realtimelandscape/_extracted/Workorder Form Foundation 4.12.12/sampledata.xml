@@ -1,0 +1,185 @@
+<my:myFields xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pc="http://schemas.microsoft.com/office/infopath/2007/PartnerControls" xmlns:ma="http://schemas.microsoft.com/office/2009/metadata/properties/metaAttributes" xmlns:d="http://schemas.microsoft.com/office/infopath/2009/WSSList/dataFields" xmlns:q="http://schemas.microsoft.com/office/infopath/2009/WSSList/queryFields" xmlns:dfs="http://schemas.microsoft.com/office/infopath/2003/dataFormSolution" xmlns:dms="http://schemas.microsoft.com/office/2009/documentManagement/types" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2012-02-02T17:37:18" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+	<my:Project/>
+	<my:ProjectDisplayName/>
+	<my:RoundTrip/>
+	<my:WorkorderNotes/>
+	<my:TotalManHours/>
+	<my:CrewSize/>
+	<my:TotalVisits/>
+	<my:TotalTravelHours/>
+	<my:AverageHourlyRate/>
+	<my:PriceSubtotal/>
+	<my:TravelPrice/>
+	<my:TotalWorkorderPrice/>
+	<my:TotalWorkorderCost/>
+	<my:TotalWorkorderProfit/>
+	<my:PercentProfit/>
+	<my:WorkDayHours>8</my:WorkDayHours>
+	<my:OnsiteCrewHours/>
+	<my:TotalVisitsRoundedUp/>
+	<my:ProjectID/>
+	<my:PricingTable>
+		<my:Activity/>
+		<my:Description/>
+		<my:ActivityNotes/>
+		<my:PlantSelection/>
+		<my:Quantity/>
+		<my:Unit/>
+		<my:ManHoursPerUnit/>
+		<my:MaterialCostPerUnit/>
+		<my:ManualMaterialCostPerUnit/>
+		<my:LaborCostPerManHour>12.50</my:LaborCostPerManHour>
+		<my:OverheadAndProfitPerManHour>12.50</my:OverheadAndProfitPerManHour>
+		<my:LaborPricePerManHour/>
+		<my:MaterialMarkupPercent>0.35</my:MaterialMarkupPercent>
+		<my:TotalLaborHours/>
+		<my:PricePerUnit/>
+		<my:TotalPrice/>
+		<my:LiveMaterialWarrantyPercent/>
+		<my:TotalMaterialCost/>
+		<my:TotalMaterialPrice/>
+		<my:TotalLaborCost/>
+		<my:TotalLaborPrice/>
+		<my:MaterialMarkup/>
+		<my:WarrantyMarkup/>
+		<my:ActivityDisplayName/>
+	</my:PricingTable>
+	<my:PricingTable>
+		<my:Activity/>
+		<my:Description/>
+		<my:ActivityNotes/>
+		<my:PlantSelection/>
+		<my:Quantity/>
+		<my:Unit/>
+		<my:ManHoursPerUnit/>
+		<my:MaterialCostPerUnit/>
+		<my:ManualMaterialCostPerUnit/>
+		<my:LaborCostPerManHour>12.50</my:LaborCostPerManHour>
+		<my:OverheadAndProfitPerManHour>12.50</my:OverheadAndProfitPerManHour>
+		<my:LaborPricePerManHour/>
+		<my:MaterialMarkupPercent>0.35</my:MaterialMarkupPercent>
+		<my:TotalLaborHours/>
+		<my:PricePerUnit/>
+		<my:TotalPrice/>
+		<my:LiveMaterialWarrantyPercent/>
+		<my:TotalMaterialCost/>
+		<my:TotalMaterialPrice/>
+		<my:TotalLaborCost/>
+		<my:TotalLaborPrice/>
+		<my:MaterialMarkup/>
+		<my:WarrantyMarkup/>
+		<my:ActivityDisplayName/>
+	</my:PricingTable>
+	<my:numID/>
+	<my:strFilename/>
+	<my:WorkorderID/>
+	<my:IncludedWork>false</my:IncludedWork>
+	<my:WorkorderDescription/>
+	<my:ShowActivities/>
+	<xd:SchemaInfo LocalName="myFields" NamespaceURI="http://schemas.microsoft.com/office/infopath/2003/myXSD/2012-02-02T17:37:18">
+		<xd:Namespaces>
+			<xd:Namespace LocalName="myFields" NamespaceURI="http://schemas.microsoft.com/office/infopath/2003/myXSD/2012-02-02T17:37:18"/>
+		</xd:Namespaces>
+	</xd:SchemaInfo>
+	<xd:DataConnection Name="Plant List">
+		<dfs:myFields xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2012-02-02T17:37:18" xmlns:pc="http://schemas.microsoft.com/office/infopath/2007/PartnerControls" xmlns:ma="http://schemas.microsoft.com/office/2009/metadata/properties/metaAttributes" xmlns:d="http://schemas.microsoft.com/office/infopath/2009/WSSList/dataFields" xmlns:q="http://schemas.microsoft.com/office/infopath/2009/WSSList/queryFields" xmlns:dfs="http://schemas.microsoft.com/office/infopath/2003/dataFormSolution" xmlns:dms="http://schemas.microsoft.com/office/2009/documentManagement/types" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+			<dfs:queryFields>
+				<q:SharePointListItem_RW>
+					<q:Botanical_x0020_Name/>
+					<q:Common_x0020_Name/>
+					<q:ID/>
+				</q:SharePointListItem_RW>
+			</dfs:queryFields>
+			<dfs:dataFields>
+				<d:SharePointListItem_RW>
+					<d:Botanical_x0020_Name/>
+					<d:Common_x0020_Name/>
+					<d:ID/>
+				</d:SharePointListItem_RW>
+			</dfs:dataFields>
+			<xd:SchemaInfo LocalName="myFields" NamespaceURI="http://schemas.microsoft.com/office/infopath/2003/dataFormSolution">
+				<xd:Namespaces>
+					<xd:Namespace LocalName="myFields" NamespaceURI="http://schemas.microsoft.com/office/infopath/2003/dataFormSolution"/>
+				</xd:Namespaces>
+			</xd:SchemaInfo>
+		</dfs:myFields>
+	</xd:DataConnection>
+	<xd:DataConnection Name="Retrieve IDs">
+		<dfs:myFields xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2012-02-02T17:37:18" xmlns:pc="http://schemas.microsoft.com/office/infopath/2007/PartnerControls" xmlns:ma="http://schemas.microsoft.com/office/2009/metadata/properties/metaAttributes" xmlns:d="http://schemas.microsoft.com/office/infopath/2009/WSSList/dataFields" xmlns:q="http://schemas.microsoft.com/office/infopath/2009/WSSList/queryFields" xmlns:dfs="http://schemas.microsoft.com/office/infopath/2003/dataFormSolution" xmlns:dms="http://schemas.microsoft.com/office/2009/documentManagement/types" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+			<dfs:queryFields>
+				<q:SharePointListItem_RW>
+					<q:ID/>
+				</q:SharePointListItem_RW>
+			</dfs:queryFields>
+			<dfs:dataFields>
+				<d:SharePointListItem_RW>
+					<d:ID/>
+				</d:SharePointListItem_RW>
+			</dfs:dataFields>
+			<xd:SchemaInfo LocalName="myFields" NamespaceURI="http://schemas.microsoft.com/office/infopath/2003/dataFormSolution">
+				<xd:Namespaces>
+					<xd:Namespace LocalName="myFields" NamespaceURI="http://schemas.microsoft.com/office/infopath/2003/dataFormSolution"/>
+				</xd:Namespaces>
+			</xd:SchemaInfo>
+		</dfs:myFields>
+	</xd:DataConnection>
+	<xd:DataConnection Name="Projects">
+		<dfs:myFields xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2012-02-02T17:37:18" xmlns:pc="http://schemas.microsoft.com/office/infopath/2007/PartnerControls" xmlns:ma="http://schemas.microsoft.com/office/2009/metadata/properties/metaAttributes" xmlns:d="http://schemas.microsoft.com/office/infopath/2009/WSSList/dataFields" xmlns:q="http://schemas.microsoft.com/office/infopath/2009/WSSList/queryFields" xmlns:dfs="http://schemas.microsoft.com/office/infopath/2003/dataFormSolution" xmlns:dms="http://schemas.microsoft.com/office/2009/documentManagement/types" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+			<dfs:queryFields>
+				<q:SharePointListItem_RW>
+					<q:Title/>
+					<q:Round_x0020_Trip/>
+					<q:ID/>
+				</q:SharePointListItem_RW>
+			</dfs:queryFields>
+			<dfs:dataFields>
+				<d:SharePointListItem_RW>
+					<d:Title/>
+					<d:Round_x0020_Trip/>
+					<d:ID/>
+				</d:SharePointListItem_RW>
+			</dfs:dataFields>
+			<xd:SchemaInfo LocalName="myFields" NamespaceURI="http://schemas.microsoft.com/office/infopath/2003/dataFormSolution">
+				<xd:Namespaces>
+					<xd:Namespace LocalName="myFields" NamespaceURI="http://schemas.microsoft.com/office/infopath/2003/dataFormSolution"/>
+				</xd:Namespaces>
+			</xd:SchemaInfo>
+		</dfs:myFields>
+	</xd:DataConnection>
+	<xd:DataConnection Name="Pricing Table">
+		<dfs:myFields xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2012-02-02T17:37:18" xmlns:pc="http://schemas.microsoft.com/office/infopath/2007/PartnerControls" xmlns:ma="http://schemas.microsoft.com/office/2009/metadata/properties/metaAttributes" xmlns:d="http://schemas.microsoft.com/office/infopath/2009/WSSList/dataFields" xmlns:q="http://schemas.microsoft.com/office/infopath/2009/WSSList/queryFields" xmlns:dfs="http://schemas.microsoft.com/office/infopath/2003/dataFormSolution" xmlns:dms="http://schemas.microsoft.com/office/2009/documentManagement/types" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+			<dfs:queryFields>
+				<q:SharePointListItem_RW>
+					<q:Title/>
+					<q:Activity_x0020_Category/>
+					<q:Unit/>
+					<q:Unit_x0020_Multiplier/>
+					<q:Unit_x0020_Category/>
+					<q:Production_x0020_Rate/>
+					<q:Material_x0020_Rate/>
+					<q:Description/>
+					<q:ID/>
+				</q:SharePointListItem_RW>
+			</dfs:queryFields>
+			<dfs:dataFields>
+				<d:SharePointListItem_RW>
+					<d:Title/>
+					<d:Activity_x0020_Category/>
+					<d:Unit/>
+					<d:Unit_x0020_Multiplier/>
+					<d:Unit_x0020_Category/>
+					<d:Production_x0020_Rate/>
+					<d:Material_x0020_Rate/>
+					<d:Description/>
+					<d:Specification/>
+					<d:ID/>
+				</d:SharePointListItem_RW>
+			</dfs:dataFields>
+			<xd:SchemaInfo LocalName="myFields" NamespaceURI="http://schemas.microsoft.com/office/infopath/2003/dataFormSolution">
+				<xd:Namespaces>
+					<xd:Namespace LocalName="myFields" NamespaceURI="http://schemas.microsoft.com/office/infopath/2003/dataFormSolution"/>
+				</xd:Namespaces>
+			</xd:SchemaInfo>
+		</dfs:myFields>
+	</xd:DataConnection>
+</my:myFields>

@@ -1,0 +1,35 @@
+<WorkflowConfig Version="14.0.0.6109">
+	<Template BaseID="{4B02BCDD-5185-4675-83FC-5A17CB3F92FE}" DocLibID="{$ListId:Workflows;}" XomlHref="Workflows/Workorder Completion/Workorder Completion.xoml" XomlVersion="V1.0" TaskContentType="0x01080100C9C9515DE4E24001905074F980F93160" Category="List" Name="Workorder Completion" Description="" RulesHref="Workflows/Workorder Completion/Workorder Completion.xoml.rules" RulesVersion = "V1.0" AssociationURL="_layouts/CstWrkflIP.aspx"/>
+	<Association ListID="{$ListId:Workorder Library;}" StartManually="true" TaskListID="{$ListId:Lists/Tasks;}" HistoryListID="{$ListId:Lists/Workflow History;}"/>
+	<ContentTypes/>
+	<Initiation URL="_layouts/IniWrkflIP.aspx">
+		<Fields>
+			<Field Name="WorkorderBillDate" FormType="Initiation" Required="TRUE" Format="DateOnly" DisplayName="Workorder Bill Date" Description="" Direction="None" Type="DateTime"/>
+		</Fields>
+		<Parameters>
+			<Parameter Name="WorkorderBillDate" Type="System.DateTime"/>
+		</Parameters>
+		<DefaultData>
+			<dfs:myFields xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:dms="http://schemas.microsoft.com/office/2009/documentManagement/types" xmlns:dfs="http://schemas.microsoft.com/office/infopath/2003/dataFormSolution" xmlns:q="http://schemas.microsoft.com/office/infopath/2009/WSSList/queryFields" xmlns:d="http://schemas.microsoft.com/office/infopath/2009/WSSList/dataFields" xmlns:ma="http://schemas.microsoft.com/office/2009/metadata/properties/metaAttributes" xmlns:pc="http://schemas.microsoft.com/office/infopath/2007/PartnerControls" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+				<dfs:queryFields/>
+				<dfs:dataFields>
+					<d:SharePointListItem_RW>
+						<d:WorkorderBillDate/>
+					</d:SharePointListItem_RW>
+				</dfs:dataFields>
+			</dfs:myFields>
+		</DefaultData>
+	</Initiation>
+	<Extended>
+		<Fields/>
+	</Extended>
+	<MetaData>
+		<ExtendedStatusColumnValues>
+			<StatusColumnValue>Canceled</StatusColumnValue>
+			<StatusColumnValue>Approved</StatusColumnValue>
+			<StatusColumnValue>Rejected</StatusColumnValue>
+		</ExtendedStatusColumnValues>
+		<Instantiation_FormURI Version= "V0.0">Workflows/Workorder Completion/Workorder Completion.xsn</Instantiation_FormURI>
+		<Association_FormURN Version= "V0.0">Workflows/Workorder Completion/Workorder Completion.xsn</Association_FormURN>
+	</MetaData>
+</WorkflowConfig>

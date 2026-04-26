@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="5c190b09-3fee-47df-8afe-9dac342a85ce" Scope="Web" Title="PropertyBag feature of exported web template &quot;Real-Time Foundation&quot;">
+  <ElementManifests>
+    <ElementManifest Location="PropertyBags\Elements.xml" />
+    <ElementFile Location="Resources\resources.en-US.resx" />
+  </ElementManifests>
+</Feature>

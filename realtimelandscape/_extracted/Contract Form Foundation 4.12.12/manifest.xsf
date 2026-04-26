@@ -1,0 +1,1335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+This file is automatically created and modified by Microsoft InfoPath.
+Changes made to the file outside of InfoPath might be lost if the form template is modified in InfoPath.
+-->
+<xsf:xDocumentClass trustSetting="automatic" solutionFormatVersion="3.0.0.0" solutionVersion="1.0.0.1108" productVersion="14.0.0" name="urn:schemas-microsoft-com:office:infopath:Contract-Form:-myXSD-2012-01-18T13-59-28" publishUrl="C:\Users\Gregory\Documents\Real Time Landscape\Landscape Wire frame Template\Production Template\Production Forms\Contract Form Foundation 4.12.12.xsn" xmlns:xsf="http://schemas.microsoft.com/office/infopath/2003/solutionDefinition" xmlns:xsf2="http://schemas.microsoft.com/office/infopath/2006/solutionDefinition/extensions" xmlns:xsf3="http://schemas.microsoft.com/office/infopath/2009/solutionDefinition/extensions" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xdUtil="http://schemas.microsoft.com/office/infopath/2003/xslt/Util" xmlns:xdXDocument="http://schemas.microsoft.com/office/infopath/2003/xslt/xDocument" xmlns:xdMath="http://schemas.microsoft.com/office/infopath/2003/xslt/Math" xmlns:xdDate="http://schemas.microsoft.com/office/infopath/2003/xslt/Date" xmlns:xdExtension="http://schemas.microsoft.com/office/infopath/2003/xslt/extension" xmlns:xdEnvironment="http://schemas.microsoft.com/office/infopath/2006/xslt/environment" xmlns:xdUser="http://schemas.microsoft.com/office/infopath/2006/xslt/User" xmlns:xdServerInfo="http://schemas.microsoft.com/office/infopath/2009/xslt/ServerInfo" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2012-01-18T13:59:28" xmlns:pc="http://schemas.microsoft.com/office/infopath/2007/PartnerControls" xmlns:ma="http://schemas.microsoft.com/office/2009/metadata/properties/metaAttributes" xmlns:d="http://schemas.microsoft.com/office/infopath/2009/WSSList/dataFields" xmlns:q="http://schemas.microsoft.com/office/infopath/2009/WSSList/queryFields" xmlns:dfs="http://schemas.microsoft.com/office/infopath/2003/dataFormSolution" xmlns:dms="http://schemas.microsoft.com/office/2009/documentManagement/types" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+	<xsf:package>
+		<xsf:files>
+			<xsf:file name="myschema.xsd">
+				<xsf:fileProperties>
+					<xsf:property name="namespace" type="string" value="http://schemas.microsoft.com/office/infopath/2003/myXSD/2012-01-18T13:59:28"></xsf:property>
+					<xsf:property name="editability" type="string" value="full"></xsf:property>
+					<xsf:property name="rootElement" type="string" value="myFields"></xsf:property>
+					<xsf:property name="useOnDemandAlgorithm" type="string" value="yes"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+			<xsf:file name="template.xml"></xsf:file>
+			<xsf:file name="sampledata.xml">
+				<xsf:fileProperties>
+					<xsf:property name="fileType" type="string" value="sampleData"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+			<xsf:file name="view1.xsl">
+				<xsf:fileProperties>
+					<xsf:property name="lang" type="string" value="1033"></xsf:property>
+					<xsf:property name="componentId" type="string" value="498"></xsf:property>
+					<xsf:property name="xmlToEditName" type="string" value="773"></xsf:property>
+					<xsf:property name="mode" type="string" value="10"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+			<xsf:file name="upgrade.xsl"></xsf:file>
+			<xsf:file name="GeneralMaintenance.xsl">
+				<xsf:fileProperties>
+					<xsf:property name="lang" type="string" value="1033"></xsf:property>
+					<xsf:property name="xmlToEditName" type="string" value="556"></xsf:property>
+					<xsf:property name="componentId" type="string" value="78"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+			<xsf:file name="Projects.xsd">
+				<xsf:fileProperties>
+					<xsf:property name="namespace" type="string" value="http://schemas.microsoft.com/office/infopath/2003/dataFormSolution"></xsf:property>
+					<xsf:property name="dataObject" type="string" value="Projects"></xsf:property>
+					<xsf:property name="rootElement" type="string" value="myFields"></xsf:property>
+					<xsf:property name="useOnDemandAlgorithm" type="string" value="yes"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+			<xsf:file name="Projects1.xsd">
+				<xsf:fileProperties>
+					<xsf:property name="namespace" type="string" value="http://schemas.microsoft.com/office/infopath/2007/PartnerControls"></xsf:property>
+					<xsf:property name="dataObject" type="string" value="Projects"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+			<xsf:file name="Projects2.xsd">
+				<xsf:fileProperties>
+					<xsf:property name="namespace" type="string" value="http://schemas.microsoft.com/office/2009/documentManagement/types"></xsf:property>
+					<xsf:property name="dataObject" type="string" value="Projects"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+			<xsf:file name="Projects3.xsd">
+				<xsf:fileProperties>
+					<xsf:property name="namespace" type="string" value="http://schemas.microsoft.com/office/infopath/2009/WSSList/dataFields"></xsf:property>
+					<xsf:property name="dataObject" type="string" value="Projects"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+			<xsf:file name="Projects4.xsd">
+				<xsf:fileProperties>
+					<xsf:property name="namespace" type="string" value="http://schemas.microsoft.com/office/infopath/2009/WSSList/queryFields"></xsf:property>
+					<xsf:property name="dataObject" type="string" value="Projects"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+			<xsf:file name="Retrieve IDs.xsd">
+				<xsf:fileProperties>
+					<xsf:property name="namespace" type="string" value="http://schemas.microsoft.com/office/infopath/2003/dataFormSolution"></xsf:property>
+					<xsf:property name="dataObject" type="string" value="Retrieve IDs"></xsf:property>
+					<xsf:property name="rootElement" type="string" value="myFields"></xsf:property>
+					<xsf:property name="useOnDemandAlgorithm" type="string" value="yes"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+			<xsf:file name="Retrieve IDs1.xsd">
+				<xsf:fileProperties>
+					<xsf:property name="namespace" type="string" value="http://schemas.microsoft.com/office/infopath/2007/PartnerControls"></xsf:property>
+					<xsf:property name="dataObject" type="string" value="Retrieve IDs"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+			<xsf:file name="Retrieve IDs2.xsd">
+				<xsf:fileProperties>
+					<xsf:property name="namespace" type="string" value="http://schemas.microsoft.com/office/2009/documentManagement/types"></xsf:property>
+					<xsf:property name="dataObject" type="string" value="Retrieve IDs"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+			<xsf:file name="Retrieve IDs3.xsd">
+				<xsf:fileProperties>
+					<xsf:property name="namespace" type="string" value="http://schemas.microsoft.com/office/infopath/2009/WSSList/dataFields"></xsf:property>
+					<xsf:property name="dataObject" type="string" value="Retrieve IDs"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+			<xsf:file name="Retrieve IDs4.xsd">
+				<xsf:fileProperties>
+					<xsf:property name="namespace" type="string" value="http://schemas.microsoft.com/office/infopath/2009/WSSList/queryFields"></xsf:property>
+					<xsf:property name="dataObject" type="string" value="Retrieve IDs"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+			<xsf:file name="Pricing Table10.xsd">
+				<xsf:fileProperties>
+					<xsf:property name="namespace" type="string" value="http://schemas.microsoft.com/office/infopath/2003/dataFormSolution"></xsf:property>
+					<xsf:property name="dataObject" type="string" value="Pricing Table"></xsf:property>
+					<xsf:property name="rootElement" type="string" value="myFields"></xsf:property>
+					<xsf:property name="useOnDemandAlgorithm" type="string" value="yes"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+			<xsf:file name="Pricing Table11.xsd">
+				<xsf:fileProperties>
+					<xsf:property name="namespace" type="string" value="http://schemas.microsoft.com/office/infopath/2007/PartnerControls"></xsf:property>
+					<xsf:property name="dataObject" type="string" value="Pricing Table"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+			<xsf:file name="Pricing Table12.xsd">
+				<xsf:fileProperties>
+					<xsf:property name="namespace" type="string" value="http://schemas.microsoft.com/office/2009/documentManagement/types"></xsf:property>
+					<xsf:property name="dataObject" type="string" value="Pricing Table"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+			<xsf:file name="Pricing Table13.xsd">
+				<xsf:fileProperties>
+					<xsf:property name="namespace" type="string" value="http://schemas.microsoft.com/office/infopath/2009/WSSList/dataFields"></xsf:property>
+					<xsf:property name="dataObject" type="string" value="Pricing Table"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+			<xsf:file name="Pricing Table14.xsd">
+				<xsf:fileProperties>
+					<xsf:property name="namespace" type="string" value="http://schemas.microsoft.com/office/infopath/2009/WSSList/queryFields"></xsf:property>
+					<xsf:property name="dataObject" type="string" value="Pricing Table"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+			<xsf:file name="Pricing Table_offline.xml"></xsf:file>
+		</xsf:files>
+	</xsf:package>
+	<xsf:importParameters enabled="yes"></xsf:importParameters>
+	<xsf:documentVersionUpgrade>
+		<xsf:useTransform transform="upgrade.xsl" minVersionToUpgrade="0.0.0.0" maxVersionToUpgrade="1.0.0.1088"></xsf:useTransform>
+	</xsf:documentVersionUpgrade>
+	<xsf:extensions>
+		<xsf:extension name="SolutionDefinitionExtensions">
+			<xsf2:solutionDefinition runtimeCompatibility="client server" allowClientOnlyCode="no" verifyOnServer="yes">
+				<xsf2:offline openIfQueryFails="yes" cacheQueries="yes"></xsf2:offline>
+				<xsf2:server formLocale="en-US" isPreSubmitPostBackEnabled="no" isMobileEnabled="no">
+					<xsf2:toolbar enabledTop="no" enabledBottom="no">
+						<xsf2:commands></xsf2:commands>
+					</xsf2:toolbar>
+				</xsf2:server>
+				<xsf2:dataConnections>
+					<xsf2:sharepointListAdapterRWExtension ref="Pricing Table" queryKey="https://realtimelandscape.sharepoint.com/sites/realtimefoundation/&lt;GetListItems xmlns=&quot;http://schemas.microsoft.com/sharepoint/soap/&quot;&gt;&lt;listName&gt;{1292F3E9-EA58-4CB8-B853-5C3F828D9F80}&lt;/listName&gt;&lt;queryOptions&gt;&lt;QueryOptions&gt;&lt;IncludeAttachmentUrls&gt;TRUE&lt;/IncludeAttachmentUrls&gt;&lt;ExpandUserField&gt;true&lt;/ExpandUserField&gt;&lt;ViewAttributes Scope=&quot;RecursiveAll&quot;/&gt;&lt;/QueryOptions&gt;&lt;/queryOptions&gt;&lt;viewFields&gt;&lt;ViewFields&gt;&lt;FieldRef Name=&quot;Title&quot;/&gt;&lt;FieldRef Name=&quot;Activity_x0020_Category&quot;/&gt;&lt;FieldRef Name=&quot;Unit&quot;/&gt;&lt;FieldRef Name=&quot;Unit_x0020_Multiplier&quot;/&gt;&lt;FieldRef Name=&quot;Unit_x0020_Category&quot;/&gt;&lt;FieldRef Name=&quot;Production_x0020_Rate&quot;/&gt;&lt;FieldRef Name=&quot;Material_x0020_Rate&quot;/&gt;&lt;FieldRef Name=&quot;Description&quot;/&gt;&lt;FieldRef Name=&quot;Specification&quot;/&gt;&lt;FieldRef Name=&quot;ID&quot;/&gt;&lt;/ViewFields&gt;&lt;/viewFields&gt;&lt;rowLimit&gt;4294967295&lt;/rowLimit&gt;&lt;/GetListItems&gt;" queryFile="Pricing Table_offline.xml" queryThisFormOnly="no"></xsf2:sharepointListAdapterRWExtension>
+					<xsf2:sharepointListAdapterRWExtension ref="Projects" queryThisFormOnly="no"></xsf2:sharepointListAdapterRWExtension>
+				</xsf2:dataConnections>
+				<xsf2:listPropertiesExtension>
+					<xsf2:fieldsExtension>
+						<xsf2:fieldExtension columnId="{fad24c27-338e-412c-a74d-cc12286faa1b}" readWrite="no" columnName="{7B178A31-FCF2-46C8-905E-87F552961DB6}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{beb6e970-9c2b-4117-9440-23914db27838}" readWrite="no" columnName="{A90E32AD-CDCB-48B7-B7D3-45784FD68F8B}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{b4e6705e-35c8-4e84-b4bd-98e5817fc440}" readWrite="no" columnName="{E42BCA20-79BE-4641-8CED-E64E025D8F12}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{0787516d-fde1-4981-af57-fa4daa6bf123}" readWrite="no" columnName="{5F8FBBEA-AD98-4B80-9AE9-59E01D6616D4}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{086b8041-8ef4-44d6-be24-d8c5f3774eaa}" readWrite="no" columnName="{95A2DB0D-3C91-4AFC-8F7B-039B535EF4EC}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{6bd335c8-cc0d-4d70-944f-50801d0cd702}" readWrite="no" columnName="{D52B655B-AFEB-47D5-AE49-4E56AE06F7AD}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{91da2d2d-87e2-404a-b263-89fc3c171e80}" readWrite="no" columnName="{4D90E176-F202-4058-8341-38E94160509C}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{040af4ab-7d69-4f5c-9b9c-1c9929bd401d}" readWrite="no" columnName="{DFAF94B7-5246-4EEE-A559-F1FEA5DD48F2}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{c19e8cc5-469c-4eef-92c7-2cfa6bd0eebf}" readWrite="no" columnName="{64F4D001-CD99-49F8-9638-3BE655DF6DB5}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{c97ad000-a3ab-4c1d-a8f7-bacefab14091}" readWrite="no" columnName="{88F17689-3CA1-4624-90F4-D5758D491766}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{6abe3582-86ee-4a76-beb8-b6160cb51d70}" readWrite="no" columnName="{9951AC54-8746-42F9-8917-017F9F18FFA8}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{031199b2-7377-4df3-b15e-d0d11f4b575d}" readWrite="no" columnName="{7FEB5335-3C58-457D-9849-D6800898FA4B}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{44656c4f-06ce-4aae-a06b-8302462a5afb}" readWrite="no" columnName="{FB2F4F09-CEA4-4DCF-9058-91D866FEAAFF}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{a13ad8ec-9e25-43a9-9dfe-c7e2d1f82c2d}" readWrite="no" columnName="{6D65931C-8CE1-4668-A894-3ABD7D723A89}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{563c8e30-2d54-4f1b-8e7f-bd76259a514d}" readWrite="no" columnName="{A53F131F-731A-4607-88A2-9718F4B0DFDC}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{599de89c-5691-49c5-af42-dd85ebbb2835}" readWrite="no" columnName="{79A27D96-3D58-4679-A7D6-28E962B3DC12}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{f3abcc6d-12f2-4429-a016-ad4601349aab}" readWrite="no" columnName="{96580372-7F40-482B-88B9-056F5C90E529}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{ff7b23e9-1910-4dab-a009-341f0a69d5b0}" readWrite="no" columnName="{56C0489D-E7F5-42DB-839E-C2A19A58FDA1}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{8ea90a1b-2de1-45cb-84e0-71b0b46cc73a}" readWrite="no" columnName="{D142B80B-B582-4ECE-AFEF-DC33859ADF74}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{fd6b1f4d-7e8a-463b-9e85-37f982dbbcab}" readWrite="no" columnName="{03042EAE-3915-43BA-8B63-5F069592BD21}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{9fb1a0cb-2e6c-4235-a56c-216505ffda50}" readWrite="no" columnName="{3E777E8E-64B1-4538-AC4E-BF1B7D5FE4D2}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{72188822-8a69-4c56-a306-256e1115cbab}" readWrite="no" columnName="{FC82C00A-977D-4AF0-B88B-0DF9BD087F8E}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{6f6ffd92-fc62-4f64-a3f5-0c14109b4ffd}" readWrite="no" columnName="{7883EA6B-2BDC-45BD-ABC3-11FEB4856050}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{d727fab6-60e6-4b56-9e19-27fc2e84a6d5}" readWrite="no" columnName="{24E58672-50F7-4F1A-B3B5-E89C57C8D085}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{a63fdf6d-7490-48c1-8ed2-929b72fd8625}" readWrite="no" columnName="{3D612C35-3D57-45F3-B6AE-88236C66F5E0}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{351745a4-663e-435c-99b5-f3302e500dfa}" readWrite="no" columnName="{D516D2D3-3D5B-43A7-89A0-F1C28733A53C}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{b006f4dc-f897-4a37-8db5-afe03764d5af}" readWrite="no" columnName="{2AE9F076-4562-4B3F-BE21-87C2AD8FFA5E}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{7ff97747-251c-4f80-a722-160b53d08850}" readWrite="no" columnName="{3A0A8C53-917A-4B82-9930-49074D89FD3B}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{eec4d04b-aaa1-41b7-a2b2-d73e670c6986}" readWrite="no" columnName="{2E907D88-67CD-49F4-9F53-B5960AAB77AF}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{a333307f-6578-42f9-9a6d-3cdfaad42829}" readWrite="no" columnName="{2CAAB834-A124-4D31-AA29-D08355E7357E}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{5869f8b9-6e1b-49a1-b257-908410fc8afd}" readWrite="no" columnName="{E8519B19-6249-43B0-8A70-99292FBD9331}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{29bdd4d5-6ca0-4fbd-a577-88621b7d5b02}" readWrite="no" columnName="{177259DD-C3E3-43AC-B7F0-113A59369DBA}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{40fd9cf1-d920-4368-b624-15ab79b00cb0}" readWrite="no" columnName="{DCF816B0-B555-4378-94E1-7ACC4253DD58}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{f8942d81-e1ec-4023-a721-85f60ebdc141}" readWrite="no" columnName="{37661451-D72B-4953-A72B-761696DFC42B}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{e9f30c53-c3d0-4b54-852f-3f008a550363}" readWrite="no" columnName="{2069C488-14BA-4D9E-8B6E-B10E55E4F53F}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{163a4f76-304a-43e4-89b6-403f1cf02dca}" readWrite="no" columnName="{3101C61E-5EF2-4E1B-92BF-10D3F3DFF330}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{17581943-1a5e-49cf-9289-0488bdd60d8e}" readWrite="no" columnName="{CCD4BED7-4C38-4A8F-8142-B0A93FF3A739}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{8c30a524-8bce-4531-a8f1-f8492f2d818b}" readWrite="no" columnName="{35900C00-588D-44D2-B78A-A8E932D1BE06}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{9bfcf5da-29d6-46af-ab6c-ea2080ffa037}" readWrite="no" columnName="{BD2F34EC-5627-45D0-BF5E-6509FFCF5227}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{e2bad002-ad52-4cb6-8685-e3baadeac90a}" readWrite="no" columnName="{4A2E5F28-37AA-442C-A35A-D4283C9BCE31}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{c5847cb4-7630-443d-a574-9c657c807b88}" readWrite="no" columnName="{48E218DE-9581-46D2-B7A9-2F6F1027FBFD}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{a3e01819-cb16-41f6-8b91-8aa373e3906c}" readWrite="no" columnName="{8C9FEE65-2CF4-47E4-8E47-1A6E7A047007}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{70aff432-7e17-4b5a-a929-942621308788}" readWrite="no" columnName="{98CB51D2-7C3F-452C-82D4-90798C94B829}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{5e3dbf8a-b8c4-4d4a-a899-30445a852487}" readWrite="no" columnName="{11CD8662-C619-4E4D-942B-05EADC021769}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{abc5ba0c-476b-40c5-9cc4-53cf13b15323}" readWrite="no" columnName="{CA535BC4-8361-4818-90D7-F1ACC136DE50}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{b3be3bc8-d9dc-401f-8c8a-8667c4f63a9f}" readWrite="no" columnName="{749F9C47-E318-4468-8CD0-17B872FECCE8}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{ade9d956-9e60-41a4-9b29-433931bae373}" readWrite="no" columnName="{F0821FF7-6DB7-450C-8637-E3632831914C}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{4a61205f-8f86-47e0-b488-e83a9a416e3c}" readWrite="no" columnName="{744AF9E5-5D63-4349-A7E4-175A6146259C}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{49d4ac32-f0f7-4a7a-ad22-b33afad0805b}" readWrite="no" columnName="{5A1BFC91-9706-4CB7-A5C5-6511F9BD9F68}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{c6ada94f-63de-4721-a9d5-34ea9be44d3a}" readWrite="no" columnName="{7D1204A5-BACA-46D2-A613-16F4488313AE}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{970682ac-49cf-4e16-836b-78a28261cd82}" readWrite="no" columnName="{2BBC566B-6E55-4E64-B90D-D9F2BF389776}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{4e0b4e79-1278-4e7c-8c09-0b72c5cec766}" readWrite="no" columnName="{848CC7D1-18E4-445E-AC36-1AB8E4F6CF89}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{38a88598-721c-4637-852b-3300dd66ca48}" readWrite="no" columnName="{6F88F39E-0BCF-4105-A075-C124201428F4}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{048ac556-949b-43ac-a6eb-38d2dfd53ff3}" readWrite="no" columnName="{04FB5603-30C2-4C68-A81C-291709F572CC}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{d27bc4be-b94f-4c28-a680-5972bbc0b7be}" readWrite="no" columnName="{7AE3242A-B2A4-4552-8290-178FDD8D1C78}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{883ce910-5b2d-411a-8eca-26da1cfb7f83}" readWrite="no" columnName="{1317D9CA-CA19-400F-A9ED-388BC8A00F12}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{90ab6b05-ac71-4dda-bae1-08d47625beab}" readWrite="no" columnName="{28829655-61D1-4910-A69C-C5015926691E}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{0ba3ff46-b557-45f2-b35d-8c011a96ea46}" readWrite="no" columnName="{F75030E9-1D66-4092-848A-DED6AFAC9D7E}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{b9b7b3db-52d2-4567-8513-56d2531fe572}" readWrite="no" columnName="{7D463B45-9F36-47A7-A213-237FB63CF330}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{4c02498f-5145-4e38-ad64-e9d2e3aef6e1}" readWrite="no" columnName="{9079A4AC-6E2F-4744-90E4-9B3C680D099A}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{9f049174-4f67-483b-b84b-654bdc0076ee}" readWrite="no" columnName="{9570850E-9159-4566-A8D8-96EBA5F6B272}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{0cf7ba25-bce3-49cc-ae2b-46effadfa0df}" readWrite="no" columnName="{83B1D247-55C4-4859-AA8B-EFBC380F243E}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{14f720bd-502a-42f0-91ea-e7bf22027af7}" readWrite="no" columnName="{A2D1F5D6-DF25-46B0-AD85-6F4B3A4934AF}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{b97a9d8b-8cf2-43f1-9798-bc8da833122f}" readWrite="no" columnName="{10FD60E2-6021-4FCD-850F-26FFBDC5FAED}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{38235bd6-9574-43b7-b155-e371f6cca51e}" readWrite="no" columnName="{10AA7283-720A-41BE-98EA-4B9345B25878}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{6ad6ab8b-83c8-41aa-b890-459958ab387c}" readWrite="no" columnName="{17F247F9-D866-4BDE-B3B0-B3D290BACB4F}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{a8a02204-6d5e-40d1-b03f-1f85a7c187d0}" readWrite="no" columnName="{6E1A46D1-2832-4996-A2AF-93A898E1822C}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{534aa8d0-7710-4437-8b81-5af63e1e005b}" readWrite="no" columnName="{6180FF6F-F8AB-432E-81E3-E5C29341FD6C}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{d8b82a85-6051-484c-8ba3-aaf8c13ba1c4}" readWrite="no" columnName="{0B00E29A-143F-4AB9-85B2-EA48F7F07317}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{8d0c62d7-6285-4f1b-a966-22c20ea8b43e}" readWrite="no" columnName="{D300A616-6CAB-48FD-B34E-69E4A84D0457}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{6388e115-f5f3-4a6c-8924-b2b47523e5c5}" readWrite="no" columnName="{77787395-382F-4A43-8EFC-70A12DA21C18}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{3fe45c94-4071-475d-9647-13303342d8ae}" readWrite="no" columnName="{8D5783A2-5F1C-49D3-AC10-47FC848FC95D}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{1cd55cf1-b2e5-4b70-b6da-fcb242563273}" readWrite="no" columnName="{BD6BD811-1E74-4C99-9CB1-9CDD28A1D518}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{88332c7b-5d61-4e91-a1db-24b2dd6398bc}" readWrite="no" columnName="{76415BB2-45CD-4142-A5AB-3F8120C0C7FC}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{daad6042-7cd3-4506-9060-313223da8e21}" readWrite="no" columnName="{FDCBFBF6-C98C-42AE-A143-96272713EAFC}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{ef78c04c-796e-4c5f-a09f-f61edc9eb0b6}" readWrite="no" columnName="{EB66CAA4-0743-4511-91D8-CC342DB6A685}"></xsf2:fieldExtension>
+						<xsf2:fieldExtension columnId="{df7f1d65-2d85-4ee8-9b92-225c313e07b6}" readWrite="no" columnName="{DD293CA2-E436-43F7-A01C-CC2E154FD9B3}"></xsf2:fieldExtension>
+					</xsf2:fieldsExtension>
+				</xsf2:listPropertiesExtension>
+				<xsf2:viewsExtension></xsf2:viewsExtension>
+				<xsf2:solutionPropertiesExtension branch="contentTypeTemplate">
+					<xsf2:contentTypeTemplate site="../../realtimefoundation" path="Contract Form.xsn" name="Contract Form" description="Fill out this form." browserEnable="yes"></xsf2:contentTypeTemplate>
+				</xsf2:solutionPropertiesExtension>
+			</xsf2:solutionDefinition>
+			<xsf3:solutionDefinition>
+				<xsf3:baseUrl relativeUrlBase="https://realtimelandscape.sharepoint.com/sites/realtimefoundation/FormServerTemplates/Contract Form.xsn"></xsf3:baseUrl>
+			</xsf3:solutionDefinition>
+		</xsf:extension>
+	</xsf:extensions>
+	<xsf:views default="Contract Total">
+		<xsf:view name="Contract Total" caption="Contract Total" showMenuItem="yes">
+			<xsf:mainpane transform="view1.xsl"></xsf:mainpane>
+			<xsf:editing>
+				<xsf:xmlToEdit name="GeneralAnnualPrice_511" item="/my:myFields/my:EstimateGroup/my:ContractTotals/my:GeneralAnnualPrice">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="GeneralAnnualLaborCost_510" item="/my:myFields/my:EstimateGroup/my:ContractTotals/my:GeneralAnnualLaborCost">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="GeneralAnnualMaterialCost_512" item="/my:myFields/my:EstimateGroup/my:ContractTotals/my:GeneralAnnualMaterialCost">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="GeneralCostTotal_513" item="/my:myFields/my:EstimateGroup/my:ContractTotals/my:GeneralCostTotal">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="TechnicalAnnualLaborCost_519" item="/my:myFields/my:EstimateGroup/my:ContractTotals/my:TechnicalAnnualLaborCost">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="TechnicalAnnualPrice_518" item="/my:myFields/my:EstimateGroup/my:ContractTotals/my:TechnicalAnnualPrice">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="ContractCost_515" item="/my:myFields/my:EstimateGroup/my:ContractTotals/my:ContractCost">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="ContractPrice_514" item="/my:myFields/my:EstimateGroup/my:ContractTotals/my:ContractPrice">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="TechnicalCostTotal_521" item="/my:myFields/my:EstimateGroup/my:ContractTotals/my:TechnicalCostTotal">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="GrossProfitPercent_517" item="/my:myFields/my:EstimateGroup/my:ContractTotals/my:GrossProfitPercent">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="TechnicalAnnualMaterialCost_520" item="/my:myFields/my:EstimateGroup/my:ContractTotals/my:TechnicalAnnualMaterialCost">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="GrossProfit_516" item="/my:myFields/my:EstimateGroup/my:ContractTotals/my:GrossProfit">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="GeneralTravelPrice_523" item="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralTravelPrice">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="GeneralTravelCost_522" item="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralTravelCost">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="GeneralArea_744" item="/my:myFields/my:TakeOff/my:TakeOffDetail/my:GeneralArea" container="/my:myFields">
+					<xsf:editWith caption="GeneralArea" xd:autogeneration="template" component="xCollection">
+						<xsf:fragmentToInsert>
+							<xsf:chooseFragment innerFragment="my:TakeOff/my:TakeOffDetail/my:GeneralArea">
+								<my:TakeOff>
+									<my:TakeOffDetail>
+										<my:GeneralArea>
+											<my:AreaTakeOffTypeTable>
+												<my:AreaLength xsi:nil="true"></my:AreaLength>
+												<my:AreaWidth xsi:nil="true"></my:AreaWidth>
+												<my:AreaTotal xsi:nil="true"></my:AreaTotal>
+											</my:AreaTakeOffTypeTable>
+											<my:AreaActivityTotal xsi:nil="true"></my:AreaActivityTotal>
+											<my:GeneralAreaActivity></my:GeneralAreaActivity>
+										</my:GeneralArea>
+									</my:TakeOffDetail>
+								</my:TakeOff>
+							</xsf:chooseFragment>
+						</xsf:fragmentToInsert>
+					</xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="AreaTakeOffTypeTable_746" item="/my:myFields/my:TakeOff/my:TakeOffDetail/my:GeneralArea/my:AreaTakeOffTypeTable" container="/my:myFields/my:TakeOff/my:TakeOffDetail/my:GeneralArea">
+					<xsf:editWith caption="AreaTakeOffTypeTable" xd:autogeneration="template" component="xCollection">
+						<xsf:fragmentToInsert>
+							<xsf:chooseFragment innerFragment="my:AreaTakeOffTypeTable">
+								<my:AreaTakeOffTypeTable>
+									<my:AreaLength xsi:nil="true"></my:AreaLength>
+									<my:AreaWidth xsi:nil="true"></my:AreaWidth>
+									<my:AreaTotal xsi:nil="true"></my:AreaTotal>
+								</my:AreaTakeOffTypeTable>
+							</xsf:chooseFragment>
+						</xsf:fragmentToInsert>
+					</xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="GeneralLinear_749" item="/my:myFields/my:TakeOff/my:TakeOffDetail/my:GeneralLinear" container="/my:myFields">
+					<xsf:editWith caption="GeneralLinear" xd:autogeneration="template" component="xCollection">
+						<xsf:fragmentToInsert>
+							<xsf:chooseFragment innerFragment="my:TakeOff/my:TakeOffDetail/my:GeneralLinear">
+								<my:TakeOff>
+									<my:TakeOffDetail>
+										<my:GeneralLinear>
+											<my:LinearTakeOffTypeTable>
+												<my:LinearLength xsi:nil="true"></my:LinearLength>
+												<my:LinearQuantity xsi:nil="true"></my:LinearQuantity>
+												<my:LinearTotal xsi:nil="true"></my:LinearTotal>
+											</my:LinearTakeOffTypeTable>
+											<my:LinearActivityTotal xsi:nil="true"></my:LinearActivityTotal>
+											<my:GeneralLinearActivity></my:GeneralLinearActivity>
+										</my:GeneralLinear>
+									</my:TakeOffDetail>
+								</my:TakeOff>
+							</xsf:chooseFragment>
+						</xsf:fragmentToInsert>
+					</xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="CountTakeOffTypeTable_756" item="/my:myFields/my:TakeOff/my:TakeOffDetail/my:GeneralCount/my:CountTakeOffTypeTable" container="/my:myFields/my:TakeOff/my:TakeOffDetail/my:GeneralCount">
+					<xsf:editWith caption="CountTakeOffTypeTable" xd:autogeneration="template" component="xCollection">
+						<xsf:fragmentToInsert>
+							<xsf:chooseFragment innerFragment="my:CountTakeOffTypeTable">
+								<my:CountTakeOffTypeTable>
+									<my:CountQuantityTotal xsi:nil="true"></my:CountQuantityTotal>
+								</my:CountTakeOffTypeTable>
+							</xsf:chooseFragment>
+						</xsf:fragmentToInsert>
+					</xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="GeneralCount_754" item="/my:myFields/my:TakeOff/my:TakeOffDetail/my:GeneralCount" container="/my:myFields">
+					<xsf:editWith caption="GeneralCount" xd:autogeneration="template" component="xCollection">
+						<xsf:fragmentToInsert>
+							<xsf:chooseFragment innerFragment="my:TakeOff/my:TakeOffDetail/my:GeneralCount">
+								<my:TakeOff>
+									<my:TakeOffDetail>
+										<my:GeneralCount>
+											<my:CountTakeOffTypeTable>
+												<my:CountQuantityTotal xsi:nil="true"></my:CountQuantityTotal>
+											</my:CountTakeOffTypeTable>
+											<my:CountActivityTotal xsi:nil="true"></my:CountActivityTotal>
+											<my:GeneralCountActivity></my:GeneralCountActivity>
+										</my:GeneralCount>
+									</my:TakeOffDetail>
+								</my:TakeOff>
+							</xsf:chooseFragment>
+						</xsf:fragmentToInsert>
+					</xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="LinearTakeOffTypeTable_751" item="/my:myFields/my:TakeOff/my:TakeOffDetail/my:GeneralLinear/my:LinearTakeOffTypeTable" container="/my:myFields/my:TakeOff/my:TakeOffDetail/my:GeneralLinear">
+					<xsf:editWith caption="LinearTakeOffTypeTable" xd:autogeneration="template" component="xCollection">
+						<xsf:fragmentToInsert>
+							<xsf:chooseFragment innerFragment="my:LinearTakeOffTypeTable">
+								<my:LinearTakeOffTypeTable>
+									<my:LinearLength xsi:nil="true"></my:LinearLength>
+									<my:LinearQuantity xsi:nil="true"></my:LinearQuantity>
+									<my:LinearTotal xsi:nil="true"></my:LinearTotal>
+								</my:LinearTakeOffTypeTable>
+							</xsf:chooseFragment>
+						</xsf:fragmentToInsert>
+					</xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="GeneralVolume_758" item="/my:myFields/my:TakeOff/my:TakeOffDetail/my:GeneralVolume" container="/my:myFields">
+					<xsf:editWith caption="GeneralVolume" xd:autogeneration="template" component="xCollection">
+						<xsf:fragmentToInsert>
+							<xsf:chooseFragment innerFragment="my:TakeOff/my:TakeOffDetail/my:GeneralVolume">
+								<my:TakeOff>
+									<my:TakeOffDetail>
+										<my:GeneralVolume>
+											<my:VolumeActivityTotal xsi:nil="true"></my:VolumeActivityTotal>
+											<my:VolumeTakeOffTypeTable>
+												<my:VolumeLength xsi:nil="true"></my:VolumeLength>
+												<my:VolumeWidth xsi:nil="true"></my:VolumeWidth>
+												<my:DepthInches xsi:nil="true"></my:DepthInches>
+												<my:VolumeTotalCF xsi:nil="true"></my:VolumeTotalCF>
+											</my:VolumeTakeOffTypeTable>
+											<my:GeneralVolumeActivity></my:GeneralVolumeActivity>
+										</my:GeneralVolume>
+									</my:TakeOffDetail>
+								</my:TakeOff>
+							</xsf:chooseFragment>
+						</xsf:fragmentToInsert>
+					</xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="VolumeTakeOffTypeTable_760" item="/my:myFields/my:TakeOff/my:TakeOffDetail/my:GeneralVolume/my:VolumeTakeOffTypeTable" container="/my:myFields/my:TakeOff/my:TakeOffDetail/my:GeneralVolume">
+					<xsf:editWith caption="VolumeTakeOffTypeTable" xd:autogeneration="template" component="xCollection">
+						<xsf:fragmentToInsert>
+							<xsf:chooseFragment innerFragment="my:VolumeTakeOffTypeTable">
+								<my:VolumeTakeOffTypeTable>
+									<my:VolumeLength xsi:nil="true"></my:VolumeLength>
+									<my:VolumeWidth xsi:nil="true"></my:VolumeWidth>
+									<my:DepthInches xsi:nil="true"></my:DepthInches>
+									<my:VolumeTotalCF xsi:nil="true"></my:VolumeTotalCF>
+								</my:VolumeTakeOffTypeTable>
+							</xsf:chooseFragment>
+						</xsf:fragmentToInsert>
+					</xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="TakeOffEntry_764" item="/my:myFields/my:TakeOff/my:TakeOffEntry" container="/my:myFields">
+					<xsf:editWith caption="TakeOffEntry" xd:autogeneration="template" component="xCollection">
+						<xsf:fragmentToInsert>
+							<xsf:chooseFragment innerFragment="my:TakeOff/my:TakeOffEntry">
+								<my:TakeOff>
+									<my:TakeOffEntry>
+										<my:TakeOffType></my:TakeOffType>
+										<my:TakeOffActivity></my:TakeOffActivity>
+										<my:TakeOffActivityUnit></my:TakeOffActivityUnit>
+										<my:TakeOffActivityMultiplier xsi:nil="true"></my:TakeOffActivityMultiplier>
+										<my:TakeOffActivityTotal xsi:nil="true"></my:TakeOffActivityTotal>
+										<my:TakeOffAreaTotal xsi:nil="true"></my:TakeOffAreaTotal>
+										<my:TakeOffLinearTotal xsi:nil="true"></my:TakeOffLinearTotal>
+										<my:TakeOffCountTotal xsi:nil="true"></my:TakeOffCountTotal>
+										<my:TakeOffVolumeTotal xsi:nil="true"></my:TakeOffVolumeTotal>
+										<my:RelatedActivity></my:RelatedActivity>
+									</my:TakeOffEntry>
+								</my:TakeOff>
+							</xsf:chooseFragment>
+						</xsf:fragmentToInsert>
+					</xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="TakeOffActivityUnit_773" item="/my:myFields/my:TakeOff/my:TakeOffEntry/my:TakeOffActivityUnit">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="TakeOffActivityTotal_769" item="/my:myFields/my:TakeOff/my:TakeOffEntry/my:TakeOffActivityTotal">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+			</xsf:editing>
+			<xsf:unboundControls>
+				<xsf:button name="CTRL474_5"></xsf:button>
+				<xsf:button name="CTRL475"></xsf:button>
+				<xsf:button name="CTRL476"></xsf:button>
+				<xsf:button name="CTRL477_5">
+					<xsf:ruleSetAction ruleSet="ruleSet_23"></xsf:ruleSetAction>
+				</xsf:button>
+				<xsf:button name="CTRL480_5">
+					<xsf:ruleSetAction ruleSet="ruleSet_25"></xsf:ruleSetAction>
+				</xsf:button>
+				<xsf:button name="CTRL72_17">
+					<xsf:ruleSetAction ruleSet="ruleSet_32"></xsf:ruleSetAction>
+				</xsf:button>
+				<xsf:button name="CTRL71_17">
+					<xsf:ruleSetAction ruleSet="ruleSet_33"></xsf:ruleSetAction>
+				</xsf:button>
+				<xsf:button name="CTRL495_5">
+					<xsf:ruleSetAction ruleSet="ruleSet_34"></xsf:ruleSetAction>
+				</xsf:button>
+				<xsf:button name="CTRL496_5"></xsf:button>
+				<xsf:button name="CTRL497_5"></xsf:button>
+				<xsf:button name="CTRL498_5"></xsf:button>
+			</xsf:unboundControls>
+			<xsf:menuArea name="msoStructuralEditingContextMenu">
+				<xsf:button action="xCollection::insertBefore" xmlToEdit="GeneralArea_744" caption="Insert GeneralArea before" showIf="immediate"></xsf:button>
+				<xsf:button action="xCollection::insertBefore" xmlToEdit="AreaTakeOffTypeTable_746" caption="Insert AreaTakeOffTypeTable before" showIf="immediate"></xsf:button>
+				<xsf:button action="xCollection::insertBefore" xmlToEdit="GeneralLinear_749" caption="Insert GeneralLinear before" showIf="immediate"></xsf:button>
+				<xsf:button action="xCollection::insertBefore" xmlToEdit="LinearTakeOffTypeTable_751" caption="Insert LinearTakeOffTypeTable before" showIf="immediate"></xsf:button>
+				<xsf:button action="xCollection::insertBefore" xmlToEdit="GeneralCount_754" caption="Insert GeneralCount before" showIf="immediate"></xsf:button>
+				<xsf:button action="xCollection::insertBefore" xmlToEdit="CountTakeOffTypeTable_756" caption="Insert CountTakeOffTypeTable before" showIf="immediate"></xsf:button>
+				<xsf:button action="xCollection::insertBefore" xmlToEdit="GeneralVolume_758" caption="Insert GeneralVolume before" showIf="immediate"></xsf:button>
+				<xsf:button action="xCollection::insertBefore" xmlToEdit="VolumeTakeOffTypeTable_760" caption="Insert VolumeTakeOffTypeTable before" showIf="immediate"></xsf:button>
+				<xsf:button action="xCollection::insertBefore" xmlToEdit="TakeOffEntry_764" caption="Insert TakeOffEntry before" showIf="immediate"></xsf:button>
+				<xsf:button action="xCollection::insertAfter" xmlToEdit="GeneralArea_744" caption="Insert GeneralArea after" showIf="immediate"></xsf:button>
+				<xsf:button action="xCollection::insertAfter" xmlToEdit="AreaTakeOffTypeTable_746" caption="Insert AreaTakeOffTypeTable after" showIf="immediate"></xsf:button>
+				<xsf:button action="xCollection::insertAfter" xmlToEdit="GeneralLinear_749" caption="Insert GeneralLinear after" showIf="immediate"></xsf:button>
+				<xsf:button action="xCollection::insertAfter" xmlToEdit="LinearTakeOffTypeTable_751" caption="Insert LinearTakeOffTypeTable after" showIf="immediate"></xsf:button>
+				<xsf:button action="xCollection::insertAfter" xmlToEdit="GeneralCount_754" caption="Insert GeneralCount after" showIf="immediate"></xsf:button>
+				<xsf:button action="xCollection::insertAfter" xmlToEdit="CountTakeOffTypeTable_756" caption="Insert CountTakeOffTypeTable after" showIf="immediate"></xsf:button>
+				<xsf:button action="xCollection::insertAfter" xmlToEdit="GeneralVolume_758" caption="Insert GeneralVolume after" showIf="immediate"></xsf:button>
+				<xsf:button action="xCollection::insertAfter" xmlToEdit="VolumeTakeOffTypeTable_760" caption="Insert VolumeTakeOffTypeTable after" showIf="immediate"></xsf:button>
+				<xsf:button action="xCollection::insertAfter" xmlToEdit="TakeOffEntry_764" caption="Insert TakeOffEntry after" showIf="immediate"></xsf:button>
+				<xsf:button action="xCollection::remove" xmlToEdit="GeneralArea_744" caption="Remove GeneralArea" showIf="immediate"></xsf:button>
+				<xsf:button action="xCollection::remove" xmlToEdit="AreaTakeOffTypeTable_746" caption="Remove AreaTakeOffTypeTable" showIf="immediate"></xsf:button>
+				<xsf:button action="xCollection::remove" xmlToEdit="GeneralLinear_749" caption="Remove GeneralLinear" showIf="immediate"></xsf:button>
+				<xsf:button action="xCollection::remove" xmlToEdit="LinearTakeOffTypeTable_751" caption="Remove LinearTakeOffTypeTable" showIf="immediate"></xsf:button>
+				<xsf:button action="xCollection::remove" xmlToEdit="GeneralCount_754" caption="Remove GeneralCount" showIf="immediate"></xsf:button>
+				<xsf:button action="xCollection::remove" xmlToEdit="CountTakeOffTypeTable_756" caption="Remove CountTakeOffTypeTable" showIf="immediate"></xsf:button>
+				<xsf:button action="xCollection::remove" xmlToEdit="GeneralVolume_758" caption="Remove GeneralVolume" showIf="immediate"></xsf:button>
+				<xsf:button action="xCollection::remove" xmlToEdit="VolumeTakeOffTypeTable_760" caption="Remove VolumeTakeOffTypeTable" showIf="immediate"></xsf:button>
+				<xsf:button action="xCollection::remove" xmlToEdit="TakeOffEntry_764" caption="Remove TakeOffEntry" showIf="immediate"></xsf:button>
+				<xsf:button action="xCollection::insert" xmlToEdit="GeneralArea_744" caption="Insert GeneralArea" showIf="immediate"></xsf:button>
+				<xsf:button action="xCollection::insert" xmlToEdit="AreaTakeOffTypeTable_746" caption="Insert AreaTakeOffTypeTable" showIf="immediate"></xsf:button>
+				<xsf:button action="xCollection::insert" xmlToEdit="GeneralLinear_749" caption="Insert GeneralLinear" showIf="immediate"></xsf:button>
+				<xsf:button action="xCollection::insert" xmlToEdit="LinearTakeOffTypeTable_751" caption="Insert LinearTakeOffTypeTable" showIf="immediate"></xsf:button>
+				<xsf:button action="xCollection::insert" xmlToEdit="GeneralCount_754" caption="Insert GeneralCount" showIf="immediate"></xsf:button>
+				<xsf:button action="xCollection::insert" xmlToEdit="CountTakeOffTypeTable_756" caption="Insert CountTakeOffTypeTable" showIf="immediate"></xsf:button>
+				<xsf:button action="xCollection::insert" xmlToEdit="GeneralVolume_758" caption="Insert GeneralVolume" showIf="immediate"></xsf:button>
+				<xsf:button action="xCollection::insert" xmlToEdit="VolumeTakeOffTypeTable_760" caption="Insert VolumeTakeOffTypeTable" showIf="immediate"></xsf:button>
+				<xsf:button action="xCollection::insert" xmlToEdit="TakeOffEntry_764" caption="Insert TakeOffEntry" showIf="immediate"></xsf:button>
+			</xsf:menuArea>
+		</xsf:view>
+		<xsf:view showMenuItem="yes" name="Contract Services" caption="Contract Services">
+			<xsf:editing>
+				<xsf:xmlToEdit name="MayCrewVisit_81" item="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralCrewVisit/my:MayCrewVisit">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="SepTravel_98" item="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralTravel/my:SepTravel">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="JulPercent_108" item="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralPercentMHPerMonth/my:JulPercent">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="DecMHSum_49" item="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHSum/my:DecMHSum">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="MarPercent_104" item="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralPercentMHPerMonth/my:MarPercent">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="OctTravel_99" item="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralTravel/my:OctTravel">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="NovCrewVisit_87" item="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralCrewVisit/my:NovCrewVisit">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="NovMHSum_48" item="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHSum/my:NovMHSum">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="FebPercent_103" item="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralPercentMHPerMonth/my:FebPercent">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="FebCrewVisit_78" item="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralCrewVisit/my:FebCrewVisit">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="UnitPrice_36" item="/my:myFields/my:EstimateGroup/my:PricingTable/my:UnitPrice">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="SepCrewVisit_85" item="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralCrewVisit/my:SepCrewVisit">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="MayTravel_94" item="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralTravel/my:MayTravel">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="MayMHSum_42" item="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHSum/my:MayMHSum">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="DecPercent_113" item="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralPercentMHPerMonth/my:DecPercent">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="MarCrewVisit_79" item="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralCrewVisit/my:MarCrewVisit">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="AnnualPrice_37" item="/my:myFields/my:EstimateGroup/my:PricingTable/my:AnnualPrice">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="JunCrewVisit_82" item="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralCrewVisit/my:JunCrewVisit">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="OctPercent_111" item="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralPercentMHPerMonth/my:OctPercent">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="Quantity_18" item="/my:myFields/my:EstimateGroup/my:PricingTable/my:Quantity">
+					<xsf:editWith component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="DecTravel_101" item="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralTravel/my:DecTravel">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="TotalGeneralVisits_63" item="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralSiteVisits/my:TotalGeneralVisits">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="PricingTable_15" item="/my:myFields/my:EstimateGroup/my:PricingTable" container="/my:myFields">
+					<xsf:editWith caption="PricingTable" xd:autogeneration="template" component="xCollection">
+						<xsf:fragmentToInsert>
+							<xsf:chooseFragment innerFragment="my:EstimateGroup/my:PricingTable">
+								<my:EstimateGroup>
+									<my:PricingTable>
+										<my:Activity></my:Activity>
+										<my:Quantity xsi:nil="true"></my:Quantity>
+										<my:Unit></my:Unit>
+										<my:MH xsi:nil="true"></my:MH>
+										<my:JanFreq xsi:nil="true"></my:JanFreq>
+										<my:FebFreq xsi:nil="true"></my:FebFreq>
+										<my:MarFreq xsi:nil="true"></my:MarFreq>
+										<my:AprFreq xsi:nil="true"></my:AprFreq>
+										<my:MayFreq xsi:nil="true"></my:MayFreq>
+										<my:JunFreq xsi:nil="true"></my:JunFreq>
+										<my:JulFreq xsi:nil="true"></my:JulFreq>
+										<my:AugFreq xsi:nil="true"></my:AugFreq>
+										<my:SepFreq xsi:nil="true"></my:SepFreq>
+										<my:OctFreq xsi:nil="true"></my:OctFreq>
+										<my:NovFreq xsi:nil="true"></my:NovFreq>
+										<my:DecFreq xsi:nil="true"></my:DecFreq>
+										<my:TotalFreq xsi:nil="true"></my:TotalFreq>
+										<my:TotalMH xsi:nil="true"></my:TotalMH>
+										<my:MaterialMarkup>0.35</my:MaterialMarkup>
+										<my:UnitPrice xsi:nil="true"></my:UnitPrice>
+										<my:AnnualPrice xsi:nil="true"></my:AnnualPrice>
+										<my:LaborPrice xsi:nil="true"></my:LaborPrice>
+										<my:MaterialCost xsi:nil="true"></my:MaterialCost>
+										<my:MaterialUnitPrice xsi:nil="true"></my:MaterialUnitPrice>
+										<my:MaterialAnnualCost xsi:nil="true"></my:MaterialAnnualCost>
+										<my:LaborAnnualCost xsi:nil="true"></my:LaborAnnualCost>
+										<my:LaborUnitPrice xsi:nil="true"></my:LaborUnitPrice>
+										<my:JanMH xsi:nil="true"></my:JanMH>
+										<my:FebMH xsi:nil="true"></my:FebMH>
+										<my:MarMH xsi:nil="true"></my:MarMH>
+										<my:AprMH xsi:nil="true"></my:AprMH>
+										<my:MayMH xsi:nil="true"></my:MayMH>
+										<my:JunMH xsi:nil="true"></my:JunMH>
+										<my:JulMH xsi:nil="true"></my:JulMH>
+										<my:AugMH xsi:nil="true"></my:AugMH>
+										<my:SepMH xsi:nil="true"></my:SepMH>
+										<my:OctMH xsi:nil="true"></my:OctMH>
+										<my:NovMH xsi:nil="true"></my:NovMH>
+										<my:DecMH xsi:nil="true"></my:DecMH>
+										<my:ActivityDisplayName></my:ActivityDisplayName>
+										<my:UnitCategory></my:UnitCategory>
+										<my:UnitMultiplier xsi:nil="true"></my:UnitMultiplier>
+									</my:PricingTable>
+								</my:EstimateGroup>
+							</xsf:chooseFragment>
+						</xsf:fragmentToInsert>
+					</xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="AugMHSum_45" item="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHSum/my:AugMHSum">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="JunMHSum_43" item="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHSum/my:JunMHSum">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="JulTravel_96" item="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralTravel/my:JulTravel">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="JanMHSum_38" item="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHSum/my:JanMHSum">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="MarTravel_92" item="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralTravel/my:MarTravel">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="MayPercent_106" item="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralPercentMHPerMonth/my:MayPercent">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="SepPercent_110" item="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralPercentMHPerMonth/my:SepPercent">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="FebTravel_91" item="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralTravel/my:FebTravel">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="JulMHSum_44" item="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHSum/my:JulMHSum">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="TotalFreq_33" item="/my:myFields/my:EstimateGroup/my:PricingTable/my:TotalFreq">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="RoundTrip_89" item="/my:myFields/my:RoundTrip">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="AugPercent_109" item="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralPercentMHPerMonth/my:AugPercent">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="AugTravel_97" item="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralTravel/my:AugTravel">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="TotalAnnualPercent_114" item="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralPercentMHPerMonth/my:TotalAnnualPercent">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="TotalMH_34" item="/my:myFields/my:EstimateGroup/my:PricingTable/my:TotalMH">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="NovPercent_112" item="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralPercentMHPerMonth/my:NovPercent">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="JunTravel_95" item="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralTravel/my:JunTravel">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="AugCrewVisit_84" item="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralCrewVisit/my:AugCrewVisit">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="NovTravel_100" item="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralTravel/my:NovTravel">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="AprCrewVisit_80" item="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralCrewVisit/my:AprCrewVisit">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="JulCrewVisit_83" item="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralCrewVisit/my:JulCrewVisit">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="JanPercent_102" item="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralPercentMHPerMonth/my:JanPercent">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="AprMHSum_41" item="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHSum/my:AprMHSum">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="JunPercent_107" item="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralPercentMHPerMonth/my:JunPercent">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="SepMHSum_46" item="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHSum/my:SepMHSum">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="AprTravel_93" item="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralTravel/my:AprTravel">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="JanTravel_90" item="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralTravel/my:JanTravel">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="MH_20" item="/my:myFields/my:EstimateGroup/my:PricingTable/my:MH">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="OctMHSum_47" item="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHSum/my:OctMHSum">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="MarMHSum_40" item="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHSum/my:MarMHSum">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="MHSum_50" item="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHSum/my:GeneralContractHours">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="Unit_19" item="/my:myFields/my:EstimateGroup/my:PricingTable/my:Unit">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="OctCrewVisit_86" item="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralCrewVisit/my:OctCrewVisit">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="FebMHSum_39" item="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHSum/my:FebMHSum">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="DecCrewVisit_88" item="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralCrewVisit/my:DecCrewVisit">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="AprPercent_105" item="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralPercentMHPerMonth/my:AprPercent">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="ProjectDisplayName_161" item="/my:myFields/my:ProjectDisplayName">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="TechnicalPricingTable_391" item="/my:myFields/my:EstimateGroup/my:TechnicalPricingTable" container="/my:myFields">
+					<xsf:editWith caption="TechnicalPricingTable" xd:autogeneration="template" component="xCollection">
+						<xsf:fragmentToInsert>
+							<xsf:chooseFragment innerFragment="my:EstimateGroup/my:TechnicalPricingTable">
+								<my:EstimateGroup>
+									<my:TechnicalPricingTable>
+										<my:TechActivity></my:TechActivity>
+										<my:TechQuantity xsi:nil="true"></my:TechQuantity>
+										<my:TechUnit></my:TechUnit>
+										<my:TechMH xsi:nil="true"></my:TechMH>
+										<my:TechTravelPerVisit></my:TechTravelPerVisit>
+										<my:TechJanFreq xsi:nil="true"></my:TechJanFreq>
+										<my:TechFebFreq xsi:nil="true"></my:TechFebFreq>
+										<my:TechMarFreq xsi:nil="true"></my:TechMarFreq>
+										<my:TechAprFreq xsi:nil="true"></my:TechAprFreq>
+										<my:TechMayFreq xsi:nil="true"></my:TechMayFreq>
+										<my:TechJunFreq xsi:nil="true"></my:TechJunFreq>
+										<my:TechJulFreq xsi:nil="true"></my:TechJulFreq>
+										<my:TechAugFreq xsi:nil="true"></my:TechAugFreq>
+										<my:TechSepFreq xsi:nil="true"></my:TechSepFreq>
+										<my:TechOctFreq xsi:nil="true"></my:TechOctFreq>
+										<my:TechNovFreq xsi:nil="true"></my:TechNovFreq>
+										<my:TechDecFreq xsi:nil="true"></my:TechDecFreq>
+										<my:TechTotalFreq xsi:nil="true"></my:TechTotalFreq>
+										<my:TechTotalMH xsi:nil="true"></my:TechTotalMH>
+										<my:TechMaterialMarkup>0.35</my:TechMaterialMarkup>
+										<my:TechUnitPrice xsi:nil="true"></my:TechUnitPrice>
+										<my:TechAnnualPrice xsi:nil="true"></my:TechAnnualPrice>
+										<my:TechLaborCost>14.5</my:TechLaborCost>
+										<my:TechOverheadAndProfit>12.5</my:TechOverheadAndProfit>
+										<my:TechLaborPrice xsi:nil="true"></my:TechLaborPrice>
+										<my:TechMaterialCost xsi:nil="true"></my:TechMaterialCost>
+										<my:TechMaterialUnitPrice xsi:nil="true"></my:TechMaterialUnitPrice>
+										<my:TechMaterialAnnualCost xsi:nil="true"></my:TechMaterialAnnualCost>
+										<my:TechLaborAnnualCost xsi:nil="true"></my:TechLaborAnnualCost>
+										<my:TechLaborUnitPrice xsi:nil="true"></my:TechLaborUnitPrice>
+										<my:TechJanMH xsi:nil="true"></my:TechJanMH>
+										<my:TechFebMH xsi:nil="true"></my:TechFebMH>
+										<my:TechMarMH xsi:nil="true"></my:TechMarMH>
+										<my:TechAprMH xsi:nil="true"></my:TechAprMH>
+										<my:TechMayMH xsi:nil="true"></my:TechMayMH>
+										<my:TechJunMH xsi:nil="true"></my:TechJunMH>
+										<my:TechJulMH xsi:nil="true"></my:TechJulMH>
+										<my:TechAugMH xsi:nil="true"></my:TechAugMH>
+										<my:TechSepMH xsi:nil="true"></my:TechSepMH>
+										<my:TechOctMH xsi:nil="true"></my:TechOctMH>
+										<my:TechNovMH xsi:nil="true"></my:TechNovMH>
+										<my:TechDecMH xsi:nil="true"></my:TechDecMH>
+										<my:TechActivityDisplayName></my:TechActivityDisplayName>
+										<my:TechUnitCategory></my:TechUnitCategory>
+										<my:TechCrewSize xsi:nil="true"></my:TechCrewSize>
+										<my:TechUnitMultiplier xsi:nil="true"></my:TechUnitMultiplier>
+									</my:TechnicalPricingTable>
+								</my:EstimateGroup>
+							</xsf:chooseFragment>
+						</xsf:fragmentToInsert>
+					</xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="TakeOffActivityUnit_418" item="/my:myFields/my:TakeOff/my:TakeOffEntry/my:TakeOffActivityUnit">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="TakeOffActivity_417" item="/my:myFields/my:TakeOff/my:TakeOffEntry/my:TakeOffActivity">
+					<xsf:editWith type="plainMultiline" proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="TakeOffActivityTotal_420" item="/my:myFields/my:TakeOff/my:TakeOffEntry/my:TakeOffActivityTotal">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="ActivityDisplayName_554" item="/my:myFields/my:EstimateGroup/my:PricingTable/my:ActivityDisplayName">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="TechActivityDisplayName_555" item="/my:myFields/my:EstimateGroup/my:TechnicalPricingTable/my:TechActivityDisplayName">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+			</xsf:editing>
+			<xsf:menuArea name="msoStructuralEditingContextMenu">
+				<xsf:button action="xCollection::insertBefore" xmlToEdit="PricingTable_15" caption="Insert PricingTable before" showIf="immediate"></xsf:button>
+				<xsf:button action="xCollection::insertBefore" xmlToEdit="TechnicalPricingTable_391" caption="Insert TechnicalPricingTable before" showIf="immediate"></xsf:button>
+				<xsf:button action="xCollection::insertAfter" xmlToEdit="PricingTable_15" caption="Insert PricingTable after" showIf="immediate"></xsf:button>
+				<xsf:button action="xCollection::insertAfter" xmlToEdit="TechnicalPricingTable_391" caption="Insert TechnicalPricingTable after" showIf="immediate"></xsf:button>
+				<xsf:button action="xCollection::remove" xmlToEdit="PricingTable_15" caption="Remove PricingTable" showIf="immediate"></xsf:button>
+				<xsf:button action="xCollection::remove" xmlToEdit="TechnicalPricingTable_391" caption="Remove TechnicalPricingTable" showIf="immediate"></xsf:button>
+				<xsf:button action="xCollection::insert" xmlToEdit="PricingTable_15" caption="Insert PricingTable" showIf="immediate"></xsf:button>
+				<xsf:button action="xCollection::insert" xmlToEdit="TechnicalPricingTable_391" caption="Insert TechnicalPricingTable" showIf="immediate"></xsf:button>
+			</xsf:menuArea>
+			<xsf:mainpane transform="GeneralMaintenance.xsl"></xsf:mainpane>
+			<xsf:unboundControls>
+				<xsf:button name="CTRL474_5"></xsf:button>
+				<xsf:button name="CTRL475"></xsf:button>
+				<xsf:button name="CTRL2"></xsf:button>
+				<xsf:button name="CTRL477_5">
+					<xsf:ruleSetAction ruleSet="ruleSet_26"></xsf:ruleSetAction>
+				</xsf:button>
+				<xsf:button name="CTRL480_5">
+					<xsf:ruleSetAction ruleSet="ruleSet_46"></xsf:ruleSetAction>
+				</xsf:button>
+				<xsf:button name="CTRL71_17">
+					<xsf:ruleSetAction ruleSet="ruleSet_30"></xsf:ruleSetAction>
+				</xsf:button>
+				<xsf:button name="CTRL72_17">
+					<xsf:ruleSetAction ruleSet="ruleSet_31"></xsf:ruleSetAction>
+				</xsf:button>
+				<xsf:button name="CTRL495_5">
+					<xsf:ruleSetAction ruleSet="ruleSet_35"></xsf:ruleSetAction>
+				</xsf:button>
+				<xsf:button name="CTRL496_5"></xsf:button>
+				<xsf:button name="CTRL497_5"></xsf:button>
+				<xsf:button name="CTRL75_7">
+					<xsf:ruleSetAction ruleSet="ruleSet_44"></xsf:ruleSetAction>
+				</xsf:button>
+			</xsf:unboundControls>
+		</xsf:view>
+	</xsf:views>
+	<xsf:applicationParameters application="InfoPath Design Mode">
+		<xsf:solutionProperties fullyEditableNamespace="http://schemas.microsoft.com/office/infopath/2003/myXSD/2012-01-18T13:59:28" lastOpenView="GeneralMaintenance.xsl" lastVersionNeedingTransform="1.0.0.1088" automaticallyCreateNodes="yes"></xsf:solutionProperties>
+	</xsf:applicationParameters>
+	<xsf:documentSchemas>
+		<xsf:documentSchema rootSchema="yes" location="http://schemas.microsoft.com/office/infopath/2003/myXSD/2012-01-18T13:59:28 myschema.xsd"></xsf:documentSchema>
+	</xsf:documentSchemas>
+	<xsf:fileNew>
+		<xsf:initialXmlDocument caption="Contract Form" href="template.xml"></xsf:initialXmlDocument>
+	</xsf:fileNew>
+	<xsf:dataObjects>
+		<xsf:dataObject name="Pricing Table" schema="Pricing Table10.xsd" initOnLoad="no">
+			<xsf:query>
+				<xsf:sharepointListAdapterRW queryAllowed="yes" submitAllowed="no" siteURL="../" sharePointListID="{1292F3E9-EA58-4CB8-B853-5C3F828D9F80}" name="Pricing Table" contentTypeID="" sortBy="Title" sortAscending="yes" relativeListUrl="../Lists/Pricing%20Table/">
+					<xsf:field internalName="Title" required="yes" type="Text"></xsf:field>
+					<xsf:field internalName="Activity_x0020_Category" required="no" type="Choice"></xsf:field>
+					<xsf:field internalName="Unit" required="no" type="Text"></xsf:field>
+					<xsf:field internalName="Unit_x0020_Multiplier" required="no" type="Number"></xsf:field>
+					<xsf:field internalName="Unit_x0020_Category" required="no" type="Choice"></xsf:field>
+					<xsf:field internalName="Production_x0020_Rate" required="no" type="Number"></xsf:field>
+					<xsf:field internalName="Material_x0020_Rate" required="no" type="Number"></xsf:field>
+					<xsf:field internalName="Description" required="no" type="Text"></xsf:field>
+					<xsf:field internalName="Specification" required="no" type="Compatible"></xsf:field>
+					<xsf:field internalName="ID" required="no" type="Counter"></xsf:field>
+				</xsf:sharepointListAdapterRW>
+			</xsf:query>
+		</xsf:dataObject>
+		<xsf:dataObject name="Projects" schema="Projects.xsd" initOnLoad="yes">
+			<xsf:query>
+				<xsf:sharepointListAdapterRW queryAllowed="yes" submitAllowed="no" siteURL="../" sharePointListID="{71D6493E-3213-4CD6-BD2C-A9643DA88FB3}" name="Projects" contentTypeID="" sortBy="Title" sortAscending="yes" relativeListUrl="../Lists/Projects/">
+					<xsf:field internalName="Title" required="yes" type="Text"></xsf:field>
+					<xsf:field internalName="Round_x0020_Trip" required="no" type="Number"></xsf:field>
+					<xsf:field internalName="ID" required="no" type="Counter"></xsf:field>
+				</xsf:sharepointListAdapterRW>
+			</xsf:query>
+		</xsf:dataObject>
+		<xsf:dataObject name="Retrieve IDs" schema="Retrieve IDs.xsd" initOnLoad="no">
+			<xsf:query>
+				<xsf:sharepointListAdapterRW queryAllowed="yes" submitAllowed="no" siteURL="../" sharePointListID="{4D5C0C26-8EB5-47AC-844C-D7F6E7666878}" name="Retrieve IDs" contentTypeID="" sortBy="ID" sortAscending="yes" relativeListUrl="../Contract%20Library/">
+					<xsf:field internalName="ID" required="no" type="Counter"></xsf:field>
+				</xsf:sharepointListAdapterRW>
+			</xsf:query>
+		</xsf:dataObject>
+	</xsf:dataObjects>
+	<xsf:calculations>
+		<xsf:calculatedField target="/my:myFields/my:RoundTrip" expression="xdXDocument:GetDOM(&quot;Projects&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:Round_x0020_Trip[../d:ID = xdXDocument:get-DOM()/my:myFields/my:ProjectName]" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:ProjectID" expression="xdXDocument:GetDOM(&quot;Projects&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:ID[. = xdXDocument:get-DOM()/my:myFields/my:ProjectName]" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:TakeOff/my:TakeOffDetail/my:GeneralArea/my:AreaTakeOffTypeTable/my:AreaTotal" expression="xdMath:Nz(../my:AreaLength) * xdMath:Nz(../my:AreaWidth)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:TakeOff/my:TakeOffDetail/my:GeneralLinear/my:LinearTakeOffTypeTable/my:LinearTotal" expression="xdMath:Nz(../my:LinearLength) * xdMath:Nz(../my:LinearQuantity)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:TakeOff/my:TakeOffDetail/my:GeneralVolume/my:VolumeTakeOffTypeTable/my:VolumeTotalCF" expression="xdMath:Nz(../my:VolumeLength) * xdMath:Nz(../my:VolumeWidth) * (xdMath:Nz(../my:DepthInches) div 12)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:PricingTable/my:Unit" expression="xdXDocument:GetDOM(&quot;Pricing Table&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:Unit[../d:ID = current()/../my:Activity]" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:PricingTable/my:MH" expression="xdMath:Nz(../my:Quantity) * xdMath:Nz(xdXDocument:GetDOM(&quot;Pricing Table&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:Production_x0020_Rate[../d:ID = current()/../my:Activity])" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:PricingTable/my:TotalFreq" expression="xdMath:Nz(../my:JanFreq) + xdMath:Nz(../my:FebFreq) + xdMath:Nz(../my:MarFreq) + xdMath:Nz(../my:AprFreq) + xdMath:Nz(../my:MayFreq) + xdMath:Nz(../my:JunFreq) + xdMath:Nz(../my:JulFreq) + xdMath:Nz(../my:AugFreq) + xdMath:Nz(../my:SepFreq) + xdMath:Nz(../my:OctFreq) + xdMath:Nz(../my:NovFreq) + xdMath:Nz(../my:DecFreq)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:PricingTable/my:TotalMH" expression="xdMath:Nz(../my:TotalFreq) * xdMath:Nz(../my:MH)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:PricingTable/my:LaborPrice" expression="xdMath:Nz(../../my:GeneralLaborCost) + xdMath:Nz(../../my:GeneralOverheadAndProfit)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:PricingTable/my:MaterialCost" expression="xdMath:Nz(../my:Quantity) * xdMath:Nz(xdXDocument:GetDOM(&quot;Pricing Table&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:Material_x0020_Rate[../d:ID = current()/../my:Activity])" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:PricingTable/my:MaterialAnnualCost" expression="xdMath:Nz(../my:MaterialCost) * xdMath:Nz(../my:TotalFreq)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:PricingTable/my:UnitPrice" expression="xdMath:Nz(../my:MaterialUnitPrice) + xdMath:Nz(../my:LaborUnitPrice)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:PricingTable/my:MaterialUnitPrice" expression="xdMath:Nz(xdXDocument:GetDOM(&quot;Pricing Table&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:Material_x0020_Rate[../d:ID = current()/../my:Activity]) * xdMath:Nz(../my:MaterialMarkup) + xdMath:Nz(xdXDocument:GetDOM(&quot;Pricing Table&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:Material_x0020_Rate[../d:ID = current()/../my:Activity])" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:PricingTable/my:LaborUnitPrice" expression="xdMath:Nz(../my:LaborPrice) * xdMath:Nz(xdXDocument:GetDOM(&quot;Pricing Table&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:Production_x0020_Rate[../d:ID = current()/../my:Activity])" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:PricingTable/my:JanMH" expression="xdMath:Nz(../my:MH) * xdMath:Nz(../my:JanFreq)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:PricingTable/my:FebMH" expression="xdMath:Nz(../my:MH) * xdMath:Nz(../my:FebFreq)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:PricingTable/my:MarMH" expression="xdMath:Nz(../my:MH) * xdMath:Nz(../my:MarFreq)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:PricingTable/my:AprMH" expression="xdMath:Nz(../my:MH) * xdMath:Nz(../my:AprFreq)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:PricingTable/my:MayMH" expression="xdMath:Nz(../my:MH) * xdMath:Nz(../my:MayFreq)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:PricingTable/my:JunMH" expression="xdMath:Nz(../my:MH) * xdMath:Nz(../my:JunFreq)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:PricingTable/my:JulMH" expression="xdMath:Nz(../my:MH) * xdMath:Nz(../my:JulFreq)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:PricingTable/my:AugMH" expression="xdMath:Nz(../my:MH) * xdMath:Nz(../my:AugFreq)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:PricingTable/my:SepMH" expression="xdMath:Nz(../my:MH) * xdMath:Nz(../my:SepFreq)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:PricingTable/my:OctMH" expression="xdMath:Nz(../my:MH) * xdMath:Nz(../my:OctFreq)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:PricingTable/my:NovMH" expression="xdMath:Nz(../my:MH) * xdMath:Nz(../my:NovFreq)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:PricingTable/my:DecMH" expression="xdMath:Nz(../my:MH) * xdMath:Nz(../my:DecFreq)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHSum/my:JanMHSum" expression="round(sum(xdMath:Nz(../../../my:PricingTable/my:JanMH)))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHSum/my:FebMHSum" expression="sum(xdMath:Nz(../../../my:PricingTable/my:FebMH))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHSum/my:MarMHSum" expression="sum(xdMath:Nz(../../../my:PricingTable/my:MarMH))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHSum/my:AprMHSum" expression="sum(xdMath:Nz(../../../my:PricingTable/my:AprMH))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHSum/my:MayMHSum" expression="sum(xdMath:Nz(../../../my:PricingTable/my:MayMH))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHSum/my:JunMHSum" expression="sum(xdMath:Nz(../../../my:PricingTable/my:JunMH))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHSum/my:JulMHSum" expression="sum(xdMath:Nz(../../../my:PricingTable/my:JulMH))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHSum/my:AugMHSum" expression="sum(xdMath:Nz(../../../my:PricingTable/my:AugMH))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHSum/my:SepMHSum" expression="sum(xdMath:Nz(../../../my:PricingTable/my:SepMH))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHSum/my:OctMHSum" expression="sum(xdMath:Nz(../../../my:PricingTable/my:OctMH))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHSum/my:NovMHSum" expression="sum(xdMath:Nz(../../../my:PricingTable/my:NovMH))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHSum/my:DecMHSum" expression="sum(xdMath:Nz(../../../my:PricingTable/my:DecMH))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHSum/my:GeneralContractHours" expression="sum(xdMath:Nz(../../../my:PricingTable/my:TotalMH))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralSiteVisits/my:TotalGeneralVisits" expression="xdMath:Nz(../my:JanVisits) + xdMath:Nz(../my:FebVisits) + xdMath:Nz(../my:MarVisits) + xdMath:Nz(../my:AprVisits) + xdMath:Nz(../my:MayVisits) + xdMath:Nz(../my:JunVisits) + xdMath:Nz(../my:JulVisits) + xdMath:Nz(../my:AugVisits) + xdMath:Nz(../my:SepVisits) + xdMath:Nz(../my:OctVisits) + xdMath:Nz(../my:NovVisits) + xdMath:Nz(../my:DecVisits)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralCrewVisit/my:JanCrewVisit" expression="xdMath:Nz(../../my:GeneralMHSum/my:JanMHSum) div xdMath:Nz(../../my:GeneralSiteVisits/my:JanVisits) div xdMath:Nz(../../my:GeneralAverageCrew/my:JanCrew)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralCrewVisit/my:FebCrewVisit" expression="xdMath:Nz(../../my:GeneralMHSum/my:FebMHSum) div xdMath:Nz(../../my:GeneralSiteVisits/my:FebVisits) div xdMath:Nz(../../my:GeneralAverageCrew/my:FebCrew)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralCrewVisit/my:MarCrewVisit" expression="xdMath:Nz(../../my:GeneralMHSum/my:MarMHSum) div xdMath:Nz(../../my:GeneralSiteVisits/my:MarVisits) div xdMath:Nz(../../my:GeneralAverageCrew/my:MarCrew)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralCrewVisit/my:AprCrewVisit" expression="xdMath:Nz(../../my:GeneralMHSum/my:AprMHSum) div xdMath:Nz(../../my:GeneralSiteVisits/my:AprVisits) div xdMath:Nz(../../my:GeneralAverageCrew/my:AprCrew)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralCrewVisit/my:MayCrewVisit" expression="xdMath:Nz(../../my:GeneralMHSum/my:MayMHSum) div xdMath:Nz(../../my:GeneralSiteVisits/my:MayVisits) div xdMath:Nz(../../my:GeneralAverageCrew/my:MayCrew)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralCrewVisit/my:JunCrewVisit" expression="xdMath:Nz(../../my:GeneralMHSum/my:JunMHSum) div xdMath:Nz(../../my:GeneralSiteVisits/my:JunVisits) div xdMath:Nz(../../my:GeneralAverageCrew/my:JunCrew)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralCrewVisit/my:JulCrewVisit" expression="xdMath:Nz(../../my:GeneralMHSum/my:JulMHSum) div xdMath:Nz(../../my:GeneralSiteVisits/my:JulVisits) div xdMath:Nz(../../my:GeneralAverageCrew/my:JulCrew)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralCrewVisit/my:AugCrewVisit" expression="xdMath:Nz(../../my:GeneralMHSum/my:AugMHSum) div xdMath:Nz(../../my:GeneralSiteVisits/my:AugVisits) div xdMath:Nz(../../my:GeneralAverageCrew/my:AugCrew)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralCrewVisit/my:SepCrewVisit" expression="xdMath:Nz(../../my:GeneralMHSum/my:SepMHSum) div xdMath:Nz(../../my:GeneralSiteVisits/my:SepVisits) div xdMath:Nz(../../my:GeneralAverageCrew/my:SepCrew)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralCrewVisit/my:OctCrewVisit" expression="xdMath:Nz(../../my:GeneralMHSum/my:OctMHSum) div xdMath:Nz(../../my:GeneralSiteVisits/my:OctVisits) div xdMath:Nz(../../my:GeneralAverageCrew/my:OctCrew)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralCrewVisit/my:NovCrewVisit" expression="xdMath:Nz(../../my:GeneralMHSum/my:NovMHSum) div xdMath:Nz(../../my:GeneralSiteVisits/my:NovVisits) div xdMath:Nz(../../my:GeneralAverageCrew/my:NovCrew)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralCrewVisit/my:DecCrewVisit" expression="xdMath:Nz(../../my:GeneralMHSum/my:DecMHSum) div xdMath:Nz(../../my:GeneralSiteVisits/my:DecVisits) div xdMath:Nz(../../my:GeneralAverageCrew/my:DecCrew)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:PricingTable/my:ActivityDisplayName" expression="xdXDocument:GetDOM(&quot;Pricing Table&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:Title[../d:ID = current()/../my:Activity]" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:PricingTable/my:UnitCategory" expression="xdXDocument:GetDOM(&quot;Pricing Table&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:Unit_x0020_Category[../d:ID = current()/../my:Activity]" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:TakeOff/my:TakeOffDetail/my:GeneralArea/my:AreaActivityTotal" expression="sum(xdMath:Nz(../my:AreaTakeOffTypeTable/my:AreaTotal)) div xdMath:Nz(../../../my:TakeOffEntry/my:TakeOffActivityMultiplier[../../my:TakeOffDetail/my:GeneralArea/my:GeneralAreaActivity = ../my:TakeOffActivity])" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:TakeOff/my:TakeOffDetail/my:GeneralLinear/my:LinearActivityTotal" expression="sum(xdMath:Nz(../my:LinearTakeOffTypeTable/my:LinearTotal)) div xdMath:Nz(../../../my:TakeOffEntry/my:TakeOffActivityMultiplier[current()/../my:GeneralLinearActivity = ../my:TakeOffActivity])" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:TakeOff/my:TakeOffDetail/my:GeneralCount/my:CountActivityTotal" expression="sum(xdMath:Nz(../my:CountTakeOffTypeTable/my:CountQuantityTotal))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:TakeOff/my:TakeOffDetail/my:GeneralVolume/my:VolumeActivityTotal" expression="sum(xdMath:Nz(../my:VolumeTakeOffTypeTable/my:VolumeTotalCF)) div xdMath:Nz(../../../my:TakeOffEntry/my:TakeOffActivityMultiplier[../../my:TakeOffDetail/my:GeneralVolume/my:GeneralVolumeActivity = ../my:TakeOffActivity])" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralPercentOfDailyTravel/my:JanPercentTravel" expression="1 - (xdMath:Nz(../../my:GeneralWorkDayHours) - xdMath:Nz(../../my:GeneralCrewVisit/my:JanCrewVisit)) div xdMath:Nz(../../my:GeneralWorkDayHours)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralTravel/my:JanTravel" expression="xdMath:Nz(../../my:GeneralPercentOfDailyTravel/my:JanPercentTravel) * xdMath:Nz(../../../../my:RoundTrip) * xdMath:Nz(../../my:GeneralAverageCrew/my:JanCrew)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralPercentOfDailyTravel/my:FebPercentTravel" expression="1 - (xdMath:Nz(../../my:GeneralWorkDayHours) - xdMath:Nz(../../my:GeneralCrewVisit/my:FebCrewVisit)) div xdMath:Nz(../../my:GeneralWorkDayHours)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralPercentOfDailyTravel/my:MarPercentTravel" expression="1 - (xdMath:Nz(../../my:GeneralWorkDayHours) - xdMath:Nz(../../my:GeneralCrewVisit/my:MarCrewVisit)) div xdMath:Nz(../../my:GeneralWorkDayHours)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralPercentOfDailyTravel/my:AprPercentTravel" expression="1 - (xdMath:Nz(../../my:GeneralWorkDayHours) - xdMath:Nz(../../my:GeneralCrewVisit/my:AprCrewVisit)) div xdMath:Nz(../../my:GeneralWorkDayHours)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralPercentOfDailyTravel/my:MayPercentTravel" expression="1 - (xdMath:Nz(../../my:GeneralWorkDayHours) - xdMath:Nz(../../my:GeneralCrewVisit/my:MayCrewVisit)) div xdMath:Nz(../../my:GeneralWorkDayHours)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralPercentOfDailyTravel/my:JunPercentTravel" expression="1 - (xdMath:Nz(../../my:GeneralWorkDayHours) - xdMath:Nz(../../my:GeneralCrewVisit/my:JunCrewVisit)) div xdMath:Nz(../../my:GeneralWorkDayHours)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralPercentOfDailyTravel/my:JulPercentTravel" expression="1 - (xdMath:Nz(../../my:GeneralWorkDayHours) - xdMath:Nz(../../my:GeneralCrewVisit/my:JulCrewVisit)) div xdMath:Nz(../../my:GeneralWorkDayHours)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralPercentOfDailyTravel/my:AugPercentTravel" expression="1 - (xdMath:Nz(../../my:GeneralWorkDayHours) - xdMath:Nz(../../my:GeneralCrewVisit/my:AugCrewVisit)) div xdMath:Nz(../../my:GeneralWorkDayHours)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralPercentOfDailyTravel/my:SepPercentTravel" expression="1 - (xdMath:Nz(../../my:GeneralWorkDayHours) - xdMath:Nz(../../my:GeneralCrewVisit/my:SepCrewVisit)) div xdMath:Nz(../../my:GeneralWorkDayHours)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralPercentOfDailyTravel/my:OctPercentTravel" expression="1 - (xdMath:Nz(../../my:GeneralWorkDayHours) - xdMath:Nz(../../my:GeneralCrewVisit/my:OctCrewVisit)) div xdMath:Nz(../../my:GeneralWorkDayHours)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralPercentOfDailyTravel/my:NovPercentTravel" expression="1 - (xdMath:Nz(../../my:GeneralWorkDayHours) - xdMath:Nz(../../my:GeneralCrewVisit/my:NovCrewVisit)) div xdMath:Nz(../../my:GeneralWorkDayHours)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralPercentOfDailyTravel/my:DecPercentTravel" expression="1 - (xdMath:Nz(../../my:GeneralWorkDayHours) - xdMath:Nz(../../my:GeneralCrewVisit/my:DecCrewVisit)) div xdMath:Nz(../../my:GeneralWorkDayHours)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralTravel/my:FebTravel" expression="xdMath:Nz(../../my:GeneralPercentOfDailyTravel/my:FebPercentTravel) * xdMath:Nz(../../../../my:RoundTrip) * xdMath:Nz(../../my:GeneralAverageCrew/my:FebCrew)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralTravel/my:MarTravel" expression="xdMath:Nz(../../my:GeneralPercentOfDailyTravel/my:MarPercentTravel) * xdMath:Nz(../../../../my:RoundTrip) * xdMath:Nz(../../my:GeneralAverageCrew/my:MarCrew)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralTravel/my:AprTravel" expression="xdMath:Nz(../../my:GeneralPercentOfDailyTravel/my:AprPercentTravel) * xdMath:Nz(../../../../my:RoundTrip) * xdMath:Nz(../../my:GeneralAverageCrew/my:AprCrew)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralTravel/my:MayTravel" expression="xdMath:Nz(../../my:GeneralPercentOfDailyTravel/my:MayPercentTravel) * xdMath:Nz(../../../../my:RoundTrip) * xdMath:Nz(../../my:GeneralAverageCrew/my:MayCrew)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralTravel/my:JunTravel" expression="xdMath:Nz(../../my:GeneralPercentOfDailyTravel/my:JunPercentTravel) * xdMath:Nz(../../../../my:RoundTrip) * xdMath:Nz(../../my:GeneralAverageCrew/my:JunCrew)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralTravel/my:JulTravel" expression="xdMath:Nz(../../my:GeneralPercentOfDailyTravel/my:JulPercentTravel) * xdMath:Nz(../../../../my:RoundTrip) * xdMath:Nz(../../my:GeneralAverageCrew/my:JulCrew)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralTravel/my:AugTravel" expression="xdMath:Nz(../../my:GeneralPercentOfDailyTravel/my:AugPercentTravel) * xdMath:Nz(../../../../my:RoundTrip) * xdMath:Nz(../../my:GeneralAverageCrew/my:AugCrew)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralTravel/my:SepTravel" expression="xdMath:Nz(../../my:GeneralPercentOfDailyTravel/my:SepPercentTravel) * xdMath:Nz(../../../../my:RoundTrip) * xdMath:Nz(../../my:GeneralAverageCrew/my:SepCrew)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralTravel/my:OctTravel" expression="xdMath:Nz(../../my:GeneralPercentOfDailyTravel/my:OctPercentTravel) * xdMath:Nz(../../../../my:RoundTrip) * xdMath:Nz(../../my:GeneralAverageCrew/my:OctCrew)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralTravel/my:NovTravel" expression="xdMath:Nz(../../my:GeneralPercentOfDailyTravel/my:NovPercentTravel) * xdMath:Nz(../../../../my:RoundTrip) * xdMath:Nz(../../my:GeneralAverageCrew/my:NovCrew)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralTravel/my:DecTravel" expression="xdMath:Nz(../../my:GeneralPercentOfDailyTravel/my:DecPercentTravel) * xdMath:Nz(../../../../my:RoundTrip) * xdMath:Nz(../../my:GeneralAverageCrew/my:DecCrew)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralPercentMHPerMonth/my:JanPercent" expression="xdMath:Nz(../../my:GeneralMHSum/my:JanMHSum) div xdMath:Nz(../../my:GeneralMHSum/my:GeneralContractHours)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralPercentMHPerMonth/my:FebPercent" expression="xdMath:Nz(../../my:GeneralMHSum/my:FebMHSum) div xdMath:Nz(../../my:GeneralMHSum/my:GeneralContractHours)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralPercentMHPerMonth/my:MarPercent" expression="xdMath:Nz(../../my:GeneralMHSum/my:MarMHSum) div xdMath:Nz(../../my:GeneralMHSum/my:GeneralContractHours)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralPercentMHPerMonth/my:AprPercent" expression="xdMath:Nz(../../my:GeneralMHSum/my:AprMHSum) div xdMath:Nz(../../my:GeneralMHSum/my:GeneralContractHours)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralPercentMHPerMonth/my:MayPercent" expression="xdMath:Nz(../../my:GeneralMHSum/my:MayMHSum) div xdMath:Nz(../../my:GeneralMHSum/my:GeneralContractHours)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralPercentMHPerMonth/my:JunPercent" expression="xdMath:Nz(../../my:GeneralMHSum/my:JunMHSum) div xdMath:Nz(../../my:GeneralMHSum/my:GeneralContractHours)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralPercentMHPerMonth/my:JulPercent" expression="xdMath:Nz(../../my:GeneralMHSum/my:JulMHSum) div xdMath:Nz(../../my:GeneralMHSum/my:GeneralContractHours)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralPercentMHPerMonth/my:AugPercent" expression="xdMath:Nz(../../my:GeneralMHSum/my:AugMHSum) div xdMath:Nz(../../my:GeneralMHSum/my:GeneralContractHours)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralPercentMHPerMonth/my:SepPercent" expression="xdMath:Nz(../../my:GeneralMHSum/my:SepMHSum) div xdMath:Nz(../../my:GeneralMHSum/my:GeneralContractHours)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralPercentMHPerMonth/my:OctPercent" expression="xdMath:Nz(../../my:GeneralMHSum/my:OctMHSum) div xdMath:Nz(../../my:GeneralMHSum/my:GeneralContractHours)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralPercentMHPerMonth/my:NovPercent" expression="xdMath:Nz(../../my:GeneralMHSum/my:NovMHSum) div xdMath:Nz(../../my:GeneralMHSum/my:GeneralContractHours)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralPercentMHPerMonth/my:DecPercent" expression="xdMath:Nz(../../my:GeneralMHSum/my:DecMHSum) div xdMath:Nz(../../my:GeneralMHSum/my:GeneralContractHours)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:PricingTable/my:AnnualPrice" expression="xdMath:Nz(../my:UnitPrice) * xdMath:Nz(../my:Quantity) * xdMath:Nz(../my:TotalFreq)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:PricingTable/my:LaborAnnualCost" expression="xdMath:Nz(../../my:GeneralLaborCost) * xdMath:Nz(../my:TotalMH)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralPercentMHPerMonth/my:TotalAnnualPercent" expression="xdMath:Nz(../my:JanPercent) + xdMath:Nz(../my:FebPercent) + xdMath:Nz(../my:MarPercent) + xdMath:Nz(../my:AprPercent) + xdMath:Nz(../my:MayPercent) + xdMath:Nz(../my:JunPercent) + xdMath:Nz(../my:JulPercent) + xdMath:Nz(../my:AugPercent) + xdMath:Nz(../my:SepPercent) + xdMath:Nz(../my:OctPercent) + xdMath:Nz(../my:NovPercent) + xdMath:Nz(../my:DecPercent)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:TechnicalPricingTable/my:TechUnit" expression="xdXDocument:GetDOM(&quot;Pricing Table&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:Unit[../d:ID = current()/../my:TechActivity]" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:TechnicalPricingTable/my:TechTravelPerVisit" expression="../../../my:RoundTrip" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:TechnicalPricingTable/my:TechActivityDisplayName" expression="xdXDocument:GetDOM(&quot;Pricing Table&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:Title[../d:ID = current()/../my:TechActivity]" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:TechnicalPricingTable/my:TechUnitCategory" expression="xdXDocument:GetDOM(&quot;Pricing Table&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:Unit_x0020_Category[../d:ID = current()/../my:TechActivity]" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:TechnicalPricingTable/my:TechMH" expression="xdMath:Nz(../my:TechQuantity) * xdMath:Nz(xdXDocument:GetDOM(&quot;Pricing Table&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:Production_x0020_Rate[../d:ID = current()/../my:TechActivity])" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:TechnicalPricingTable/my:TechTotalFreq" expression="xdMath:Nz(../my:TechJanFreq) + xdMath:Nz(../my:TechFebFreq) + xdMath:Nz(../my:TechMarFreq) + xdMath:Nz(../my:TechAprFreq) + xdMath:Nz(../my:TechMayFreq) + xdMath:Nz(../my:TechJunFreq) + xdMath:Nz(../my:TechJulFreq) + xdMath:Nz(../my:TechAugFreq) + xdMath:Nz(../my:TechSepFreq) + xdMath:Nz(../my:TechOctFreq) + xdMath:Nz(../my:TechNovFreq) + xdMath:Nz(../my:TechDecFreq)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:TechnicalPricingTable/my:TechTotalMH" expression="xdMath:Nz(../my:TechMH) * xdMath:Nz(../my:TechTotalFreq) + xdMath:Nz(../my:TechTravelPerVisit) * xdMath:Nz(../my:TechCrewSize) * xdMath:Nz(../my:TechTotalFreq)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:TechnicalPricingTable/my:TechUnitPrice" expression="xdMath:Nz(../my:TechMaterialUnitPrice) + xdMath:Nz(../my:TechLaborUnitPrice)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:TechnicalPricingTable/my:TechLaborPrice" expression="xdMath:Nz(../my:TechLaborCost) + xdMath:Nz(../my:TechOverheadAndProfit)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:TechnicalPricingTable/my:TechMaterialCost" expression="xdMath:Nz(../my:TechQuantity) * xdMath:Nz(xdXDocument:GetDOM(&quot;Pricing Table&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:Material_x0020_Rate[../d:ID = current()/../my:TechActivity])" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:TechnicalPricingTable/my:TechLaborUnitPrice" expression="xdMath:Nz(../my:TechLaborPrice) * xdMath:Nz(xdXDocument:GetDOM(&quot;Pricing Table&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:Production_x0020_Rate[../d:ID = current()/../my:TechActivity]) + xdMath:Nz(../my:TechLaborPrice) * (xdMath:Nz(../my:TechTravelPerVisit) * xdMath:Nz(../my:TechCrewSize)) div xdMath:Nz(../my:TechQuantity)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:TechnicalPricingTable/my:TechMaterialUnitPrice" expression="xdMath:Nz(xdXDocument:GetDOM(&quot;Pricing Table&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:Material_x0020_Rate[../d:ID = current()/../my:TechActivity]) * xdMath:Nz(../my:TechMaterialMarkup) + xdMath:Nz(xdXDocument:GetDOM(&quot;Pricing Table&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:Material_x0020_Rate[../d:ID = current()/../my:TechActivity])" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:TechnicalPricingTable/my:TechMaterialAnnualCost" expression="xdMath:Nz(../my:TechMaterialCost) * xdMath:Nz(../my:TechTotalFreq)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:TechnicalPricingTable/my:TechLaborAnnualCost" expression="xdMath:Nz(../my:TechTotalMH) * xdMath:Nz(../my:TechLaborCost)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:TechnicalPricingTable/my:TechAnnualPrice" expression="xdMath:Nz(../my:TechUnitPrice) * xdMath:Nz(../my:TechQuantity) * xdMath:Nz(../my:TechTotalFreq)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:TechnicalPricingTable/my:TechJanMH" expression="xdMath:Nz(../my:TechJanFreq) * (xdMath:Nz(../my:TechMH) + xdMath:Nz(../my:TechTravelPerVisit) * xdMath:Nz(../my:TechCrewSize))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:TechnicalPricingTable/my:TechFebMH" expression="xdMath:Nz(../my:TechFebFreq) * (xdMath:Nz(../my:TechMH) + xdMath:Nz(../my:TechTravelPerVisit) * xdMath:Nz(../my:TechCrewSize))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:TechnicalPricingTable/my:TechMarMH" expression="xdMath:Nz(../my:TechMarFreq) * (xdMath:Nz(../my:TechMH) + xdMath:Nz(../my:TechTravelPerVisit) * xdMath:Nz(../my:TechCrewSize))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:TechnicalPricingTable/my:TechAprMH" expression="xdMath:Nz(../my:TechAprFreq) * (xdMath:Nz(../my:TechMH) + xdMath:Nz(../my:TechTravelPerVisit) * xdMath:Nz(../my:TechCrewSize))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:TechnicalPricingTable/my:TechMayMH" expression="xdMath:Nz(../my:TechMayFreq) * (xdMath:Nz(../my:TechMH) + xdMath:Nz(../my:TechTravelPerVisit) * xdMath:Nz(../my:TechCrewSize))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:TechnicalPricingTable/my:TechJunMH" expression="xdMath:Nz(../my:TechJunFreq) * (xdMath:Nz(../my:TechMH) + xdMath:Nz(../my:TechTravelPerVisit) * xdMath:Nz(../my:TechCrewSize))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:TechnicalPricingTable/my:TechJulMH" expression="xdMath:Nz(../my:TechJulFreq) * (xdMath:Nz(../my:TechMH) + xdMath:Nz(../my:TechTravelPerVisit) * xdMath:Nz(../my:TechCrewSize))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:TechnicalPricingTable/my:TechAugMH" expression="xdMath:Nz(../my:TechAugFreq) * (xdMath:Nz(../my:TechMH) + xdMath:Nz(../my:TechTravelPerVisit) * xdMath:Nz(../my:TechCrewSize))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:TechnicalPricingTable/my:TechSepMH" expression="xdMath:Nz(../my:TechSepFreq) * (xdMath:Nz(../my:TechMH) + xdMath:Nz(../my:TechTravelPerVisit) * xdMath:Nz(../my:TechCrewSize))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:TechnicalPricingTable/my:TechOctMH" expression="xdMath:Nz(../my:TechOctFreq) * (xdMath:Nz(../my:TechMH) + xdMath:Nz(../my:TechTravelPerVisit) * xdMath:Nz(../my:TechCrewSize))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:TechnicalPricingTable/my:TechNovMH" expression="xdMath:Nz(../my:TechNovFreq) * (xdMath:Nz(../my:TechMH) + xdMath:Nz(../my:TechTravelPerVisit) * xdMath:Nz(../my:TechCrewSize))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:TechnicalPricingTable/my:TechDecMH" expression="xdMath:Nz(../my:TechDecFreq) * (xdMath:Nz(../my:TechMH) + xdMath:Nz(../my:TechTravelPerVisit) * xdMath:Nz(../my:TechCrewSize))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:ContractTotals/my:GeneralAnnualPrice" expression="round(sum(xdMath:Nz(../../my:PricingTable/my:AnnualPrice)) + xdMath:Nz(../../my:GeneralVisitCalculations/my:GeneralTravelPrice))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:ContractTotals/my:GeneralAnnualLaborCost" expression="sum(xdMath:Nz(../../my:PricingTable/my:LaborAnnualCost)) + xdMath:Nz(../../my:GeneralVisitCalculations/my:GeneralTravelCost)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:ContractTotals/my:GeneralAnnualMaterialCost" expression="sum(xdMath:Nz(../../my:PricingTable/my:MaterialAnnualCost))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:ContractTotals/my:GeneralCostTotal" expression="xdMath:Nz(../my:GeneralAnnualLaborCost) + xdMath:Nz(../my:GeneralAnnualMaterialCost)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:ContractTotals/my:TechnicalAnnualPrice" expression="round(sum(xdMath:Nz(../../my:TechnicalPricingTable/my:TechAnnualPrice)))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:ContractTotals/my:TechnicalAnnualLaborCost" expression="sum(xdMath:Nz(../../my:TechnicalPricingTable/my:TechLaborAnnualCost))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:ContractTotals/my:TechnicalAnnualMaterialCost" expression="sum(xdMath:Nz(../../my:TechnicalPricingTable/my:TechMaterialAnnualCost))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:ContractTotals/my:TechnicalCostTotal" expression="xdMath:Nz(../my:TechnicalAnnualLaborCost) + xdMath:Nz(../my:TechnicalAnnualMaterialCost)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:ContractTotals/my:ContractPrice" expression="round(xdMath:Nz(../my:GeneralAnnualPrice) + xdMath:Nz(../my:TechnicalAnnualPrice))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:ContractTotals/my:ContractCost" expression="xdMath:Nz(../my:GeneralCostTotal) + xdMath:Nz(../my:TechnicalCostTotal)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:ContractTotals/my:GrossProfit" expression="xdMath:Nz(../my:ContractPrice) - xdMath:Nz(../my:ContractCost)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:ContractTotals/my:GrossProfitPercent" expression="xdMath:Nz(../my:GrossProfit) div xdMath:Nz(../my:ContractPrice)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralTravelCost" expression="xdMath:Nz(../my:GeneralMonthlyTravel/my:TotalMonthlyTravel) * xdMath:Nz(../../my:GeneralLaborCost)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralTravelPrice" expression="xdMath:Nz(../my:GeneralMonthlyTravel/my:TotalMonthlyTravel) * (xdMath:Nz(../../my:GeneralLaborCost) + xdMath:Nz(../../my:GeneralOverheadAndProfit))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMonthlyTravel/my:JanMTravel" expression="xdMath:Nz(../../my:GeneralTravel/my:JanTravel) * xdMath:Nz(../../my:GeneralSiteVisits/my:JanVisits)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMonthlyTravel/my:FebMTravel" expression="xdMath:Nz(../../my:GeneralTravel/my:FebTravel) * xdMath:Nz(../../my:GeneralSiteVisits/my:FebVisits)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMonthlyTravel/my:MarMTravel" expression="xdMath:Nz(../../my:GeneralTravel/my:MarTravel) * xdMath:Nz(../../my:GeneralSiteVisits/my:MarVisits)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMonthlyTravel/my:AprMTravel" expression="xdMath:Nz(../../my:GeneralTravel/my:AprTravel) * xdMath:Nz(../../my:GeneralSiteVisits/my:AprVisits)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMonthlyTravel/my:MayMTravel" expression="xdMath:Nz(../../my:GeneralTravel/my:MayTravel) * xdMath:Nz(../../my:GeneralSiteVisits/my:MayVisits)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMonthlyTravel/my:JunMTravel" expression="xdMath:Nz(../../my:GeneralTravel/my:JunTravel) * xdMath:Nz(../../my:GeneralSiteVisits/my:JunVisits)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMonthlyTravel/my:JulMTravel" expression="xdMath:Nz(../../my:GeneralTravel/my:JulTravel) * xdMath:Nz(../../my:GeneralSiteVisits/my:JulVisits)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMonthlyTravel/my:AugMTravel" expression="xdMath:Nz(../../my:GeneralTravel/my:AugTravel) * xdMath:Nz(../../my:GeneralSiteVisits/my:AugVisits)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMonthlyTravel/my:SepMTravel" expression="xdMath:Nz(../../my:GeneralTravel/my:SepTravel) * xdMath:Nz(../../my:GeneralSiteVisits/my:SepVisits)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMonthlyTravel/my:OctMTravel" expression="xdMath:Nz(../../my:GeneralTravel/my:OctTravel) * xdMath:Nz(../../my:GeneralSiteVisits/my:OctVisits)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMonthlyTravel/my:NovMTravel" expression="xdMath:Nz(../../my:GeneralTravel/my:NovTravel) * xdMath:Nz(../../my:GeneralSiteVisits/my:NovVisits)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMonthlyTravel/my:DecMTravel" expression="xdMath:Nz(../../my:GeneralTravel/my:DecTravel) * xdMath:Nz(../../my:GeneralSiteVisits/my:DecVisits)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMonthlyTravel/my:TotalMonthlyTravel" expression="xdMath:Nz(../my:JanMTravel) + xdMath:Nz(../my:FebMTravel) + xdMath:Nz(../my:MarMTravel) + xdMath:Nz(../my:AprMTravel) + xdMath:Nz(../my:MayMTravel) + xdMath:Nz(../my:JunMTravel) + xdMath:Nz(../my:JulMTravel) + xdMath:Nz(../my:AugMTravel) + xdMath:Nz(../my:SepMTravel) + xdMath:Nz(../my:OctMTravel) + xdMath:Nz(../my:NovMTravel) + xdMath:Nz(../my:DecMTravel)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:ProjectDisplayName" expression="xdXDocument:GetDOM(&quot;Projects&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:Title[../d:ID = xdXDocument:get-DOM()/my:myFields/my:ProjectName]" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:PricingTable/my:UnitMultiplier" expression="xdXDocument:GetDOM(&quot;Pricing Table&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:Unit_x0020_Multiplier[../d:ID = current()/../my:Activity]" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:TechnicalPricingTable/my:TechUnitMultiplier" expression="xdXDocument:GetDOM(&quot;Pricing Table&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:Unit_x0020_Multiplier[../d:ID = current()/../my:TechActivity]" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:TakeOff/my:TakeOffEntry/my:TakeOffAreaTotal" expression="../../my:TakeOffDetail/my:GeneralArea/my:AreaActivityTotal[current()/../my:TakeOffActivity = ../my:GeneralAreaActivity]" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:TakeOff/my:TakeOffEntry/my:TakeOffLinearTotal" expression="../../my:TakeOffDetail/my:GeneralLinear/my:LinearActivityTotal[current()/../my:TakeOffActivity = ../my:GeneralLinearActivity]" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:TakeOff/my:TakeOffEntry/my:TakeOffActivityTotal" expression="xdMath:Nz(../my:TakeOffAreaTotal) + xdMath:Nz(../my:TakeOffLinearTotal) + xdMath:Nz(../my:TakeOffCountTotal) + xdMath:Nz(../my:TakeOffVolumeTotal)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:TakeOff/my:TakeOffEntry/my:TakeOffCountTotal" expression="../../my:TakeOffDetail/my:GeneralCount/my:CountActivityTotal[current()/../my:TakeOffActivity = ../my:GeneralCountActivity]" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:TakeOff/my:TakeOffEntry/my:TakeOffVolumeTotal" expression="../../my:TakeOffDetail/my:GeneralVolume/my:VolumeActivityTotal[current()/../my:TakeOffActivity = ../my:GeneralVolumeActivity]" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:TakeOff/my:TakeOffEntry/my:TakeOffActivityMultiplier" expression="xdXDocument:GetDOM(&quot;Pricing Table&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:Unit_x0020_Multiplier[../d:ID = current()/../my:RelatedActivity]" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:TakeOff/my:TakeOffEntry/my:TakeOffActivityUnit" expression="xdXDocument:GetDOM(&quot;Pricing Table&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:Unit[../d:ID = current()/../my:RelatedActivity]" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHOnSitePerVisit/my:JanPV" expression="ceiling(xdMath:Nz(../../my:GeneralMHSum/my:JanMHSum) div xdMath:Nz(../../my:GeneralSiteVisits/my:JanVisits))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHOnSitePerVisit/my:FebPV" expression="ceiling(xdMath:Nz(../../my:GeneralMHSum/my:FebMHSum) div xdMath:Nz(../../my:GeneralSiteVisits/my:FebVisits))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHOnSitePerVisit/my:MarPV" expression="ceiling(xdMath:Nz(../../my:GeneralMHSum/my:MarMHSum) div xdMath:Nz(../../my:GeneralSiteVisits/my:MarVisits))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHOnSitePerVisit/my:AprPV" expression="ceiling(xdMath:Nz(../../my:GeneralMHSum/my:AprMHSum) div xdMath:Nz(../../my:GeneralSiteVisits/my:AprVisits))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHOnSitePerVisit/my:MayPV" expression="ceiling(xdMath:Nz(../../my:GeneralMHSum/my:MayMHSum) div xdMath:Nz(../../my:GeneralSiteVisits/my:MayVisits))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHOnSitePerVisit/my:JunPV" expression="ceiling(xdMath:Nz(../../my:GeneralMHSum/my:JunMHSum) div xdMath:Nz(../../my:GeneralSiteVisits/my:JunVisits))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHOnSitePerVisit/my:JulPV" expression="ceiling(xdMath:Nz(../../my:GeneralMHSum/my:JulMHSum) div xdMath:Nz(../../my:GeneralSiteVisits/my:JulVisits))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHOnSitePerVisit/my:AugPV" expression="ceiling(xdMath:Nz(../../my:GeneralMHSum/my:AugMHSum) div xdMath:Nz(../../my:GeneralSiteVisits/my:AugVisits))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHOnSitePerVisit/my:SepPV" expression="ceiling(xdMath:Nz(../../my:GeneralMHSum/my:SepMHSum) div xdMath:Nz(../../my:GeneralSiteVisits/my:SepVisits))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHOnSitePerVisit/my:OctPV" expression="ceiling(xdMath:Nz(../../my:GeneralMHSum/my:OctMHSum) div xdMath:Nz(../../my:GeneralSiteVisits/my:OctVisits))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHOnSitePerVisit/my:NovPV" expression="ceiling(xdMath:Nz(../../my:GeneralMHSum/my:NovMHSum) div xdMath:Nz(../../my:GeneralSiteVisits/my:NovVisits))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHOnSitePerVisit/my:DecPV" expression="ceiling(xdMath:Nz(../../my:GeneralMHSum/my:DecMHSum) div xdMath:Nz(../../my:GeneralSiteVisits/my:DecVisits))" refresh="onChange"></xsf:calculatedField>
+	</xsf:calculations>
+	<xsf:domEventHandlers></xsf:domEventHandlers>
+	<xsf:ruleSets>
+		<xsf:ruleSet name="ruleSet_7">
+			<xsf:rule caption="Rule 1" isEnabled="yes">
+				<xsf:switchViewAction view="Contract Services"></xsf:switchViewAction>
+			</xsf:rule>
+		</xsf:ruleSet>
+		<xsf:ruleSet name="ruleSet_17">
+			<xsf:rule caption="Rule 1" isEnabled="yes">
+				<xsf:switchViewAction view="Contract Total"></xsf:switchViewAction>
+			</xsf:rule>
+		</xsf:ruleSet>
+		<xsf:ruleSet name="ruleSet_18">
+			<xsf:rule caption="Rule 1" isEnabled="yes">
+				<xsf:switchViewAction view="Contract Services"></xsf:switchViewAction>
+			</xsf:rule>
+		</xsf:ruleSet>
+		<xsf:ruleSet name="ruleSet_23">
+			<xsf:rule caption="QueryID" isEnabled="yes">
+				<xsf:queryAction adapter="Retrieve IDs"></xsf:queryAction>
+			</xsf:rule>
+			<xsf:rule caption="Set Next ID" condition="count(xdXDocument:GetDOM(&quot;Retrieve IDs&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:ID) &gt; 0 and my:strFilename = &quot;&quot;" isEnabled="yes">
+				<xsf:assignmentAction targetField="my:numID" expression="xdMath:Max(xdXDocument:GetDOM(&quot;Retrieve IDs&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:ID) + 1"></xsf:assignmentAction>
+			</xsf:rule>
+			<xsf:rule caption="Set Initial ID to 1" condition="count(xdXDocument:GetDOM(&quot;Retrieve IDs&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:ID) = 0" isEnabled="yes">
+				<xsf:assignmentAction targetField="my:numID" expression="&quot;1&quot;"></xsf:assignmentAction>
+			</xsf:rule>
+			<xsf:rule caption="Edit" condition="my:strFilename != &quot;&quot;" isEnabled="yes">
+				<xsf:submitAction adapter="SharePoint Library Submit"></xsf:submitAction>
+				<xsf:closeDocumentAction promptToSaveChanges="no"></xsf:closeDocumentAction>
+			</xsf:rule>
+			<xsf:rule caption="Submit" condition="my:strFilename = &quot;&quot;" isEnabled="yes">
+				<xsf:assignmentAction targetField="my:strFilename" expression="concat(my:ProjectDisplayName, &quot; - &quot;, &quot;Contract &quot;, my:numID)"></xsf:assignmentAction>
+				<xsf:assignmentAction targetField="my:ContractID" expression="my:numID"></xsf:assignmentAction>
+				<xsf:assignmentAction targetField="my:CreatedDate" expression="xdDate:Today()"></xsf:assignmentAction>
+				<xsf:submitAction adapter="SharePoint Library Submit"></xsf:submitAction>
+				<xsf:closeDocumentAction promptToSaveChanges="no"></xsf:closeDocumentAction>
+			</xsf:rule>
+		</xsf:ruleSet>
+		<xsf:ruleSet name="ruleSet_25">
+			<xsf:rule caption="Rule 2" isEnabled="yes">
+				<xsf:assignmentAction targetField="my:numID" expression="&quot;&quot;"></xsf:assignmentAction>
+				<xsf:assignmentAction targetField="my:strFilename" expression="&quot;&quot;"></xsf:assignmentAction>
+				<xsf:assignmentAction targetField="my:ProjectName" expression="&quot;&quot;"></xsf:assignmentAction>
+				<xsf:assignmentAction targetField="my:ContractID" expression="&quot;&quot;"></xsf:assignmentAction>
+				<xsf:assignmentAction targetField="my:ShowActivities" expression="&quot;Yes&quot;"></xsf:assignmentAction>
+				<xsf:queryAction adapter="Pricing Table"></xsf:queryAction>
+			</xsf:rule>
+		</xsf:ruleSet>
+		<xsf:ruleSet name="ruleSet_26">
+			<xsf:rule caption="QueryID" isEnabled="yes">
+				<xsf:queryAction adapter="Retrieve IDs"></xsf:queryAction>
+			</xsf:rule>
+			<xsf:rule caption="Set Next ID" condition="count(xdXDocument:GetDOM(&quot;Retrieve IDs&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:ID) &gt; 0 and my:strFilename = &quot;&quot;" isEnabled="yes">
+				<xsf:assignmentAction targetField="my:numID" expression="xdMath:Max(xdXDocument:GetDOM(&quot;Retrieve IDs&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:ID) + 1"></xsf:assignmentAction>
+			</xsf:rule>
+			<xsf:rule caption="Set Initial ID to 1" condition="count(xdXDocument:GetDOM(&quot;Retrieve IDs&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:ID) = 0" isEnabled="yes">
+				<xsf:assignmentAction targetField="my:numID" expression="&quot;1&quot;"></xsf:assignmentAction>
+			</xsf:rule>
+			<xsf:rule caption="Edit" condition="my:strFilename != &quot;&quot;" isEnabled="yes">
+				<xsf:submitAction adapter="SharePoint Library Submit"></xsf:submitAction>
+				<xsf:closeDocumentAction promptToSaveChanges="no"></xsf:closeDocumentAction>
+			</xsf:rule>
+			<xsf:rule caption="Submit" condition="my:strFilename = &quot;&quot;" isEnabled="yes">
+				<xsf:assignmentAction targetField="my:strFilename" expression="concat(my:ProjectDisplayName, &quot; - &quot;, &quot;Contract &quot;, my:numID)"></xsf:assignmentAction>
+				<xsf:assignmentAction targetField="my:ContractID" expression="my:numID"></xsf:assignmentAction>
+				<xsf:assignmentAction targetField="my:CreatedDate" expression="xdDate:Today()"></xsf:assignmentAction>
+				<xsf:submitAction adapter="SharePoint Library Submit"></xsf:submitAction>
+				<xsf:closeDocumentAction promptToSaveChanges="no"></xsf:closeDocumentAction>
+			</xsf:rule>
+		</xsf:ruleSet>
+		<xsf:ruleSet name="ruleSet_28">
+			<xsf:rule caption="QueryID" isEnabled="yes">
+				<xsf:queryAction adapter="Retrieve IDs"></xsf:queryAction>
+			</xsf:rule>
+			<xsf:rule caption="Set Next ID" condition="count(xdXDocument:GetDOM(&quot;Retrieve IDs&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:ID) &gt; 0 and my:strFilename = &quot;&quot;" isEnabled="yes">
+				<xsf:assignmentAction targetField="my:numID" expression="xdMath:Max(xdXDocument:GetDOM(&quot;Retrieve IDs&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:ID) + 1"></xsf:assignmentAction>
+			</xsf:rule>
+			<xsf:rule caption="Set Initial ID to 1" condition="count(xdXDocument:GetDOM(&quot;Retrieve IDs&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:ID) = 0" isEnabled="yes">
+				<xsf:assignmentAction targetField="my:numID" expression="&quot;1&quot;"></xsf:assignmentAction>
+			</xsf:rule>
+			<xsf:rule caption="Edit" condition="my:strFilename != &quot;&quot;" isEnabled="yes">
+				<xsf:submitAction adapter="SharePoint Library Submit"></xsf:submitAction>
+				<xsf:closeDocumentAction promptToSaveChanges="no"></xsf:closeDocumentAction>
+			</xsf:rule>
+			<xsf:rule caption="Submit" condition="my:strFilename = &quot;&quot;" isEnabled="yes">
+				<xsf:assignmentAction targetField="my:strFilename" expression="concat(my:ProjectDisplayName, &quot; - &quot;, &quot;Contract &quot;, my:numID)"></xsf:assignmentAction>
+				<xsf:assignmentAction targetField="my:ContractID" expression="my:numID"></xsf:assignmentAction>
+				<xsf:assignmentAction targetField="my:CreatedDate" expression="xdDate:Today()"></xsf:assignmentAction>
+				<xsf:submitAction adapter="SharePoint Library Submit"></xsf:submitAction>
+				<xsf:closeDocumentAction promptToSaveChanges="no"></xsf:closeDocumentAction>
+			</xsf:rule>
+		</xsf:ruleSet>
+		<xsf:ruleSet name="ruleSet_29">
+			<xsf:rule caption="Rule 2" isEnabled="yes">
+				<xsf:assignmentAction targetField="my:numID" expression="&quot;&quot;"></xsf:assignmentAction>
+				<xsf:assignmentAction targetField="my:strFilename" expression="&quot;&quot;"></xsf:assignmentAction>
+				<xsf:assignmentAction targetField="my:ProjectName" expression="&quot;&quot;"></xsf:assignmentAction>
+				<xsf:assignmentAction targetField="my:ContractID" expression="&quot;&quot;"></xsf:assignmentAction>
+			</xsf:rule>
+		</xsf:ruleSet>
+		<xsf:ruleSet name="ruleSet_30">
+			<xsf:rule caption="Rule 1" isEnabled="yes">
+				<xsf:switchViewAction view="Contract Total"></xsf:switchViewAction>
+			</xsf:rule>
+		</xsf:ruleSet>
+		<xsf:ruleSet name="ruleSet_31">
+			<xsf:rule caption="Rule 2" isEnabled="yes">
+				<xsf:submitAction adapter="Save Form"></xsf:submitAction>
+			</xsf:rule>
+		</xsf:ruleSet>
+		<xsf:ruleSet name="ruleSet_32">
+			<xsf:rule caption="Rule 2" isEnabled="yes">
+				<xsf:submitAction adapter="Save Form"></xsf:submitAction>
+			</xsf:rule>
+		</xsf:ruleSet>
+		<xsf:ruleSet name="ruleSet_33">
+			<xsf:rule caption="Rule 1" isEnabled="yes">
+				<xsf:switchViewAction view="Contract Services"></xsf:switchViewAction>
+			</xsf:rule>
+		</xsf:ruleSet>
+		<xsf:ruleSet name="ruleSet_34">
+			<xsf:rule caption="Rule 1" isEnabled="yes">
+				<xsf:closeDocumentAction promptToSaveChanges="no"></xsf:closeDocumentAction>
+			</xsf:rule>
+		</xsf:ruleSet>
+		<xsf:ruleSet name="ruleSet_35">
+			<xsf:rule caption="Rule 1" isEnabled="yes">
+				<xsf:closeDocumentAction promptToSaveChanges="no"></xsf:closeDocumentAction>
+			</xsf:rule>
+		</xsf:ruleSet>
+		<xsf:ruleSet name="ruleSet_38">
+			<xsf:rule caption="Rule 1" isEnabled="yes">
+				<xsf:switchViewAction view="Contract Services"></xsf:switchViewAction>
+			</xsf:rule>
+		</xsf:ruleSet>
+		<xsf:ruleSet name="ruleSet_39">
+			<xsf:rule caption="Rule 1" isEnabled="yes">
+				<xsf:closeDocumentAction promptToSaveChanges="no"></xsf:closeDocumentAction>
+			</xsf:rule>
+		</xsf:ruleSet>
+		<xsf:ruleSet name="ruleSet_40">
+			<xsf:rule caption="Rule 1" isEnabled="yes">
+				<xsf:switchViewAction view="Contract Total"></xsf:switchViewAction>
+			</xsf:rule>
+		</xsf:ruleSet>
+		<xsf:ruleSet name="ruleSet_42">
+			<xsf:rule caption="Rule 1" isEnabled="yes">
+				<xsf:closeDocumentAction promptToSaveChanges="no"></xsf:closeDocumentAction>
+			</xsf:rule>
+		</xsf:ruleSet>
+		<xsf:ruleSet name="ruleSet_43">
+			<xsf:rule caption="Rule 1" isEnabled="yes">
+				<xsf:switchViewAction view="Contract Services"></xsf:switchViewAction>
+			</xsf:rule>
+		</xsf:ruleSet>
+		<xsf:ruleSet name="ruleSet_44">
+			<xsf:rule caption="Rule 1" isEnabled="yes">
+				<xsf:queryAction adapter="Pricing Table"></xsf:queryAction>
+			</xsf:rule>
+			<xsf:rule caption="Rule 2" isEnabled="yes">
+				<xsf:assignmentAction targetField="my:ShowActivities" expression="&quot;Yes&quot;"></xsf:assignmentAction>
+			</xsf:rule>
+		</xsf:ruleSet>
+		<xsf:ruleSet name="ruleSet_45">
+			<xsf:rule caption="Rule 1" condition="my:ContractID = &quot;&quot;" isEnabled="yes">
+				<xsf:queryAction adapter="Pricing Table"></xsf:queryAction>
+				<xsf:assignmentAction targetField="my:ShowActivities" expression="&quot;Yes&quot;"></xsf:assignmentAction>
+			</xsf:rule>
+			<xsf:rule caption="Rule 2" condition="my:ContractID != &quot;&quot;" isEnabled="yes">
+				<xsf:assignmentAction targetField="my:ShowActivities" expression="&quot;No&quot;"></xsf:assignmentAction>
+			</xsf:rule>
+		</xsf:ruleSet>
+		<xsf:ruleSet name="ruleSet_46">
+			<xsf:rule caption="Rule 2" isEnabled="yes">
+				<xsf:assignmentAction targetField="my:numID" expression="&quot;&quot;"></xsf:assignmentAction>
+				<xsf:assignmentAction targetField="my:strFilename" expression="&quot;&quot;"></xsf:assignmentAction>
+				<xsf:assignmentAction targetField="my:ProjectName" expression="&quot;&quot;"></xsf:assignmentAction>
+				<xsf:assignmentAction targetField="my:ContractID" expression="&quot;&quot;"></xsf:assignmentAction>
+				<xsf:assignmentAction targetField="my:ShowActivities" expression="&quot;Yes&quot;"></xsf:assignmentAction>
+				<xsf:queryAction adapter="Pricing Table"></xsf:queryAction>
+			</xsf:rule>
+		</xsf:ruleSet>
+	</xsf:ruleSets>
+	<xsf:submit caption="Submit" disableMenuItem="no" onAfterSubmit="close" showStatusDialog="no">
+		<xsf:errorMessage>The form cannot be submitted because of an error.</xsf:errorMessage>
+		<xsf:davAdapter name="SharePoint Library Submit" submitAllowed="yes" overwriteAllowed="yes">
+			<xsf:folderURL value="../Contract%20Library/"></xsf:folderURL>
+			<xsf:fileName value="my:strFilename" valueType="expression"></xsf:fileName>
+		</xsf:davAdapter>
+	</xsf:submit>
+	<xsf:listProperties>
+		<xsf:fields>
+			<xsf:field name="Project Display Name" columnName="{7B178A31-FCF2-46C8-905E-87F552961DB6}" node="/my:myFields/my:ProjectDisplayName" type="xsd:string"></xsf:field>
+			<xsf:field name="Project ID" columnName="{A90E32AD-CDCB-48B7-B7D3-45784FD68F8B}" node="/my:myFields/my:ProjectID" type="xsd:string"></xsf:field>
+			<xsf:field name="Technical Annual Price" columnName="{5F8FBBEA-AD98-4B80-9AE9-59E01D6616D4}" node="/my:myFields/my:EstimateGroup/my:ContractTotals/my:TechnicalAnnualPrice" type="xsd:double"></xsf:field>
+			<xsf:field name="Technical Annual Material Cost" columnName="{95A2DB0D-3C91-4AFC-8F7B-039B535EF4EC}" node="/my:myFields/my:EstimateGroup/my:ContractTotals/my:TechnicalAnnualMaterialCost" type="xsd:double"></xsf:field>
+			<xsf:field name="General Annual Material Cost" columnName="{D52B655B-AFEB-47D5-AE49-4E56AE06F7AD}" node="/my:myFields/my:EstimateGroup/my:ContractTotals/my:GeneralAnnualMaterialCost" type="xsd:double"></xsf:field>
+			<xsf:field name="General Contract Hours" columnName="{D142B80B-B582-4ECE-AFEF-DC33859ADF74}" node="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHSum/my:GeneralContractHours" type="xsd:double"></xsf:field>
+			<xsf:field name="Jan Percent" columnName="{03042EAE-3915-43BA-8B63-5F069592BD21}" node="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralPercentMHPerMonth/my:JanPercent" type="xsd:double"></xsf:field>
+			<xsf:field name="Feb Percent" columnName="{3E777E8E-64B1-4538-AC4E-BF1B7D5FE4D2}" node="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralPercentMHPerMonth/my:FebPercent" type="xsd:double"></xsf:field>
+			<xsf:field name="Mar Percent" columnName="{FC82C00A-977D-4AF0-B88B-0DF9BD087F8E}" node="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralPercentMHPerMonth/my:MarPercent" type="xsd:double"></xsf:field>
+			<xsf:field name="Apr Percent" columnName="{7883EA6B-2BDC-45BD-ABC3-11FEB4856050}" node="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralPercentMHPerMonth/my:AprPercent" type="xsd:double"></xsf:field>
+			<xsf:field name="May Percent" columnName="{24E58672-50F7-4F1A-B3B5-E89C57C8D085}" node="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralPercentMHPerMonth/my:MayPercent" type="xsd:double"></xsf:field>
+			<xsf:field name="Jun Percent" columnName="{3D612C35-3D57-45F3-B6AE-88236C66F5E0}" node="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralPercentMHPerMonth/my:JunPercent" type="xsd:double"></xsf:field>
+			<xsf:field name="Jul Percent" columnName="{D516D2D3-3D5B-43A7-89A0-F1C28733A53C}" node="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralPercentMHPerMonth/my:JulPercent" type="xsd:double"></xsf:field>
+			<xsf:field name="Aug Percent" columnName="{2AE9F076-4562-4B3F-BE21-87C2AD8FFA5E}" node="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralPercentMHPerMonth/my:AugPercent" type="xsd:double"></xsf:field>
+			<xsf:field name="Sep Percent" columnName="{3A0A8C53-917A-4B82-9930-49074D89FD3B}" node="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralPercentMHPerMonth/my:SepPercent" type="xsd:double"></xsf:field>
+			<xsf:field name="Oct Percent" columnName="{2E907D88-67CD-49F4-9F53-B5960AAB77AF}" node="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralPercentMHPerMonth/my:OctPercent" type="xsd:double"></xsf:field>
+			<xsf:field name="Nov Percent" columnName="{2CAAB834-A124-4D31-AA29-D08355E7357E}" node="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralPercentMHPerMonth/my:NovPercent" type="xsd:double"></xsf:field>
+			<xsf:field name="Dec Percent" columnName="{E8519B19-6249-43B0-8A70-99292FBD9331}" node="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralPercentMHPerMonth/my:DecPercent" type="xsd:double"></xsf:field>
+			<xsf:field name="Contract ID" columnName="{177259DD-C3E3-43AC-B7F0-113A59369DBA}" node="/my:myFields/my:ContractID" type="xsd:double"></xsf:field>
+			<xsf:field name="Technical Annual Labor Cost" columnName="{37661451-D72B-4953-A72B-761696DFC42B}" node="/my:myFields/my:EstimateGroup/my:ContractTotals/my:TechnicalAnnualLaborCost" type="xsd:double"></xsf:field>
+			<xsf:field name="Total General Visits" columnName="{F0821FF7-6DB7-450C-8637-E3632831914C}" node="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralSiteVisits/my:TotalGeneralVisits" type="xsd:double"></xsf:field>
+			<xsf:field name="Jan MHSum" columnName="{744AF9E5-5D63-4349-A7E4-175A6146259C}" node="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHSum/my:JanMHSum" type="xsd:double"></xsf:field>
+			<xsf:field name="Feb MHSum" columnName="{5A1BFC91-9706-4CB7-A5C5-6511F9BD9F68}" node="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHSum/my:FebMHSum" type="xsd:double"></xsf:field>
+			<xsf:field name="Mar MHSum" columnName="{7D1204A5-BACA-46D2-A613-16F4488313AE}" node="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHSum/my:MarMHSum" type="xsd:double"></xsf:field>
+			<xsf:field name="Apr MHSum" columnName="{2BBC566B-6E55-4E64-B90D-D9F2BF389776}" node="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHSum/my:AprMHSum" type="xsd:double"></xsf:field>
+			<xsf:field name="May MHSum" columnName="{848CC7D1-18E4-445E-AC36-1AB8E4F6CF89}" node="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHSum/my:MayMHSum" type="xsd:double"></xsf:field>
+			<xsf:field name="Jun MHSum" columnName="{6F88F39E-0BCF-4105-A075-C124201428F4}" node="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHSum/my:JunMHSum" type="xsd:double"></xsf:field>
+			<xsf:field name="Jul MHSum" columnName="{04FB5603-30C2-4C68-A81C-291709F572CC}" node="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHSum/my:JulMHSum" type="xsd:double"></xsf:field>
+			<xsf:field name="Aug MHSum" columnName="{7AE3242A-B2A4-4552-8290-178FDD8D1C78}" node="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHSum/my:AugMHSum" type="xsd:double"></xsf:field>
+			<xsf:field name="Sep MHSum" columnName="{1317D9CA-CA19-400F-A9ED-388BC8A00F12}" node="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHSum/my:SepMHSum" type="xsd:double"></xsf:field>
+			<xsf:field name="Oct MHSum" columnName="{28829655-61D1-4910-A69C-C5015926691E}" node="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHSum/my:OctMHSum" type="xsd:double"></xsf:field>
+			<xsf:field name="Nov MHSum" columnName="{F75030E9-1D66-4092-848A-DED6AFAC9D7E}" node="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHSum/my:NovMHSum" type="xsd:double"></xsf:field>
+			<xsf:field name="Dec MHSum" columnName="{7D463B45-9F36-47A7-A213-237FB63CF330}" node="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHSum/my:DecMHSum" type="xsd:double"></xsf:field>
+			<xsf:field name="Jan PV" columnName="{9079A4AC-6E2F-4744-90E4-9B3C680D099A}" node="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHOnSitePerVisit/my:JanPV" type="xsd:double"></xsf:field>
+			<xsf:field name="Feb PV" columnName="{9570850E-9159-4566-A8D8-96EBA5F6B272}" node="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHOnSitePerVisit/my:FebPV" type="xsd:double"></xsf:field>
+			<xsf:field name="Mar PV" columnName="{83B1D247-55C4-4859-AA8B-EFBC380F243E}" node="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHOnSitePerVisit/my:MarPV" type="xsd:double"></xsf:field>
+			<xsf:field name="Apr PV" columnName="{A2D1F5D6-DF25-46B0-AD85-6F4B3A4934AF}" node="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHOnSitePerVisit/my:AprPV" type="xsd:double"></xsf:field>
+			<xsf:field name="May PV" columnName="{10FD60E2-6021-4FCD-850F-26FFBDC5FAED}" node="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHOnSitePerVisit/my:MayPV" type="xsd:double"></xsf:field>
+			<xsf:field name="Jun PV" columnName="{10AA7283-720A-41BE-98EA-4B9345B25878}" node="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHOnSitePerVisit/my:JunPV" type="xsd:double"></xsf:field>
+			<xsf:field name="Jul PV" columnName="{17F247F9-D866-4BDE-B3B0-B3D290BACB4F}" node="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHOnSitePerVisit/my:JulPV" type="xsd:double"></xsf:field>
+			<xsf:field name="Aug PV" columnName="{6E1A46D1-2832-4996-A2AF-93A898E1822C}" node="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHOnSitePerVisit/my:AugPV" type="xsd:double"></xsf:field>
+			<xsf:field name="Sep PV" columnName="{6180FF6F-F8AB-432E-81E3-E5C29341FD6C}" node="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHOnSitePerVisit/my:SepPV" type="xsd:double"></xsf:field>
+			<xsf:field name="Oct PV" columnName="{0B00E29A-143F-4AB9-85B2-EA48F7F07317}" node="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHOnSitePerVisit/my:OctPV" type="xsd:string"></xsf:field>
+			<xsf:field name="Nov PV" columnName="{D300A616-6CAB-48FD-B34E-69E4A84D0457}" node="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHOnSitePerVisit/my:NovPV" type="xsd:double"></xsf:field>
+			<xsf:field name="Dec PV" columnName="{77787395-382F-4A43-8EFC-70A12DA21C18}" node="/my:myFields/my:EstimateGroup/my:GeneralVisitCalculations/my:GeneralMHOnSitePerVisit/my:DecPV" type="xsd:double"></xsf:field>
+			<xsf:field name="Contract Price" columnName="{8D5783A2-5F1C-49D3-AC10-47FC848FC95D}" node="/my:myFields/my:EstimateGroup/my:ContractTotals/my:ContractPrice" type="xsd:double"></xsf:field>
+			<xsf:field name="Gross Profit Percent" columnName="{76415BB2-45CD-4142-A5AB-3F8120C0C7FC}" node="/my:myFields/my:EstimateGroup/my:ContractTotals/my:GrossProfitPercent" type="xsd:double"></xsf:field>
+			<xsf:field name="General Annual Price" columnName="{FDCBFBF6-C98C-42AE-A143-96272713EAFC}" node="/my:myFields/my:EstimateGroup/my:ContractTotals/my:GeneralAnnualPrice" type="xsd:double"></xsf:field>
+			<xsf:field name="General Annual Labor Cost" columnName="{EB66CAA4-0743-4511-91D8-CC342DB6A685}" node="/my:myFields/my:EstimateGroup/my:ContractTotals/my:GeneralAnnualLaborCost" type="xsd:double"></xsf:field>
+			<xsf:field name="Contract Cost" columnName="{DD293CA2-E436-43F7-A01C-CC2E154FD9B3}" node="/my:myFields/my:EstimateGroup/my:ContractTotals/my:ContractCost" type="xsd:double"></xsf:field>
+		</xsf:fields>
+	</xsf:listProperties>
+	<xsf:dataAdapters>
+		<xsf:davAdapter name="Save Form" submitAllowed="yes" overwriteAllowed="yes">
+			<xsf:folderURL value="../Contract%20Library/"></xsf:folderURL>
+			<xsf:fileName value="my:strFilename" valueType="expression"></xsf:fileName>
+		</xsf:davAdapter>
+	</xsf:dataAdapters>
+	<xsf:onLoad>
+		<xsf:ruleSetAction ruleSet="ruleSet_45"></xsf:ruleSetAction>
+	</xsf:onLoad>
+</xsf:xDocumentClass>

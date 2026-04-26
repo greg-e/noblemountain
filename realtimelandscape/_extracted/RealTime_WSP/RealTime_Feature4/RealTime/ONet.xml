@@ -1,0 +1,251 @@
+<Project Title="Real-Time Foundation" Revision="0" UIVersion="4" SiteLogoUrl="" SiteLogoDescription="" xmlns="http://schemas.microsoft.com/sharepoint/">
+	<NavBars>
+		<NavBar Name="SharePoint Top Navigation Bar" Url="/sites/realtimefoundation" ID="1002">
+			<NavBarPage Name="Home" Url="" />
+		</NavBar>
+		<NavBar Name="Libraries" Url="_layouts/viewlsts.aspx?BaseType=1" ID="1004">
+			<NavBarPage Name="Contract Library" Url="Contract Library/Forms/AllItems.aspx" />
+			<NavBarPage Name="Workorder Library" Url="Workorder Library/Forms/AllItems.aspx" />
+			<NavBarPage Name="Report Library" Url="Report Library/Forms/updated.aspx" />
+		</NavBar>
+		<NavBar Name="Lists" Url="_layouts/viewlsts.aspx?BaseType=0" ID="1003">
+			<NavBarPage Name="Projects" Url="Lists/Projects/AllItems.aspx" />
+			<NavBarPage Name="Contract Table" Url="Lists/Contract Table/AllItems.aspx" />
+			<NavBarPage Name="Workorder Table" Url="Lists/Workorder Table/AllItems.aspx" />
+			<NavBarPage Name="Pricing Table" Url="Lists/Pricing Table/AllItems.aspx" />
+			<NavBarPage Name="Maintenance Schedule" Url="Lists/Maintenance Schedule/calendar.aspx" />
+			<NavBarPage Name="Workorder Schedule" Url="Lists/Workorder Schedule/gantt.aspx" />
+		</NavBar>
+	</NavBars>
+	<Configurations>
+		<Configuration ID="0" Name="Default" MasterUrl="_catalogs/masterpage/v4.master" ThemedCssFolderUrl="">
+			<SiteFeatures>
+				<!--DocumentRoutingResources Feature-->
+				<Feature ID="{0c8a9a47-22a9-4798-82f1-00e62a96006e}" Name="FeatureDefinition/0c8a9a47-22a9-4798-82f1-00e62a96006e" SourceVersion="14.0.0.0" />
+				<!--HelpCollectionRemoveDefault Feature-->
+				<Feature ID="{232b3f94-9d6e-4ed6-8d55-04d5a44ac449}" Name="FeatureDefinition/232b3f94-9d6e-4ed6-8d55-04d5a44ac449" SourceVersion="0.0.0.0" />
+				<!--MobileWordViewer Feature-->
+				<Feature ID="{8dfaf93d-e23c-4471-9347-07368668ddaf}" Name="FeatureDefinition/8dfaf93d-e23c-4471-9347-07368668ddaf" SourceVersion="14.0.0.0" />
+				<!--EnhancedTheming Feature-->
+				<Feature ID="{068bc832-4951-11dc-8314-0800200c9a66}" Name="FeatureDefinition/068bc832-4951-11dc-8314-0800200c9a66" SourceVersion="14.0.0.0" />
+				<!--Ratings Feature-->
+				<Feature ID="{915c240e-a6cc-49b8-8b2c-0bff8b553ed3}" Name="FeatureDefinition/915c240e-a6cc-49b8-8b2c-0bff8b553ed3" SourceVersion="14.0.1.0" />
+				<!--WebPartAdderGroups Feature-->
+				<Feature ID="{2ed1c45e-a73b-4779-ae81-1524e4de467a}" Name="FeatureDefinition/2ed1c45e-a73b-4779-ae81-1524e4de467a" SourceVersion="14.0.0.0" />
+				<!--PremiumSite Feature-->
+				<Feature ID="{8581a8a7-cf16-4770-ac54-260265ddb0b2}" Name="FeatureDefinition/8581a8a7-cf16-4770-ac54-260265ddb0b2" SourceVersion="14.0.1.0" />
+				<!--CTypes Feature-->
+				<Feature ID="{695b6570-a48b-4a8e-8ea5-26ea7fc1d162}" Name="FeatureDefinition/695b6570-a48b-4a8e-8ea5-26ea7fc1d162" SourceVersion="14.0.1.0" />
+				<!--MobilePowerPointViewer Feature-->
+				<Feature ID="{893627d9-b5ef-482d-a3bf-2a605175ac36}" Name="FeatureDefinition/893627d9-b5ef-482d-a3bf-2a605175ac36" SourceVersion="14.0.0.0" />
+				<!--ExpirationWorkflow Feature-->
+				<Feature ID="{c85e5759-f323-4efb-b548-443d2216efb5}" Name="FeatureDefinition/c85e5759-f323-4efb-b548-443d2216efb5" SourceVersion="14.0.0.0">
+					<Properties>
+						<Property Key="RegisterForms" Value="Forms\*.xsn" />
+						<Property Key="GloballyAvailable" Value="true" />
+					</Properties>
+				</Feature>
+				<!--FastEndUserHelpCollection Feature-->
+				<Feature ID="{6e8f2b8d-d765-4e69-84ea-5702574c11d6}" Name="FeatureDefinition/6e8f2b8d-d765-4e69-84ea-5702574c11d6" SourceVersion="14.0.0.0" />
+				<!--Fields Feature-->
+				<Feature ID="{ca7bd552-10b1-4563-85b9-5ed1d39c962a}" Name="FeatureDefinition/ca7bd552-10b1-4563-85b9-5ed1d39c962a" SourceVersion="14.0.1.0" />
+				<!--VisioWebAccess Feature-->
+				<Feature ID="{9fec40ea-a949-407d-be09-6cba26470a0c}" Name="FeatureDefinition/9fec40ea-a949-407d-be09-6cba26470a0c" SourceVersion="14.0.0.0" />
+				<!--ExcelServerEdit Feature-->
+				<Feature ID="{b3da33d0-5e51-4694-99ce-705a3ac80dc5}" Name="FeatureDefinition/b3da33d0-5e51-4694-99ce-705a3ac80dc5" SourceVersion="14.0.0.0" />
+				<!--OffWFCommon Feature-->
+				<Feature ID="{c9c9515d-e4e2-4001-9050-74f980f93160}" Name="FeatureDefinition/c9c9515d-e4e2-4001-9050-74f980f93160" SourceVersion="14.0.1.0">
+					<Properties>
+						<Property Key="EnsureRootPublicLibrary" Value="true" />
+						<Property Key="RegisterForms" Value="Forms\*.xsn" />
+						<Property Key="GloballyAvailable" Value="true" />
+					</Properties>
+				</Feature>
+				<!--BizAppsSiteTemplates Feature-->
+				<Feature ID="{4248e21f-a816-4c88-8cab-79d82201da7b}" Name="FeatureDefinition/4248e21f-a816-4c88-8cab-79d82201da7b" SourceVersion="14.0.1.0" />
+				<!--BaseSite Feature-->
+				<Feature ID="{b21b090c-c796-4b0f-ac0f-7ef1659c20ae}" Name="FeatureDefinition/b21b090c-c796-4b0f-ac0f-7ef1659c20ae" SourceVersion="14.0.0.0" />
+				<!--PortalLayouts Feature-->
+				<Feature ID="{5f3b0127-2f1d-4cfd-8dd2-85ad1fb00bfc}" Name="FeatureDefinition/5f3b0127-2f1d-4cfd-8dd2-85ad1fb00bfc" SourceVersion="14.0.0.0" />
+				<!--IssueTrackingWorkflow Feature-->
+				<Feature ID="{fde5d850-671e-4143-950a-87b473922dc7}" Name="FeatureDefinition/fde5d850-671e-4143-950a-87b473922dc7" SourceVersion="12.0.0.0" />
+				<!--PowerPointEditServer Feature-->
+				<Feature ID="{738250ba-9327-4dc0-813a-a76928ba1842}" Name="FeatureDefinition/738250ba-9327-4dc0-813a-a76928ba1842" SourceVersion="14.0.0.0" />
+				<!--ExcelServerWebPart Feature-->
+				<Feature ID="{4c42ab64-55af-4c7c-986a-ac216a6e0c0e}" Name="FeatureDefinition/4c42ab64-55af-4c7c-986a-ac216a6e0c0e" SourceVersion="14.0.0.0" />
+				<!--WordViewer Feature-->
+				<Feature ID="{1663ee19-e6ab-4d47-be1b-adeb27cfd9d2}" Name="FeatureDefinition/1663ee19-e6ab-4d47-be1b-adeb27cfd9d2" SourceVersion="14.0.0.0" />
+				<!--OneNote Feature-->
+				<Feature ID="{3d433d02-cf49-4975-81b4-aede31e16edf}" Name="FeatureDefinition/3d433d02-cf49-4975-81b4-aede31e16edf" SourceVersion="14.0.0.0">
+					<Properties>
+						<Property Key="NOTEBOOKCSSBASE" Value="/_layouts/inc/{0}Box4/" />
+						<Property Key="NOTEBOOKSCRIPTSBASE" Value="/_layouts/inc/Box4/" />
+						<Property Key="NOTEBOOKSCRIPTSLCIDBASE" Value="/_layouts/inc/{0}Box4/" />
+						<Property Key="NOTEBOOKIMAGEBASE" Value="/_layouts/inc/{0}Box4/" />
+						<Property Key="SYNCINTERVALMININSECONDS" Value="5" />
+						<Property Key="SYNCINTERVALMINONHEAVYLOADINSECONDS" Value="30" />
+						<Property Key="SERVERHEALTHSCOREONHEAVYLOAD" Value="8" />
+						<Property Key="SYNCINTERVALSTEPINSECONDS" Value="5" />
+						<Property Key="SYNCINTERVALMAXINSECONDS" Value="60" />
+						<Property Key="REPLICATIONINTERVALONFAILUREINSECONDS" Value="1" />
+						<Property Key="REPLICATIONINTERVALSTEPONFAILUREINSECONDS" Value="2" />
+						<Property Key="REPLICATIONINTERVALSLEEPINGINSECONDS" Value="540" />
+						<Property Key="SLEEPINTERVALINSECONDS" Value="420" />
+						<Property Key="NOTEBOOKVERSIONINGENABLED" Value="True" />
+						<Property Key="MAXMERGEQUEUELENGTH" Value="10" />
+						<Property Key="TIMEINSECONDSBEFOREALLOWINGOTHERFEHANDLEPERSISTEDMERGEREQUEST" Value="10" />
+						<Property Key="IMAGECACHEMAXSIZE" Value="50" />
+						<Property Key="CSAPISPELLINGDLLROOT" Value="Bin" />
+						<Property Key="CSAPISPELLINGLEXROOT" Value="Bin" />
+						<Property Key="PROXY" Value="" />
+						<Property Key="OFFICEONLINECONFIGURL" Value="http://r.office.microsoft.com/r/rlidClientConfig" />
+						<Property Key="CLIPARTENABLED" Value="True" />
+						<Property Key="CLIPARTCOMMUNITYSUBMITTEDENABLED" Value="False" />
+						<Property Key="MAXIMUMREQUESTCOUNTINGROUP" Value="20" />
+						<Property Key="MAXIMUMDATAELEMENTPACKAGESIZEINBYTES" Value="104857600" />
+						<Property Key="MAXIMUMDATABLOBSIZEINBYTES" Value="52428800" />
+						<Property Key="MAXIMUMOBJECTSINREVISIONDOCX" Value="100000" />
+					</Properties>
+				</Feature>
+				<!--BizAppsCTypes Feature-->
+				<Feature ID="{43f41342-1a37-4372-8ca0-b44d881e4434}" Name="FeatureDefinition/43f41342-1a37-4372-8ca0-b44d881e4434" SourceVersion="14.0.0.0" />
+				<!--LocationBasedPolicy Feature-->
+				<Feature ID="{063c26fa-3ccc-4180-8a84-b6f98e991df3}" Name="FeatureDefinition/063c26fa-3ccc-4180-8a84-b6f98e991df3" SourceVersion="14.0.0.0" />
+				<!--RecordResources Feature-->
+				<Feature ID="{5bccb9a4-b903-4fd1-8620-b795fa33c9ba}" Name="FeatureDefinition/5bccb9a4-b903-4fd1-8620-b795fa33c9ba" SourceVersion="14.0.0.0" />
+				<!--BasicWebParts Feature-->
+				<Feature ID="{00bfea71-1c5e-4a24-b310-ba51c3eb7a57}" Name="FeatureDefinition/00bfea71-1c5e-4a24-b310-ba51c3eb7a57" SourceVersion="14.0.1.0" />
+				<!--IPFSSiteFeatures Feature-->
+				<Feature ID="{c88c4ff1-dbf5-4649-ad9f-c6c426ebcbf5}" Name="FeatureDefinition/c88c4ff1-dbf5-4649-ad9f-c6c426ebcbf5" SourceVersion="14.0.0.0" />
+				<!--OfficeWebApps Feature-->
+				<Feature ID="{0c504a5c-bcea-4376-b05e-cbca5ced7b4f}" Name="FeatureDefinition/0c504a5c-bcea-4376-b05e-cbca5ced7b4f" SourceVersion="14.0.0.0">
+					<Properties>
+						<Property Key="CANARYSITEKEY" Value="smBJuCsLWP9ycv1s8fFUPwPudWTivqkSj8IPv2zMYJQ=" />
+					</Properties>
+				</Feature>
+				<!--BizAppsFields Feature-->
+				<Feature ID="{5a979115-6b71-45a5-9881-cdc872051a69}" Name="FeatureDefinition/5a979115-6b71-45a5-9881-cdc872051a69" SourceVersion="14.0.0.0" />
+				<!--MobileExcelWebAccess Feature-->
+				<Feature ID="{e995e28b-9ba8-4668-9933-cf5c146d7a9f}" Name="FeatureDefinition/e995e28b-9ba8-4668-9933-cf5c146d7a9f" SourceVersion="14.0.0.0" />
+				<!--MossChart Feature-->
+				<Feature ID="{875d1044-c0cf-4244-8865-d2a0039c2a49}" Name="FeatureDefinition/875d1044-c0cf-4244-8865-d2a0039c2a49" SourceVersion="14.0.0.0" />
+				<!--LocalSiteDirectoryControl Feature-->
+				<Feature ID="{14aafd3a-fcb9-4bb7-9ad7-d8e36b663bbd}" Name="FeatureDefinition/14aafd3a-fcb9-4bb7-9ad7-d8e36b663bbd" SourceVersion="14.0.0.0" />
+				<!--ExcelServerSite Feature-->
+				<Feature ID="{3cb475e7-4e87-45eb-a1f3-db96ad7cf313}" Name="FeatureDefinition/3cb475e7-4e87-45eb-a1f3-db96ad7cf313" SourceVersion="14.0.1.0" />
+				<!--AccSrvSolutionGallery Feature-->
+				<Feature ID="{744b5fd3-3b09-4da6-9bd1-de18315b045d}" Name="FeatureDefinition/744b5fd3-3b09-4da6-9bd1-de18315b045d" SourceVersion="1.0.0.0" />
+				<!--AssetLibrary Feature-->
+				<Feature ID="{4bcccd62-dcaf-46dc-a7d4-e38277ef33f4}" Name="FeatureDefinition/4bcccd62-dcaf-46dc-a7d4-e38277ef33f4" SourceVersion="14.0.1.0" />
+				<!--TaxonomyFieldAdded Feature-->
+				<Feature ID="{73ef14b1-13a9-416b-a9b5-ececa2b0604c}" Name="FeatureDefinition/73ef14b1-13a9-416b-a9b5-ececa2b0604c" SourceVersion="14.0.0.0" />
+				<!--PowerPointServer Feature-->
+				<Feature ID="{5709298b-1876-4686-b257-f101a923f58d}" Name="FeatureDefinition/5709298b-1876-4686-b257-f101a923f58d" SourceVersion="14.0.0.0" />
+				<!--Reporting Feature-->
+				<Feature ID="{7094bd89-2cfe-490a-8c7e-fbace37b4a34}" Name="FeatureDefinition/7094bd89-2cfe-490a-8c7e-fbace37b4a34" SourceVersion="14.0.0.0" />
+			</SiteFeatures>
+			<WebFeatures>
+				<!--WikiPageHomePage Feature-->
+				<Feature ID="{00bfea71-d8fe-4fec-8dad-01c19a6e4053}" Name="FeatureDefinition/00bfea71-d8fe-4fec-8dad-01c19a6e4053" SourceVersion="1.0.0.0">
+					<Properties>
+						<Property Key="OldWelcomePage" Value="" />
+					</Properties>
+				</Feature>
+				<!--WebPageLibrary Feature-->
+				<Feature ID="{00bfea71-c796-4402-9f2f-0eb9a6e71b18}" Name="FeatureDefinition/00bfea71-c796-4402-9f2f-0eb9a6e71b18" SourceVersion="1.0.0.0" />
+				<!--BizAppsListTemplates Feature-->
+				<Feature ID="{065c78be-5231-477e-a972-14177cc5b3c7}" Name="FeatureDefinition/065c78be-5231-477e-a972-14177cc5b3c7" SourceVersion="14.0.0.0" />
+				<!--IssuesList Feature-->
+				<Feature ID="{00bfea71-5932-4f9c-ad71-1557e5751100}" Name="FeatureDefinition/00bfea71-5932-4f9c-ad71-1557e5751100" SourceVersion="0.0.0.0" />
+				<!--MetaDataNav Feature-->
+				<Feature ID="{7201d6a4-a5d3-49a1-8c19-19c4bac6e668}" Name="FeatureDefinition/7201d6a4-a5d3-49a1-8c19-19c4bac6e668" SourceVersion="14.0.0.0" />
+				<!--PremiumWeb Feature-->
+				<Feature ID="{0806d127-06e6-447a-980e-2e90b03101b8}" Name="FeatureDefinition/0806d127-06e6-447a-980e-2e90b03101b8" SourceVersion="14.0.0.0" />
+				<!--WorkflowHistoryList Feature-->
+				<Feature ID="{00bfea71-4ea5-48d4-a4ad-305cf7030140}" Name="FeatureDefinition/00bfea71-4ea5-48d4-a4ad-305cf7030140" SourceVersion="0.0.0.0" />
+				<!--ReportListTemplate Feature-->
+				<Feature ID="{2510d73f-7109-4ccc-8a1c-314894deeb3a}" Name="FeatureDefinition/2510d73f-7109-4ccc-8a1c-314894deeb3a" SourceVersion="14.0.0.0" />
+				<!--NoCodeWorkflowLibrary Feature-->
+				<Feature ID="{00bfea71-f600-43f6-a895-40c0de7b0117}" Name="FeatureDefinition/00bfea71-f600-43f6-a895-40c0de7b0117" SourceVersion="0.0.0.0" />
+				<!--SurveysList Feature-->
+				<Feature ID="{00bfea71-eb8a-40b1-80c7-506be7590102}" Name="FeatureDefinition/00bfea71-eb8a-40b1-80c7-506be7590102" SourceVersion="1.0.0.0" />
+				<!--RelatedLinksScopeSettingsLink Feature-->
+				<Feature ID="{e8734bb6-be8e-48a1-b036-5a40ff0b8a81}" Name="FeatureDefinition/e8734bb6-be8e-48a1-b036-5a40ff0b8a81" SourceVersion="14.0.0.0" />
+				<!--GridList Feature-->
+				<Feature ID="{00bfea71-3a1d-41d3-a0ee-651d11570120}" Name="FeatureDefinition/00bfea71-3a1d-41d3-a0ee-651d11570120" SourceVersion="1.0.0.0" />
+				<!--GanttTasksList Feature-->
+				<Feature ID="{00bfea71-513d-4ca0-96c2-6a47775c0119}" Name="FeatureDefinition/00bfea71-513d-4ca0-96c2-6a47775c0119" SourceVersion="0.0.0.0" />
+				<!--SlideLibrary Feature-->
+				<Feature ID="{0be49fe9-9bc9-409d-abf9-702753bd878d}" Name="FeatureDefinition/0be49fe9-9bc9-409d-abf9-702753bd878d" SourceVersion="1.0.0.0" />
+				<!--LinksList Feature-->
+				<Feature ID="{00bfea71-2062-426c-90bf-714c59600103}" Name="FeatureDefinition/00bfea71-2062-426c-90bf-714c59600103" SourceVersion="1.0.0.0" />
+				<!--MobilityRedirect Feature-->
+				<Feature ID="{f41cc668-37e5-4743-b4a8-74d1db3fd8a4}" Name="FeatureDefinition/f41cc668-37e5-4743-b4a8-74d1db3fd8a4" SourceVersion="1.0.0.0" />
+				<!--workflowProcessList Feature-->
+				<Feature ID="{00bfea71-2d77-4a75-9fca-76516689e21a}" Name="FeatureDefinition/00bfea71-2d77-4a75-9fca-76516689e21a" SourceVersion="1.0.0.0" />
+				<!--TasksList Feature-->
+				<Feature ID="{00bfea71-a83e-497e-9ba0-7a5c597d0107}" Name="FeatureDefinition/00bfea71-a83e-497e-9ba0-7a5c597d0107" SourceVersion="1.0.0.0" />
+				<!--TeamCollab Feature-->
+				<Feature ID="{00bfea71-4ea5-48d4-a4ad-7ea5c011abe5}" Name="FeatureDefinition/00bfea71-4ea5-48d4-a4ad-7ea5c011abe5" SourceVersion="14.0.0.0" />
+				<!--BaseWeb Feature-->
+				<Feature ID="{99fe402e-89a0-45aa-9163-85342e865dc8}" Name="FeatureDefinition/99fe402e-89a0-45aa-9163-85342e865dc8" SourceVersion="14.0.0.0" />
+				<!--AnnouncementsList Feature-->
+				<Feature ID="{00bfea71-d1ce-42de-9c63-a44004ce0104}" Name="FeatureDefinition/00bfea71-d1ce-42de-9c63-a44004ce0104" SourceVersion="1.0.0.0" />
+				<!--ObaSimpleSolution Feature-->
+				<Feature ID="{d250636f-0a26-4019-8425-a5232d592c01}" Name="FeatureDefinition/d250636f-0a26-4019-8425-a5232d592c01" SourceVersion="14.0.0.0" />
+				<!--PictureLibrary Feature-->
+				<Feature ID="{00bfea71-52d4-45b3-b544-b1c71b620109}" Name="FeatureDefinition/00bfea71-52d4-45b3-b544-b1c71b620109" SourceVersion="1.0.0.0" />
+				<!--ContactsList Feature-->
+				<Feature ID="{00bfea71-7e6d-4186-9ba8-c047ac750105}" Name="FeatureDefinition/00bfea71-7e6d-4186-9ba8-c047ac750105" SourceVersion="1.0.0.0" />
+				<!--CustomList Feature-->
+				<Feature ID="{00bfea71-de22-43b2-a848-c05709900100}" Name="FeatureDefinition/00bfea71-de22-43b2-a848-c05709900100" SourceVersion="1.0.0.0" />
+				<!--DocumentLibrary Feature-->
+				<Feature ID="{00bfea71-e717-4e80-aa17-d0c71b360101}" Name="FeatureDefinition/00bfea71-e717-4e80-aa17-d0c71b360101" SourceVersion="1.0.0.0" />
+				<!--DiscussionsList Feature-->
+				<Feature ID="{00bfea71-6a49-43fa-b535-d15c05500108}" Name="FeatureDefinition/00bfea71-6a49-43fa-b535-d15c05500108" SourceVersion="1.0.0.0" />
+				<!--DataSourceLibrary Feature-->
+				<Feature ID="{00bfea71-f381-423d-b9d1-da7a54c50110}" Name="FeatureDefinition/00bfea71-f381-423d-b9d1-da7a54c50110" SourceVersion="0.0.0.0" />
+				<!--DataConnectionLibrary Feature-->
+				<Feature ID="{00bfea71-dbd7-4f72-b8cb-da7ac0440130}" Name="FeatureDefinition/00bfea71-dbd7-4f72-b8cb-da7ac0440130" SourceVersion="14.0.0.0" />
+				<!--ExternalList Feature-->
+				<Feature ID="{00bfea71-9549-43f8-b978-e47e54a10600}" Name="FeatureDefinition/00bfea71-9549-43f8-b978-e47e54a10600" SourceVersion="1.0.0.0" />
+				<!--EventsList Feature-->
+				<Feature ID="{00bfea71-ec85-4903-972d-ebe475780106}" Name="FeatureDefinition/00bfea71-ec85-4903-972d-ebe475780106" SourceVersion="3.0.0.0" />
+				<!--XmlFormLibrary Feature-->
+				<Feature ID="{00bfea71-1e1d-4562-b56a-f05371bb0115}" Name="FeatureDefinition/00bfea71-1e1d-4562-b56a-f05371bb0115" SourceVersion="0.0.0.0" />
+				<!--IPFSWebFeatures Feature-->
+				<Feature ID="{a0e5a010-1329-49d4-9e09-f280cdbed37d}" Name="FeatureDefinition/a0e5a010-1329-49d4-9e09-f280cdbed37d" SourceVersion="14.0.0.0" />
+				<!--List Feature-->
+				<Feature ID="{8e83cc1f-9f65-42d5-a7d1-91dbccf99479}" Name="List Feature">
+					<Properties>
+						<Property Key="GeneratedBySaveAsTemplate" Value="1" />
+					</Properties>
+				</Feature>
+				<!--Module Feature-->
+				<Feature ID="{8d54daeb-6e61-46b4-b5e7-f617fe30c991}" Name="Module Feature">
+					<Properties>
+						<Property Key="GeneratedBySaveAsTemplate" Value="1" />
+					</Properties>
+				</Feature>
+				<!--Web Workflow Feature-->
+				<Feature ID="{23cb55e0-5e80-48b3-b210-bcc6c897f353}" Name="Web Workflow Feature">
+					<Properties>
+						<Property Key="GeneratedBySaveAsTemplate" Value="1" />
+					</Properties>
+				</Feature>
+				<!--Web EventReceivers Feature-->
+				<Feature ID="{357009da-977e-492e-a1c5-bbad75d2f9f1}" Name="Web EventReceivers Feature">
+					<Properties>
+						<Property Key="GeneratedBySaveAsTemplate" Value="1" />
+					</Properties>
+				</Feature>
+				<!--Property Bag Feature-->
+				<Feature ID="{5c190b09-3fee-47df-8afe-9dac342a85ce}" Name="Property Bag Feature">
+					<Properties>
+						<Property Key="GeneratedBySaveAsTemplate" Value="1" />
+					</Properties>
+				</Feature>
+			</WebFeatures>
+		</Configuration>
+	</Configurations>
+</Project>

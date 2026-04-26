@@ -1,0 +1,65 @@
+<WorkflowConfig Version="14.0.0.6109">
+	<Template BaseID="{B5CE977E-5EE3-46A6-8929-07891837B3DD}" DocLibID="{$ListId:Workflows;}" XomlHref="Workflows/Contract Activation/Contract Activation.xoml" XomlVersion="V1.0" AssociationURL="_layouts/CstWrkflIP.aspx" TaskContentType="0x01080100C9C9515DE4E24001905074F980F93160" Category="List" Name="Contract Activation" Description="" PreviewHref="Workflows/Contract Activation/Contract Activation_V3.vdw" ShowPreview="true" PreviewVersion="3" PreviewRequiresGeneration="true"/>
+	<Association ListID="{$ListId:Contract Library;}" StartManually="true" TaskListID="{$ListId:Lists/Tasks;}" HistoryListID="{$ListId:Lists/Workflow History;}"/>
+	<ContentTypes>
+		<ContentType Name="Schedule Contract" ContentTypeID="0x01080100C9C9515DE4E24001905074F980F9316000ADC8CAE8F43B4246A28744FD1DEB5761006E7643F3FFBC7B4580FB4DED7C54FFC9" WorkflowForm="Workflows/Contract Activation/Schedule Contract.xsn" WorkflowFormVersion = "V0.0" Description="One instance of this contract has been scheduled.  Open this instance and make it a reoccuring visit.">
+			<Fields/>
+			<WorkflowFormData>
+				<dfs:myFields xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:dms="http://schemas.microsoft.com/office/2009/documentManagement/types" xmlns:dfs="http://schemas.microsoft.com/office/infopath/2003/dataFormSolution" xmlns:q="http://schemas.microsoft.com/office/infopath/2009/WSSList/queryFields" xmlns:d="http://schemas.microsoft.com/office/infopath/2009/WSSList/dataFields" xmlns:ma="http://schemas.microsoft.com/office/2009/metadata/properties/metaAttributes" xmlns:pc="http://schemas.microsoft.com/office/infopath/2007/PartnerControls" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+					<dfs:queryFields/>
+					<dfs:dataFields>
+						<d:SharePointListItem_RW>
+							<d:FieldName_ToDoTitle>Schedule Contract</d:FieldName_ToDoTitle>
+							<d:FieldName_ToDoDescription>One instance of this contract has been scheduled.  Open this instance and make it a reoccuring visit.</d:FieldName_ToDoDescription>
+						</d:SharePointListItem_RW>
+					</dfs:dataFields>
+				</dfs:myFields>
+			</WorkflowFormData>
+		</ContentType>
+	</ContentTypes>
+	<Initiation URL="_layouts/IniWrkflIP.aspx">
+		<Fields>
+			<Field Name="ActivationEmail" FormType="Initiation" List="UserInfo" ShowField="Title" Type="UserMulti" UserSelectionMode="PeopleAndGroups" UserSelectionScope="0" DisplayName="Activation Email" Description="Add all people you would like to inform of this contract approval." Direction="None" Mult="TRUE"/>
+			<Field Name="ContractStartDate" FormType="Initiation" Required="TRUE" Format="DateOnly" DisplayName="Contract Start Date" Description="" Direction="None" Type="DateTime"/>
+			<Field Name="ContractExpirationDate" FormType="Initiation" Required="TRUE" Format="DateOnly" DisplayName="Contract Expiration Date" Description="" Direction="None" Type="DateTime"/>
+			<Field Name="ScheduleTask" FormType="Initiation" List="UserInfo" ShowField="Title" Required="TRUE" Type="User" UserSelectionMode="PeopleOnly" UserSelectionScope="0" DisplayName="Schedule Task" Description="Person assigned to schedule the visits for this Contract" Direction="None"/>
+			<Field Name="InitialVisitStartDateandTime" FormType="Initiation" Required="TRUE" Format="DateTime" DisplayName="Initial Visit Start Date and Time" Description="" Direction="None" Type="DateTime"/>
+			<Field Name="InitialVisitStopDateandTime" FormType="Initiation" Required="TRUE" Format="DateTime" DisplayName="Initial Visit Stop Date and Time" Description="" Direction="None" Type="DateTime"/>
+		</Fields>
+		<Parameters>
+			<Parameter Name="ActivationEmail" Type="System.String"/>
+			<Parameter Name="ContractStartDate" Type="System.DateTime"/>
+			<Parameter Name="ContractExpirationDate" Type="System.DateTime"/>
+			<Parameter Name="ScheduleTask" Type="System.String"/>
+			<Parameter Name="InitialVisitStartDateandTime" Type="System.DateTime"/>
+			<Parameter Name="InitialVisitStopDateandTime" Type="System.DateTime"/>
+		</Parameters>
+		<DefaultData>
+			<dfs:myFields xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:dms="http://schemas.microsoft.com/office/2009/documentManagement/types" xmlns:dfs="http://schemas.microsoft.com/office/infopath/2003/dataFormSolution" xmlns:q="http://schemas.microsoft.com/office/infopath/2009/WSSList/queryFields" xmlns:d="http://schemas.microsoft.com/office/infopath/2009/WSSList/dataFields" xmlns:ma="http://schemas.microsoft.com/office/2009/metadata/properties/metaAttributes" xmlns:pc="http://schemas.microsoft.com/office/infopath/2007/PartnerControls" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+				<dfs:queryFields/>
+				<dfs:dataFields>
+					<d:SharePointListItem_RW>
+						<d:ActivationEmail/>
+						<d:ContractStartDate/>
+						<d:ContractExpirationDate/>
+						<d:ScheduleTask/>
+						<d:InitialVisitStartDateandTime/>
+						<d:InitialVisitStopDateandTime/>
+					</d:SharePointListItem_RW>
+				</dfs:dataFields>
+			</dfs:myFields>
+		</DefaultData>
+	</Initiation>
+	<Extended>
+		<Fields/>
+	</Extended>
+	<MetaData>
+		<ExtendedStatusColumnValues>
+			<StatusColumnValue>Canceled</StatusColumnValue>
+			<StatusColumnValue>Approved</StatusColumnValue>
+			<StatusColumnValue>Rejected</StatusColumnValue>
+		</ExtendedStatusColumnValues>
+		<Association_FormURN Version= "V0.0">Workflows/Contract Activation/Contract Activation.xsn</Association_FormURN>
+		<Instantiation_FormURI Version= "V0.0">Workflows/Contract Activation/Contract Activation.xsn</Instantiation_FormURI>
+	</MetaData>
+</WorkflowConfig>

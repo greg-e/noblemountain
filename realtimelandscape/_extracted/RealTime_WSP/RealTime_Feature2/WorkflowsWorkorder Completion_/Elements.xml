@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<Module Name="WorkflowsWorkorder Completion_" Url="Workflows/Workorder Completion" RootWebOnly="FALSE" Path="Files\Workflows\44WorkorderCompletion" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<File Url="Workorder Completion.xoml" DoGUIDFixUp="true" Type="GhostableInLibrary" Path="43WorkorderCompletion.xoml">
+			<Property Name="ID" Value="51" />
+			<Property Name="ContentTypeId" Value="0x010107007E6EEAE8D3CD3C45BA0A57BECF10EE2B" />
+			<Property Name="ContentType" Value="User Workflow Document" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="sites/realtimefoundation/Workflows/Workorder Completion" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="Workorder Completion.xoml" />
+			<Property Name="MetaInfo" Value="51;#vti_parserversion:SR|14.0.0.6109&#xD;&#xA;vti_folderitemcount:IR|0&#xD;&#xA;vti_foldersubfolderitemcount:IR|0&#xD;&#xA;vti_modifiedby:SR|i:0#.f|membership|greg@realtimelandscape.onmicrosoft.com&#xD;&#xA;ContentTypeId:SW|0x010107007E6EEAE8D3CD3C45BA0A57BECF10EE2B&#xD;&#xA;vti_author:SR|i:0#.f|membership|greg@realtimelandscape.onmicrosoft.com&#xD;&#xA;" />
+			<Property Name="Order" Value="5100.00000000000" />
+		</File>
+		<File Url="Workorder Completion.xoml.rules" Type="GhostableInLibrary" Path="45WorkorderCompletion.xoml.rules">
+			<Property Name="ID" Value="54" />
+			<Property Name="ContentTypeId" Value="0x010107007E6EEAE8D3CD3C45BA0A57BECF10EE2B" />
+			<Property Name="ContentType" Value="User Workflow Document" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="sites/realtimefoundation/Workflows/Workorder Completion" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="Workorder Completion.xoml.rules" />
+			<Property Name="MetaInfo" Value="54;#vti_parserversion:SR|14.0.0.6109&#xD;&#xA;vti_folderitemcount:IR|0&#xD;&#xA;vti_foldersubfolderitemcount:IR|0&#xD;&#xA;vti_modifiedby:SR|i:0#.f|membership|greg@realtimelandscape.onmicrosoft.com&#xD;&#xA;ContentTypeId:SW|0x010107007E6EEAE8D3CD3C45BA0A57BECF10EE2B&#xD;&#xA;vti_author:SR|i:0#.f|membership|greg@realtimelandscape.onmicrosoft.com&#xD;&#xA;" />
+			<Property Name="Order" Value="5400.00000000000" />
+		</File>
+		<File Url="Workorder Completion.xoml.wfconfig.xml" DoGUIDFixUp="true" Type="GhostableInLibrary" Path="46WorkorderCompletion.xoml.wfconfig.xml">
+			<Property Name="ID" Value="52" />
+			<Property Name="ContentTypeId" Value="0x010107007E6EEAE8D3CD3C45BA0A57BECF10EE2B" />
+			<Property Name="ContentType" Value="User Workflow Document" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="sites/realtimefoundation/Workflows/Workorder Completion" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="Workorder Completion.xoml.wfconfig.xml" />
+			<Property Name="MetaInfo" Value="52;#BaseAssociationGuid:SW|{4B02BCDD-5185-4675-83FC-5A17CB3F92FE}&#xD;&#xA;WorkflowDisplayName:SW|Workorder Completion&#xD;&#xA;vti_parserversion:SR|14.0.0.6109&#xD;&#xA;vti_folderitemcount:IR|0&#xD;&#xA;vti_charset:SR|utf-8&#xD;&#xA;XomlUrl:SW|Workflows/Workorder Completion/Workorder Completion.xoml&#xD;&#xA;NoCodeVisibility:SW|&#xD;&#xA;vti_author:SR|i:0#.f|membership|greg@realtimelandscape.onmicrosoft.com&#xD;&#xA;vti_foldersubfolderitemcount:IR|0&#xD;&#xA;AssociatedListId:SW|{$ListId:Workorder Library;}&#xD;&#xA;vti_cachedcustomprops:VX|BaseAssociationGuid WorkflowDisplayName AssociatedListId XomlUrl NoCodeVisibility RulesUrl RestrictContentTypeId&#xD;&#xA;vti_modifiedby:SR|i:0#.f|membership|greg@realtimelandscape.onmicrosoft.com&#xD;&#xA;vti_privatelistexempt:BW|true&#xD;&#xA;vti_title:SR|Workorder Completion.xoml.wfconfig.xml&#xD;&#xA;ContentTypeId:SW|0x010107007E6EEAE8D3CD3C45BA0A57BECF10EE2B&#xD;&#xA;ContentType:SW|User Workflow Document&#xD;&#xA;RulesUrl:SW|Workflows/Workorder Completion/Workorder Completion.xoml.rules&#xD;&#xA;RestrictContentTypeId:SW|&#xD;&#xA;" />
+			<Property Name="Order" Value="5200.00000000000" />
+		</File>
+		<File Url="Workorder Completion.xsn" Type="GhostableInLibrary" Path="47WorkorderCompletion.xsn">
+			<Property Name="ID" Value="53" />
+			<Property Name="ContentTypeId" Value="0x010107007E6EEAE8D3CD3C45BA0A57BECF10EE2B" />
+			<Property Name="ContentType" Value="User Workflow Document" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="sites/realtimefoundation/Workflows/Workorder Completion" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="Workorder Completion.xsn" />
+			<Property Name="MetaInfo" Value="53;#vti_parserversion:SR|14.0.0.6109&#xD;&#xA;vti_folderitemcount:IR|0&#xD;&#xA;vti_privatelistexempt:BW|true&#xD;&#xA;ContentTypeId:SW|0x010107007E6EEAE8D3CD3C45BA0A57BECF10EE2B&#xD;&#xA;vti_author:SR|i:0#.f|membership|greg@realtimelandscape.onmicrosoft.com&#xD;&#xA;vti_foldersubfolderitemcount:IR|0&#xD;&#xA;ipfs_streamhash:SW|K7hJaE09ZxZa9/AUCeFLDmkhUNfE4L/AR9r2IWoSGqY=&#xD;&#xA;vti_modifiedby:SR|i:0#.f|membership|greg@realtimelandscape.onmicrosoft.com&#xD;&#xA;" />
+			<Property Name="Order" Value="5300.00000000000" />
+		</File>
+	</Module>
+</Elements>

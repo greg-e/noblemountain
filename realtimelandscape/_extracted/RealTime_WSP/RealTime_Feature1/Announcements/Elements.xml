@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ListInstance FeatureId="{00bfea71-d1ce-42de-9c63-a44004ce0104}" TemplateType="104" Title="Announcements" Description="Use this list to track upcoming events, status updates or other team news." Url="Lists/Announcements" CustomSchema="Files\Lists\Announcements\Schema.xml" HyperlinkBaseUrl="https://realtimelandscape.sharepoint.com/sites/realtimefoundation" RootWebOnly="FALSE" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<Data>
+			<Rows>
+				<Row>
+					<Field Name="ID">1</Field>
+					<Field Name="ContentTypeId">0x010400576261390C528547899AF822AAABFBC9</Field>
+					<Field Name="Title">Get Started with Microsoft SharePoint Foundation!</Field>
+					<Field Name="_ModerationStatus">0</Field>
+					<Field Name="Order">100.000000000000</Field>
+					<Field Name="FSObjType">0</Field>
+					<Field Name="FileLeafRef">1_.000</Field>
+					<Field Name="MetaInfo">1;#</Field>
+					<Field Name="Body">&lt;div class="ExternalClassA0858F9FF31D4CBF9CD0A2B5A0E6BE16"&gt;Microsoft SharePoint Foundation helps you to be more effective by connecting people, information, and documents. For information on getting started, see Help.&lt;/div&gt;</Field>
+					<Field Name="Expires">2012-04-12T15:20:34Z</Field>
+				</Row>
+			</Rows>
+		</Data>
+	</ListInstance>
+</Elements>

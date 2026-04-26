@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<WorkflowAssociation Name="Update Contract Table Item" Description="" Id="{c71b449b-04bb-4a3c-ab11-243594ec79a2}" BaseTemplateId="{a40a8857-b945-4bae-adb7-e1440626885c}" ParentContentType="List" ParentList="Contract Library" ParentWeb="TRUE" TaskList="Lists/Tasks" TaskListTitle="Tasks" HistoryList="Lists/Workflow History" HistoryListTitle="Workflow History" StatusColumnShown="TRUE" InternalNameStatusField="UpdateCo" RequireManagePermission="EditListItems" Configuration="6226" AssociationData="" ContentTypeName="" ContentTypeId="0x" xmlns="http://schemas.microsoft.com/sharepoint/" />
+</Elements>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<Module Name="WorkflowsUpdate Contract Lookup_" Url="Workflows/Update Contract Lookup" RootWebOnly="FALSE" Path="Files\Workflows\11UpdateContractLookup" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<File Url="Update Contract Lookup.xoml" Type="GhostableInLibrary" Path="10UpdateContractLookup.xoml">
+			<Property Name="ID" Value="34" />
+			<Property Name="ContentTypeId" Value="0x010107007E6EEAE8D3CD3C45BA0A57BECF10EE2B" />
+			<Property Name="ContentType" Value="User Workflow Document" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="sites/realtimefoundation/Workflows/Update Contract Lookup" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="Update Contract Lookup.xoml" />
+			<Property Name="MetaInfo" Value="34;#vti_parserversion:SR|14.0.0.6109&#xD;&#xA;vti_folderitemcount:IR|0&#xD;&#xA;vti_foldersubfolderitemcount:IR|0&#xD;&#xA;vti_modifiedby:SR|i:0#.f|membership|greg@realtimelandscape.onmicrosoft.com&#xD;&#xA;ContentTypeId:SW|0x010107007E6EEAE8D3CD3C45BA0A57BECF10EE2B&#xD;&#xA;vti_author:SR|i:0#.f|membership|greg@realtimelandscape.onmicrosoft.com&#xD;&#xA;" />
+			<Property Name="Order" Value="3400.00000000000" />
+		</File>
+		<File Url="Update Contract Lookup.xoml.wfconfig.xml" DoGUIDFixUp="true" Type="GhostableInLibrary" Path="12UpdateContractLookup.xoml.wfconfig.xml">
+			<Property Name="ID" Value="35" />
+			<Property Name="ContentTypeId" Value="0x010107007E6EEAE8D3CD3C45BA0A57BECF10EE2B" />
+			<Property Name="ContentType" Value="User Workflow Document" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="sites/realtimefoundation/Workflows/Update Contract Lookup" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="Update Contract Lookup.xoml.wfconfig.xml" />
+			<Property Name="MetaInfo" Value="35;#BaseAssociationGuid:SW|{940C3B59-A195-402E-9BAD-3D1EE6497807}&#xD;&#xA;WorkflowDisplayName:SW|Update Contract Lookup&#xD;&#xA;vti_parserversion:SR|14.0.0.6109&#xD;&#xA;vti_folderitemcount:IR|0&#xD;&#xA;vti_charset:SR|utf-8&#xD;&#xA;XomlUrl:SW|Workflows/Update Contract Lookup/Update Contract Lookup.xoml&#xD;&#xA;NoCodeVisibility:SW|&#xD;&#xA;vti_author:SR|i:0#.f|membership|greg@realtimelandscape.onmicrosoft.com&#xD;&#xA;vti_foldersubfolderitemcount:IR|0&#xD;&#xA;AssociatedListId:SW|{$ListId:Lists/Maintenance Schedule;}&#xD;&#xA;vti_cachedcustomprops:VX|BaseAssociationGuid WorkflowDisplayName AssociatedListId XomlUrl NoCodeVisibility RulesUrl RestrictContentTypeId&#xD;&#xA;vti_modifiedby:SR|i:0#.f|membership|greg@realtimelandscape.onmicrosoft.com&#xD;&#xA;vti_privatelistexempt:BW|true&#xD;&#xA;vti_title:SR|Update Contract Lookup.xoml.wfconfig.xml&#xD;&#xA;ContentTypeId:SW|0x010107007E6EEAE8D3CD3C45BA0A57BECF10EE2B&#xD;&#xA;ContentType:SW|User Workflow Document&#xD;&#xA;RulesUrl:SW|&#xD;&#xA;RestrictContentTypeId:SW|&#xD;&#xA;" />
+			<Property Name="Order" Value="3500.00000000000" />
+		</File>
+	</Module>
+</Elements>

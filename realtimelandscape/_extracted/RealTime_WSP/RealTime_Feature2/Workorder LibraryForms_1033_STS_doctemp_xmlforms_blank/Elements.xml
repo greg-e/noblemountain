@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<Module Name="Workorder LibraryForms_1033\STS\doctemp\xmlforms\blank" Url="Workorder Library/Forms" SetupPath="1033\STS\doctemp\xmlforms\blank" RootWebOnly="FALSE" Path="Files\69WorkorderLibrary\Forms" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<File Url="template.xml" DocumentTemplateForList="Workorder Library/Forms" Type="Ghostable" Path="template.xml" />
+	</Module>
+</Elements>

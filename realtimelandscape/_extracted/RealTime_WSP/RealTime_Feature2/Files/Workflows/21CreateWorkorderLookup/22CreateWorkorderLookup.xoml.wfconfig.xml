@@ -1,0 +1,21 @@
+<WorkflowConfig Version="14.0.0.6109">
+	<Template BaseID="{137D9425-8811-4A85-8627-CA3E6F70215C}" DocLibID="{$ListId:Workflows;}" XomlHref="Workflows/Create Workorder Lookup/Create Workorder Lookup.xoml" XomlVersion="V1.0" TaskContentType="0x01080100C9C9515DE4E24001905074F980F93160" Category="List" Name="Create Workorder Lookup" Description=""/>
+	<Association ListID="{$ListId:Lists/Workorder Schedule;}" TaskListID="{$ListId:Lists/Tasks;}" HistoryListID="{$ListId:Lists/Workflow History;}" StartOnCreate="true"/>
+	<ContentTypes/>
+	<Initiation URL="_layouts/IniWrkflIP.aspx">
+		<Fields/>
+		<Parameters/>
+		<DefaultData/>
+	</Initiation>
+	<Extended>
+		<Fields/>
+	</Extended>
+	<MetaData>
+		<ExtendedStatusColumnValues>
+			<StatusColumnValue>Canceled</StatusColumnValue>
+			<StatusColumnValue>Approved</StatusColumnValue>
+			<StatusColumnValue>Rejected</StatusColumnValue>
+		</ExtendedStatusColumnValues>
+		<Instantiation_FormURI>Workflows/Create Workorder Lookup/Create Workorder Lookup.xsn</Instantiation_FormURI>
+	</MetaData>
+</WorkflowConfig>

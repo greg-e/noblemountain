@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<Module Name="WorkflowsUpdate Maintenance Schedule_" Url="Workflows/Update Maintenance Schedule" RootWebOnly="FALSE" Path="Files\Workflows\18UpdateMaintenanceSchedule" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<File Url="Update Maintenance Schedule.xoml" Type="GhostableInLibrary" Path="17UpdateMaintenanceSchedule.xoml">
+			<Property Name="ID" Value="31" />
+			<Property Name="ContentTypeId" Value="0x010107007E6EEAE8D3CD3C45BA0A57BECF10EE2B" />
+			<Property Name="ContentType" Value="User Workflow Document" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="sites/realtimefoundation/Workflows/Update Maintenance Schedule" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="Update Maintenance Schedule.xoml" />
+			<Property Name="MetaInfo" Value="31;#vti_parserversion:SR|14.0.0.6109&#xD;&#xA;vti_modifiedby:SR|i:0#.f|membership|greg@realtimelandscape.onmicrosoft.com&#xD;&#xA;ContentTypeId:SW|0x010107007E6EEAE8D3CD3C45BA0A57BECF10EE2B&#xD;&#xA;vti_author:SR|i:0#.f|membership|greg@realtimelandscape.onmicrosoft.com&#xD;&#xA;" />
+			<Property Name="Order" Value="3100.00000000000" />
+		</File>
+		<File Url="Update Maintenance Schedule.xoml.wfconfig.xml" DoGUIDFixUp="true" Type="GhostableInLibrary" Path="19UpdateMaintenanceSchedule.xoml.wfconfig.xml">
+			<Property Name="ID" Value="32" />
+			<Property Name="ContentTypeId" Value="0x010107007E6EEAE8D3CD3C45BA0A57BECF10EE2B" />
+			<Property Name="ContentType" Value="User Workflow Document" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="sites/realtimefoundation/Workflows/Update Maintenance Schedule" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="Update Maintenance Schedule.xoml.wfconfig.xml" />
+			<Property Name="MetaInfo" Value="32;#BaseAssociationGuid:SW|{252C6B8C-6C11-4E10-86A8-A741114E72D1}&#xD;&#xA;WorkflowDisplayName:SW|Update Maintenance Schedule&#xD;&#xA;vti_parserversion:SR|14.0.0.6109&#xD;&#xA;AssociatedListId:SW|{$ListId:Lists/Maintenance Schedule;}&#xD;&#xA;vti_cachedcustomprops:VX|BaseAssociationGuid WorkflowDisplayName AssociatedListId vti_title ContentTypeId ContentType XomlUrl NoCodeVisibility RulesUrl RestrictContentTypeId&#xD;&#xA;vti_modifiedby:SR|i:0#.f|membership|greg@realtimelandscape.onmicrosoft.com&#xD;&#xA;vti_privatelistexempt:BW|true&#xD;&#xA;vti_cachedtitle:SR|Update Maintenance Schedule.xoml.wfconfig.xml&#xD;&#xA;vti_charset:SR|utf-8&#xD;&#xA;vti_title:SR|Update Maintenance Schedule.xoml.wfconfig.xml&#xD;&#xA;ContentTypeId:SW|0x010107007E6EEAE8D3CD3C45BA0A57BECF10EE2B&#xD;&#xA;ContentType:SW|User Workflow Document&#xD;&#xA;XomlUrl:SW|Workflows/Update Maintenance Schedule/Update Maintenance Schedule.xoml&#xD;&#xA;NoCodeVisibility:SW|&#xD;&#xA;RulesUrl:SW|&#xD;&#xA;RestrictContentTypeId:SW|&#xD;&#xA;vti_author:SR|i:0#.f|membership|greg@realtimelandscape.onmicrosoft.com&#xD;&#xA;" />
+			<Property Name="Order" Value="3200.00000000000" />
+		</File>
+	</Module>
+</Elements>

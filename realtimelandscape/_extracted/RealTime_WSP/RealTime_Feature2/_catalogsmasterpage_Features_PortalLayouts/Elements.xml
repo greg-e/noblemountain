@@ -1,0 +1,1451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<Module Name="_catalogsmasterpage_Features\PortalLayouts" Url="_catalogs/masterpage" SetupPath="Features\PortalLayouts" RootWebOnly="FALSE" Path="Files\_catalogs\masterpage" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<File Url="AdvancedSearchLayout.aspx" Type="GhostableInLibrary" Path="AdvancedSearchLayout.aspx">
+			<AllUsersWebPart WebPartOrder="1" WebPartZoneID="BottomZone" ID="g_26232f13_e11d_4238_924f_d7c7cc658c4a"><![CDATA[<WebPart xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/WebPart/v2">
+  <Title>Advanced Search Box</Title>
+  <FrameType>None</FrameType>
+  <Description>Displays parameterized search options based on properties and combinations of words.</Description>
+  <IsIncluded>true</IsIncluded>
+  <ZoneID>BottomZone</ZoneID>
+  <PartOrder>1</PartOrder>
+  <FrameState>Normal</FrameState>
+  <Height />
+  <Width />
+  <AllowRemove>true</AllowRemove>
+  <AllowZoneChange>true</AllowZoneChange>
+  <AllowMinimize>true</AllowMinimize>
+  <AllowConnect>true</AllowConnect>
+  <AllowEdit>true</AllowEdit>
+  <AllowHide>true</AllowHide>
+  <IsVisible>true</IsVisible>
+  <DetailLink />
+  <HelpLink />
+  <HelpMode>Modeless</HelpMode>
+  <Dir>Default</Dir>
+  <PartImageSmall />
+  <MissingAssembly>Cannot import this Web Part.</MissingAssembly>
+  <PartImageLarge />
+  <IsIncludedFilter />
+  <Assembly>Microsoft.Office.Server.Search, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+  <TypeName>Microsoft.Office.Server.Search.WebControls.AdvancedSearchBox</TypeName>
+  <SearchResultPageURL xmlns="urn:schemas-microsoft-com:AdvancedSearchBox" />
+  <TextQuerySectionLabelText xmlns="urn:schemas-microsoft-com:AdvancedSearchBox">Find documents that have...</TextQuerySectionLabelText>
+  <ShowAndQueryTextBox xmlns="urn:schemas-microsoft-com:AdvancedSearchBox">true</ShowAndQueryTextBox>
+  <AndQueryTextBoxLabelText xmlns="urn:schemas-microsoft-com:AdvancedSearchBox" />
+  <ShowPhraseQueryTextBox xmlns="urn:schemas-microsoft-com:AdvancedSearchBox">true</ShowPhraseQueryTextBox>
+  <PhraseQueryTextBoxLabelText xmlns="urn:schemas-microsoft-com:AdvancedSearchBox" />
+  <ShowOrQueryTextBox xmlns="urn:schemas-microsoft-com:AdvancedSearchBox">true</ShowOrQueryTextBox>
+  <OrQueryTextBoxLabelText xmlns="urn:schemas-microsoft-com:AdvancedSearchBox" />
+  <ShowNotQueryTextBox xmlns="urn:schemas-microsoft-com:AdvancedSearchBox">true</ShowNotQueryTextBox>
+  <NotQueryTextBoxLabelText xmlns="urn:schemas-microsoft-com:AdvancedSearchBox" />
+  <ScopeSectionLabelText xmlns="urn:schemas-microsoft-com:AdvancedSearchBox">Narrow the search...</ScopeSectionLabelText>
+  <ShowScopes xmlns="urn:schemas-microsoft-com:AdvancedSearchBox">false</ShowScopes>
+  <ScopeLabelText xmlns="urn:schemas-microsoft-com:AdvancedSearchBox" />
+  <DisplayGroup xmlns="urn:schemas-microsoft-com:AdvancedSearchBox">Advanced Search</DisplayGroup>
+  <ShowLanguageOptions xmlns="urn:schemas-microsoft-com:AdvancedSearchBox">true</ShowLanguageOptions>
+  <LanguagesLabelText xmlns="urn:schemas-microsoft-com:AdvancedSearchBox" />
+  <ShowResultTypePicker xmlns="urn:schemas-microsoft-com:AdvancedSearchBox">true</ShowResultTypePicker>
+  <ResultTypeLabelText xmlns="urn:schemas-microsoft-com:AdvancedSearchBox" />
+  <ShowPropertiesSection xmlns="urn:schemas-microsoft-com:AdvancedSearchBox">true</ShowPropertiesSection>
+  <PropertiesSectionLabelText xmlns="urn:schemas-microsoft-com:AdvancedSearchBox">Add property restrictions...</PropertiesSectionLabelText>
+  <Properties xmlns="urn:schemas-microsoft-com:AdvancedSearchBox" />
+</WebPart>]]></AllUsersWebPart>
+			<Property Name="ID" Value="8" />
+			<Property Name="ContentTypeId" Value="0x010105006C1802C176E44548BC29BC86B88C5885" />
+			<Property Name="ContentType" Value="Master Page" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="sites/realtimefoundation/_catalogs/masterpage" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="AdvancedSearchLayout.aspx" />
+			<Property Name="MetaInfo" Value="8;#vti_parserversion:SR|14.0.0.6109&#xD;&#xA;vti_folderitemcount:IR|0&#xD;&#xA;vti_charset:SR|utf-8&#xD;&#xA;PublishingAssociatedContentType:SR|;#Welcome Page;#0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF390064DEA0F50FC8C147B0B6EA0636C4A7D4;#&#xD;&#xA;vti_author:SR|SHAREPOINT\\system&#xD;&#xA;vti_setuppath:SR|Features\\PortalLayouts\\AdvancedSearchLayout.aspx&#xD;&#xA;vti_cachedzones:VR|TopZone MidUpperLeftZone MidUpperRightZone BottomZone&#xD;&#xA;vti_cachedneedsrewrite:BR|false&#xD;&#xA;PublishingPreviewImage:SR|/sites/realtimefoundation/_catalogs/masterpage/Preview Images/advancedsearch.png, /sites/realtimefoundation/_catalogs/masterpage/Preview Images/advancedsearch.png&#xD;&#xA;vti_foldersubfolderitemcount:IR|0&#xD;&#xA;vti_modifiedby:SR|SHAREPOINT\\system&#xD;&#xA;vti_cachedhastheme:BR|false&#xD;&#xA;ContentType:SW|Master Page&#xD;&#xA;vti_title:SR|Advanced search&#xD;&#xA;MasterPageDescription:SR|This page layout contains a tab control. It has Web Part zones arranged in a header, footer and 2 columns.&#xD;&#xA;vti_cachednoperszones:VR|TopZone MidUpperLeftZone MidUpperRightZone BottomZone&#xD;&#xA;ContentTypeId:SW|0x010105006C1802C176E44548BC29BC86B88C5885&#xD;&#xA;" />
+			<Property Name="Order" Value="800.000000000000" />
+			<Property Name="MasterPageDescription" Value="This page layout contains a tab control. It has Web Part zones arranged in a header, footer and 2 columns." />
+			<Property Name="UIVersion" Value="4" />
+		</File>
+		<File Url="DefaultLayout.aspx" Type="GhostableInLibrary" Path="DefaultLayout.aspx">
+			<Property Name="ID" Value="4" />
+			<Property Name="ContentTypeId" Value="0x010105006C1802C176E44548BC29BC86B88C5885" />
+			<Property Name="ContentType" Value="Master Page" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="sites/realtimefoundation/_catalogs/masterpage" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="DefaultLayout.aspx" />
+			<Property Name="MetaInfo" Value="4;#vti_parserversion:SR|14.0.0.6109&#xD;&#xA;vti_folderitemcount:IR|0&#xD;&#xA;vti_charset:SR|utf-8&#xD;&#xA;PublishingHidden:SR|TRUE&#xD;&#xA;vti_author:SR|SHAREPOINT\\system&#xD;&#xA;vti_setuppath:SR|Features\\PortalLayouts\\DefaultLayout.aspx&#xD;&#xA;PublishingAssociatedContentType:SR|;#Welcome Page;#0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF390064DEA0F50FC8C147B0B6EA0636C4A7D4;#&#xD;&#xA;vti_cachedzones:VR|TopZone MiddleLeftZone MiddleRightZone BottomZone RightZone&#xD;&#xA;vti_cachedneedsrewrite:BR|false&#xD;&#xA;vti_foldersubfolderitemcount:IR|0&#xD;&#xA;vti_modifiedby:SR|SHAREPOINT\\system&#xD;&#xA;vti_cachedhastheme:BR|false&#xD;&#xA;ContentType:SW|Master Page&#xD;&#xA;vti_title:SR|Web Part zones&#xD;&#xA;MasterPageDescription:SR|This page layout contains an image field on left, a rich text field, and Web Part zones arranged in a right column, header, footer and 2 columns.&#xD;&#xA;vti_cachednoperszones:VR|TopZone MiddleLeftZone MiddleRightZone BottomZone RightZone&#xD;&#xA;ContentTypeId:SW|0x010105006C1802C176E44548BC29BC86B88C5885&#xD;&#xA;" />
+			<Property Name="Order" Value="400.000000000000" />
+			<Property Name="MasterPageDescription" Value="This page layout contains an image field on left, a rich text field, and Web Part zones arranged in a right column, header, footer and 2 columns." />
+			<Property Name="UIVersion" Value="4" />
+		</File>
+		<File Url="NewsHomeLayout.aspx" Type="GhostableInLibrary" Path="NewsHomeLayout.aspx">
+			<Property Name="ID" Value="5" />
+			<Property Name="ContentTypeId" Value="0x010105006C1802C176E44548BC29BC86B88C5885" />
+			<Property Name="ContentType" Value="Master Page" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="sites/realtimefoundation/_catalogs/masterpage" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="NewsHomeLayout.aspx" />
+			<Property Name="MetaInfo" Value="5;#vti_parserversion:SR|14.0.0.6109&#xD;&#xA;vti_folderitemcount:IR|0&#xD;&#xA;vti_charset:SR|utf-8&#xD;&#xA;PublishingHidden:SR|TRUE&#xD;&#xA;vti_author:SR|SHAREPOINT\\system&#xD;&#xA;vti_setuppath:SR|Features\\PortalLayouts\\NewsHomeLayout.aspx&#xD;&#xA;PublishingAssociatedContentType:SR|;#Welcome Page;#0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF390064DEA0F50FC8C147B0B6EA0636C4A7D4;#&#xD;&#xA;vti_cachedzones:VR|TopZone MiddleLeftZone MiddleRightZone BottomZone RightZone&#xD;&#xA;vti_cachedneedsrewrite:BR|false&#xD;&#xA;vti_foldersubfolderitemcount:IR|0&#xD;&#xA;vti_modifiedby:SR|SHAREPOINT\\system&#xD;&#xA;vti_cachedhastheme:BR|false&#xD;&#xA;ContentType:SW|Master Page&#xD;&#xA;vti_title:SR|News Home&#xD;&#xA;MasterPageDescription:SR|This page layout contains Web Part zones arranged in a right column, header, footer and 2 columns.&#xD;&#xA;vti_cachednoperszones:VR|TopZone MiddleLeftZone MiddleRightZone BottomZone RightZone&#xD;&#xA;ContentTypeId:SW|0x010105006C1802C176E44548BC29BC86B88C5885&#xD;&#xA;" />
+			<Property Name="Order" Value="500.000000000000" />
+			<Property Name="MasterPageDescription" Value="This page layout contains Web Part zones arranged in a right column, header, footer and 2 columns." />
+			<Property Name="UIVersion" Value="4" />
+		</File>
+		<File Url="PeopleSearchResults.aspx" Type="GhostableInLibrary" Path="PeopleSearchResults.aspx">
+			<AllUsersWebPart WebPartOrder="1" WebPartZoneID="TopZone" ID="g_bd5eca8b_b489_4a13_81f4_db6abbc0b1a3"><![CDATA[<WebPart xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/WebPart/v2">
+  <Title>People Search Box</Title>
+  <FrameType>None</FrameType>
+  <Description>Presents a search box that allows users to search for people.</Description>
+  <IsIncluded>true</IsIncluded>
+  <ZoneID>TopZone</ZoneID>
+  <PartOrder>1</PartOrder>
+  <FrameState>Normal</FrameState>
+  <Height />
+  <Width>800px</Width>
+  <AllowRemove>true</AllowRemove>
+  <AllowZoneChange>true</AllowZoneChange>
+  <AllowMinimize>true</AllowMinimize>
+  <AllowConnect>true</AllowConnect>
+  <AllowEdit>true</AllowEdit>
+  <AllowHide>true</AllowHide>
+  <IsVisible>true</IsVisible>
+  <DetailLink />
+  <HelpLink />
+  <HelpMode>Modeless</HelpMode>
+  <Dir>Default</Dir>
+  <PartImageSmall />
+  <MissingAssembly>Cannot import this Web Part.</MissingAssembly>
+  <PartImageLarge />
+  <IsIncludedFilter />
+  <Assembly>Microsoft.SharePoint.Portal, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+  <TypeName>Microsoft.SharePoint.Portal.WebControls.PeopleSearchBoxEx</TypeName>
+  <GoImageUrl xmlns="urn:schemas-microsoft-com:SearchBoxEx">/_layouts/images/gosearch30.png</GoImageUrl>
+  <GoImageUrlRTL xmlns="urn:schemas-microsoft-com:SearchBoxEx">/_layouts/images/gosearchrtl30.png</GoImageUrlRTL>
+  <GoImageActiveUrl xmlns="urn:schemas-microsoft-com:SearchBoxEx">/_layouts/images/gosearchhover30.png</GoImageActiveUrl>
+  <GoImageActiveUrlRTL xmlns="urn:schemas-microsoft-com:SearchBoxEx">/_layouts/images/gosearchrtl30.png</GoImageActiveUrlRTL>
+  <DropDownModeEx xmlns="urn:schemas-microsoft-com:SearchBoxEx">HideScopeDD</DropDownModeEx>
+  <IsMysiteSearchBox xmlns="urn:schemas-microsoft-com:SearchBoxEx">false</IsMysiteSearchBox>
+  <TextBoxWidth xmlns="urn:schemas-microsoft-com:SearchBoxEx">368</TextBoxWidth>
+  <ShowPerferenceLink xmlns="urn:schemas-microsoft-com:SearchBoxEx">true</ShowPerferenceLink>
+  <SearchBoxVisual xmlns="urn:schemas-microsoft-com:SearchBoxEx">SearchCenterDefault</SearchBoxVisual>
+  <SearchResultPageURL xmlns="urn:schemas-microsoft-com:SearchBoxEx">peopleresults.aspx</SearchResultPageURL>
+  <RegisterStyles xmlns="urn:schemas-microsoft-com:SearchBoxEx">true</RegisterStyles>
+  <ShouldTakeFocusIfEmpty xmlns="urn:schemas-microsoft-com:SearchBoxEx">true</ShouldTakeFocusIfEmpty>
+  <ShowSearchOptions xmlns="urn:schemas-microsoft-com:SearchBoxEx">true</ShowSearchOptions>
+  <Properties xmlns="urn:schemas-microsoft-com:SearchBoxEx" />
+</WebPart>]]></AllUsersWebPart>
+			<AllUsersWebPart WebPartOrder="1" WebPartZoneID="LeftZone" ID="g_aae290d7_729f_4ef7_94a8_da15c2d019e0"><![CDATA[<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="Microsoft.Office.Server.Search.WebControls.PeopleRefinementWebPart, Microsoft.Office.Server.Search, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+      <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="InitialAsyncDataFetch" type="bool">False</property>
+        <property name="ChromeType" type="chrometype">None</property>
+        <property name="Title" type="string">People Refinement Panel</property>
+        <property name="Height" type="string" />
+        <property name="CacheXslStorage" type="bool">True</property>
+        <property name="ListDisplayName" type="string" null="true" />
+        <property name="AllowZoneChange" type="bool">True</property>
+        <property name="AllowEdit" type="bool">True</property>
+        <property name="XmlDefinitionLink" type="string" />
+        <property name="DataFields" type="string" />
+        <property name="ListName" type="string" null="true" />
+        <property name="NoDefaultStyle" type="string" />
+        <property name="DisplayedCategories" type="int">6</property>
+        <property name="AutoRefresh" type="bool">False</property>
+        <property name="ViewFlag" type="string">0</property>
+        <property name="Direction" type="direction">NotSet</property>
+        <property name="AutoRefreshInterval" type="int">60</property>
+        <property name="AllowConnect" type="bool">False</property>
+        <property name="Description" type="string">This webpart helps the users to refine people search results</property>
+        <property name="AllowClose" type="bool">True</property>
+        <property name="ShowWithSampleData" type="bool">False</property>
+        <property name="ParameterBindings" type="string" />
+        <property name="Xsl" type="string" null="true" />
+        <property name="ShowMessages" type="bool">False</property>
+        <property name="CacheXslTimeOut" type="int">86400</property>
+        <property name="Hidden" type="bool">False</property>
+        <property name="RefinementPanelCaption" type="string" null="true" />
+        <property name="ListUrl" type="string" null="true" />
+        <property name="DataSourceID" type="string" />
+        <property name="FireInitialRow" type="bool">True</property>
+        <property name="NumberOfCharsToDisplay" type="int">19</property>
+        <property name="ManualRefresh" type="bool">False</property>
+        <property name="ViewFlags" type="Microsoft.SharePoint.SPViewFlags, Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">None</property>
+        <property name="ChromeState" type="chromestate">Normal</property>
+        <property name="QueryNumber" type="Microsoft.Office.Server.Search.WebControls.QueryId, Microsoft.Office.Server.Search, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">Query1</property>
+        <property name="AllowHide" type="bool">True</property>
+        <property name="PageSize" type="int">-1</property>
+        <property name="SampleData" type="string" null="true" />
+        <property name="AsyncRefresh" type="bool">False</property>
+        <property name="HelpMode" type="helpmode">Modeless</property>
+        <property name="ListId" type="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">00000000-0000-0000-0000-000000000000</property>
+        <property name="UseSQLDataSourcePaging" type="bool">True</property>
+        <property name="AllowMinimize" type="bool">True</property>
+        <property name="TitleUrl" type="string" />
+        <property name="CatalogIconImageUrl" type="string" />
+        <property name="DataSourcesString" type="string" />
+        <property name="DisplayName" type="string" />
+        <property name="PageType" type="Microsoft.SharePoint.PAGETYPE, Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">PAGE_NORMALVIEW</property>
+        <property name="Width" type="string" />
+        <property name="UseDefaultConfiguration" type="bool">True</property>
+        <property name="ExportMode" type="exportmode">All</property>
+        <property name="XslLink" type="string" null="true" />
+        <property name="ViewContentTypeId" type="string" />
+        <property name="HelpUrl" type="string" />
+        <property name="XmlDefinition" type="string" />
+        <property name="AccuracyIndex" type="int">50</property>
+        <property name="Default" type="string" />
+        <property name="TitleIconImageUrl" type="string" />
+        <property name="MissingAssembly" type="string">Cannot import this Web Part.</property>
+        <property name="FilterCategoriesDefinition" type="string" null="true" />
+      </properties>
+    </data>
+  </webPart>
+</webParts>]]></AllUsersWebPart>
+			<AllUsersWebPart WebPartOrder="1" WebPartZoneID="MidLowerRightZone" ID="g_6df885db_fdb2_4acc_9fe7_d17b5454ce1e"><![CDATA[<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="Microsoft.Office.Server.Search.WebControls.PeopleCoreResultsWebPart, Microsoft.Office.Server.Search, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+      <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="SpellcheckingMode" type="Microsoft.Office.Server.Search.Query.SpellcheckMode, Microsoft.Office.Server.Search, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">Suggest</property>
+        <property name="MissingAssembly" type="string">Cannot import this Web Part.</property>
+        <property name="AllowConnect" type="bool">False</property>
+        <property name="HelpMode" type="helpmode">Modeless</property>
+        <property name="CharactersInUrl" type="int">90</property>
+        <property name="ShowLangPicker" type="bool">True</property>
+        <property name="DisplayName" type="string" />
+        <property name="MoreLinkUrl" type="string" null="true" />
+        <property name="Title" type="string">Search Action Links</property>
+        <property name="ShowActionLinks" type="bool">True</property>
+        <property name="ViewFlag" type="string">0</property>
+        <property name="QueryNumber" type="Microsoft.Office.Server.Search.WebControls.QueryId, Microsoft.Office.Server.Search, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">Query1</property>
+        <property name="PreviewWindowSize" type="string">160</property>
+        <property name="DateFormat" type="Microsoft.SharePoint.Utilities.SPDateFormat, Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">DateOnly</property>
+        <property name="AllowClose" type="bool">True</property>
+        <property name="SentencesInSummary" type="System.Int16, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">3</property>
+        <property name="HighestResultPage" type="System.Int16, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">1000</property>
+        <property name="CacheXslTimeOut" type="int">86400</property>
+        <property name="RelevanceView" type="bool">False</property>
+        <property name="MoreLinkLabel" type="string">View more results »</property>
+        <property name="ManualRefresh" type="bool">False</property>
+        <property name="ListUrl" type="string" null="true" />
+        <property name="FixedQuery" type="string" null="true" />
+        <property name="CacheXslStorage" type="bool">True</property>
+        <property name="ResubmitFlag" type="Microsoft.Office.Server.Search.Query.ResubmitFlag, Microsoft.Office.Server.Search, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">NoResubmit</property>
+        <property name="XslLink" type="string" null="true" />
+        <property name="EnableStemming" type="bool">False</property>
+        <property name="ShowSearchResults" type="bool">False</property>
+        <property name="AllowMinimize" type="bool">True</property>
+        <property name="AllowHide" type="bool">True</property>
+        <property name="ShowMoreLink" type="bool">False</property>
+        <property name="ListDisplayName" type="string" null="true" />
+        <property name="ChromeType" type="chrometype">None</property>
+        <property name="EnableDocumentPreviewPowerPoint" type="bool">True</property>
+        <property name="DefaultRankingModelID" type="string" />
+        <property name="CatalogIconImageUrl" type="string" />
+        <property name="Default" type="string" />
+        <property name="DisplayRSSLink" type="bool">True</property>
+        <property name="FireInitialRow" type="bool">True</property>
+        <property name="TotalNumberDocumentPreview" type="string">10</property>
+        <property name="DateView" type="bool">False</property>
+        <property name="ViewFlags" type="Microsoft.SharePoint.SPViewFlags, Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">None</property>
+        <property name="DisplayAlertMeLink" type="bool">True</property>
+        <property name="DataSourceID" type="string" />
+        <property name="HelpUrl" type="string" />
+        <property name="DisplayDiscoveredDefinition" type="bool">True</property>
+        <property name="AppendedQuery" type="string" null="true" />
+        <property name="AsyncRefresh" type="bool">False</property>
+        <property name="IgnoreNoise" type="bool">True</property>
+        <property name="Height" type="string" />
+        <property name="PageSize" type="int">-1</property>
+        <property name="UseSQLDataSourcePaging" type="bool">True</property>
+        <property name="AllowEdit" type="bool">True</property>
+        <property name="ViewContentTypeId" type="string" />
+        <property name="Hidden" type="bool">False</property>
+        <property name="DefaultSort" type="Microsoft.Office.Server.Search.WebControls.ResultsView, Microsoft.Office.Server.Search, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">Relevance</property>
+        <property name="ExportMode" type="exportmode">All</property>
+        <property name="ConcurrentNumberDocumentPreview" type="string">10</property>
+        <property name="ListName" type="string" null="true" />
+        <property name="PropertiesToRetrieve" type="string" null="true" />
+        <property name="ParameterBindings" type="string" />
+        <property name="DataSourcesString" type="string" />
+        <property name="EnablePhonetic" type="bool">False</property>
+        <property name="ListId" type="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">00000000-0000-0000-0000-000000000000</property>
+        <property name="Scope" type="string" null="true" />
+        <property name="XmlDefinitionLink" type="string" />
+        <property name="DataFields" type="string" />
+        <property name="ShowMessages" type="bool">False</property>
+        <property name="Width" type="string" />
+        <property name="InitialAsyncDataFetch" type="bool">False</property>
+        <property name="QuerySideLanguage" type="string" />
+        <property name="MoreResultsLink" type="string" null="true" />
+        <property name="XmlDefinition" type="string" />
+        <property name="ChromeState" type="chromestate">Normal</property>
+        <property name="PageType" type="Microsoft.SharePoint.PAGETYPE, Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">PAGE_NORMALVIEW</property>
+        <property name="ScopeID" type="int">-1</property>
+        <property name="SelectColumns" type="string" null="true" />
+        <property name="SampleData" type="string" null="true" />
+        <property name="EnableDocumentPreviewWord" type="bool">True</property>
+        <property name="DefaultPeopleView" type="Microsoft.Office.Server.Search.WebControls.PeopleResultsView, Microsoft.Office.Server.Search, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">Relevance</property>
+        <property name="AutoRefreshInterval" type="int">60</property>
+        <property name="CharactersInSummary" type="int">185</property>
+        <property name="TitleUrl" type="string" />
+        <property name="RemoveDuplicates" type="bool">True</property>
+        <property name="Xsl" type="string" />
+        <property name="View" type="Microsoft.Office.Server.Search.WebControls.ResultsView, Microsoft.Office.Server.Search, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">Relevance</property>
+        <property name="TitleIconImageUrl" type="string" />
+        <property name="EnableSimilarFind" type="bool">False</property>
+        <property name="Direction" type="direction">NotSet</property>
+        <property name="AllowZoneChange" type="bool">True</property>
+        <property name="ResultsPerPage" type="System.Int16, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">10</property>
+        <property name="ShowWithSampleData" type="bool">False</property>
+        <property name="ShowPeopleSortDropdown" type="bool">True</property>
+        <property name="Description" type="string">Displays the search action links on the search results page.</property>
+        <property name="EnableNicknames" type="bool">False</property>
+        <property name="AutoRefresh" type="bool">False</property>
+        <property name="IsLocationPeople" type="bool">False</property>
+        <property name="Location" type="string" null="true" />
+        <property name="NoDefaultStyle" type="string" />
+        <property name="ShowWindowsSearch" type="bool">True</property>
+        <property name="UseLocationVisualization" type="bool">True</property>
+        <property name="MoreResultsText" type="string">View more results »</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>]]></AllUsersWebPart>
+			<AllUsersWebPart WebPartOrder="1" WebPartZoneID="MidLowerLeftZone" ID="g_a3b70f28_75ab_4ad0_9e51_8fa49f7581ee"><![CDATA[<WebPart xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/WebPart/v2">
+  <Title>Search Statistics</Title>
+  <FrameType>None</FrameType>
+  <Description>Displays the search statistics such as the number of results shown on the current page, total number of results and time taken to perform the search.</Description>
+  <IsIncluded>true</IsIncluded>
+  <ZoneID>MidLowerLeftZone</ZoneID>
+  <PartOrder>1</PartOrder>
+  <FrameState>Normal</FrameState>
+  <Height />
+  <Width />
+  <AllowRemove>true</AllowRemove>
+  <AllowZoneChange>true</AllowZoneChange>
+  <AllowMinimize>true</AllowMinimize>
+  <AllowConnect>false</AllowConnect>
+  <AllowEdit>true</AllowEdit>
+  <AllowHide>true</AllowHide>
+  <IsVisible>true</IsVisible>
+  <DetailLink />
+  <HelpLink />
+  <HelpMode>Modeless</HelpMode>
+  <Dir>Default</Dir>
+  <PartImageSmall />
+  <MissingAssembly>Cannot import this Web Part.</MissingAssembly>
+  <PartImageLarge />
+  <IsIncludedFilter />
+  <Assembly>Microsoft.Office.Server.Search, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+  <TypeName>Microsoft.Office.Server.Search.WebControls.SearchStatsWebPart</TypeName>
+  <Mode xmlns="urn:schemas-microsoft-com:SearchStatsWebPart">OneLine</Mode>
+  <DisplayNumberOfPages xmlns="urn:schemas-microsoft-com:SearchStatsWebPart">true</DisplayNumberOfPages>
+  <DisplayTotalResults xmlns="urn:schemas-microsoft-com:SearchStatsWebPart">true</DisplayTotalResults>
+  <DisplayResponseTime xmlns="urn:schemas-microsoft-com:SearchStatsWebPart">false</DisplayResponseTime>
+  <DisplayDeepLatencyStats xmlns="urn:schemas-microsoft-com:SearchStatsWebPart">false</DisplayDeepLatencyStats>
+  <ShowMessages xmlns="urn:schemas-microsoft-com:SearchStatsWebPart">false</ShowMessages>
+  <QueryID xmlns="urn:schemas-microsoft-com:SearchStatsWebPart">Query1</QueryID>
+</WebPart>]]></AllUsersWebPart>
+			<AllUsersWebPart WebPartOrder="1" WebPartZoneID="BottomZone" ID="g_69ec8383_86e9_4b3f_bd9c_a3c89ec2e711"><![CDATA[<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="Microsoft.Office.Server.Search.WebControls.PeopleCoreResultsWebPart, Microsoft.Office.Server.Search, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+      <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="SpellcheckingMode" type="Microsoft.Office.Server.Search.Query.SpellcheckMode, Microsoft.Office.Server.Search, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">Suggest</property>
+        <property name="MissingAssembly" type="string">Cannot import this Web Part.</property>
+        <property name="AllowConnect" type="bool">False</property>
+        <property name="HelpMode" type="helpmode">Modeless</property>
+        <property name="CharactersInUrl" type="int">90</property>
+        <property name="ShowLangPicker" type="bool">True</property>
+        <property name="DisplayName" type="string" />
+        <property name="MoreLinkUrl" type="string" null="true" />
+        <property name="Title" type="string">People Search Core Results</property>
+        <property name="ShowActionLinks" type="bool">False</property>
+        <property name="ViewFlag" type="string">0</property>
+        <property name="QueryNumber" type="Microsoft.Office.Server.Search.WebControls.QueryId, Microsoft.Office.Server.Search, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">Query1</property>
+        <property name="PreviewWindowSize" type="string">160</property>
+        <property name="DateFormat" type="Microsoft.SharePoint.Utilities.SPDateFormat, Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">DateOnly</property>
+        <property name="AllowClose" type="bool">True</property>
+        <property name="SentencesInSummary" type="System.Int16, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">3</property>
+        <property name="HighestResultPage" type="System.Int16, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">1000</property>
+        <property name="CacheXslTimeOut" type="int">86400</property>
+        <property name="RelevanceView" type="bool">False</property>
+        <property name="MoreLinkLabel" type="string">View more results »</property>
+        <property name="ManualRefresh" type="bool">False</property>
+        <property name="ListUrl" type="string" null="true" />
+        <property name="FixedQuery" type="string" null="true" />
+        <property name="CacheXslStorage" type="bool">True</property>
+        <property name="ResubmitFlag" type="Microsoft.Office.Server.Search.Query.ResubmitFlag, Microsoft.Office.Server.Search, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">NoResubmit</property>
+        <property name="XslLink" type="string" null="true" />
+        <property name="EnableStemming" type="bool">False</property>
+        <property name="ShowSearchResults" type="bool">True</property>
+        <property name="AllowMinimize" type="bool">True</property>
+        <property name="AllowHide" type="bool">True</property>
+        <property name="ShowMoreLink" type="bool">False</property>
+        <property name="ListDisplayName" type="string" null="true" />
+        <property name="ChromeType" type="chrometype">None</property>
+        <property name="EnableDocumentPreviewPowerPoint" type="bool">True</property>
+        <property name="DefaultRankingModelID" type="string" />
+        <property name="CatalogIconImageUrl" type="string" />
+        <property name="Default" type="string" />
+        <property name="DisplayRSSLink" type="bool">True</property>
+        <property name="FireInitialRow" type="bool">True</property>
+        <property name="TotalNumberDocumentPreview" type="string">10</property>
+        <property name="DateView" type="bool">False</property>
+        <property name="ViewFlags" type="Microsoft.SharePoint.SPViewFlags, Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">None</property>
+        <property name="DisplayAlertMeLink" type="bool">True</property>
+        <property name="DataSourceID" type="string" />
+        <property name="HelpUrl" type="string" />
+        <property name="DisplayDiscoveredDefinition" type="bool">True</property>
+        <property name="AppendedQuery" type="string" null="true" />
+        <property name="AsyncRefresh" type="bool">False</property>
+        <property name="IgnoreNoise" type="bool">True</property>
+        <property name="Height" type="string" />
+        <property name="PageSize" type="int">-1</property>
+        <property name="UseSQLDataSourcePaging" type="bool">True</property>
+        <property name="AllowEdit" type="bool">True</property>
+        <property name="ViewContentTypeId" type="string" />
+        <property name="Hidden" type="bool">False</property>
+        <property name="DefaultSort" type="Microsoft.Office.Server.Search.WebControls.ResultsView, Microsoft.Office.Server.Search, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">Relevance</property>
+        <property name="ExportMode" type="exportmode">All</property>
+        <property name="ConcurrentNumberDocumentPreview" type="string">10</property>
+        <property name="ListName" type="string" null="true" />
+        <property name="PropertiesToRetrieve" type="string" null="true" />
+        <property name="ParameterBindings" type="string" />
+        <property name="DataSourcesString" type="string" />
+        <property name="EnablePhonetic" type="bool">False</property>
+        <property name="ListId" type="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">00000000-0000-0000-0000-000000000000</property>
+        <property name="Scope" type="string" null="true" />
+        <property name="XmlDefinitionLink" type="string" />
+        <property name="DataFields" type="string" />
+        <property name="ShowMessages" type="bool">True</property>
+        <property name="Width" type="string" />
+        <property name="InitialAsyncDataFetch" type="bool">False</property>
+        <property name="QuerySideLanguage" type="string" />
+        <property name="MoreResultsLink" type="string" null="true" />
+        <property name="XmlDefinition" type="string" />
+        <property name="ChromeState" type="chromestate">Normal</property>
+        <property name="PageType" type="Microsoft.SharePoint.PAGETYPE, Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">PAGE_NORMALVIEW</property>
+        <property name="ScopeID" type="int">-1</property>
+        <property name="SelectColumns" type="string" null="true" />
+        <property name="SampleData" type="string" null="true" />
+        <property name="EnableDocumentPreviewWord" type="bool">True</property>
+        <property name="DefaultPeopleView" type="Microsoft.Office.Server.Search.WebControls.PeopleResultsView, Microsoft.Office.Server.Search, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">Relevance</property>
+        <property name="AutoRefreshInterval" type="int">60</property>
+        <property name="CharactersInSummary" type="int">185</property>
+        <property name="TitleUrl" type="string" />
+        <property name="RemoveDuplicates" type="bool">True</property>
+        <property name="Xsl" type="string" />
+        <property name="View" type="Microsoft.Office.Server.Search.WebControls.ResultsView, Microsoft.Office.Server.Search, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">Relevance</property>
+        <property name="TitleIconImageUrl" type="string" />
+        <property name="EnableSimilarFind" type="bool">False</property>
+        <property name="Direction" type="direction">NotSet</property>
+        <property name="AllowZoneChange" type="bool">True</property>
+        <property name="ResultsPerPage" type="System.Int16, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">10</property>
+        <property name="ShowWithSampleData" type="bool">False</property>
+        <property name="ShowPeopleSortDropdown" type="bool">True</property>
+        <property name="Description" type="string">Displays the people search results and the properties associated with them.</property>
+        <property name="EnableNicknames" type="bool">False</property>
+        <property name="AutoRefresh" type="bool">False</property>
+        <property name="IsLocationPeople" type="bool">False</property>
+        <property name="Location" type="string" null="true" />
+        <property name="NoDefaultStyle" type="string" />
+        <property name="ShowWindowsSearch" type="bool">True</property>
+        <property name="UseLocationVisualization" type="bool">True</property>
+        <property name="MoreResultsText" type="string">View more results »</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>]]></AllUsersWebPart>
+			<AllUsersWebPart WebPartOrder="2" WebPartZoneID="BottomZone" ID="g_3faa8255_0eab_4fc0_8dfd_2d447bdf0b0d"><![CDATA[<WebPart xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/WebPart/v2">
+  <Title>Search Paging</Title>
+  <FrameType>None</FrameType>
+  <Description>Display links for navigating pages containing search results.</Description>
+  <IsIncluded>true</IsIncluded>
+  <ZoneID>BottomZone</ZoneID>
+  <PartOrder>2</PartOrder>
+  <FrameState>Normal</FrameState>
+  <Height />
+  <Width />
+  <AllowRemove>true</AllowRemove>
+  <AllowZoneChange>true</AllowZoneChange>
+  <AllowMinimize>true</AllowMinimize>
+  <AllowConnect>true</AllowConnect>
+  <AllowEdit>true</AllowEdit>
+  <AllowHide>true</AllowHide>
+  <IsVisible>true</IsVisible>
+  <DetailLink />
+  <HelpLink />
+  <HelpMode>Modeless</HelpMode>
+  <Dir>Default</Dir>
+  <PartImageSmall />
+  <MissingAssembly>Cannot import this Web Part.</MissingAssembly>
+  <PartImageLarge />
+  <IsIncludedFilter />
+  <Assembly>Microsoft.Office.Server.Search, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+  <TypeName>Microsoft.Office.Server.Search.WebControls.SearchPagingWebPart</TypeName>
+  <MaxBeforeCurrent xmlns="urn:schemas-microsoft-com:SearchPagingWebPart">4</MaxBeforeCurrent>
+  <MaxAfterCurrent xmlns="urn:schemas-microsoft-com:SearchPagingWebPart">3</MaxAfterCurrent>
+  <PreviousLinkUrl xmlns="urn:schemas-microsoft-com:SearchPagingWebPart">/_layouts/images/prev.png</PreviousLinkUrl>
+  <PreviousLinkRTL xmlns="urn:schemas-microsoft-com:SearchPagingWebPart">/_layouts/images/next.png</PreviousLinkRTL>
+  <NextLinkUrl xmlns="urn:schemas-microsoft-com:SearchPagingWebPart">/_layouts/images/next.png</NextLinkUrl>
+  <NextLinkRTL xmlns="urn:schemas-microsoft-com:SearchPagingWebPart">/_layouts/images/prev.png</NextLinkRTL>
+  <ShowMessages xmlns="urn:schemas-microsoft-com:SearchPagingWebPart">false</ShowMessages>
+  <QueryID xmlns="urn:schemas-microsoft-com:SearchPagingWebPart">Query1</QueryID>
+</WebPart>]]></AllUsersWebPart>
+			<Property Name="ID" Value="11" />
+			<Property Name="ContentTypeId" Value="0x010105006C1802C176E44548BC29BC86B88C5885" />
+			<Property Name="ContentType" Value="Master Page" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="sites/realtimefoundation/_catalogs/masterpage" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="PeopleSearchResults.aspx" />
+			<Property Name="MetaInfo" Value="11;#vti_parserversion:SR|14.0.0.6109&#xD;&#xA;vti_folderitemcount:IR|0&#xD;&#xA;vti_charset:SR|utf-8&#xD;&#xA;PublishingAssociatedContentType:SR|;#Welcome Page;#0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF390064DEA0F50FC8C147B0B6EA0636C4A7D4;#&#xD;&#xA;vti_author:SR|SHAREPOINT\\system&#xD;&#xA;vti_setuppath:SR|Features\\PortalLayouts\\PeopleSearchResults.aspx&#xD;&#xA;vti_cachedzones:VR|TopZone LeftZone MidUpperLeftZone MidUpperRightZone MidLowerLeftZone MidLowerRightZone BottomZone RightZone&#xD;&#xA;vti_cachedneedsrewrite:BR|false&#xD;&#xA;PublishingPreviewImage:SR|/sites/realtimefoundation/_catalogs/masterpage/Preview Images/peoplesearchpage.png, /sites/realtimefoundation/_catalogs/masterpage/Preview Images/peoplesearchpage.png&#xD;&#xA;vti_foldersubfolderitemcount:IR|0&#xD;&#xA;vti_modifiedby:SR|SHAREPOINT\\system&#xD;&#xA;vti_cachedhastheme:BR|false&#xD;&#xA;ContentType:SW|Master Page&#xD;&#xA;vti_title:SR|People search results&#xD;&#xA;MasterPageDescription:SR|This page layout contains a tab control.  It has Web Part zones arranged in a right column, header, footer, 2 columns and 2 rows.&#xD;&#xA;vti_cachednoperszones:VR|TopZone LeftZone MidUpperLeftZone MidUpperRightZone MidLowerLeftZone MidLowerRightZone BottomZone RightZone&#xD;&#xA;ContentTypeId:SW|0x010105006C1802C176E44548BC29BC86B88C5885&#xD;&#xA;" />
+			<Property Name="Order" Value="1100.00000000000" />
+			<Property Name="MasterPageDescription" Value="This page layout contains a tab control.  It has Web Part zones arranged in a right column, header, footer, 2 columns and 2 rows." />
+			<Property Name="UIVersion" Value="4" />
+		</File>
+		<File Url="ReportCenterLayout.aspx" Type="GhostableInLibrary" Path="ReportCenterLayout.aspx">
+			<Property Name="ID" Value="7" />
+			<Property Name="ContentTypeId" Value="0x010105006C1802C176E44548BC29BC86B88C5885" />
+			<Property Name="ContentType" Value="Master Page" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="sites/realtimefoundation/_catalogs/masterpage" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="ReportCenterLayout.aspx" />
+			<Property Name="MetaInfo" Value="7;#vti_parserversion:SR|14.0.0.6109&#xD;&#xA;vti_folderitemcount:IR|0&#xD;&#xA;vti_charset:SR|utf-8&#xD;&#xA;PublishingHidden:SR|TRUE&#xD;&#xA;vti_author:SR|SHAREPOINT\\system&#xD;&#xA;vti_setuppath:SR|Features\\PortalLayouts\\ReportCenterLayout.aspx&#xD;&#xA;PublishingAssociatedContentType:SR|;#Welcome Page;#0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF390064DEA0F50FC8C147B0B6EA0636C4A7D4;#&#xD;&#xA;vti_cachedzones:VR|HeaderZone TopLeftZone MiddleLeftZone MiddleMiddleZone BottomLeftZone RightZone FooterZone&#xD;&#xA;vti_cachedneedsrewrite:BR|false&#xD;&#xA;vti_foldersubfolderitemcount:IR|0&#xD;&#xA;vti_modifiedby:SR|SHAREPOINT\\system&#xD;&#xA;vti_cachedhastheme:BR|false&#xD;&#xA;ContentType:SW|Master Page&#xD;&#xA;vti_title:SR|Report Center Page&#xD;&#xA;MasterPageDescription:SR|This page layout contains Web Part zones arranged in a header, footer, 2 columns and 3 rows.&#xD;&#xA;vti_cachednoperszones:VR|HeaderZone TopLeftZone MiddleLeftZone MiddleMiddleZone BottomLeftZone RightZone FooterZone&#xD;&#xA;ContentTypeId:SW|0x010105006C1802C176E44548BC29BC86B88C5885&#xD;&#xA;" />
+			<Property Name="Order" Value="700.000000000000" />
+			<Property Name="MasterPageDescription" Value="This page layout contains Web Part zones arranged in a header, footer, 2 columns and 3 rows." />
+			<Property Name="UIVersion" Value="4" />
+		</File>
+		<File Url="SearchMain.aspx" Type="GhostableInLibrary" Path="SearchMain.aspx">
+			<AllUsersWebPart WebPartOrder="1" WebPartZoneID="TopZone" ID="g_d49a4564_724d_4023_90d4_147c6a1c5911"><![CDATA[<WebPart xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/WebPart/v2">
+  <Title>Search Box</Title>
+  <FrameType>None</FrameType>
+  <Description>Displays a search box that allows users to search for information.</Description>
+  <IsIncluded>true</IsIncluded>
+  <ZoneID>TopZone</ZoneID>
+  <PartOrder>1</PartOrder>
+  <FrameState>Normal</FrameState>
+  <Height />
+  <Width>800px</Width>
+  <AllowRemove>true</AllowRemove>
+  <AllowZoneChange>true</AllowZoneChange>
+  <AllowMinimize>true</AllowMinimize>
+  <AllowConnect>true</AllowConnect>
+  <AllowEdit>true</AllowEdit>
+  <AllowHide>true</AllowHide>
+  <IsVisible>true</IsVisible>
+  <DetailLink />
+  <HelpLink />
+  <HelpMode>Modeless</HelpMode>
+  <Dir>Default</Dir>
+  <PartImageSmall />
+  <MissingAssembly>Cannot import this Web Part.</MissingAssembly>
+  <PartImageLarge />
+  <IsIncludedFilter />
+  <Assembly>Microsoft.Office.Server.Search, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+  <TypeName>Microsoft.SharePoint.Portal.WebControls.SearchBoxEx</TypeName>
+  <GoImageUrl xmlns="urn:schemas-microsoft-com:SearchBoxEx">/_layouts/images/gosearch30.png</GoImageUrl>
+  <GoImageUrlRTL xmlns="urn:schemas-microsoft-com:SearchBoxEx">/_layouts/images/gosearchrtl30.png</GoImageUrlRTL>
+  <GoImageActiveUrl xmlns="urn:schemas-microsoft-com:SearchBoxEx">/_layouts/images/gosearchhover30.png</GoImageActiveUrl>
+  <GoImageActiveUrlRTL xmlns="urn:schemas-microsoft-com:SearchBoxEx">/_layouts/images/gosearchrtlhover30.png</GoImageActiveUrlRTL>
+  <ShowAdvancedSearch xmlns="urn:schemas-microsoft-com:SearchBoxEx">true</ShowAdvancedSearch>
+  <DropDownModeEx xmlns="urn:schemas-microsoft-com:SearchBoxEx">HideScopeDD</DropDownModeEx>
+  <IsMysiteSearchBox xmlns="urn:schemas-microsoft-com:SearchBoxEx">false</IsMysiteSearchBox>
+  <TextBoxWidth xmlns="urn:schemas-microsoft-com:SearchBoxEx">368</TextBoxWidth>
+  <ShowPerferenceLink xmlns="urn:schemas-microsoft-com:SearchBoxEx">true</ShowPerferenceLink>
+  <ShowQuerySuggestions xmlns="urn:schemas-microsoft-com:SearchBoxEx">true</ShowQuerySuggestions>
+  <SearchBoxVisual xmlns="urn:schemas-microsoft-com:SearchBoxEx">SearchCenterDefault</SearchBoxVisual>
+  <AdvancedSearchPageURL xmlns="urn:schemas-microsoft-com:SearchBoxEx">/sites/realtimefoundation/Pages/advanced.aspx</AdvancedSearchPageURL>
+  <SearchResultPageURL xmlns="urn:schemas-microsoft-com:SearchBoxEx">results.aspx</SearchResultPageURL>
+  <RegisterStyles xmlns="urn:schemas-microsoft-com:SearchBoxEx">true</RegisterStyles>
+  <ShouldTakeFocusIfEmpty xmlns="urn:schemas-microsoft-com:SearchBoxEx">true</ShouldTakeFocusIfEmpty>
+</WebPart>]]></AllUsersWebPart>
+			<Property Name="ID" Value="9" />
+			<Property Name="ContentTypeId" Value="0x010105006C1802C176E44548BC29BC86B88C5885" />
+			<Property Name="ContentType" Value="Master Page" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="sites/realtimefoundation/_catalogs/masterpage" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="SearchMain.aspx" />
+			<Property Name="MetaInfo" Value="9;#vti_parserversion:SR|14.0.0.6109&#xD;&#xA;vti_folderitemcount:IR|0&#xD;&#xA;vti_charset:SR|utf-8&#xD;&#xA;PublishingAssociatedContentType:SR|;#Welcome Page;#0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF390064DEA0F50FC8C147B0B6EA0636C4A7D4;#&#xD;&#xA;vti_author:SR|SHAREPOINT\\system&#xD;&#xA;vti_setuppath:SR|Features\\PortalLayouts\\SearchMain.aspx&#xD;&#xA;vti_cachedzones:VR|TopZone MiddleLeftZone&#xD;&#xA;vti_cachedneedsrewrite:BR|false&#xD;&#xA;PublishingPreviewImage:SR|/sites/realtimefoundation/_catalogs/masterpage/Preview Images/searchpage.png, /sites/realtimefoundation/_catalogs/masterpage/Preview Images/searchpage.png&#xD;&#xA;vti_foldersubfolderitemcount:IR|0&#xD;&#xA;vti_modifiedby:SR|SHAREPOINT\\system&#xD;&#xA;vti_cachedhastheme:BR|false&#xD;&#xA;ContentType:SW|Master Page&#xD;&#xA;vti_title:SR|Search box&#xD;&#xA;MasterPageDescription:SR|This page layout contains a tab control, and search box Web Part. It has Web Part zones arranged in a header and footer.&#xD;&#xA;vti_cachednoperszones:VR|TopZone MiddleLeftZone&#xD;&#xA;ContentTypeId:SW|0x010105006C1802C176E44548BC29BC86B88C5885&#xD;&#xA;" />
+			<Property Name="Order" Value="900.000000000000" />
+			<Property Name="MasterPageDescription" Value="This page layout contains a tab control, and search box Web Part. It has Web Part zones arranged in a header and footer." />
+			<Property Name="UIVersion" Value="4" />
+		</File>
+		<File Url="SearchResults.aspx" Type="GhostableInLibrary" Path="SearchResults.aspx">
+			<AllUsersWebPart WebPartOrder="1" WebPartZoneID="MidLowerRightZone" ID="g_da165f35_6641_43e2_adcc_b1e94e15118e"><![CDATA[<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="Microsoft.Office.Server.Search.WebControls.CoreResultsWebPart, Microsoft.Office.Server.Search, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+      <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="SpellcheckingMode" type="Microsoft.Office.Server.Search.Query.SpellcheckMode, Microsoft.Office.Server.Search, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">Suggest</property>
+        <property name="MissingAssembly" type="string">Cannot import this Web Part.</property>
+        <property name="AllowConnect" type="bool">False</property>
+        <property name="HelpMode" type="helpmode">Modeless</property>
+        <property name="CharactersInUrl" type="int">90</property>
+        <property name="ShowLangPicker" type="bool">True</property>
+        <property name="DisplayName" type="string" />
+        <property name="MoreLinkUrl" type="string" null="true" />
+        <property name="Title" type="string">Search Action Links</property>
+        <property name="ShowActionLinks" type="bool">True</property>
+        <property name="ViewFlag" type="string">0</property>
+        <property name="QueryNumber" type="Microsoft.Office.Server.Search.WebControls.QueryId, Microsoft.Office.Server.Search, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">Query1</property>
+        <property name="PreviewWindowSize" type="string">160</property>
+        <property name="DateFormat" type="Microsoft.SharePoint.Utilities.SPDateFormat, Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">DateOnly</property>
+        <property name="AllowClose" type="bool">True</property>
+        <property name="SentencesInSummary" type="System.Int16, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">3</property>
+        <property name="HighestResultPage" type="System.Int16, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">1000</property>
+        <property name="CacheXslTimeOut" type="int">86400</property>
+        <property name="RelevanceView" type="bool">False</property>
+        <property name="MoreLinkLabel" type="string">View more results »</property>
+        <property name="ManualRefresh" type="bool">False</property>
+        <property name="ListUrl" type="string" null="true" />
+        <property name="FixedQuery" type="string" null="true" />
+        <property name="CacheXslStorage" type="bool">True</property>
+        <property name="ResubmitFlag" type="Microsoft.Office.Server.Search.Query.ResubmitFlag, Microsoft.Office.Server.Search, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">NoResubmit</property>
+        <property name="XslLink" type="string" null="true" />
+        <property name="EnableStemming" type="bool">False</property>
+        <property name="ShowSearchResults" type="bool">False</property>
+        <property name="AllowMinimize" type="bool">True</property>
+        <property name="AllowHide" type="bool">True</property>
+        <property name="ShowMoreLink" type="bool">False</property>
+        <property name="ListDisplayName" type="string" null="true" />
+        <property name="ChromeType" type="chrometype">None</property>
+        <property name="EnableDocumentPreviewPowerPoint" type="bool">True</property>
+        <property name="DefaultRankingModelID" type="string" />
+        <property name="CatalogIconImageUrl" type="string" />
+        <property name="Default" type="string" />
+        <property name="DisplayRSSLink" type="bool">True</property>
+        <property name="FireInitialRow" type="bool">True</property>
+        <property name="TotalNumberDocumentPreview" type="string">10</property>
+        <property name="DateView" type="bool">False</property>
+        <property name="ViewFlags" type="Microsoft.SharePoint.SPViewFlags, Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">None</property>
+        <property name="DisplayAlertMeLink" type="bool">True</property>
+        <property name="DataSourceID" type="string" />
+        <property name="HelpUrl" type="string" />
+        <property name="DisplayDiscoveredDefinition" type="bool">True</property>
+        <property name="AppendedQuery" type="string" null="true" />
+        <property name="AsyncRefresh" type="bool">False</property>
+        <property name="IgnoreNoise" type="bool">True</property>
+        <property name="Height" type="string" />
+        <property name="PageSize" type="int">-1</property>
+        <property name="UseSQLDataSourcePaging" type="bool">True</property>
+        <property name="AllowEdit" type="bool">True</property>
+        <property name="ViewContentTypeId" type="string" />
+        <property name="Hidden" type="bool">False</property>
+        <property name="DefaultSort" type="Microsoft.Office.Server.Search.WebControls.ResultsView, Microsoft.Office.Server.Search, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">Relevance</property>
+        <property name="ExportMode" type="exportmode">All</property>
+        <property name="ConcurrentNumberDocumentPreview" type="string">10</property>
+        <property name="ListName" type="string" null="true" />
+        <property name="PropertiesToRetrieve" type="string" null="true" />
+        <property name="ParameterBindings" type="string" />
+        <property name="DataSourcesString" type="string" />
+        <property name="EnablePhonetic" type="bool">False</property>
+        <property name="ListId" type="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">00000000-0000-0000-0000-000000000000</property>
+        <property name="Scope" type="string" null="true" />
+        <property name="XmlDefinitionLink" type="string" />
+        <property name="DataFields" type="string" />
+        <property name="ShowMessages" type="bool">False</property>
+        <property name="Width" type="string" />
+        <property name="InitialAsyncDataFetch" type="bool">False</property>
+        <property name="QuerySideLanguage" type="string" />
+        <property name="MoreResultsLink" type="string" null="true" />
+        <property name="XmlDefinition" type="string" />
+        <property name="ChromeState" type="chromestate">Normal</property>
+        <property name="PageType" type="Microsoft.SharePoint.PAGETYPE, Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">PAGE_NORMALVIEW</property>
+        <property name="ScopeID" type="int">-1</property>
+        <property name="SelectColumns" type="string" null="true" />
+        <property name="SampleData" type="string" null="true" />
+        <property name="EnableDocumentPreviewWord" type="bool">True</property>
+        <property name="AutoRefreshInterval" type="int">60</property>
+        <property name="CharactersInSummary" type="int">185</property>
+        <property name="TitleUrl" type="string" />
+        <property name="RemoveDuplicates" type="bool">True</property>
+        <property name="Xsl" type="string" />
+        <property name="View" type="Microsoft.Office.Server.Search.WebControls.ResultsView, Microsoft.Office.Server.Search, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">Relevance</property>
+        <property name="TitleIconImageUrl" type="string" />
+        <property name="EnableSimilarFind" type="bool">False</property>
+        <property name="Direction" type="direction">NotSet</property>
+        <property name="AllowZoneChange" type="bool">True</property>
+        <property name="ResultsPerPage" type="System.Int16, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">10</property>
+        <property name="ShowWithSampleData" type="bool">False</property>
+        <property name="Description" type="string">Displays the search action links on the search results page.</property>
+        <property name="EnableNicknames" type="bool">False</property>
+        <property name="AutoRefresh" type="bool">False</property>
+        <property name="IsLocationPeople" type="bool">False</property>
+        <property name="Location" type="string" null="true" />
+        <property name="NoDefaultStyle" type="string" />
+        <property name="ShowWindowsSearch" type="bool">True</property>
+        <property name="UseLocationVisualization" type="bool">True</property>
+        <property name="MoreResultsText" type="string">View more results »</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>]]></AllUsersWebPart>
+			<AllUsersWebPart WebPartOrder="3" WebPartZoneID="BottomZone" ID="g_07c5050b_1197_42a3_bf85_8a2ef10d5de8"><![CDATA[<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="Microsoft.Office.Server.Search.WebControls.CoreResultsWebPart, Microsoft.Office.Server.Search, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+      <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="SpellcheckingMode" type="Microsoft.Office.Server.Search.Query.SpellcheckMode, Microsoft.Office.Server.Search, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">Suggest</property>
+        <property name="MissingAssembly" type="string">Cannot import this Web Part.</property>
+        <property name="AllowConnect" type="bool">False</property>
+        <property name="HelpMode" type="helpmode">Modeless</property>
+        <property name="CharactersInUrl" type="int">90</property>
+        <property name="ShowLangPicker" type="bool">True</property>
+        <property name="DisplayName" type="string" />
+        <property name="MoreLinkUrl" type="string" null="true" />
+        <property name="Title" type="string">Search Core Results</property>
+        <property name="ShowActionLinks" type="bool">False</property>
+        <property name="ViewFlag" type="string">0</property>
+        <property name="QueryNumber" type="Microsoft.Office.Server.Search.WebControls.QueryId, Microsoft.Office.Server.Search, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">Query1</property>
+        <property name="PreviewWindowSize" type="string">160</property>
+        <property name="DateFormat" type="Microsoft.SharePoint.Utilities.SPDateFormat, Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">DateOnly</property>
+        <property name="AllowClose" type="bool">True</property>
+        <property name="SentencesInSummary" type="System.Int16, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">3</property>
+        <property name="HighestResultPage" type="System.Int16, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">1000</property>
+        <property name="CacheXslTimeOut" type="int">86400</property>
+        <property name="RelevanceView" type="bool">False</property>
+        <property name="MoreLinkLabel" type="string">View more results »</property>
+        <property name="ManualRefresh" type="bool">False</property>
+        <property name="ListUrl" type="string" null="true" />
+        <property name="FixedQuery" type="string" null="true" />
+        <property name="CacheXslStorage" type="bool">True</property>
+        <property name="ResubmitFlag" type="Microsoft.Office.Server.Search.Query.ResubmitFlag, Microsoft.Office.Server.Search, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">NoResubmit</property>
+        <property name="XslLink" type="string" null="true" />
+        <property name="EnableStemming" type="bool">False</property>
+        <property name="ShowSearchResults" type="bool">True</property>
+        <property name="AllowMinimize" type="bool">True</property>
+        <property name="AllowHide" type="bool">True</property>
+        <property name="ShowMoreLink" type="bool">False</property>
+        <property name="ListDisplayName" type="string" null="true" />
+        <property name="ChromeType" type="chrometype">None</property>
+        <property name="EnableDocumentPreviewPowerPoint" type="bool">True</property>
+        <property name="DefaultRankingModelID" type="string" />
+        <property name="CatalogIconImageUrl" type="string" />
+        <property name="Default" type="string" />
+        <property name="DisplayRSSLink" type="bool">False</property>
+        <property name="FireInitialRow" type="bool">True</property>
+        <property name="TotalNumberDocumentPreview" type="string">10</property>
+        <property name="DateView" type="bool">False</property>
+        <property name="ViewFlags" type="Microsoft.SharePoint.SPViewFlags, Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">None</property>
+        <property name="DisplayAlertMeLink" type="bool">False</property>
+        <property name="DataSourceID" type="string" />
+        <property name="HelpUrl" type="string" />
+        <property name="DisplayDiscoveredDefinition" type="bool">True</property>
+        <property name="AppendedQuery" type="string" null="true" />
+        <property name="AsyncRefresh" type="bool">False</property>
+        <property name="IgnoreNoise" type="bool">True</property>
+        <property name="Height" type="string" />
+        <property name="PageSize" type="int">-1</property>
+        <property name="UseSQLDataSourcePaging" type="bool">True</property>
+        <property name="AllowEdit" type="bool">True</property>
+        <property name="ViewContentTypeId" type="string" />
+        <property name="Hidden" type="bool">False</property>
+        <property name="DefaultSort" type="Microsoft.Office.Server.Search.WebControls.ResultsView, Microsoft.Office.Server.Search, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">Relevance</property>
+        <property name="ExportMode" type="exportmode">All</property>
+        <property name="ConcurrentNumberDocumentPreview" type="string">10</property>
+        <property name="ListName" type="string" null="true" />
+        <property name="PropertiesToRetrieve" type="string" null="true" />
+        <property name="ParameterBindings" type="string" />
+        <property name="DataSourcesString" type="string" />
+        <property name="EnablePhonetic" type="bool">False</property>
+        <property name="ListId" type="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">00000000-0000-0000-0000-000000000000</property>
+        <property name="Scope" type="string" null="true" />
+        <property name="XmlDefinitionLink" type="string" />
+        <property name="DataFields" type="string" />
+        <property name="ShowMessages" type="bool">False</property>
+        <property name="Width" type="string" />
+        <property name="InitialAsyncDataFetch" type="bool">False</property>
+        <property name="QuerySideLanguage" type="string" />
+        <property name="MoreResultsLink" type="string" null="true" />
+        <property name="XmlDefinition" type="string" />
+        <property name="ChromeState" type="chromestate">Normal</property>
+        <property name="PageType" type="Microsoft.SharePoint.PAGETYPE, Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">PAGE_NORMALVIEW</property>
+        <property name="ScopeID" type="int">1</property>
+        <property name="SelectColumns" type="string" null="true" />
+        <property name="SampleData" type="string" null="true" />
+        <property name="EnableDocumentPreviewWord" type="bool">True</property>
+        <property name="AutoRefreshInterval" type="int">60</property>
+        <property name="CharactersInSummary" type="int">185</property>
+        <property name="TitleUrl" type="string" />
+        <property name="RemoveDuplicates" type="bool">True</property>
+        <property name="Xsl" type="string" />
+        <property name="View" type="Microsoft.Office.Server.Search.WebControls.ResultsView, Microsoft.Office.Server.Search, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">Relevance</property>
+        <property name="TitleIconImageUrl" type="string" />
+        <property name="EnableSimilarFind" type="bool">False</property>
+        <property name="Direction" type="direction">NotSet</property>
+        <property name="AllowZoneChange" type="bool">True</property>
+        <property name="ResultsPerPage" type="System.Int16, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">10</property>
+        <property name="ShowWithSampleData" type="bool">False</property>
+        <property name="Description" type="string">Displays the search results and the properties associated with them.</property>
+        <property name="EnableNicknames" type="bool">False</property>
+        <property name="AutoRefresh" type="bool">False</property>
+        <property name="IsLocationPeople" type="bool">False</property>
+        <property name="Location" type="string" null="true" />
+        <property name="NoDefaultStyle" type="string" />
+        <property name="ShowWindowsSearch" type="bool">True</property>
+        <property name="UseLocationVisualization" type="bool">True</property>
+        <property name="MoreResultsText" type="string">View more results »</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>]]></AllUsersWebPart>
+			<AllUsersWebPart WebPartOrder="4" WebPartZoneID="BottomZone" ID="g_e86580da_a9c6_4efa_8a47_4780e0779402"><![CDATA[<WebPart xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/WebPart/v2">
+  <Title>Search Paging</Title>
+  <FrameType>None</FrameType>
+  <Description>Display links for navigating pages containing search results.</Description>
+  <IsIncluded>true</IsIncluded>
+  <ZoneID>BottomZone</ZoneID>
+  <PartOrder>4</PartOrder>
+  <FrameState>Normal</FrameState>
+  <Height />
+  <Width />
+  <AllowRemove>true</AllowRemove>
+  <AllowZoneChange>true</AllowZoneChange>
+  <AllowMinimize>true</AllowMinimize>
+  <AllowConnect>true</AllowConnect>
+  <AllowEdit>true</AllowEdit>
+  <AllowHide>true</AllowHide>
+  <IsVisible>true</IsVisible>
+  <DetailLink />
+  <HelpLink />
+  <HelpMode>Modeless</HelpMode>
+  <Dir>Default</Dir>
+  <PartImageSmall />
+  <MissingAssembly>Cannot import this Web Part.</MissingAssembly>
+  <PartImageLarge />
+  <IsIncludedFilter />
+  <Assembly>Microsoft.Office.Server.Search, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+  <TypeName>Microsoft.Office.Server.Search.WebControls.SearchPagingWebPart</TypeName>
+  <MaxBeforeCurrent xmlns="urn:schemas-microsoft-com:SearchPagingWebPart">4</MaxBeforeCurrent>
+  <MaxAfterCurrent xmlns="urn:schemas-microsoft-com:SearchPagingWebPart">3</MaxAfterCurrent>
+  <PreviousLinkUrl xmlns="urn:schemas-microsoft-com:SearchPagingWebPart">/_layouts/images/prev.png</PreviousLinkUrl>
+  <PreviousLinkRTL xmlns="urn:schemas-microsoft-com:SearchPagingWebPart">/_layouts/images/next.png</PreviousLinkRTL>
+  <NextLinkUrl xmlns="urn:schemas-microsoft-com:SearchPagingWebPart">/_layouts/images/next.png</NextLinkUrl>
+  <NextLinkRTL xmlns="urn:schemas-microsoft-com:SearchPagingWebPart">/_layouts/images/prev.png</NextLinkRTL>
+  <ShowMessages xmlns="urn:schemas-microsoft-com:SearchPagingWebPart">false</ShowMessages>
+  <QueryID xmlns="urn:schemas-microsoft-com:SearchPagingWebPart">Query1</QueryID>
+</WebPart>]]></AllUsersWebPart>
+			<AllUsersWebPart WebPartOrder="1" WebPartZoneID="RightZone" ID="g_f77278a6_ed20_44a6_83d0_7e8e69a5f110"><![CDATA[<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="Microsoft.Office.Server.Search.WebControls.QuerySuggestionsWebPart, Microsoft.Office.Server.Search, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+      <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="PageSize" type="int">-1</property>
+        <property name="EnableNicknames" type="bool">False</property>
+        <property name="LoadingImageToolTip" type="string">Loading query suggestions.</property>
+        <property name="ChromeState" type="chromestate">Normal</property>
+        <property name="HelpMode" type="helpmode">Modeless</property>
+        <property name="IsLocationPeople" type="bool">False</property>
+        <property name="Height" type="string" />
+        <property name="AllowMinimize" type="bool">True</property>
+        <property name="ParameterBindings" type="string" />
+        <property name="QueryUrl" type="string" />
+        <property name="AllowConnect" type="bool">False</property>
+        <property name="MoreLinkLabel" type="string">View more results »</property>
+        <property name="XslLink" type="string" null="true" />
+        <property name="ExportMode" type="exportmode">All</property>
+        <property name="DataSourcesString" type="string" />
+        <property name="MoreLinkUrl" type="string" null="true" />
+        <property name="AllowHide" type="bool">True</property>
+        <property name="ShowMoreLink" type="bool">False</property>
+        <property name="EnableStemming" type="bool">False</property>
+        <property name="LoadingImageUrl" type="string">/_layouts/images/gears_an.gif</property>
+        <property name="Title" type="string">Related Queries</property>
+        <property name="LoadAsynchronously" type="bool">True</property>
+        <property name="AsyncRefresh" type="bool">False</property>
+        <property name="DisplayName" type="string" />
+        <property name="ChromeType" type="chrometype">None</property>
+        <property name="ViewContentTypeId" type="string" />
+        <property name="UseLocationVisualization" type="bool">True</property>
+        <property name="TitleUrl" type="string" />
+        <property name="FireInitialRow" type="bool">True</property>
+        <property name="ViewFlags" type="Microsoft.SharePoint.SPViewFlags, Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">None</property>
+        <property name="DataFields" type="string" />
+        <property name="Hidden" type="bool">False</property>
+        <property name="AllowEdit" type="bool">True</property>
+        <property name="MissingAssembly" type="string">Cannot import this Web Part.</property>
+        <property name="HelpUrl" type="string" />
+        <property name="InitialAsyncDataFetch" type="bool">False</property>
+        <property name="PropertiesToRetrieve" type="string" null="true" />
+        <property name="IgnoreNoise" type="bool">True</property>
+        <property name="DataSourceID" type="string" />
+        <property name="ListName" type="string" null="true" />
+        <property name="Width" type="string" />
+        <property name="Default" type="string" />
+        <property name="Direction" type="direction">NotSet</property>
+        <property name="ViewFlag" type="string">0</property>
+        <property name="ShowLoadingImage" type="bool">False</property>
+        <property name="ListUrl" type="string" null="true" />
+        <property name="Description" type="string">This webpart displays related queries to a user query.</property>
+        <property name="CharactersInSummary" type="int">185</property>
+        <property name="AutoRefreshInterval" type="int">60</property>
+        <property name="AppendedQuery" type="string" null="true" />
+        <property name="ListDisplayName" type="string" null="true" />
+        <property name="TitleIconImageUrl" type="string" />
+        <property name="DefaultRankingModelID" type="string" />
+        <property name="ResultsPerPage" type="System.Int16, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">5</property>
+        <property name="ManualRefresh" type="bool">False</property>
+        <property name="PageType" type="Microsoft.SharePoint.PAGETYPE, Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">PAGE_NORMALVIEW</property>
+        <property name="AutoRefresh" type="bool">False</property>
+        <property name="RemoveDuplicates" type="bool">True</property>
+        <property name="AllowZoneChange" type="bool">True</property>
+        <property name="UseSQLDataSourcePaging" type="bool">True</property>
+        <property name="NoDefaultStyle" type="string" />
+        <property name="FixedQuery" type="string" null="true" />
+        <property name="ShowMessages" type="bool">False</property>
+        <property name="CacheXslTimeOut" type="int">86400</property>
+        <property name="SampleData" type="string" null="true" />
+        <property name="Xsl" type="string" />
+        <property name="CacheXslStorage" type="bool">True</property>
+        <property name="ListId" type="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">00000000-0000-0000-0000-000000000000</property>
+        <property name="EnablePhonetic" type="bool">False</property>
+        <property name="CharactersInUrl" type="int">25</property>
+        <property name="ShowWithSampleData" type="bool">False</property>
+        <property name="DateFormat" type="Microsoft.SharePoint.Utilities.SPDateFormat, Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">DateOnly</property>
+        <property name="AllowClose" type="bool">True</property>
+        <property name="XmlDefinitionLink" type="string" />
+        <property name="CatalogIconImageUrl" type="string" />
+        <property name="XmlDefinition" type="string" />
+      </properties>
+    </data>
+  </webPart>
+</webParts>]]></AllUsersWebPart>
+			<AllUsersWebPart WebPartOrder="2" WebPartZoneID="RightZone" ID="g_c60aa9d8_03b5_499d_be53_8c0840e5d887"><![CDATA[<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="Microsoft.Office.Server.Search.WebControls.FederatedResultsWebPart, Microsoft.Office.Server.Search, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+      <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="PageSize" type="int">-1</property>
+        <property name="EnableNicknames" type="bool">True</property>
+        <property name="LoadingImageToolTip" type="string">Loading federated results.</property>
+        <property name="ChromeState" type="chromestate">Normal</property>
+        <property name="HelpMode" type="helpmode">Modeless</property>
+        <property name="IsLocationPeople" type="bool">False</property>
+        <property name="Height" type="string" />
+        <property name="AllowMinimize" type="bool">True</property>
+        <property name="ParameterBindings" type="string" />
+        <property name="AllowConnect" type="bool">False</property>
+        <property name="MoreLinkLabel" type="string">View more people »</property>
+        <property name="XslLink" type="string" null="true" />
+        <property name="ExportMode" type="exportmode">All</property>
+        <property name="DataSourcesString" type="string" />
+        <property name="MoreLinkUrl" type="string" null="true" />
+        <property name="AllowHide" type="bool">True</property>
+        <property name="ShowMoreLink" type="bool">True</property>
+        <property name="EnableStemming" type="bool">False</property>
+        <property name="LoadingImageUrl" type="string">/_layouts/images/gears_an.gif</property>
+        <property name="Title" type="string">People Matches</property>
+        <property name="LoadAsynchronously" type="bool">True</property>
+        <property name="AsyncRefresh" type="bool">False</property>
+        <property name="DisplayName" type="string" />
+        <property name="ChromeType" type="chrometype">None</property>
+        <property name="ViewContentTypeId" type="string" />
+        <property name="UseLocationVisualization" type="bool">True</property>
+        <property name="TitleUrl" type="string" />
+        <property name="FireInitialRow" type="bool">True</property>
+        <property name="ViewFlags" type="Microsoft.SharePoint.SPViewFlags, Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">None</property>
+        <property name="DataFields" type="string" />
+        <property name="Hidden" type="bool">False</property>
+        <property name="AllowEdit" type="bool">True</property>
+        <property name="MissingAssembly" type="string">Cannot import this Web Part.</property>
+        <property name="HelpUrl" type="string" />
+        <property name="InitialAsyncDataFetch" type="bool">False</property>
+        <property name="PropertiesToRetrieve" type="string" null="true" />
+        <property name="IgnoreNoise" type="bool">True</property>
+        <property name="DataSourceID" type="string" />
+        <property name="ListName" type="string" null="true" />
+        <property name="Width" type="string" />
+        <property name="Default" type="string" />
+        <property name="Direction" type="direction">NotSet</property>
+        <property name="ViewFlag" type="string">0</property>
+        <property name="Location" type="string">LocalPeopleSearchIndex</property>
+        <property name="ShowLoadingImage" type="bool">False</property>
+        <property name="ListUrl" type="string" null="true" />
+        <property name="Description" type="string">This webpart displays people results matching the user query.</property>
+        <property name="CharactersInSummary" type="int">185</property>
+        <property name="AutoRefreshInterval" type="int">60</property>
+        <property name="AppendedQuery" type="string" null="true" />
+        <property name="ListDisplayName" type="string" null="true" />
+        <property name="TitleIconImageUrl" type="string" />
+        <property name="DefaultRankingModelID" type="string" />
+        <property name="ResultsPerPage" type="System.Int16, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">3</property>
+        <property name="ManualRefresh" type="bool">False</property>
+        <property name="PageType" type="Microsoft.SharePoint.PAGETYPE, Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">PAGE_NORMALVIEW</property>
+        <property name="AutoRefresh" type="bool">False</property>
+        <property name="RemoveDuplicates" type="bool">True</property>
+        <property name="AllowZoneChange" type="bool">True</property>
+        <property name="UseSQLDataSourcePaging" type="bool">True</property>
+        <property name="NoDefaultStyle" type="string" />
+        <property name="FixedQuery" type="string" null="true" />
+        <property name="ShowMessages" type="bool">False</property>
+        <property name="CacheXslTimeOut" type="int">86400</property>
+        <property name="SampleData" type="string" null="true" />
+        <property name="Xsl" type="string" />
+        <property name="CacheXslStorage" type="bool">True</property>
+        <property name="ListId" type="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">00000000-0000-0000-0000-000000000000</property>
+        <property name="EnablePhonetic" type="bool">True</property>
+        <property name="CharactersInUrl" type="int">25</property>
+        <property name="ShowWithSampleData" type="bool">False</property>
+        <property name="DateFormat" type="Microsoft.SharePoint.Utilities.SPDateFormat, Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">DateOnly</property>
+        <property name="AllowClose" type="bool">True</property>
+        <property name="XmlDefinitionLink" type="string" />
+        <property name="CatalogIconImageUrl" type="string" />
+        <property name="XmlDefinition" type="string" />
+      </properties>
+    </data>
+  </webPart>
+</webParts>]]></AllUsersWebPart>
+			<AllUsersWebPart WebPartOrder="1" WebPartZoneID="BottomZone" ID="g_4c6c99e8_bca1_43e8_b127_98a679b5e733"><![CDATA[<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="Microsoft.Office.Server.Search.WebControls.HighConfidenceWebPart, Microsoft.Office.Server.Search, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+      <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="DisplayDefinition" type="bool">True</property>
+        <property name="PageSize" type="int">-1</property>
+        <property name="EnableNicknames" type="bool">False</property>
+        <property name="ChromeState" type="chromestate">Normal</property>
+        <property name="IsLocationPeople" type="bool">False</property>
+        <property name="Height" type="string" />
+        <property name="AllowMinimize" type="bool">True</property>
+        <property name="ParameterBindings" type="string" />
+        <property name="DisplayHCDescription" type="bool">False</property>
+        <property name="Width" type="string" />
+        <property name="AllowConnect" type="bool">False</property>
+        <property name="MoreLinkLabel" type="string">View more results »</property>
+        <property name="XslLink" type="string" null="true" />
+        <property name="ExportMode" type="exportmode">All</property>
+        <property name="DataSourcesString" type="string" />
+        <property name="MoreLinkUrl" type="string" null="true" />
+        <property name="AllowHide" type="bool">True</property>
+        <property name="ShowMoreLink" type="bool">False</property>
+        <property name="EnableStemming" type="bool">False</property>
+        <property name="Title" type="string">Search Best Bets</property>
+        <property name="HelpMode" type="helpmode">Modeless</property>
+        <property name="AsyncRefresh" type="bool">False</property>
+        <property name="DisplayName" type="string" />
+        <property name="ChromeType" type="chrometype">None</property>
+        <property name="ViewContentTypeId" type="string" />
+        <property name="UseLocationVisualization" type="bool">True</property>
+        <property name="TitleUrl" type="string" />
+        <property name="FireInitialRow" type="bool">True</property>
+        <property name="ViewFlags" type="Microsoft.SharePoint.SPViewFlags, Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">None</property>
+        <property name="DataFields" type="string" />
+        <property name="Hidden" type="bool">False</property>
+        <property name="DefaultRankingModelID" type="string" />
+        <property name="AllowEdit" type="bool">True</property>
+        <property name="MissingAssembly" type="string">Cannot import this Web Part.</property>
+        <property name="HelpUrl" type="string" />
+        <property name="InitialAsyncDataFetch" type="bool">False</property>
+        <property name="PropertiesToRetrieve" type="string" null="true" />
+        <property name="IgnoreNoise" type="bool">True</property>
+        <property name="ResultsPerTypeLimit" type="int">1</property>
+        <property name="DataSourceID" type="string" />
+        <property name="CharactersInUrl" type="int">90</property>
+        <property name="DisplayUrl" type="bool">True</property>
+        <property name="Default" type="string" />
+        <property name="Direction" type="direction">NotSet</property>
+        <property name="ViewFlag" type="string">0</property>
+        <property name="DisplayHCTitle" type="bool">False</property>
+        <property name="DateFormat" type="Microsoft.SharePoint.Utilities.SPDateFormat, Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">DateOnly</property>
+        <property name="ListUrl" type="string" null="true" />
+        <property name="Description" type="string">Displays high-confidence results on a search results page.</property>
+        <property name="CharactersInSummary" type="int">185</property>
+        <property name="AutoRefreshInterval" type="int">60</property>
+        <property name="DisplayHCProps" type="bool">False</property>
+        <property name="QueryID" type="Microsoft.Office.Server.Search.WebControls.QueryId, Microsoft.Office.Server.Search, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">Query1</property>
+        <property name="DisplayHCImage" type="bool">False</property>
+        <property name="AppendedQuery" type="string" null="true" />
+        <property name="ListDisplayName" type="string" null="true" />
+        <property name="TitleIconImageUrl" type="string" />
+        <property name="DisplayBestBetTitle" type="bool">True</property>
+        <property name="ResultsPerPage" type="System.Int16, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">10</property>
+        <property name="DisplayDescription" type="bool">True</property>
+        <property name="ManualRefresh" type="bool">False</property>
+        <property name="PageType" type="Microsoft.SharePoint.PAGETYPE, Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">PAGE_NORMALVIEW</property>
+        <property name="AutoRefresh" type="bool">False</property>
+        <property name="RemoveDuplicates" type="bool">True</property>
+        <property name="AllowZoneChange" type="bool">True</property>
+        <property name="ListName" type="string" null="true" />
+        <property name="UseSQLDataSourcePaging" type="bool">True</property>
+        <property name="NoDefaultStyle" type="string" />
+        <property name="FixedQuery" type="string" null="true" />
+        <property name="ShowMessages" type="bool">False</property>
+        <property name="CacheXslTimeOut" type="int">86400</property>
+        <property name="SampleData" type="string" null="true" />
+        <property name="Xsl" type="string" />
+        <property name="CacheXslStorage" type="bool">True</property>
+        <property name="ListId" type="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">00000000-0000-0000-0000-000000000000</property>
+        <property name="EnablePhonetic" type="bool">False</property>
+        <property name="DisplayTerm" type="bool">True</property>
+        <property name="ShowWithSampleData" type="bool">False</property>
+        <property name="BestBetsLimit" type="int">3</property>
+        <property name="AllowClose" type="bool">True</property>
+        <property name="XmlDefinitionLink" type="string" />
+        <property name="CatalogIconImageUrl" type="string" />
+        <property name="XmlDefinition" type="string" />
+      </properties>
+    </data>
+  </webPart>
+</webParts>]]></AllUsersWebPart>
+			<AllUsersWebPart WebPartOrder="2" WebPartZoneID="BottomZone" ID="g_3ec6fadc_4b0e_4ca1_9218_a585b32952d0"><![CDATA[<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="Microsoft.Office.Server.Search.WebControls.TopFederatedResultsWebPart, Microsoft.Office.Server.Search, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+      <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="TitleIconImageUrl" type="string" />
+        <property name="ShowWithSampleData" type="bool">False</property>
+        <property name="Default" type="string" />
+        <property name="NoDefaultStyle" type="string" />
+        <property name="AutoRefreshInterval" type="int">60</property>
+        <property name="ViewContentTypeId" type="string" />
+        <property name="XmlDefinitionLink" type="string" />
+        <property name="ManualRefresh" type="bool">False</property>
+        <property name="ShowMoreLink" type="bool">False</property>
+        <property name="AppendedQuery" type="string" null="true" />
+        <property name="UseLocationVisualization" type="bool">True</property>
+        <property name="Height" type="string" />
+        <property name="TitleUrl" type="string" />
+        <property name="DateFormat" type="Microsoft.SharePoint.Utilities.SPDateFormat, Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">DateOnly</property>
+        <property name="SampleData" type="string" null="true" />
+        <property name="EnableNicknames" type="bool">False</property>
+        <property name="ResultsPerPage" type="System.Int16, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">1</property>
+        <property name="ViewFlags" type="Microsoft.SharePoint.SPViewFlags, Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">None</property>
+        <property name="AsyncRefresh" type="bool">False</property>
+        <property name="ListId" type="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">00000000-0000-0000-0000-000000000000</property>
+        <property name="HelpUrl" type="string" />
+        <property name="DefaultRankingModelID" type="string" />
+        <property name="ListName" type="string" null="true" />
+        <property name="AllowZoneChange" type="bool">True</property>
+        <property name="Hidden" type="bool">False</property>
+        <property name="DataSourceID" type="string" />
+        <property name="MoreLinkLabel" type="string">View more results »</property>
+        <property name="ViewFlag" type="string">0</property>
+        <property name="AllowHide" type="bool">True</property>
+        <property name="ExportMode" type="exportmode">All</property>
+        <property name="LocationPriorityList" type="string" null="true" />
+        <property name="DataFields" type="string" />
+        <property name="HelpMode" type="helpmode">Modeless</property>
+        <property name="AllowEdit" type="bool">True</property>
+        <property name="Description" type="string">Displays the Top Federated result from the configured location.</property>
+        <property name="AllowConnect" type="bool">False</property>
+        <property name="AllowMinimize" type="bool">True</property>
+        <property name="AutoRefresh" type="bool">False</property>
+        <property name="ChromeType" type="chrometype">None</property>
+        <property name="Xsl" type="string" />
+        <property name="ChromeState" type="chromestate">Normal</property>
+        <property name="CatalogIconImageUrl" type="string" />
+        <property name="IsLocationPeople" type="bool">False</property>
+        <property name="MoreLinkUrl" type="string" null="true" />
+        <property name="PageSize" type="int">-1</property>
+        <property name="RemoveDuplicates" type="bool">True</property>
+        <property name="UseSQLDataSourcePaging" type="bool">True</property>
+        <property name="EnablePhonetic" type="bool">False</property>
+        <property name="Title" type="string">Top Federated Results</property>
+        <property name="PageType" type="Microsoft.SharePoint.PAGETYPE, Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">PAGE_NORMALVIEW</property>
+        <property name="DataSourcesString" type="string" />
+        <property name="InitialAsyncDataFetch" type="bool">False</property>
+        <property name="MissingAssembly" type="string">Cannot import this Web Part.</property>
+        <property name="FireInitialRow" type="bool">True</property>
+        <property name="CacheXslStorage" type="bool">True</property>
+        <property name="CharactersInUrl" type="int">90</property>
+        <property name="ListUrl" type="string" null="true" />
+        <property name="IgnoreNoise" type="bool">True</property>
+        <property name="XslLink" type="string" null="true" />
+        <property name="FixedQuery" type="string" null="true" />
+        <property name="AllowClose" type="bool">True</property>
+        <property name="XmlDefinition" type="string" />
+        <property name="EnableStemming" type="bool">False</property>
+        <property name="PropertiesToRetrieve" type="string" null="true" />
+        <property name="ShowMessages" type="bool">False</property>
+        <property name="ParameterBindings" type="string" />
+        <property name="DisplayName" type="string" />
+        <property name="CharactersInSummary" type="int">185</property>
+        <property name="Width" type="string" />
+        <property name="ListDisplayName" type="string" null="true" />
+        <property name="Direction" type="direction">NotSet</property>
+        <property name="CacheXslTimeOut" type="int">86400</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>]]></AllUsersWebPart>
+			<AllUsersWebPart WebPartOrder="1" WebPartZoneID="TopZone" ID="g_f292db95_7760_4bc9_9540_63fb5313325c"><![CDATA[<WebPart xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/WebPart/v2">
+  <Title>Search Box</Title>
+  <FrameType>None</FrameType>
+  <Description>Displays a search box that allows users to search for information.</Description>
+  <IsIncluded>true</IsIncluded>
+  <ZoneID>TopZone</ZoneID>
+  <PartOrder>1</PartOrder>
+  <FrameState>Normal</FrameState>
+  <Height />
+  <Width>800px</Width>
+  <AllowRemove>true</AllowRemove>
+  <AllowZoneChange>true</AllowZoneChange>
+  <AllowMinimize>true</AllowMinimize>
+  <AllowConnect>true</AllowConnect>
+  <AllowEdit>true</AllowEdit>
+  <AllowHide>true</AllowHide>
+  <IsVisible>true</IsVisible>
+  <DetailLink />
+  <HelpLink />
+  <HelpMode>Modeless</HelpMode>
+  <Dir>Default</Dir>
+  <PartImageSmall />
+  <MissingAssembly>Cannot import this Web Part.</MissingAssembly>
+  <PartImageLarge />
+  <IsIncludedFilter />
+  <Assembly>Microsoft.Office.Server.Search, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+  <TypeName>Microsoft.SharePoint.Portal.WebControls.SearchBoxEx</TypeName>
+  <GoImageUrl xmlns="urn:schemas-microsoft-com:SearchBoxEx">/_layouts/images/gosearch30.png</GoImageUrl>
+  <GoImageUrlRTL xmlns="urn:schemas-microsoft-com:SearchBoxEx">/_layouts/images/gosearchrtl30.png</GoImageUrlRTL>
+  <GoImageActiveUrl xmlns="urn:schemas-microsoft-com:SearchBoxEx">/_layouts/images/gosearchhover30.png</GoImageActiveUrl>
+  <GoImageActiveUrlRTL xmlns="urn:schemas-microsoft-com:SearchBoxEx">/_layouts/images/gosearchrtlhover30.png</GoImageActiveUrlRTL>
+  <ShowAdvancedSearch xmlns="urn:schemas-microsoft-com:SearchBoxEx">true</ShowAdvancedSearch>
+  <DropDownModeEx xmlns="urn:schemas-microsoft-com:SearchBoxEx">HideScopeDD</DropDownModeEx>
+  <IsMysiteSearchBox xmlns="urn:schemas-microsoft-com:SearchBoxEx">false</IsMysiteSearchBox>
+  <TextBoxWidth xmlns="urn:schemas-microsoft-com:SearchBoxEx">368</TextBoxWidth>
+  <ShowPerferenceLink xmlns="urn:schemas-microsoft-com:SearchBoxEx">true</ShowPerferenceLink>
+  <ShowQuerySuggestions xmlns="urn:schemas-microsoft-com:SearchBoxEx">true</ShowQuerySuggestions>
+  <SearchBoxVisual xmlns="urn:schemas-microsoft-com:SearchBoxEx">SearchCenterDefault</SearchBoxVisual>
+  <AdvancedSearchPageURL xmlns="urn:schemas-microsoft-com:SearchBoxEx">/sites/realtimefoundation/Pages/advanced.aspx</AdvancedSearchPageURL>
+  <SearchResultPageURL xmlns="urn:schemas-microsoft-com:SearchBoxEx">results.aspx</SearchResultPageURL>
+  <RegisterStyles xmlns="urn:schemas-microsoft-com:SearchBoxEx">true</RegisterStyles>
+  <ShouldTakeFocusIfEmpty xmlns="urn:schemas-microsoft-com:SearchBoxEx">true</ShouldTakeFocusIfEmpty>
+</WebPart>]]></AllUsersWebPart>
+			<AllUsersWebPart WebPartOrder="2" WebPartZoneID="TopZone" ID="g_4c9381d8_3df3_4bc0_aca9_c7e7f992724c"><![CDATA[<WebPart xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/WebPart/v2">
+  <Title>Search Summary</Title>
+  <FrameType>None</FrameType>
+  <Description>Displays suggestions for current search query.</Description>
+  <IsIncluded>true</IsIncluded>
+  <ZoneID>TopZone</ZoneID>
+  <PartOrder>2</PartOrder>
+  <FrameState>Normal</FrameState>
+  <Height />
+  <Width />
+  <AllowRemove>true</AllowRemove>
+  <AllowZoneChange>true</AllowZoneChange>
+  <AllowMinimize>true</AllowMinimize>
+  <AllowConnect>false</AllowConnect>
+  <AllowEdit>true</AllowEdit>
+  <AllowHide>true</AllowHide>
+  <IsVisible>true</IsVisible>
+  <DetailLink />
+  <HelpLink />
+  <HelpMode>Modeless</HelpMode>
+  <Dir>Default</Dir>
+  <PartImageSmall />
+  <MissingAssembly>Cannot import this Web Part.</MissingAssembly>
+  <PartImageLarge />
+  <IsIncludedFilter />
+  <Assembly>Microsoft.Office.Server.Search, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+  <TypeName>Microsoft.Office.Server.Search.WebControls.SearchSummaryWebPart</TypeName>
+  <ShowMessages xmlns="urn:schemas-microsoft-com:SearchSummaryWebPart">false</ShowMessages>
+  <QueryID xmlns="urn:schemas-microsoft-com:SearchSummaryWebPart">Query1</QueryID>
+</WebPart>]]></AllUsersWebPart>
+			<AllUsersWebPart WebPartOrder="1" WebPartZoneID="LeftZone" ID="g_92b4e780_75a2_4b4f_8084_019f5c3fb828"><![CDATA[<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="Microsoft.Office.Server.Search.WebControls.RefinementWebPart, Microsoft.Office.Server.Search, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+      <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="InitialAsyncDataFetch" type="bool">False</property>
+        <property name="ChromeType" type="chrometype">None</property>
+        <property name="Title" type="string">Refinement Panel</property>
+        <property name="Height" type="string" />
+        <property name="CacheXslStorage" type="bool">True</property>
+        <property name="ListDisplayName" type="string" null="true" />
+        <property name="AllowZoneChange" type="bool">True</property>
+        <property name="AllowEdit" type="bool">True</property>
+        <property name="XmlDefinitionLink" type="string" />
+        <property name="DataFields" type="string" />
+        <property name="ListName" type="string" null="true" />
+        <property name="NoDefaultStyle" type="string" />
+        <property name="DisplayedCategories" type="int">6</property>
+        <property name="AutoRefresh" type="bool">False</property>
+        <property name="ViewFlag" type="string">0</property>
+        <property name="Direction" type="direction">NotSet</property>
+        <property name="AutoRefreshInterval" type="int">60</property>
+        <property name="AllowConnect" type="bool">False</property>
+        <property name="Description" type="string">This webpart helps the users to refine search results</property>
+        <property name="AllowClose" type="bool">True</property>
+        <property name="ShowWithSampleData" type="bool">False</property>
+        <property name="ParameterBindings" type="string" />
+        <property name="Xsl" type="string" null="true" />
+        <property name="ShowMessages" type="bool">False</property>
+        <property name="CacheXslTimeOut" type="int">86400</property>
+        <property name="Hidden" type="bool">False</property>
+        <property name="RefinementPanelCaption" type="string" null="true" />
+        <property name="ListUrl" type="string" null="true" />
+        <property name="DataSourceID" type="string" />
+        <property name="FireInitialRow" type="bool">True</property>
+        <property name="NumberOfCharsToDisplay" type="int">19</property>
+        <property name="ManualRefresh" type="bool">False</property>
+        <property name="ViewFlags" type="Microsoft.SharePoint.SPViewFlags, Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">None</property>
+        <property name="ChromeState" type="chromestate">Normal</property>
+        <property name="QueryNumber" type="Microsoft.Office.Server.Search.WebControls.QueryId, Microsoft.Office.Server.Search, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">Query1</property>
+        <property name="AllowHide" type="bool">True</property>
+        <property name="PageSize" type="int">-1</property>
+        <property name="SampleData" type="string" null="true" />
+        <property name="AsyncRefresh" type="bool">False</property>
+        <property name="HelpMode" type="helpmode">Modeless</property>
+        <property name="ListId" type="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">00000000-0000-0000-0000-000000000000</property>
+        <property name="UseSQLDataSourcePaging" type="bool">True</property>
+        <property name="AllowMinimize" type="bool">True</property>
+        <property name="TitleUrl" type="string" />
+        <property name="CatalogIconImageUrl" type="string" />
+        <property name="DataSourcesString" type="string" />
+        <property name="DisplayName" type="string" />
+        <property name="PageType" type="Microsoft.SharePoint.PAGETYPE, Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">PAGE_NORMALVIEW</property>
+        <property name="Width" type="string" />
+        <property name="UseDefaultConfiguration" type="bool">True</property>
+        <property name="ExportMode" type="exportmode">All</property>
+        <property name="XslLink" type="string" null="true" />
+        <property name="ViewContentTypeId" type="string" />
+        <property name="HelpUrl" type="string" />
+        <property name="XmlDefinition" type="string" />
+        <property name="AccuracyIndex" type="int">50</property>
+        <property name="Default" type="string" />
+        <property name="TitleIconImageUrl" type="string" />
+        <property name="MissingAssembly" type="string">Cannot import this Web Part.</property>
+        <property name="FilterCategoriesDefinition" type="string" null="true" />
+      </properties>
+    </data>
+  </webPart>
+</webParts>]]></AllUsersWebPart>
+			<AllUsersWebPart WebPartOrder="1" WebPartZoneID="MidLowerLeftZone" ID="g_c0aabbf7_69ef_47ef_8c18_30ab35727789"><![CDATA[<WebPart xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/WebPart/v2">
+  <Title>Search Statistics</Title>
+  <FrameType>None</FrameType>
+  <Description>Displays the search statistics such as the number of results shown on the current page, total number of results and time taken to perform the search.</Description>
+  <IsIncluded>true</IsIncluded>
+  <ZoneID>MidLowerLeftZone</ZoneID>
+  <PartOrder>1</PartOrder>
+  <FrameState>Normal</FrameState>
+  <Height />
+  <Width />
+  <AllowRemove>true</AllowRemove>
+  <AllowZoneChange>true</AllowZoneChange>
+  <AllowMinimize>true</AllowMinimize>
+  <AllowConnect>false</AllowConnect>
+  <AllowEdit>true</AllowEdit>
+  <AllowHide>true</AllowHide>
+  <IsVisible>true</IsVisible>
+  <DetailLink />
+  <HelpLink />
+  <HelpMode>Modeless</HelpMode>
+  <Dir>Default</Dir>
+  <PartImageSmall />
+  <MissingAssembly>Cannot import this Web Part.</MissingAssembly>
+  <PartImageLarge />
+  <IsIncludedFilter />
+  <Assembly>Microsoft.Office.Server.Search, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+  <TypeName>Microsoft.Office.Server.Search.WebControls.SearchStatsWebPart</TypeName>
+  <Mode xmlns="urn:schemas-microsoft-com:SearchStatsWebPart">OneLine</Mode>
+  <DisplayNumberOfPages xmlns="urn:schemas-microsoft-com:SearchStatsWebPart">true</DisplayNumberOfPages>
+  <DisplayTotalResults xmlns="urn:schemas-microsoft-com:SearchStatsWebPart">true</DisplayTotalResults>
+  <DisplayResponseTime xmlns="urn:schemas-microsoft-com:SearchStatsWebPart">false</DisplayResponseTime>
+  <DisplayDeepLatencyStats xmlns="urn:schemas-microsoft-com:SearchStatsWebPart">false</DisplayDeepLatencyStats>
+  <ShowMessages xmlns="urn:schemas-microsoft-com:SearchStatsWebPart">false</ShowMessages>
+  <QueryID xmlns="urn:schemas-microsoft-com:SearchStatsWebPart">Query1</QueryID>
+</WebPart>]]></AllUsersWebPart>
+			<Property Name="ID" Value="10" />
+			<Property Name="ContentTypeId" Value="0x010105006C1802C176E44548BC29BC86B88C5885" />
+			<Property Name="ContentType" Value="Master Page" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="sites/realtimefoundation/_catalogs/masterpage" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="SearchResults.aspx" />
+			<Property Name="MetaInfo" Value="10;#vti_parserversion:SR|14.0.0.6109&#xD;&#xA;vti_folderitemcount:IR|0&#xD;&#xA;vti_charset:SR|utf-8&#xD;&#xA;PublishingAssociatedContentType:SR|;#Welcome Page;#0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF390064DEA0F50FC8C147B0B6EA0636C4A7D4;#&#xD;&#xA;vti_author:SR|SHAREPOINT\\system&#xD;&#xA;vti_setuppath:SR|Features\\PortalLayouts\\SearchResults.aspx&#xD;&#xA;vti_cachedzones:VR|TopZone LeftZone MidUpperLeftZone MidUpperRightZone MidLowerLeftZone MidLowerRightZone BottomZone RightZone&#xD;&#xA;vti_cachedneedsrewrite:BR|false&#xD;&#xA;PublishingPreviewImage:SR|/sites/realtimefoundation/_catalogs/masterpage/Preview Images/searchresults.png, /sites/realtimefoundation/_catalogs/masterpage/Preview Images/searchresults.png&#xD;&#xA;vti_foldersubfolderitemcount:IR|0&#xD;&#xA;vti_modifiedby:SR|SHAREPOINT\\system&#xD;&#xA;vti_cachedhastheme:BR|false&#xD;&#xA;ContentType:SW|Master Page&#xD;&#xA;vti_title:SR|Search results&#xD;&#xA;MasterPageDescription:SR|This page layout contains a tab control, and search Web Parts. It has Web Part zones arranged in a right column, header, footer, 2 columns and 2 rows.&#xD;&#xA;vti_cachednoperszones:VR|TopZone LeftZone MidUpperLeftZone MidUpperRightZone MidLowerLeftZone MidLowerRightZone BottomZone RightZone&#xD;&#xA;ContentTypeId:SW|0x010105006C1802C176E44548BC29BC86B88C5885&#xD;&#xA;" />
+			<Property Name="Order" Value="1000.00000000000" />
+			<Property Name="MasterPageDescription" Value="This page layout contains a tab control, and search Web Parts. It has Web Part zones arranged in a right column, header, footer, 2 columns and 2 rows." />
+			<Property Name="UIVersion" Value="4" />
+		</File>
+		<File Url="TabViewPageLayout.aspx" Type="GhostableInLibrary" Path="TabViewPageLayout.aspx">
+			<AllUsersWebPart WebPartOrder="1" WebPartZoneID="Header" ID="g_11b08004_50a7_4d34_a2b2_642c5229c67e"><![CDATA[<WebPart xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/WebPart/v2">
+  <Title>Contact Details</Title>
+  <FrameType>TitleBarOnly</FrameType>
+  <Description>Use to display details about a contact for this page or site.</Description>
+  <IsIncluded>true</IsIncluded>
+  <ZoneID>Header</ZoneID>
+  <PartOrder>1</PartOrder>
+  <FrameState>Normal</FrameState>
+  <Height />
+  <Width />
+  <AllowRemove>true</AllowRemove>
+  <AllowZoneChange>true</AllowZoneChange>
+  <AllowMinimize>true</AllowMinimize>
+  <AllowConnect>true</AllowConnect>
+  <AllowEdit>true</AllowEdit>
+  <AllowHide>true</AllowHide>
+  <IsVisible>true</IsVisible>
+  <DetailLink />
+  <HelpLink />
+  <HelpMode>Modeless</HelpMode>
+  <Dir>Default</Dir>
+  <PartImageSmall />
+  <MissingAssembly />
+  <PartImageLarge>/_layouts/images/wp_pers.gif</PartImageLarge>
+  <IsIncludedFilter />
+  <Hidden>false</Hidden>
+  <Assembly>Microsoft.SharePoint.Portal, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+  <TypeName>Microsoft.SharePoint.Portal.WebControls.ContactFieldControl</TypeName>
+  <CacheTimeout xmlns="urn:schemas-microsoft-com:sharepoint:CacheableWebPart">600</CacheTimeout>
+</WebPart>]]></AllUsersWebPart>
+			<Property Name="ID" Value="6" />
+			<Property Name="ContentTypeId" Value="0x010105006C1802C176E44548BC29BC86B88C5885" />
+			<Property Name="ContentType" Value="Master Page" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="sites/realtimefoundation/_catalogs/masterpage" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="TabViewPageLayout.aspx" />
+			<Property Name="MetaInfo" Value="6;#vti_parserversion:SR|14.0.0.6109&#xD;&#xA;vti_folderitemcount:IR|0&#xD;&#xA;vti_charset:SR|utf-8&#xD;&#xA;PublishingAssociatedContentType:SR|;#Welcome Page;#0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF390064DEA0F50FC8C147B0B6EA0636C4A7D4;#&#xD;&#xA;vti_author:SR|SHAREPOINT\\system&#xD;&#xA;vti_setuppath:SR|Features\\PortalLayouts\\TabViewPageLayout.aspx&#xD;&#xA;vti_cachedzones:VR|Header TopZone RightColumn Footer&#xD;&#xA;vti_cachedneedsrewrite:BR|false&#xD;&#xA;PublishingPreviewImage:SR|/sites/realtimefoundation/_catalogs/masterpage/Preview Images/sitedir_layout.gif, /sites/realtimefoundation/_catalogs/masterpage/Preview Images/sitedir_layout.gif&#xD;&#xA;vti_foldersubfolderitemcount:IR|0&#xD;&#xA;vti_modifiedby:SR|SHAREPOINT\\system&#xD;&#xA;vti_cachedhastheme:BR|false&#xD;&#xA;vti_title:SR|Site directory home&#xD;&#xA;MasterPageDescription:SR|This page layout contains a tab control. It has Web Part zones arranged in a header, footer, and 2 columns. &#xD;&#xA;ContentType:SW|Master Page&#xD;&#xA;ContentTypeId:SW|0x010105006C1802C176E44548BC29BC86B88C5885&#xD;&#xA;" />
+			<Property Name="Order" Value="600.000000000000" />
+			<Property Name="MasterPageDescription" Value="This page layout contains a tab control. It has Web Part zones arranged in a header, footer, and 2 columns. " />
+			<Property Name="UIVersion" Value="4" />
+		</File>
+		<File Url="welcomelayout2.aspx" Type="GhostableInLibrary" Path="welcomelayout2.aspx">
+			<Property Name="ID" Value="12" />
+			<Property Name="ContentTypeId" Value="0x010105006C1802C176E44548BC29BC86B88C5885" />
+			<Property Name="ContentType" Value="Master Page" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="sites/realtimefoundation/_catalogs/masterpage" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="welcomelayout2.aspx" />
+			<Property Name="MetaInfo" Value="12;#vti_parserversion:SR|14.0.0.6109&#xD;&#xA;vti_folderitemcount:IR|0&#xD;&#xA;vti_charset:SR|utf-8&#xD;&#xA;PublishingHidden:SR|TRUE&#xD;&#xA;vti_author:SR|SHAREPOINT\\system&#xD;&#xA;vti_setuppath:SR|Features\\PortalLayouts\\welcomelayout2.aspx&#xD;&#xA;PublishingAssociatedContentType:SR|;#Welcome Page;#0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF390064DEA0F50FC8C147B0B6EA0636C4A7D4;#&#xD;&#xA;vti_cachedzones:VR|TopZone MiddleLeftZone MiddleRightZone BottomZone&#xD;&#xA;vti_cachedneedsrewrite:BR|false&#xD;&#xA;vti_foldersubfolderitemcount:IR|0&#xD;&#xA;vti_modifiedby:SR|SHAREPOINT\\system&#xD;&#xA;vti_cachedhastheme:BR|false&#xD;&#xA;ContentType:SW|Master Page&#xD;&#xA;vti_title:SR|Welcome Page with Web Part Zones&#xD;&#xA;vti_cachednoperszones:VR|TopZone MiddleLeftZone MiddleRightZone BottomZone&#xD;&#xA;ContentTypeId:SW|0x010105006C1802C176E44548BC29BC86B88C5885&#xD;&#xA;" />
+			<Property Name="Order" Value="1200.00000000000" />
+			<Property Name="UIVersion" Value="4" />
+		</File>
+	</Module>
+</Elements>

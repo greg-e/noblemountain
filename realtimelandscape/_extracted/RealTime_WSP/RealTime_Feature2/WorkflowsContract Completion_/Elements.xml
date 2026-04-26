@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<Module Name="WorkflowsContract Completion_" Url="Workflows/Contract Completion" RootWebOnly="FALSE" Path="Files\Workflows\14ContractCompletion" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<File Url="Contract Completion.xoml.wfconfig.xml" DoGUIDFixUp="true" Type="GhostableInLibrary" Path="13ContractCompletion.xoml.wfconfig.xml">
+			<Property Name="ID" Value="48" />
+			<Property Name="ContentTypeId" Value="0x010107007E6EEAE8D3CD3C45BA0A57BECF10EE2B" />
+			<Property Name="ContentType" Value="User Workflow Document" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="sites/realtimefoundation/Workflows/Contract Completion" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="Contract Completion.xoml.wfconfig.xml" />
+			<Property Name="MetaInfo" Value="48;#BaseAssociationGuid:SW|{AA2DC493-8B90-4EC3-83A5-E3B622AA3294}&#xD;&#xA;WorkflowDisplayName:SW|Contract Completion&#xD;&#xA;vti_parserversion:SR|14.0.0.6109&#xD;&#xA;vti_folderitemcount:IR|0&#xD;&#xA;vti_charset:SR|utf-8&#xD;&#xA;XomlUrl:SW|Workflows/Contract Completion/Contract Completion.xoml&#xD;&#xA;NoCodeVisibility:SW|&#xD;&#xA;vti_author:SR|i:0#.f|membership|greg@realtimelandscape.onmicrosoft.com&#xD;&#xA;vti_foldersubfolderitemcount:IR|0&#xD;&#xA;AssociatedListId:SW|{$ListId:Contract Library;}&#xD;&#xA;vti_cachedcustomprops:VX|BaseAssociationGuid WorkflowDisplayName AssociatedListId XomlUrl NoCodeVisibility RulesUrl RestrictContentTypeId&#xD;&#xA;vti_modifiedby:SR|i:0#.f|membership|greg@realtimelandscape.onmicrosoft.com&#xD;&#xA;vti_privatelistexempt:BW|true&#xD;&#xA;vti_title:SR|Contract Completion.xoml.wfconfig.xml&#xD;&#xA;ContentTypeId:SW|0x010107007E6EEAE8D3CD3C45BA0A57BECF10EE2B&#xD;&#xA;ContentType:SW|User Workflow Document&#xD;&#xA;RulesUrl:SW|&#xD;&#xA;RestrictContentTypeId:SW|&#xD;&#xA;" />
+			<Property Name="Order" Value="4800.00000000000" />
+		</File>
+		<File Url="Contract Completion.xsn" Type="GhostableInLibrary" Path="15ContractCompletion.xsn">
+			<Property Name="ID" Value="49" />
+			<Property Name="ContentTypeId" Value="0x010107007E6EEAE8D3CD3C45BA0A57BECF10EE2B" />
+			<Property Name="ContentType" Value="User Workflow Document" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="sites/realtimefoundation/Workflows/Contract Completion" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="Contract Completion.xsn" />
+			<Property Name="MetaInfo" Value="49;#vti_parserversion:SR|14.0.0.6109&#xD;&#xA;vti_modifiedby:SR|i:0#.f|membership|greg@realtimelandscape.onmicrosoft.com&#xD;&#xA;ipfs_streamhash:SW|wV0XkL8QE5LeO7hBRzSJzIed9HA+VFM4A/MYNpspXJ8=&#xD;&#xA;vti_folderitemcount:IW|0&#xD;&#xA;vti_foldersubfolderitemcount:IW|0&#xD;&#xA;vti_privatelistexempt:BW|true&#xD;&#xA;ContentTypeId:SW|0x010107007E6EEAE8D3CD3C45BA0A57BECF10EE2B&#xD;&#xA;vti_author:SR|i:0#.f|membership|greg@realtimelandscape.onmicrosoft.com&#xD;&#xA;" />
+			<Property Name="Order" Value="4900.00000000000" />
+		</File>
+		<File Url="Contract Completion.xoml" Type="GhostableInLibrary" Path="16ContractCompletion.xoml">
+			<Property Name="ID" Value="47" />
+			<Property Name="ContentTypeId" Value="0x010107007E6EEAE8D3CD3C45BA0A57BECF10EE2B" />
+			<Property Name="ContentType" Value="User Workflow Document" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="sites/realtimefoundation/Workflows/Contract Completion" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="Contract Completion.xoml" />
+			<Property Name="MetaInfo" Value="47;#vti_parserversion:SR|14.0.0.6109&#xD;&#xA;vti_folderitemcount:IR|0&#xD;&#xA;vti_foldersubfolderitemcount:IR|0&#xD;&#xA;vti_modifiedby:SR|i:0#.f|membership|greg@realtimelandscape.onmicrosoft.com&#xD;&#xA;ContentTypeId:SW|0x010107007E6EEAE8D3CD3C45BA0A57BECF10EE2B&#xD;&#xA;vti_author:SR|i:0#.f|membership|greg@realtimelandscape.onmicrosoft.com&#xD;&#xA;" />
+			<Property Name="Order" Value="4700.00000000000" />
+		</File>
+	</Module>
+</Elements>

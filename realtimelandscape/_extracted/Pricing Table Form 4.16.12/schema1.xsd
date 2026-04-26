@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema targetNamespace="http://schemas.microsoft.com/office/infopath/2009/WSSList/cmeDataFields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dfs="http://schemas.microsoft.com/office/infopath/2003/dataFormSolution" xmlns:d="http://schemas.microsoft.com/office/infopath/2009/WSSList/dataFields" xmlns:pc="http://schemas.microsoft.com/office/infopath/2007/PartnerControls" xmlns:ma="http://schemas.microsoft.com/office/2009/metadata/properties/metaAttributes" xmlns:q="http://schemas.microsoft.com/office/infopath/2009/WSSList/queryFields" xmlns:dms="http://schemas.microsoft.com/office/2009/documentManagement/types" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2009/WSSList/cmeDataFields" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:import schemaLocation="schema.xsd" namespace="http://schemas.microsoft.com/office/infopath/2003/dataFormSolution"/>
+	<xsd:import schemaLocation="schema2.xsd" namespace="http://schemas.microsoft.com/office/2009/documentManagement/types"/>
+	<xsd:import schemaLocation="schema3.xsd" namespace="http://schemas.microsoft.com/office/infopath/2007/PartnerControls"/>
+	<xsd:import schemaLocation="schema4.xsd" namespace="http://schemas.microsoft.com/office/infopath/2009/WSSList/queryFields"/>
+	<xsd:element name="SharePointListItem_RW">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="my:ID" minOccurs="0"/>
+				<xsd:element ref="my:Title" minOccurs="0"/>
+				<xsd:element ref="my:Author" minOccurs="0"/>
+				<xsd:element ref="my:Editor" minOccurs="0"/>
+				<xsd:element ref="my:Modified" minOccurs="0"/>
+				<xsd:element ref="my:Created" minOccurs="0"/>
+				<xsd:element ref="my:Attachments" minOccurs="0"/>
+				<xsd:element ref="my:Activity_x0020_Category" minOccurs="0"/>
+				<xsd:element ref="my:Unit" minOccurs="0"/>
+				<xsd:element ref="my:Unit_x0020_Multiplier" minOccurs="0"/>
+				<xsd:element ref="my:Unit_x0020_Category" minOccurs="0"/>
+				<xsd:element ref="my:Production_x0020_Rate" minOccurs="0"/>
+				<xsd:element ref="my:Material_x0020_Rate" minOccurs="0"/>
+				<xsd:element ref="my:Description" minOccurs="0"/>
+				<xsd:element ref="my:Specification" minOccurs="0"/>
+				<xsd:element ref="my:Activity_x0020_Note" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ID" ma:displayName="ID" ma:readOnly="True" ma:allowDeletion="false" nillable="true" type="dms:CounterType"/>
+	<xsd:element name="Title" ma:displayName="Title" ma:allowDeletion="false">
+		<xsd:simpleType>
+			<xsd:restriction base="dms:TextType">
+				<xsd:minLength value="1"/>
+				<xsd:maxLength value="255"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="Author" ma:displayName="Created By" ma:readOnly="True" ma:SharePointGroup="0" ma:SearchPeopleOnly="true" ma:allowDeletion="false" type="dms:UserType"/>
+	<xsd:element name="Editor" ma:displayName="Modified By" ma:readOnly="True" ma:SharePointGroup="0" ma:SearchPeopleOnly="true" ma:allowDeletion="false" type="dms:UserType"/>
+	<xsd:element name="Modified" ma:displayName="Modified" ma:readOnly="True" ma:formatSpec="dateFormat:Short Date;timeFormat:none;" ma:formatCategory="datetime" ma:allowDeletion="false" nillable="true" type="dms:DateTimeType"/>
+	<xsd:element name="Created" ma:displayName="Created" ma:readOnly="True" ma:formatSpec="dateFormat:Short Date;timeFormat:none;" ma:formatCategory="datetime" ma:allowDeletion="false" nillable="true" type="dms:DateTimeType"/>
+	<xsd:element name="Attachments" ma:displayName="Attachments" ma:allowDeletion="false" type="dms:AttachmentsType"/>
+	<xsd:element name="Activity_x0020_Category" ma:displayName="Activity Category" ma:auxDataSourceName="Choices Data Connection" ma:auxChoicesXPath="/root/Activity_x0020_Category/SharePointListChoice_RW" ma:auxValue="." ma:auxDisplay="@DisplayName" ma:allowDeletion="true" type="dms:ChoiceType"/>
+	<xsd:element name="Unit" ma:displayName="Unit" ma:allowDeletion="true">
+		<xsd:simpleType>
+			<xsd:restriction base="dms:TextType">
+				<xsd:maxLength value="255"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="Unit_x0020_Multiplier" ma:displayName="Unit Multiplier" ma:formatSpec="numDigits:2;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="Unit_x0020_Category" ma:displayName="Unit Category" ma:auxDataSourceName="Choices Data Connection" ma:auxChoicesXPath="/root/Unit_x0020_Category/SharePointListChoice_RW" ma:auxValue="." ma:auxDisplay="@DisplayName" ma:allowDeletion="true" type="dms:ChoiceType"/>
+	<xsd:element name="Production_x0020_Rate" ma:displayName="Production Rate" ma:formatSpec="numDigits:3;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="Material_x0020_Rate" ma:displayName="Material Rate" ma:formatSpec="numDigits:3;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="Description" ma:displayName="Description" ma:allowDeletion="true">
+		<xsd:simpleType>
+			<xsd:restriction base="dms:TextType">
+				<xsd:maxLength value="255"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="Specification" ma:displayName="Specification" ma:allowDeletion="true" type="dms:NoteRichType"/>
+	<xsd:element name="Activity_x0020_Note" ma:displayName="Activity Note" ma:allowDeletion="true" type="dms:NoteRichType"/>
+</xsd:schema>

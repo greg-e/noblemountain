@@ -1,0 +1,21 @@
+<WorkflowConfig Version="14.0.0.6109">
+	<Template BaseID="{F3139D59-0C08-4A93-A5E0-BADA480981BB}" DocLibID="{$ListId:Workflows;}" XomlHref="Workflows/Create Contract Table Item/Create Contract Table Item.xoml" XomlVersion="V1.0" TaskContentType="0x01080100C9C9515DE4E24001905074F980F93160" Category="List" Name="Create Contract Table Item" Description=""/>
+	<Association ListID="{$ListId:Contract Library;}" TaskListID="{$ListId:Lists/Tasks;}" HistoryListID="{$ListId:Lists/Workflow History;}" StartOnCreate="true"/>
+	<ContentTypes/>
+	<Initiation URL="_layouts/IniWrkflIP.aspx">
+		<Fields/>
+		<Parameters/>
+		<DefaultData/>
+	</Initiation>
+	<Extended>
+		<Fields/>
+	</Extended>
+	<MetaData>
+		<ExtendedStatusColumnValues>
+			<StatusColumnValue>Canceled</StatusColumnValue>
+			<StatusColumnValue>Approved</StatusColumnValue>
+			<StatusColumnValue>Rejected</StatusColumnValue>
+		</ExtendedStatusColumnValues>
+		<Instantiation_FormURI>Workflows/Create Contract Table Item/Create Contract Table Item.xsn</Instantiation_FormURI>
+	</MetaData>
+</WorkflowConfig>

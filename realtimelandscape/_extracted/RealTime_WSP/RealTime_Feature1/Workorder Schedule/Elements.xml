@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ListInstance FeatureId="{00bfea71-513d-4ca0-96c2-6a47775c0119}" TemplateType="150" Title="Workorder Schedule" Description="Workorder items automatically created in Workorder Activation Workflow.  Items are associated with Workorder Library and will delete when deleted in the Workorder Library." Url="Lists/Workorder Schedule" CustomSchema="Files\Lists\Workorder Schedule\Schema.xml" HyperlinkBaseUrl="https://realtimelandscape.sharepoint.com/sites/realtimefoundation" RootWebOnly="FALSE" xmlns="http://schemas.microsoft.com/sharepoint/" />
+</Elements>

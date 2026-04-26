@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ListInstance FeatureId="{00bfea71-4ea5-48d4-a4ad-305cf7030140}" TemplateType="140" Title="Workflow History" Description="" Url="Lists/Workflow History" CustomSchema="Files\Lists\Workflow History\Schema.xml" HyperlinkBaseUrl="https://realtimelandscape.sharepoint.com/sites/realtimefoundation" RootWebOnly="FALSE" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<Data>
+			<Rows>
+				<Row>
+					<Field Name="ID">1</Field>
+					<Field Name="ContentTypeId">0x010900847BF56D85874E4F9CB1AB824D158B3E</Field>
+					<Field Name="_ModerationStatus">0</Field>
+					<Field Name="Order">100.000000000000</Field>
+					<Field Name="FSObjType">0</Field>
+					<Field Name="FileLeafRef">1_.000</Field>
+					<Field Name="MetaInfo">1;#</Field>
+					<Field Name="Event">10</Field>
+					<Field Name="WorkflowInstance">{cfaec2d9-69bb-4044-8d80-ebc97bad2af8}</Field>
+					<Field Name="WorkflowAssociation">{e1bf601c-8158-45b1-94f1-4dac4c78e52b}</Field>
+					<Field Name="WorkflowTemplate">{172a084c-ac04-467e-9bbf-194ee96d1e30}</Field>
+					<Field Name="List">{$ListId:Workorder Library;}</Field>
+					<Field Name="Item">2</Field>
+					<Field Name="Occurred">2012-04-17T00:22:37Z</Field>
+					<Field Name="Group">0</Field>
+					<Field Name="Description">The e-mail message cannot be sent. Make sure the e-mail has a valid recipient.</Field>
+				</Row>
+			</Rows>
+		</Data>
+	</ListInstance>
+</Elements>

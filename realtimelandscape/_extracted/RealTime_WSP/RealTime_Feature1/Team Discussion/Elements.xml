@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ListInstance FeatureId="{00bfea71-6a49-43fa-b535-d15c05500108}" TemplateType="108" Title="Team Discussion" Description="Use the Team Discussion list to hold newsgroup-style discussions on topics relevant to your team." Url="Lists/Team Discussion" CustomSchema="Files\Lists\Team Discussion\Schema.xml" HyperlinkBaseUrl="https://realtimelandscape.sharepoint.com/sites/realtimefoundation" RootWebOnly="FALSE" xmlns="http://schemas.microsoft.com/sharepoint/" />
+</Elements>

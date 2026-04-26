@@ -1,0 +1,21 @@
+<WorkflowConfig Version="14.0.0.6109">
+	<Template BaseID="{FA941C3F-6795-4010-B310-643C68C430C3}" DocLibID="{$ListId:Workflows;}" XomlHref="Workflows/Update Workorder List Item/Update Workorder List Item.xoml" XomlVersion="V1.0" TaskContentType="0x01080100C9C9515DE4E24001905074F980F93160" Category="List" Name="Update Workorder List Item" Description=""/>
+	<Association ListID="{$ListId:Workorder Library;}" TaskListID="{$ListId:Lists/Tasks;}" HistoryListID="{$ListId:Lists/Workflow History;}" StartOnChange="true"/>
+	<ContentTypes/>
+	<Initiation URL="_layouts/IniWrkflIP.aspx">
+		<Fields/>
+		<Parameters/>
+		<DefaultData/>
+	</Initiation>
+	<Extended>
+		<Fields/>
+	</Extended>
+	<MetaData>
+		<ExtendedStatusColumnValues>
+			<StatusColumnValue>Canceled</StatusColumnValue>
+			<StatusColumnValue>Approved</StatusColumnValue>
+			<StatusColumnValue>Rejected</StatusColumnValue>
+		</ExtendedStatusColumnValues>
+		<Instantiation_FormURI>Workflows/Update Workorder List Item/Update Workorder List Item.xsn</Instantiation_FormURI>
+	</MetaData>
+</WorkflowConfig>

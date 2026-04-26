@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ListInstance FeatureId="{00bfea71-ec85-4903-972d-ebe475780106}" TemplateType="106" Title="Calendar" Description="Use the Calendar list to keep informed of upcoming meetings, deadlines, and other important events." Url="Lists/Calendar" CustomSchema="Files\Lists\Calendar\Schema.xml" HyperlinkBaseUrl="https://realtimelandscape.sharepoint.com/sites/realtimefoundation" RootWebOnly="FALSE" xmlns="http://schemas.microsoft.com/sharepoint/" />
+</Elements>

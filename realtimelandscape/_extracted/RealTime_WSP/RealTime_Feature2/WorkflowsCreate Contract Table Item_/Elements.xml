@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<Module Name="WorkflowsCreate Contract Table Item_" Url="Workflows/Create Contract Table Item" RootWebOnly="FALSE" Path="Files\Workflows\35CreateContractTableItem" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<File Url="Create Contract Table Item.xoml.wfconfig.xml" DoGUIDFixUp="true" Type="GhostableInLibrary" Path="34CreateContractTableItem.xoml.wfconfig.xml">
+			<Property Name="ID" Value="18" />
+			<Property Name="ContentTypeId" Value="0x010107007E6EEAE8D3CD3C45BA0A57BECF10EE2B" />
+			<Property Name="ContentType" Value="User Workflow Document" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="sites/realtimefoundation/Workflows/Create Contract Table Item" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="Create Contract Table Item.xoml.wfconfig.xml" />
+			<Property Name="MetaInfo" Value="18;#BaseAssociationGuid:SW|{F3139D59-0C08-4A93-A5E0-BADA480981BB}&#xD;&#xA;WorkflowDisplayName:SW|Create Contract Table Item&#xD;&#xA;vti_parserversion:SR|14.0.0.6109&#xD;&#xA;vti_folderitemcount:IR|0&#xD;&#xA;vti_charset:SR|utf-8&#xD;&#xA;XomlUrl:SW|Workflows/Create Contract Table Item/Create Contract Table Item.xoml&#xD;&#xA;NoCodeVisibility:SW|&#xD;&#xA;vti_author:SR|i:0#.f|membership|greg@realtimelandscape.onmicrosoft.com&#xD;&#xA;vti_foldersubfolderitemcount:IR|0&#xD;&#xA;AssociatedListId:SW|{$ListId:Contract Library;}&#xD;&#xA;vti_cachedcustomprops:VX|BaseAssociationGuid WorkflowDisplayName AssociatedListId XomlUrl NoCodeVisibility RulesUrl RestrictContentTypeId&#xD;&#xA;vti_modifiedby:SR|i:0#.f|membership|greg@realtimelandscape.onmicrosoft.com&#xD;&#xA;vti_privatelistexempt:BW|true&#xD;&#xA;vti_title:SR|Create Contract Table Item.xoml.wfconfig.xml&#xD;&#xA;ContentTypeId:SW|0x010107007E6EEAE8D3CD3C45BA0A57BECF10EE2B&#xD;&#xA;ContentType:SW|User Workflow Document&#xD;&#xA;RulesUrl:SW|&#xD;&#xA;RestrictContentTypeId:SW|&#xD;&#xA;" />
+			<Property Name="Order" Value="1800.00000000000" />
+		</File>
+		<File Url="Create Contract Table Item.xoml" DoGUIDFixUp="true" Type="GhostableInLibrary" Path="36CreateContractTableItem.xoml">
+			<Property Name="ID" Value="17" />
+			<Property Name="ContentTypeId" Value="0x010107007E6EEAE8D3CD3C45BA0A57BECF10EE2B" />
+			<Property Name="ContentType" Value="User Workflow Document" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="sites/realtimefoundation/Workflows/Create Contract Table Item" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="Create Contract Table Item.xoml" />
+			<Property Name="MetaInfo" Value="17;#vti_parserversion:SR|14.0.0.6109&#xD;&#xA;vti_folderitemcount:IR|0&#xD;&#xA;vti_foldersubfolderitemcount:IR|0&#xD;&#xA;vti_modifiedby:SR|i:0#.f|membership|greg@realtimelandscape.onmicrosoft.com&#xD;&#xA;ContentTypeId:SW|0x010107007E6EEAE8D3CD3C45BA0A57BECF10EE2B&#xD;&#xA;vti_author:SR|i:0#.f|membership|greg@realtimelandscape.onmicrosoft.com&#xD;&#xA;" />
+			<Property Name="Order" Value="1700.00000000000" />
+		</File>
+	</Module>
+</Elements>

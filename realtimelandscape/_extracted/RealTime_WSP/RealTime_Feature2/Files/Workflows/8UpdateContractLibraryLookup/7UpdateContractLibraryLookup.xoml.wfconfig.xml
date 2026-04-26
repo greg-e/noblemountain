@@ -1,0 +1,21 @@
+<WorkflowConfig Version="14.0.0.6109">
+	<Template BaseID="{61C7FBE3-55D1-45AF-BABB-DC208C73CC21}" DocLibID="{$ListId:Workflows;}" XomlHref="Workflows/Update Contract Library Lookup/Update Contract Library Lookup.xoml" XomlVersion="V1.0" TaskContentType="0x01080100C9C9515DE4E24001905074F980F93160" Category="List" Name="Update Contract Library Lookup" Description=""/>
+	<Association ListID="{$ListId:Lists/Contract Table;}" TaskListID="{$ListId:Lists/Tasks;}" HistoryListID="{$ListId:Lists/Workflow History;}" StartOnCreate="true"/>
+	<ContentTypes/>
+	<Initiation URL="_layouts/IniWrkflIP.aspx">
+		<Fields/>
+		<Parameters/>
+		<DefaultData/>
+	</Initiation>
+	<Extended>
+		<Fields/>
+	</Extended>
+	<MetaData>
+		<ExtendedStatusColumnValues>
+			<StatusColumnValue>Canceled</StatusColumnValue>
+			<StatusColumnValue>Approved</StatusColumnValue>
+			<StatusColumnValue>Rejected</StatusColumnValue>
+		</ExtendedStatusColumnValues>
+		<Instantiation_FormURI>Workflows/Update Contract Library Lookup/Update Contract Library Lookup.xsn</Instantiation_FormURI>
+	</MetaData>
+</WorkflowConfig>

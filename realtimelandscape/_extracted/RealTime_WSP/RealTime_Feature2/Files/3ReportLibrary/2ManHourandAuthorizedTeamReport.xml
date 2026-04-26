@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?mso-infoPathSolution name="urn:schemas-microsoft-com:office:infopath:Contract-MH-Report:-myXSD-2011-12-12T16-30-10" solutionVersion="1.0.0.166" productVersion="14.0.0.0" PIVersion="1.0.0.0" href="https://realtimelandscape.sharepoint.com/sites/realtimefoundation/FormServerTemplates/Contract%20MH%20Report.xsn"?>
+<?mso-application progid="InfoPath.Document" versionProgid="InfoPath.Document.3"?>
+<my:myFields xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pc="http://schemas.microsoft.com/office/infopath/2007/PartnerControls" xmlns:ma="http://schemas.microsoft.com/office/2009/metadata/properties/metaAttributes" xmlns:d="http://schemas.microsoft.com/office/infopath/2009/WSSList/dataFields" xmlns:q="http://schemas.microsoft.com/office/infopath/2009/WSSList/queryFields" xmlns:dfs="http://schemas.microsoft.com/office/infopath/2003/dataFormSolution" xmlns:dms="http://schemas.microsoft.com/office/2009/documentManagement/types" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2011-12-12T16:30:10" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003" xml:lang="en-US">
+	<my:Jan>
+		<my:JanSum>0</my:JanSum>
+		<my:JanAvgPercentage xsi:nil="true"></my:JanAvgPercentage>
+		<my:JanAuthorized>0</my:JanAuthorized>
+		<my:JanLaborPercentGoal>NaN</my:JanLaborPercentGoal>
+		<my:JanPayrollGuideline>0</my:JanPayrollGuideline>
+	</my:Jan>
+	<my:Feb>
+		<my:FebSum>0</my:FebSum>
+		<my:FebAvgPercentage xsi:nil="true"></my:FebAvgPercentage>
+		<my:FebAuthorized>0</my:FebAuthorized>
+		<my:FebLaborPercentGoal>NaN</my:FebLaborPercentGoal>
+		<my:FebPayrollGuideline>0</my:FebPayrollGuideline>
+	</my:Feb>
+	<my:Mar>
+		<my:MarSum>0</my:MarSum>
+		<my:MarAvgPercentage xsi:nil="true"></my:MarAvgPercentage>
+		<my:MarAuthorized>0</my:MarAuthorized>
+		<my:MarLaborPercentGoal>NaN</my:MarLaborPercentGoal>
+		<my:MarPayrollGuideline>0</my:MarPayrollGuideline>
+	</my:Mar>
+	<my:Apr>
+		<my:AprSum>0</my:AprSum>
+		<my:AprAvgPercentage xsi:nil="true"></my:AprAvgPercentage>
+		<my:AprAuthorized>0</my:AprAuthorized>
+		<my:AprLaborPercentGoal>NaN</my:AprLaborPercentGoal>
+		<my:AprPayrollGuideline>0</my:AprPayrollGuideline>
+	</my:Apr>
+	<my:May>
+		<my:MaySum>0</my:MaySum>
+		<my:MayAvgPercentage xsi:nil="true"></my:MayAvgPercentage>
+		<my:MayAuthorized>0</my:MayAuthorized>
+		<my:MayLaborPercentGoal>NaN</my:MayLaborPercentGoal>
+		<my:MayPayrollGuideline>0</my:MayPayrollGuideline>
+	</my:May>
+	<my:Jun>
+		<my:JuneSum>0</my:JuneSum>
+		<my:JunAvgPercentage xsi:nil="true"></my:JunAvgPercentage>
+		<my:JunAuthorized>0</my:JunAuthorized>
+		<my:JunLaborPercentGoal>NaN</my:JunLaborPercentGoal>
+		<my:JunPayrollGuideline>0</my:JunPayrollGuideline>
+	</my:Jun>
+	<my:Jul>
+		<my:JulSum>0</my:JulSum>
+		<my:JulAvgPercentage xsi:nil="true"></my:JulAvgPercentage>
+		<my:JulAuthorized>0</my:JulAuthorized>
+		<my:JulLaborPercentGoal>NaN</my:JulLaborPercentGoal>
+		<my:JulPayrollGuideline>0</my:JulPayrollGuideline>
+	</my:Jul>
+	<my:Aug>
+		<my:AugSum>0</my:AugSum>
+		<my:AugAvgPercentage xsi:nil="true"></my:AugAvgPercentage>
+		<my:AugAuthorized>0</my:AugAuthorized>
+		<my:AugLaborPercentGoal>NaN</my:AugLaborPercentGoal>
+		<my:AugPayrollGuideline>0</my:AugPayrollGuideline>
+	</my:Aug>
+	<my:Sep>
+		<my:SepSum>0</my:SepSum>
+		<my:SepAvgPercentage xsi:nil="true"></my:SepAvgPercentage>
+		<my:SepAuthorized>0</my:SepAuthorized>
+		<my:SepLaborPercentGoal>NaN</my:SepLaborPercentGoal>
+		<my:SepPayrollGuideline>0</my:SepPayrollGuideline>
+	</my:Sep>
+	<my:Oct>
+		<my:OctSum>0</my:OctSum>
+		<my:OctAvgPercentage xsi:nil="true"></my:OctAvgPercentage>
+		<my:OctAuthorized>0</my:OctAuthorized>
+		<my:OctLaborPercentGoal>NaN</my:OctLaborPercentGoal>
+		<my:OctPayrollGuideline>0</my:OctPayrollGuideline>
+	</my:Oct>
+	<my:Nov>
+		<my:NovSum>0</my:NovSum>
+		<my:NovAvgPercentage xsi:nil="true"></my:NovAvgPercentage>
+		<my:NovAuthorized>0</my:NovAuthorized>
+		<my:NovLaborPercentGoal>NaN</my:NovLaborPercentGoal>
+		<my:NovPayrollGuideline>0</my:NovPayrollGuideline>
+	</my:Nov>
+	<my:Dec>
+		<my:DecSum>0</my:DecSum>
+		<my:DecAvgPercentage xsi:nil="true"></my:DecAvgPercentage>
+		<my:DecAuthorized>0</my:DecAuthorized>
+		<my:DecLaborPercentGoal>NaN</my:DecLaborPercentGoal>
+		<my:DecPayrollGuideline>0</my:DecPayrollGuideline>
+	</my:Dec>
+	<my:WeeklyRevenue>0</my:WeeklyRevenue>
+	<my:Manager></my:Manager>
+	<my:CostPerHour>9.75</my:CostPerHour>
+	<my:TotalPersonnel xsi:nil="true"></my:TotalPersonnel>
+	<my:Date>2012-04-17</my:Date>
+</my:myFields>

@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+This file is automatically created and modified by Microsoft InfoPath.
+Changes made to the file outside of InfoPath might be lost if the form template is modified in InfoPath.
+-->
+<xsf:xDocumentClass trustSetting="automatic" solutionFormatVersion="3.0.0.0" solutionVersion="1.0.0.168" productVersion="14.0.0" name="urn:schemas-microsoft-com:office:infopath:Contract-MH-Report:-myXSD-2011-12-12T16-30-10" publishUrl="C:\Users\Gregory\Documents\Real Time Landscape\Landscape Wire frame Template\Production Template\Production Forms\MH Report Foundation 4.12.12.xsn" xmlns:xsf="http://schemas.microsoft.com/office/infopath/2003/solutionDefinition" xmlns:xsf2="http://schemas.microsoft.com/office/infopath/2006/solutionDefinition/extensions" xmlns:xsf3="http://schemas.microsoft.com/office/infopath/2009/solutionDefinition/extensions" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xdUtil="http://schemas.microsoft.com/office/infopath/2003/xslt/Util" xmlns:xdXDocument="http://schemas.microsoft.com/office/infopath/2003/xslt/xDocument" xmlns:xdMath="http://schemas.microsoft.com/office/infopath/2003/xslt/Math" xmlns:xdDate="http://schemas.microsoft.com/office/infopath/2003/xslt/Date" xmlns:xdExtension="http://schemas.microsoft.com/office/infopath/2003/xslt/extension" xmlns:xdEnvironment="http://schemas.microsoft.com/office/infopath/2006/xslt/environment" xmlns:xdUser="http://schemas.microsoft.com/office/infopath/2006/xslt/User" xmlns:xdServerInfo="http://schemas.microsoft.com/office/infopath/2009/xslt/ServerInfo" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2011-12-12T16:30:10" xmlns:pc="http://schemas.microsoft.com/office/infopath/2007/PartnerControls" xmlns:ma="http://schemas.microsoft.com/office/2009/metadata/properties/metaAttributes" xmlns:d="http://schemas.microsoft.com/office/infopath/2009/WSSList/dataFields" xmlns:q="http://schemas.microsoft.com/office/infopath/2009/WSSList/queryFields" xmlns:dfs="http://schemas.microsoft.com/office/infopath/2003/dataFormSolution" xmlns:dms="http://schemas.microsoft.com/office/2009/documentManagement/types">
+	<xsf:package>
+		<xsf:files>
+			<xsf:file name="myschema.xsd">
+				<xsf:fileProperties>
+					<xsf:property name="namespace" type="string" value="http://schemas.microsoft.com/office/infopath/2003/myXSD/2011-12-12T16:30:10"></xsf:property>
+					<xsf:property name="editability" type="string" value="full"></xsf:property>
+					<xsf:property name="rootElement" type="string" value="myFields"></xsf:property>
+					<xsf:property name="useOnDemandAlgorithm" type="string" value="yes"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+			<xsf:file name="template.xml"></xsf:file>
+			<xsf:file name="sampledata.xml">
+				<xsf:fileProperties>
+					<xsf:property name="fileType" type="string" value="sampleData"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+			<xsf:file name="view1.xsl">
+				<xsf:fileProperties>
+					<xsf:property name="lang" type="string" value="1033"></xsf:property>
+					<xsf:property name="mode" type="string" value="8"></xsf:property>
+					<xsf:property name="componentId" type="string" value="230"></xsf:property>
+					<xsf:property name="xmlToEditName" type="string" value="298"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+			<xsf:file name="upgrade.xsl"></xsf:file>
+			<xsf:file name="Contract Library5.xsd">
+				<xsf:fileProperties>
+					<xsf:property name="namespace" type="string" value="http://schemas.microsoft.com/office/infopath/2003/dataFormSolution"></xsf:property>
+					<xsf:property name="dataObject" type="string" value="Contract Library"></xsf:property>
+					<xsf:property name="rootElement" type="string" value="myFields"></xsf:property>
+					<xsf:property name="useOnDemandAlgorithm" type="string" value="yes"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+			<xsf:file name="Contract Library6.xsd">
+				<xsf:fileProperties>
+					<xsf:property name="namespace" type="string" value="http://schemas.microsoft.com/office/infopath/2007/PartnerControls"></xsf:property>
+					<xsf:property name="dataObject" type="string" value="Contract Library"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+			<xsf:file name="Contract Library7.xsd">
+				<xsf:fileProperties>
+					<xsf:property name="namespace" type="string" value="http://schemas.microsoft.com/office/2009/documentManagement/types"></xsf:property>
+					<xsf:property name="dataObject" type="string" value="Contract Library"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+			<xsf:file name="Contract Library8.xsd">
+				<xsf:fileProperties>
+					<xsf:property name="namespace" type="string" value="http://schemas.microsoft.com/office/infopath/2009/WSSList/dataFields"></xsf:property>
+					<xsf:property name="dataObject" type="string" value="Contract Library"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+			<xsf:file name="Contract Library9.xsd">
+				<xsf:fileProperties>
+					<xsf:property name="namespace" type="string" value="http://schemas.microsoft.com/office/infopath/2009/WSSList/queryFields"></xsf:property>
+					<xsf:property name="dataObject" type="string" value="Contract Library"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+		</xsf:files>
+	</xsf:package>
+	<xsf:importParameters enabled="yes"></xsf:importParameters>
+	<xsf:documentVersionUpgrade>
+		<xsf:useTransform transform="upgrade.xsl" minVersionToUpgrade="0.0.0.0" maxVersionToUpgrade="1.0.0.164"></xsf:useTransform>
+	</xsf:documentVersionUpgrade>
+	<xsf:extensions>
+		<xsf:extension name="SolutionDefinitionExtensions">
+			<xsf2:solutionDefinition runtimeCompatibility="client server" allowClientOnlyCode="no">
+				<xsf2:offline openIfQueryFails="yes" cacheQueries="yes"></xsf2:offline>
+				<xsf2:server formLocale="en-US" isPreSubmitPostBackEnabled="no" isMobileEnabled="no"></xsf2:server>
+				<xsf2:viewsExtension></xsf2:viewsExtension>
+				<xsf2:solutionPropertiesExtension branch="contentTypeTemplate">
+					<xsf2:contentTypeTemplate site="../../realtimefoundation" path="Contract MH Report.xsn" name="MH Report" description="Fill out this form." browserEnable="yes"></xsf2:contentTypeTemplate>
+				</xsf2:solutionPropertiesExtension>
+			</xsf2:solutionDefinition>
+			<xsf3:solutionDefinition>
+				<xsf3:baseUrl relativeUrlBase="https://realtimelandscape.sharepoint.com/sites/realtimefoundation/FormServerTemplates/Contract MH Report.xsn"></xsf3:baseUrl>
+			</xsf3:solutionDefinition>
+		</xsf:extension>
+	</xsf:extensions>
+	<xsf:views default="View 1">
+		<xsf:view name="View 1" caption="View 1">
+			<xsf:mainpane transform="view1.xsl"></xsf:mainpane>
+			<xsf:editing>
+				<xsf:xmlToEdit name="OctSum_260" item="/my:myFields/my:Oct/my:OctSum">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="FebAvgPercentage_215" item="/my:myFields/my:Feb/my:FebAvgPercentage">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="AugSum_212" item="/my:myFields/my:Aug/my:AugSum">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="MayAvgPercentage_218" item="/my:myFields/my:May/my:MayAvgPercentage">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="JuneSum_210" item="/my:myFields/my:Jun/my:JuneSum">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="DecAvgPercentage_262" item="/my:myFields/my:Dec/my:DecAvgPercentage">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="NovAvgPercentage_261" item="/my:myFields/my:Nov/my:NovAvgPercentage">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="SepSum_213" item="/my:myFields/my:Sep/my:SepSum">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="OctAvgPercentage_263" item="/my:myFields/my:Oct/my:OctAvgPercentage">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="JunAvgPercentage_219" item="/my:myFields/my:Jun/my:JunAvgPercentage">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="JulAvgPercentage_220" item="/my:myFields/my:Jul/my:JulAvgPercentage">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="MarSum_207" item="/my:myFields/my:Mar/my:MarSum">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="AugAvgPercentage_221" item="/my:myFields/my:Aug/my:AugAvgPercentage">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="AprSum_208" item="/my:myFields/my:Apr/my:AprSum">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="AprAvgPercentage_217" item="/my:myFields/my:Apr/my:AprAvgPercentage">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="SepAvgPercentage_222" item="/my:myFields/my:Sep/my:SepAvgPercentage">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="FebSum_206" item="/my:myFields/my:Feb/my:FebSum">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="JanAvgPercentage_214" item="/my:myFields/my:Jan/my:JanAvgPercentage">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="JanSum_205" item="/my:myFields/my:Jan/my:JanSum">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="MaySum_209" item="/my:myFields/my:May/my:MaySum">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="JulSum_211" item="/my:myFields/my:Jul/my:JulSum">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="MarAvgPercentage_216" item="/my:myFields/my:Mar/my:MarAvgPercentage">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="JunAuthorized_228" item="/my:myFields/my:Jun/my:JunAuthorized">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="NovAuthorized_267" item="/my:myFields/my:Nov/my:NovAuthorized">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="DecAuthorized_268" item="/my:myFields/my:Dec/my:DecAuthorized">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="JanAuthorized_223" item="/my:myFields/my:Jan/my:JanAuthorized">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="AugAuthorized_230" item="/my:myFields/my:Aug/my:AugAuthorized">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="AprAuthorized_226" item="/my:myFields/my:Apr/my:AprAuthorized">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="FebAuthorized_224" item="/my:myFields/my:Feb/my:FebAuthorized">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="MayAuthorized_227" item="/my:myFields/my:May/my:MayAuthorized">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="MarAuthorized_225" item="/my:myFields/my:Mar/my:MarAuthorized">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="JulAuthorized_229" item="/my:myFields/my:Jul/my:JulAuthorized">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="SepAuthorized_231" item="/my:myFields/my:Sep/my:SepAuthorized">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="OctAuthorized_266" item="/my:myFields/my:Oct/my:OctAuthorized">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="OctLaborPercentGoal_269" item="/my:myFields/my:Oct/my:OctLaborPercentGoal">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="JulLaborPercentGoal_238" item="/my:myFields/my:Jul/my:JulLaborPercentGoal">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="AprLaborPercentGoal_235" item="/my:myFields/my:Apr/my:AprLaborPercentGoal">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="AugLaborPercentGoal_239" item="/my:myFields/my:Aug/my:AugLaborPercentGoal">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="NovLaborPercentGoal_270" item="/my:myFields/my:Nov/my:NovLaborPercentGoal">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="FebLaborPercentGoal_233" item="/my:myFields/my:Feb/my:FebLaborPercentGoal">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="JunLaborPercentGoal_237" item="/my:myFields/my:Jun/my:JunLaborPercentGoal">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="MarLaborPercentGoal_234" item="/my:myFields/my:Mar/my:MarLaborPercentGoal">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="JanLaborPercentGoal_232" item="/my:myFields/my:Jan/my:JanLaborPercentGoal">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="MayLaborPercentGoal_236" item="/my:myFields/my:May/my:MayLaborPercentGoal">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="SepLaborPercentGoal_240" item="/my:myFields/my:Sep/my:SepLaborPercentGoal">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="DecLaborPercentGoal_271" item="/my:myFields/my:Dec/my:DecLaborPercentGoal">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="DecPayrollGuideline_277" item="/my:myFields/my:Dec/my:DecPayrollGuideline">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="JanPayrollGuideline_250" item="/my:myFields/my:Jan/my:JanPayrollGuideline">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="AugPayrollGuideline_257" item="/my:myFields/my:Aug/my:AugPayrollGuideline">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="NovPayrollGuideline_276" item="/my:myFields/my:Nov/my:NovPayrollGuideline">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="JunPayrollGuideline_255" item="/my:myFields/my:Jun/my:JunPayrollGuideline">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="AprPayrollGuideline_253" item="/my:myFields/my:Apr/my:AprPayrollGuideline">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="FebPayrollGuideline_251" item="/my:myFields/my:Feb/my:FebPayrollGuideline">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="MarPayrollGuideline_252" item="/my:myFields/my:Mar/my:MarPayrollGuideline">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="MayPayrollGuideline_254" item="/my:myFields/my:May/my:MayPayrollGuideline">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="JulPayrollGuideline_256" item="/my:myFields/my:Jul/my:JulPayrollGuideline">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="SepPayrollGuideline_258" item="/my:myFields/my:Sep/my:SepPayrollGuideline">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="OctPayrollGuideline_275" item="/my:myFields/my:Oct/my:OctPayrollGuideline">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="NovSum_264" item="/my:myFields/my:Nov/my:NovSum">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="DecSum_265" item="/my:myFields/my:Dec/my:DecSum">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="WeeklyRevenue_259" item="/my:myFields/my:WeeklyRevenue">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+				<xsf:xmlToEdit name="Date_294" item="/my:myFields/my:Date">
+					<xsf:editWith proofing="no" autoComplete="no" component="xField"></xsf:editWith>
+				</xsf:xmlToEdit>
+			</xsf:editing>
+			<xsf:printSettings orientation="landscape"></xsf:printSettings>
+		</xsf:view>
+	</xsf:views>
+	<xsf:applicationParameters application="InfoPath Design Mode">
+		<xsf:solutionProperties fullyEditableNamespace="http://schemas.microsoft.com/office/infopath/2003/myXSD/2011-12-12T16:30:10" lastOpenView="view1.xsl" lastVersionNeedingTransform="1.0.0.164" automaticallyCreateNodes="yes"></xsf:solutionProperties>
+	</xsf:applicationParameters>
+	<xsf:documentSchemas>
+		<xsf:documentSchema rootSchema="yes" location="http://schemas.microsoft.com/office/infopath/2003/myXSD/2011-12-12T16:30:10 myschema.xsd"></xsf:documentSchema>
+	</xsf:documentSchemas>
+	<xsf:fileNew>
+		<xsf:initialXmlDocument caption="Contract MH Report" href="template.xml"></xsf:initialXmlDocument>
+	</xsf:fileNew>
+	<xsf:dataObjects>
+		<xsf:dataObject name="Contract Library" schema="Contract Library5.xsd" initOnLoad="yes">
+			<xsf:query>
+				<xsf:sharepointListAdapterRW queryAllowed="yes" submitAllowed="no" siteURL="../" sharePointListID="{4D5C0C26-8EB5-47AC-844C-D7F6E7666878}" name="Contract Library" contentTypeID="" sortBy="Title" sortAscending="yes" relativeListUrl="../Contract%20Library/">
+					<xsf:field internalName="Title" required="no" type="Text"></xsf:field>
+					<xsf:field internalName="Project_x0020_Display_x0020_Name" required="no" type="Text"></xsf:field>
+					<xsf:field internalName="General_x0020_Annual_x0020_Price" required="no" type="Currency"></xsf:field>
+					<xsf:field internalName="Jan_x0020_Percent" required="no" type="Number"></xsf:field>
+					<xsf:field internalName="Feb_x0020_Percent" required="no" type="Number"></xsf:field>
+					<xsf:field internalName="Mar_x0020_Percent" required="no" type="Number"></xsf:field>
+					<xsf:field internalName="Apr_x0020_Percent" required="no" type="Number"></xsf:field>
+					<xsf:field internalName="May_x0020_Percent" required="no" type="Number"></xsf:field>
+					<xsf:field internalName="Jun_x0020_Percent" required="no" type="Number"></xsf:field>
+					<xsf:field internalName="Jul_x0020_Percent" required="no" type="Number"></xsf:field>
+					<xsf:field internalName="Aug_x0020_Percent" required="no" type="Number"></xsf:field>
+					<xsf:field internalName="Sep_x0020_Percent" required="no" type="Number"></xsf:field>
+					<xsf:field internalName="Oct_x0020_Percent" required="no" type="Number"></xsf:field>
+					<xsf:field internalName="Nov_x0020_Percent" required="no" type="Number"></xsf:field>
+					<xsf:field internalName="Dec_x0020_Percent" required="no" type="Number"></xsf:field>
+					<xsf:field internalName="Contract_x0020_ID" required="no" type="Number"></xsf:field>
+					<xsf:field internalName="Total_x0020_General_x0020_Visits" required="no" type="Number"></xsf:field>
+					<xsf:field internalName="Jan_x0020_PV" required="no" type="Number"></xsf:field>
+					<xsf:field internalName="Feb_x0020_PV" required="no" type="Number"></xsf:field>
+					<xsf:field internalName="Mar_x0020_PV" required="no" type="Number"></xsf:field>
+					<xsf:field internalName="Apr_x0020_PV" required="no" type="Number"></xsf:field>
+					<xsf:field internalName="May_x0020_PV" required="no" type="Number"></xsf:field>
+					<xsf:field internalName="Jun_x0020_PV" required="no" type="Number"></xsf:field>
+					<xsf:field internalName="Jul_x0020_PV" required="no" type="Number"></xsf:field>
+					<xsf:field internalName="Aug_x0020_PV" required="no" type="Number"></xsf:field>
+					<xsf:field internalName="Sep_x0020_PV" required="no" type="Number"></xsf:field>
+					<xsf:field internalName="Oct_x0020_PV" required="no" type="Text"></xsf:field>
+					<xsf:field internalName="Nov_x0020_PV" required="no" type="Number"></xsf:field>
+					<xsf:field internalName="Dec_x0020_PV" required="no" type="Number"></xsf:field>
+					<xsf:field internalName="Contract_x0020_Price" required="no" type="Number"></xsf:field>
+					<xsf:field internalName="Contract_x0020_Status" required="no" type="Choice"></xsf:field>
+					<xsf:field internalName="General_x0020_Annual_x0020_Price1" required="no" type="Number"></xsf:field>
+					<xsf:field internalName="ID" required="no" type="Counter"></xsf:field>
+				</xsf:sharepointListAdapterRW>
+			</xsf:query>
+		</xsf:dataObject>
+	</xsf:dataObjects>
+	<xsf:calculations>
+		<xsf:calculatedField target="/my:myFields/my:Jan/my:JanPayrollGuideline" expression="xdMath:Nz(../my:JanSum) * xdMath:Nz(../../my:CostPerHour)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Jan/my:JanLaborPercentGoal" expression="xdMath:Nz(../my:JanPayrollGuideline) div xdMath:Nz(../../my:WeeklyRevenue)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Feb/my:FebAuthorized" expression="ceiling(xdMath:Nz(../my:FebSum) div 40)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Feb/my:FebPayrollGuideline" expression="xdMath:Nz(../my:FebSum) * xdMath:Nz(../../my:CostPerHour)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Feb/my:FebLaborPercentGoal" expression="xdMath:Nz(../my:FebPayrollGuideline) div xdMath:Nz(../../my:WeeklyRevenue)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Jan/my:JanAuthorized" expression="ceiling(xdMath:Nz(../my:JanSum) div 40)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Aug/my:AugSum" expression="sum(xdMath:Nz(xdXDocument:GetDOM(&quot;Contract Library&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:Aug_x0020_PV[../d:Contract_x0020_Status = &quot;Active&quot;]))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:WeeklyRevenue" expression="sum(xdMath:Nz(xdXDocument:GetDOM(&quot;Contract Library&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:General_x0020_Annual_x0020_Price[../d:Contract_x0020_Status = &quot;Active&quot;])) div 52" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Jan/my:JanAvgPercentage" expression="xdMath:Avg(xdXDocument:GetDOM(&quot;Contract Library&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:Jan_x0020_Percent[../d:Contract_x0020_Status = &quot;Active&quot;])" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Feb/my:FebAvgPercentage" expression="xdMath:Avg(xdXDocument:GetDOM(&quot;Contract Library&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:Feb_x0020_Percent[../d:Contract_x0020_Status = &quot;Active&quot;])" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Mar/my:MarAvgPercentage" expression="xdMath:Avg(xdXDocument:GetDOM(&quot;Contract Library&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:Mar_x0020_Percent[../d:Contract_x0020_Status = &quot;Active&quot;])" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Apr/my:AprAvgPercentage" expression="xdMath:Avg(xdXDocument:GetDOM(&quot;Contract Library&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:Apr_x0020_Percent[../d:Contract_x0020_Status = &quot;Active&quot;])" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:May/my:MayAvgPercentage" expression="xdMath:Avg(xdXDocument:GetDOM(&quot;Contract Library&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:May_x0020_Percent[../d:Contract_x0020_Status = &quot;Active&quot;])" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Jun/my:JunAvgPercentage" expression="xdMath:Avg(xdXDocument:GetDOM(&quot;Contract Library&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:Jun_x0020_Percent[../d:Contract_x0020_Status = &quot;Active&quot;])" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Jul/my:JulAvgPercentage" expression="xdMath:Avg(xdXDocument:GetDOM(&quot;Contract Library&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:Jul_x0020_Percent[../d:Contract_x0020_Status = &quot;Active&quot;])" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Aug/my:AugAvgPercentage" expression="xdMath:Avg(xdXDocument:GetDOM(&quot;Contract Library&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:Aug_x0020_Percent[../d:Contract_x0020_Status = &quot;Active&quot;])" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Sep/my:SepAvgPercentage" expression="xdMath:Avg(xdXDocument:GetDOM(&quot;Contract Library&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:Sep_x0020_Percent[../d:Contract_x0020_Status = &quot;Active&quot;])" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Oct/my:OctAvgPercentage" expression="xdMath:Avg(xdXDocument:GetDOM(&quot;Contract Library&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:Oct_x0020_Percent[../d:Contract_x0020_Status = &quot;Active&quot;])" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Nov/my:NovAvgPercentage" expression="xdMath:Avg(xdXDocument:GetDOM(&quot;Contract Library&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:Nov_x0020_Percent[../d:Contract_x0020_Status = &quot;Active&quot;])" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Dec/my:DecAvgPercentage" expression="xdMath:Avg(xdXDocument:GetDOM(&quot;Contract Library&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:Dec_x0020_Percent[../d:Contract_x0020_Status = &quot;Active&quot;])" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Mar/my:MarAuthorized" expression="ceiling(xdMath:Nz(../my:MarSum) div 40)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Apr/my:AprAuthorized" expression="ceiling(xdMath:Nz(../my:AprSum) div 40)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:May/my:MayAuthorized" expression="ceiling(xdMath:Nz(../my:MaySum) div 40)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Jun/my:JunAuthorized" expression="ceiling(xdMath:Nz(../my:JuneSum) div 40)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Jul/my:JulAuthorized" expression="ceiling(xdMath:Nz(../my:JulSum) div 40)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Aug/my:AugAuthorized" expression="ceiling(xdMath:Nz(../my:AugSum) div 40)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Sep/my:SepAuthorized" expression="ceiling(xdMath:Nz(../my:SepSum) div 40)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Oct/my:OctAuthorized" expression="ceiling(xdMath:Nz(../my:OctSum) div 40)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Nov/my:NovAuthorized" expression="ceiling(xdMath:Nz(../my:NovSum) div 40)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Dec/my:DecAuthorized" expression="ceiling(xdMath:Nz(../my:DecSum) div 40)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Mar/my:MarLaborPercentGoal" expression="xdMath:Nz(../my:MarPayrollGuideline) div xdMath:Nz(../../my:WeeklyRevenue)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Apr/my:AprLaborPercentGoal" expression="xdMath:Nz(../my:AprPayrollGuideline) div xdMath:Nz(../../my:WeeklyRevenue)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:May/my:MayLaborPercentGoal" expression="xdMath:Nz(../my:MayPayrollGuideline) div xdMath:Nz(../../my:WeeklyRevenue)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Jun/my:JunLaborPercentGoal" expression="xdMath:Nz(../my:JunPayrollGuideline) div xdMath:Nz(../../my:WeeklyRevenue)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Jul/my:JulLaborPercentGoal" expression="xdMath:Nz(../my:JulPayrollGuideline) div xdMath:Nz(../../my:WeeklyRevenue)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Aug/my:AugLaborPercentGoal" expression="xdMath:Nz(../my:AugPayrollGuideline) div xdMath:Nz(../../my:WeeklyRevenue)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Sep/my:SepLaborPercentGoal" expression="xdMath:Nz(../my:SepPayrollGuideline) div xdMath:Nz(../../my:WeeklyRevenue)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Oct/my:OctLaborPercentGoal" expression="xdMath:Nz(../my:OctPayrollGuideline) div xdMath:Nz(../../my:WeeklyRevenue)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Nov/my:NovLaborPercentGoal" expression="xdMath:Nz(../my:NovPayrollGuideline) div xdMath:Nz(../../my:WeeklyRevenue)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Dec/my:DecLaborPercentGoal" expression="xdMath:Nz(../my:DecPayrollGuideline) div xdMath:Nz(../../my:WeeklyRevenue)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Mar/my:MarPayrollGuideline" expression="xdMath:Nz(../my:MarSum) * xdMath:Nz(../../my:CostPerHour)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Apr/my:AprPayrollGuideline" expression="xdMath:Nz(../my:AprSum) * xdMath:Nz(../../my:CostPerHour)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:May/my:MayPayrollGuideline" expression="xdMath:Nz(../my:MaySum) * xdMath:Nz(../../my:CostPerHour)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Jun/my:JunPayrollGuideline" expression="xdMath:Nz(../my:JuneSum) * xdMath:Nz(../../my:CostPerHour)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Jul/my:JulPayrollGuideline" expression="xdMath:Nz(../my:JulSum) * xdMath:Nz(../../my:CostPerHour)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Aug/my:AugPayrollGuideline" expression="xdMath:Nz(../my:AugSum) * xdMath:Nz(../../my:CostPerHour)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Sep/my:SepPayrollGuideline" expression="xdMath:Nz(../my:SepSum) * xdMath:Nz(../../my:CostPerHour)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Oct/my:OctPayrollGuideline" expression="xdMath:Nz(../my:OctSum) * xdMath:Nz(../../my:CostPerHour)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Nov/my:NovPayrollGuideline" expression="xdMath:Nz(../my:NovSum) * xdMath:Nz(../../my:CostPerHour)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Dec/my:DecPayrollGuideline" expression="xdMath:Nz(../my:DecSum) * xdMath:Nz(../../my:CostPerHour)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Date" expression="xdDate:Today()" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Apr/my:AprSum" expression="sum(xdMath:Nz(xdXDocument:GetDOM(&quot;Contract Library&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:Apr_x0020_PV[../d:Contract_x0020_Status = &quot;Active&quot;]))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Jan/my:JanSum" expression="sum(xdMath:Nz(xdXDocument:GetDOM(&quot;Contract Library&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:Jan_x0020_PV[../d:Contract_x0020_Status = &quot;Active&quot;]))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Feb/my:FebSum" expression="sum(xdMath:Nz(xdXDocument:GetDOM(&quot;Contract Library&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:Feb_x0020_PV[../d:Contract_x0020_Status = &quot;Active&quot;]))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Mar/my:MarSum" expression="sum(xdMath:Nz(xdXDocument:GetDOM(&quot;Contract Library&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:Mar_x0020_PV[../d:Contract_x0020_Status = &quot;Active&quot;]))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:May/my:MaySum" expression="sum(xdMath:Nz(xdXDocument:GetDOM(&quot;Contract Library&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:May_x0020_PV[../d:Contract_x0020_Status = &quot;Active&quot;]))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Jun/my:JuneSum" expression="sum(xdMath:Nz(xdXDocument:GetDOM(&quot;Contract Library&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:Jun_x0020_PV[../d:Contract_x0020_Status = &quot;Active&quot;]))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Jul/my:JulSum" expression="sum(xdMath:Nz(xdXDocument:GetDOM(&quot;Contract Library&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:Jul_x0020_PV[../d:Contract_x0020_Status = &quot;Active&quot;]))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Sep/my:SepSum" expression="sum(xdMath:Nz(xdXDocument:GetDOM(&quot;Contract Library&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:Sep_x0020_PV[../d:Contract_x0020_Status = &quot;Active&quot;]))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Oct/my:OctSum" expression="sum(xdMath:Nz(xdXDocument:GetDOM(&quot;Contract Library&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:Oct_x0020_PV[../d:Contract_x0020_Status = &quot;Active&quot;]))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Nov/my:NovSum" expression="sum(xdMath:Nz(xdXDocument:GetDOM(&quot;Contract Library&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:Nov_x0020_PV[../d:Contract_x0020_Status = &quot;Active&quot;]))" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/my:myFields/my:Dec/my:DecSum" expression="sum(xdMath:Nz(xdXDocument:GetDOM(&quot;Contract Library&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:Dec_x0020_PV))" refresh="onChange"></xsf:calculatedField>
+	</xsf:calculations>
+	<xsf:domEventHandlers></xsf:domEventHandlers>
+</xsf:xDocumentClass>

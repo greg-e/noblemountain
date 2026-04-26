@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?mso-infoPathSolution name="urn:schemas-microsoft-com:office:infopath:Workorder-Form:-myXSD-2012-02-02T17-37-18" href="manifest.xsf" solutionVersion="1.0.0.294" productVersion="14.0.0" PIVersion="1.0.0.0" ?>
+<?mso-application progid="InfoPath.Document" versionProgid="InfoPath.Document.3"?>
+<my:myFields xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pc="http://schemas.microsoft.com/office/infopath/2007/PartnerControls" xmlns:ma="http://schemas.microsoft.com/office/2009/metadata/properties/metaAttributes" xmlns:d="http://schemas.microsoft.com/office/infopath/2009/WSSList/dataFields" xmlns:q="http://schemas.microsoft.com/office/infopath/2009/WSSList/queryFields" xmlns:dfs="http://schemas.microsoft.com/office/infopath/2003/dataFormSolution" xmlns:dms="http://schemas.microsoft.com/office/2009/documentManagement/types" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2012-02-02T17:37:18" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+	<my:Project></my:Project>
+	<my:ProjectDisplayName></my:ProjectDisplayName>
+	<my:RoundTrip></my:RoundTrip>
+	<my:WorkorderNotes></my:WorkorderNotes>
+	<my:TotalManHours xsi:nil="true"></my:TotalManHours>
+	<my:CrewSize></my:CrewSize>
+	<my:TotalVisits xsi:nil="true"></my:TotalVisits>
+	<my:TotalTravelHours xsi:nil="true"></my:TotalTravelHours>
+	<my:AverageHourlyRate xsi:nil="true"></my:AverageHourlyRate>
+	<my:PriceSubtotal xsi:nil="true"></my:PriceSubtotal>
+	<my:TravelPrice xsi:nil="true"></my:TravelPrice>
+	<my:TotalWorkorderPrice xsi:nil="true"></my:TotalWorkorderPrice>
+	<my:TotalWorkorderCost xsi:nil="true"></my:TotalWorkorderCost>
+	<my:TotalWorkorderProfit xsi:nil="true"></my:TotalWorkorderProfit>
+	<my:PercentProfit xsi:nil="true"></my:PercentProfit>
+	<my:WorkDayHours>8</my:WorkDayHours>
+	<my:OnsiteCrewHours xsi:nil="true"></my:OnsiteCrewHours>
+	<my:TotalVisitsRoundedUp xsi:nil="true"></my:TotalVisitsRoundedUp>
+	<my:ProjectID></my:ProjectID>
+	<my:PricingTable>
+		<my:Activity></my:Activity>
+		<my:Description></my:Description>
+		<my:ActivityNotes></my:ActivityNotes>
+		<my:PlantSelection></my:PlantSelection>
+		<my:Quantity xsi:nil="true"></my:Quantity>
+		<my:Unit></my:Unit>
+		<my:ManHoursPerUnit xsi:nil="true"></my:ManHoursPerUnit>
+		<my:MaterialCostPerUnit xsi:nil="true"></my:MaterialCostPerUnit>
+		<my:ManualMaterialCostPerUnit xsi:nil="true"></my:ManualMaterialCostPerUnit>
+		<my:LaborCostPerManHour>12.50</my:LaborCostPerManHour>
+		<my:OverheadAndProfitPerManHour>12.50</my:OverheadAndProfitPerManHour>
+		<my:LaborPricePerManHour xsi:nil="true"></my:LaborPricePerManHour>
+		<my:MaterialMarkupPercent>0.35</my:MaterialMarkupPercent>
+		<my:TotalLaborHours xsi:nil="true"></my:TotalLaborHours>
+		<my:PricePerUnit xsi:nil="true"></my:PricePerUnit>
+		<my:TotalPrice xsi:nil="true"></my:TotalPrice>
+		<my:LiveMaterialWarrantyPercent xsi:nil="true"></my:LiveMaterialWarrantyPercent>
+		<my:TotalMaterialCost xsi:nil="true"></my:TotalMaterialCost>
+		<my:TotalMaterialPrice xsi:nil="true"></my:TotalMaterialPrice>
+		<my:TotalLaborCost xsi:nil="true"></my:TotalLaborCost>
+		<my:TotalLaborPrice xsi:nil="true"></my:TotalLaborPrice>
+		<my:MaterialMarkup xsi:nil="true"></my:MaterialMarkup>
+		<my:WarrantyMarkup xsi:nil="true"></my:WarrantyMarkup>
+		<my:ActivityDisplayName></my:ActivityDisplayName>
+	</my:PricingTable>
+	<my:numID xsi:nil="true"></my:numID>
+	<my:strFilename></my:strFilename>
+	<my:WorkorderID xsi:nil="true"></my:WorkorderID>
+	<my:IncludedWork>false</my:IncludedWork>
+	<my:WorkorderDescription></my:WorkorderDescription>
+	<my:ShowActivities></my:ShowActivities>
+</my:myFields>

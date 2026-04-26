@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<Module Name="FormServerTemplates_" Url="FormServerTemplates" RootWebOnly="FALSE" Path="Files\FormServerTemplates" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<File Url="Contract Form.xsn" Type="GhostableInLibrary" Path="53ContractForm.xsn">
+			<Property Name="ContentTypeId" Value="0x010100F8EF98760CBA4A94994F13BA881038FA00D85C6575300FC846BF81380BBA65AF26" />
+			<Property Name="FileLeafRef" Value="Contract Form.xsn" />
+			<Property Name="ShowInCatalog" Value="TRUE" />
+			<Property Name="ID" Value="1" />
+			<Property Name="ContentType" Value="InfoPath Form Template" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="sites/realtimefoundation/FormServerTemplates" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="MetaInfo" Value="1;#vti_contentversionisdirty:BW|false&#xD;&#xA;vti_parserversion:SR|14.0.0.6109&#xD;&#xA;vti_lmt:SW|Tue, 17 Apr 2012 21:06:44 GMT&#xD;&#xA;vti_folderitemcount:IR|0&#xD;&#xA;vti_contenttag:SW|{34B3F0EA-270B-4D26-AFB2-14B4F1D9CF42},29,27&#xD;&#xA;vti_backlinkinfo:VX|Contract\\ Library/Bergen\\ Industrial\\ Parkway\\ -\\ Contract\\ 1.xml&#xD;&#xA;vti_author:SR|i:0#.f|membership|greg@realtimelandscape.onmicrosoft.com&#xD;&#xA;vti_winfileattribs:SW|00000020&#xD;&#xA;vti_foldersubfolderitemcount:IR|0&#xD;&#xA;vti_metainfoversion:IW|91&#xD;&#xA;ipfs_streamhash:SW|GZm4VsYytVfBLUsufAKopqK3/iwhCWL66ji9DbCzZf8=&#xD;&#xA;vti_modifiedby:SR|i:0#.f|membership|greg@realtimelandscape.onmicrosoft.com&#xD;&#xA;vti_docstoreversion:IR|29&#xD;&#xA;ContentTypeId:SW|0x010100F8EF98760CBA4A94994F13BA881038FA00D85C6575300FC846BF81380BBA65AF26&#xD;&#xA;vti_ct:SW|Thu, 12 Apr 2012 15:38:12 GMT&#xD;&#xA;vti_lat:SW|Tue, 17 Apr 2012 21:06:44 GMT&#xD;&#xA;vti_sourcecontrolmultiuserchkoutby:VR|i:0#.f|membership|greg@realtimelandscape.onmicrosoft.com&#xD;&#xA;" />
+			<Property Name="Order" Value="100.000000000000" />
+		</File>
+		<File Url="Contract MH Report.xsn" Type="GhostableInLibrary" Path="54ContractMHReport.xsn">
+			<Property Name="ContentTypeId" Value="0x010100F8EF98760CBA4A94994F13BA881038FA00D85C6575300FC846BF81380BBA65AF26" />
+			<Property Name="FileLeafRef" Value="Contract MH Report.xsn" />
+			<Property Name="ShowInCatalog" Value="TRUE" />
+			<Property Name="ID" Value="4" />
+			<Property Name="ContentType" Value="InfoPath Form Template" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="sites/realtimefoundation/FormServerTemplates" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="MetaInfo" Value="4;#vti_contentversionisdirty:BW|false&#xD;&#xA;vti_parserversion:SR|14.0.0.6109&#xD;&#xA;vti_lmt:SW|Tue, 17 Apr 2012 15:06:02 GMT&#xD;&#xA;vti_folderitemcount:IR|0&#xD;&#xA;vti_contenttag:SW|{C09B53C9-F24D-461F-8AEC-7A401D8C38F3},8,6&#xD;&#xA;vti_author:SR|i:0#.f|membership|greg@realtimelandscape.onmicrosoft.com&#xD;&#xA;vti_winfileattribs:SW|00000020&#xD;&#xA;vti_foldersubfolderitemcount:IR|0&#xD;&#xA;vti_metainfoversion:IW|20&#xD;&#xA;ipfs_streamhash:SW|syJw5AfulGOZnaoUJtSUgYjOJgWBn7mhHhHlZYjVKvQ=&#xD;&#xA;vti_modifiedby:SR|i:0#.f|membership|greg@realtimelandscape.onmicrosoft.com&#xD;&#xA;vti_docstoreversion:IR|8&#xD;&#xA;ContentTypeId:SW|0x010100F8EF98760CBA4A94994F13BA881038FA00D85C6575300FC846BF81380BBA65AF26&#xD;&#xA;vti_ct:SW|Fri, 13 Apr 2012 16:14:57 GMT&#xD;&#xA;vti_lat:SW|Tue, 17 Apr 2012 15:06:02 GMT&#xD;&#xA;vti_sourcecontrolmultiuserchkoutby:VR|i:0#.f|membership|greg@realtimelandscape.onmicrosoft.com&#xD;&#xA;" />
+			<Property Name="Order" Value="400.000000000000" />
+		</File>
+		<File Url="Workorder Form.xsn" Type="GhostableInLibrary" Path="55WorkorderForm.xsn">
+			<Property Name="ContentTypeId" Value="0x010100F8EF98760CBA4A94994F13BA881038FA00D85C6575300FC846BF81380BBA65AF26" />
+			<Property Name="FileLeafRef" Value="Workorder Form.xsn" />
+			<Property Name="ShowInCatalog" Value="TRUE" />
+			<Property Name="ID" Value="2" />
+			<Property Name="ContentType" Value="InfoPath Form Template" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="sites/realtimefoundation/FormServerTemplates" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="MetaInfo" Value="2;#vti_contentversionisdirty:BW|false&#xD;&#xA;vti_parserversion:SR|14.0.0.6109&#xD;&#xA;vti_lmt:SW|Tue, 17 Apr 2012 20:56:48 GMT&#xD;&#xA;vti_folderitemcount:IR|0&#xD;&#xA;vti_contenttag:SW|{C693A4C8-B5CD-4591-9C07-FC5AAAB85441},17,15&#xD;&#xA;vti_backlinkinfo:VX|Workorder\\ Library/Price\\ Warehouse\\ -\\ Workorder\\ 10.xml Workorder\\ Library/Bergen\\ Industrial\\ Parkway\\ -\\ Workorder\\ 1.xml&#xD;&#xA;vti_author:SR|i:0#.f|membership|greg@realtimelandscape.onmicrosoft.com&#xD;&#xA;vti_winfileattribs:SW|00000020&#xD;&#xA;vti_foldersubfolderitemcount:IR|0&#xD;&#xA;vti_metainfoversion:IW|49&#xD;&#xA;ipfs_streamhash:SW|IuLVVYmKPJnmwC7RkQIS3ApUJeD/KicZEB8PkqGIS18=&#xD;&#xA;vti_modifiedby:SR|i:0#.f|membership|greg@realtimelandscape.onmicrosoft.com&#xD;&#xA;vti_docstoreversion:IR|17&#xD;&#xA;ContentTypeId:SW|0x010100F8EF98760CBA4A94994F13BA881038FA00D85C6575300FC846BF81380BBA65AF26&#xD;&#xA;vti_ct:SW|Thu, 12 Apr 2012 15:50:31 GMT&#xD;&#xA;vti_lat:SW|Tue, 17 Apr 2012 20:56:48 GMT&#xD;&#xA;vti_sourcecontrolmultiuserchkoutby:VR|i:0#.f|membership|greg@realtimelandscape.onmicrosoft.com&#xD;&#xA;" />
+			<Property Name="Order" Value="200.000000000000" />
+		</File>
+	</Module>
+</Elements>

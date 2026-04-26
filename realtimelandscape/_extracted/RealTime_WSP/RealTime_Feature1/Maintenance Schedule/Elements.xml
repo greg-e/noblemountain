@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ListInstance FeatureId="{00bfea71-ec85-4903-972d-ebe475780106}" TemplateType="106" Title="Maintenance Schedule" Description="Initial instance of Contract Visit is created in Contract Activation Workflow.  Items do not delete with Contract Library Items." Url="Lists/Maintenance Schedule" CustomSchema="Files\Lists\Maintenance Schedule\Schema.xml" HyperlinkBaseUrl="https://realtimelandscape.sharepoint.com/sites/realtimefoundation" RootWebOnly="FALSE" xmlns="http://schemas.microsoft.com/sharepoint/" />
+</Elements>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<Module Name="WorkflowsCreate Workorder Lookup_" Url="Workflows/Create Workorder Lookup" RootWebOnly="FALSE" Path="Files\Workflows\21CreateWorkorderLookup" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<File Url="Create Workorder Lookup.xoml" Type="GhostableInLibrary" Path="20CreateWorkorderLookup.xoml">
+			<Property Name="ID" Value="41" />
+			<Property Name="ContentTypeId" Value="0x010107007E6EEAE8D3CD3C45BA0A57BECF10EE2B" />
+			<Property Name="ContentType" Value="User Workflow Document" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="sites/realtimefoundation/Workflows/Create Workorder Lookup" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="Create Workorder Lookup.xoml" />
+			<Property Name="MetaInfo" Value="41;#vti_parserversion:SR|14.0.0.6109&#xD;&#xA;vti_folderitemcount:IR|0&#xD;&#xA;vti_foldersubfolderitemcount:IR|0&#xD;&#xA;vti_modifiedby:SR|i:0#.f|membership|greg@realtimelandscape.onmicrosoft.com&#xD;&#xA;ContentTypeId:SW|0x010107007E6EEAE8D3CD3C45BA0A57BECF10EE2B&#xD;&#xA;vti_author:SR|i:0#.f|membership|greg@realtimelandscape.onmicrosoft.com&#xD;&#xA;" />
+			<Property Name="Order" Value="4100.00000000000" />
+		</File>
+		<File Url="Create Workorder Lookup.xoml.wfconfig.xml" DoGUIDFixUp="true" Type="GhostableInLibrary" Path="22CreateWorkorderLookup.xoml.wfconfig.xml">
+			<Property Name="ID" Value="42" />
+			<Property Name="ContentTypeId" Value="0x010107007E6EEAE8D3CD3C45BA0A57BECF10EE2B" />
+			<Property Name="ContentType" Value="User Workflow Document" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="sites/realtimefoundation/Workflows/Create Workorder Lookup" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="Create Workorder Lookup.xoml.wfconfig.xml" />
+			<Property Name="MetaInfo" Value="42;#BaseAssociationGuid:SW|{137D9425-8811-4A85-8627-CA3E6F70215C}&#xD;&#xA;WorkflowDisplayName:SW|Create Workorder Lookup&#xD;&#xA;vti_parserversion:SR|14.0.0.6109&#xD;&#xA;vti_folderitemcount:IR|0&#xD;&#xA;vti_charset:SR|utf-8&#xD;&#xA;XomlUrl:SW|Workflows/Create Workorder Lookup/Create Workorder Lookup.xoml&#xD;&#xA;NoCodeVisibility:SW|&#xD;&#xA;vti_author:SR|i:0#.f|membership|greg@realtimelandscape.onmicrosoft.com&#xD;&#xA;vti_foldersubfolderitemcount:IR|0&#xD;&#xA;AssociatedListId:SW|{$ListId:Lists/Workorder Schedule;}&#xD;&#xA;vti_cachedcustomprops:VX|BaseAssociationGuid WorkflowDisplayName AssociatedListId XomlUrl NoCodeVisibility RulesUrl RestrictContentTypeId&#xD;&#xA;vti_modifiedby:SR|i:0#.f|membership|greg@realtimelandscape.onmicrosoft.com&#xD;&#xA;vti_privatelistexempt:BW|true&#xD;&#xA;vti_title:SR|Create Workorder Lookup.xoml.wfconfig.xml&#xD;&#xA;ContentTypeId:SW|0x010107007E6EEAE8D3CD3C45BA0A57BECF10EE2B&#xD;&#xA;ContentType:SW|User Workflow Document&#xD;&#xA;RulesUrl:SW|&#xD;&#xA;RestrictContentTypeId:SW|&#xD;&#xA;" />
+			<Property Name="Order" Value="4200.00000000000" />
+		</File>
+	</Module>
+</Elements>

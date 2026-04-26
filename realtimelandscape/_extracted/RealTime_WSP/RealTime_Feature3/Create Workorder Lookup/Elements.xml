@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<WorkflowAssociation Name="Create Workorder Lookup" Description="" Id="{1c8545ba-ccdb-45ae-8a47-7ea34f8c8c0f}" BaseTemplateId="{137d9425-8811-4a85-8627-ca3e6f70215c}" ParentContentType="List" ParentList="Lists/Workorder Schedule" ParentWeb="TRUE" TaskList="Lists/Tasks" TaskListTitle="Tasks" HistoryList="Lists/Workflow History" HistoryListTitle="Workflow History" StatusColumnShown="FALSE" InternalNameStatusField="ows_" RequireManagePermission="EditListItems" Configuration="4177" AssociationData="" ContentTypeName="" ContentTypeId="0x" xmlns="http://schemas.microsoft.com/sharepoint/" />
+</Elements>

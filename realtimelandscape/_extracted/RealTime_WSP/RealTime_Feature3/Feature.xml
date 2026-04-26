@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="23cb55e0-5e80-48b3-b210-bcc6c897f353" Scope="Web" Title="Workflows feature of exported web template Real-Time Foundation">
+  <ElementManifests>
+    <ElementManifest Location="Contract Activation\Elements.xml" />
+    <ElementManifest Location="Contract Completion\Elements.xml" />
+    <ElementManifest Location="Create Contract Table Item\Elements.xml" />
+    <ElementManifest Location="Update Contract Table Item\Elements.xml" />
+    <ElementManifest Location="Update Contract Library Lookup\Elements.xml" />
+    <ElementManifest Location="Update Contract Lookup\Elements.xml" />
+    <ElementManifest Location="Create Workorder Lookup\Elements.xml" />
+    <ElementManifest Location="Update Workorder Library Lookup\Elements.xml" />
+    <ElementManifest Location="Create Workorder List Item\Elements.xml" />
+    <ElementManifest Location="Update Workorder List Item\Elements.xml" />
+    <ElementManifest Location="Workorder Activiation\Elements.xml" />
+    <ElementManifest Location="Workorder Completion\Elements.xml" />
+    <ElementFile Location="Resources\resources.en-US.resx" />
+  </ElementManifests>
+</Feature>

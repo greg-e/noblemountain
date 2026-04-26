@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ListInstance FeatureId="{00bfea71-de22-43b2-a848-c05709900100}" TemplateType="100" Title="Contract Table" Description="Items are related to the Contract Library, they are added, updated and deleted with the Contract Library item.  This database format gives you more flexibility in working with the Contract Data than the Library format." Url="Lists/Contract Table" CustomSchema="Files\Lists\Contract Table\Schema.xml" HyperlinkBaseUrl="https://realtimelandscape.sharepoint.com/sites/realtimefoundation" RootWebOnly="FALSE" xmlns="http://schemas.microsoft.com/sharepoint/" />
+</Elements>
