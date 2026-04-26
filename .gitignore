@@ -3,6 +3,8 @@ dist/
 build/
 coverage/
 *.log
+logs/
+!logs/.gitkeep
 .env
 .env.local
 

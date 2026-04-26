@@ -1,6 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import helmet from 'helmet';
+import path from 'path';
 
 import { activitiesRouter } from './routes/activities.routes';
 import { projectsRouter }   from './routes/projects.routes';
@@ -31,9 +32,14 @@ api.use('/workorders', workordersRouter);
 
 app.use('/api', api);
 
-// 404 for unknown routes
-app.use((_req, res) => {
-  res.status(404).json({ error: 'Not found' });
+// ── Static frontend (production) ──────────────────────────────
+// Served only when the built UI exists next to this project.
+const uiDist = path.resolve(__dirname, '../../realtimelandscape-web-ui/dist');
+app.use(express.static(uiDist));
+
+// SPA fallback — any non-API route serves index.html
+app.get('/*splat', (_req, res) => {
+  res.sendFile(path.join(uiDist, 'index.html'));
 });
 
 // ── Error handler (must be last) ─────────────────────────────
