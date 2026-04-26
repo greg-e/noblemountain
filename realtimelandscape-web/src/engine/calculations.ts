@@ -139,7 +139,7 @@ export const recalcTakeOffEntry = (entry: TakeOffEntry): TakeOffEntry => {
  *   materialAnnualCost = materialCost × totalFreq
  *   laborUnitPrice   = laborPrice × productionRate
  *   unitPrice        = materialUnitPrice + laborUnitPrice
- *   laborAnnualCost  = laborUnitPrice × totalFreq  (derived)
+ *   laborAnnualCost  = (generalLaborCost × productionRate) × quantity × totalFreq
  *   annualPrice      = unitPrice × totalFreq        (derived)
  */
 export const recalcContractLineItem = (
@@ -160,9 +160,10 @@ export const recalcContractLineItem = (
   const materialUnitPrice = materialRate * nz(row.materialMarkup) + materialRate;
   const materialAnnualCost = materialCost * totalFreq;
   const qty            = nz(row.quantity);
+  const laborCostUnitPrice = nz(generalLaborCost) * productionRate;
   const laborUnitPrice = laborPrice * productionRate;
   const unitPrice      = materialUnitPrice + laborUnitPrice;
-  const laborAnnualCost = laborUnitPrice * qty * totalFreq;
+  const laborAnnualCost = laborCostUnitPrice * qty * totalFreq;
   const annualPrice    = unitPrice * qty * totalFreq;
 
   return {
@@ -269,6 +270,7 @@ export const recalcContractTotals = (
   generalItems: ContractLineItem[],
   technicalItems: ContractLineItem[],
   travelPrice: number,
+  travelCost: number,
 ): ContractTotals => {
   const generalAnnualPrice     = generalItems.reduce((a, r) => a + nz(r.annualPrice), 0);
   const generalAnnualLaborCost = generalItems.reduce((a, r) => a + nz(r.laborAnnualCost), 0);
@@ -281,7 +283,7 @@ export const recalcContractTotals = (
   const technicalCostTotal        = technicalAnnualLaborCost + technicalAnnualMaterialCost;
 
   const contractPrice   = generalAnnualPrice + technicalAnnualPrice + nz(travelPrice);
-  const contractCost    = generalCostTotal + technicalCostTotal;
+  const contractCost    = generalCostTotal + technicalCostTotal + nz(travelCost);
   const grossProfit     = contractPrice - contractCost;
   const grossProfitPercent = safeDiv(grossProfit, contractPrice);
 
@@ -335,13 +337,21 @@ export const recalcEstimateGroup = (
   });
 
   // Recalc visit calculations from updated general items
-  const visitCalcs = recalcVisitCalculations(generalItems, group.visitCalculations, roundTrip);
+  const visitCalcsBase = recalcVisitCalculations(generalItems, group.visitCalculations, roundTrip);
+  const travelCost = nz(visitCalcsBase.totalMonthlyTravel) * nz(group.generalLaborCost);
+  const travelPrice = nz(visitCalcsBase.totalMonthlyTravel) * (nz(group.generalLaborCost) + nz(group.generalOverheadAndProfit));
+  const visitCalcs = {
+    ...visitCalcsBase,
+    travelCost,
+    travelPrice,
+  };
 
   // Contract totals
   const contractTotals = recalcContractTotals(
     generalItems,
     technicalItems,
     nz(visitCalcs.travelPrice),
+    nz(visitCalcs.travelCost),
   );
 
   return {

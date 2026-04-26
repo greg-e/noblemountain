@@ -153,7 +153,8 @@ describe('recalcContractLineItem()', () => {
   // laborUnitPrice   = laborPrice × productionRate     = 37.50 × 0.1 = 3.75
   // unitPrice        = materialUnitPrice + laborUnitPrice = 2.70 + 3.75 = 6.45
   // materialAnnualCost = materialCost × totalFreq      = 100 × 16   = 1600
-  // laborAnnualCost  = laborUnitPrice × quantity × totalFreq = 3.75 × 50 × 16 = 3000
+  // laborAnnualCost  = (generalLaborCost × productionRate) × quantity × totalFreq
+  //                  = (25 × 0.1) × 50 × 16 = 2000
   // annualPrice      = unitPrice × quantity × totalFreq     = 6.45 × 50 × 16 = 5160
 
   it('calculates mh = quantity × productionRate', () => expect(result.mh).toBe(5));
@@ -165,7 +166,7 @@ describe('recalcContractLineItem()', () => {
   it('calculates laborUnitPrice = laborPrice × productionRate', () => expect(result.laborUnitPrice).toBeCloseTo(3.75));
   it('calculates unitPrice = materialUnitPrice + laborUnitPrice', () => expect(result.unitPrice).toBeCloseTo(6.45));
   it('calculates materialAnnualCost = materialCost × totalFreq', () => expect(result.materialAnnualCost).toBe(1600));
-  it('calculates laborAnnualCost = laborUnitPrice × quantity × totalFreq', () => expect(result.laborAnnualCost).toBeCloseTo(3000));
+  it('calculates laborAnnualCost from labor cost (without overhead)', () => expect(result.laborAnnualCost).toBeCloseTo(2000));
   it('calculates annualPrice = unitPrice × quantity × totalFreq', () => expect(result.annualPrice).toBeCloseTo(5160));
 
   it('calculates monthlyMH[jan] = mh × janFreq', () => expect(result.monthlyMH.jan).toBe(5));
@@ -188,15 +189,15 @@ describe('recalcContractTotals()', () => {
     materialAnnualCost: 100,
   } as ContractLineItem;
 
-  const totals = recalcContractTotals([generalItem], [techItem], 150);
+  const totals = recalcContractTotals([generalItem], [techItem], 150, 50);
 
   it('sums generalAnnualPrice', () => expect(totals.generalAnnualPrice).toBe(1000));
   it('sums technicalAnnualPrice', () => expect(totals.technicalAnnualPrice).toBe(500));
   it('contractPrice = gen + tech + travel', () => expect(totals.contractPrice).toBe(1650));
-  it('contractCost = all labor + material costs', () => expect(totals.contractCost).toBe(900));
-  it('grossProfit = price - cost', () => expect(totals.grossProfit).toBe(750));
+  it('contractCost = all labor + material costs + travel cost', () => expect(totals.contractCost).toBe(950));
+  it('grossProfit = price - cost', () => expect(totals.grossProfit).toBe(700));
   it('grossProfitPercent = profit / price', () =>
-    expect(totals.grossProfitPercent).toBeCloseTo(750 / 1650));
+    expect(totals.grossProfitPercent).toBeCloseTo(700 / 1650));
 });
 
 // ── Visit Calculations ───────────────────────────────────────
