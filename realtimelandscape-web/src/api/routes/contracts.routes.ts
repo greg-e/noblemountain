@@ -123,9 +123,11 @@ contractsRouter.post(
 
     const activityIds = collectActivityIds(estimateGroup);
     const activityDocs = activityIds.length ? await findActivitiesByIds(activityIds) : [];
-    const activityMap = new Map(activityDocs.map(a => [String((a as any)._id), toEngineActivity(a)]));
+    const activityMap = new Map<string, PricingTableActivity>(
+      activityDocs.map(a => [String((a as any)._id), toEngineActivity(a)])
+    );
 
-    const recalculated = recalcEstimateGroup(estimateGroup, [...activityMap.values()], toEngineProject(projectDoc));
+    const recalculated = recalcEstimateGroup(estimateGroup, activityMap, toEngineProject(projectDoc));
 
     const contractNumber = await generateContractNumber();
     const contract = await createContract({
@@ -173,9 +175,11 @@ contractsRouter.put(
 
     const activityIds = collectActivityIds(estimateGroup);
     const activityDocs = activityIds.length ? await findActivitiesByIds(activityIds) : [];
-    const activityMap = new Map<string, any>(activityDocs.map(a => [String((a as any)._id), toEngineActivity(a)]));
+    const activityMap = new Map<string, PricingTableActivity>(
+      activityDocs.map(a => [String((a as any)._id), toEngineActivity(a)])
+    );
 
-    const recalculated = recalcEstimateGroup(estimateGroup, [...activityMap.values()], toEngineProject(projectDoc));
+    const recalculated = recalcEstimateGroup(estimateGroup, activityMap, toEngineProject(projectDoc));
 
     const updated = await saveContract(req.params.id as string, {
       ...recalculated,

@@ -6,7 +6,7 @@
 // ── Master Data (from SharePoint lists) ─────────────────────
 
 export interface PricingTableActivity {
-  id: number;
+  id: string;
   title: string;               // Activity display name
   activityCategory: string;
   unit: string;
@@ -18,13 +18,13 @@ export interface PricingTableActivity {
 }
 
 export interface Project {
-  id: number;
+  id: string;
   title: string;               // ProjectDisplayName
   roundTrip: number;           // Round trip travel hours
 }
 
 export interface PlantItem {
-  id: number;
+  id: string;
   title: string;
   description: string;
 }
@@ -98,7 +98,7 @@ export interface MonthlyValues {
 /** A single line item in the General or Technical pricing table */
 export interface ContractLineItem {
   // User-entered
-  activity: number;            // FK → PricingTableActivity.id
+  activity: string;            // FK → PricingTableActivity.id
   quantity: number;
   monthlyFrequency: MonthlyValues;
   materialMarkup: number;
@@ -176,7 +176,7 @@ export interface EstimateGroup {
 }
 
 export interface ContractForm {
-  projectName: number;           // FK → Project.id
+  projectName: string;           // FK → Project.id
   projectDisplayName: string;    // calculated lookup
   projectID: string;             // calculated lookup
   roundTrip: number;             // calculated lookup
@@ -193,7 +193,7 @@ export interface ContractForm {
 
 export interface WorkorderLineItem {
   // User-entered
-  activity: number;              // FK → PricingTableActivity.id
+  activity: string;              // FK → PricingTableActivity.id
   quantity: number;
   plantSelection: string;
   activityNotes: string;
@@ -230,7 +230,7 @@ export interface WorkorderLineItem {
 }
 
 export interface WorkorderForm {
-  project: number;               // FK → Project.id
+  project: string;               // FK → Project.id
   projectDisplayName: string;    // calculated
   projectID: string;             // calculated
   roundTrip: number;             // calculated lookup

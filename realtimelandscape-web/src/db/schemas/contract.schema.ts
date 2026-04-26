@@ -188,11 +188,11 @@ const ContractSchema = new Schema<IContract>(
 
     generalLaborCost:         { type: Number, default: 0 },
     generalOverheadAndProfit: { type: Number, default: 0 },
-    generalLineItems:         { type: [ContractLineItemSchema],   default: [] },
-    technicalLineItems:       { type: [TechnicalLineItemSchema],  default: [] },
+    generalLineItems:         ({ type: [ContractLineItemSchema],   default: [] } as any),
+    technicalLineItems:       ({ type: [TechnicalLineItemSchema],  default: [] } as any),
     visitCalculations:        { type: VisitCalculationsSchema,    default: () => ({}) },
     contractTotals:           { type: ContractTotalsSchema,       default: () => ({}) },
-    takeOff:                  { type: [TakeOffEntrySchema],       default: [] },
+    takeOff:                  ({ type: [TakeOffEntrySchema],       default: [] } as any),
     showActivities:           { type: String, default: '' },
 
     createdBy: { type: String, default: '' },

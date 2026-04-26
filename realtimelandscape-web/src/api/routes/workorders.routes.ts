@@ -103,10 +103,16 @@ workordersRouter.post(
     const lineItems: any[] = req.body.lineItems ?? [];
     const activityIds  = collectActivityIds(lineItems);
     const activityDocs = activityIds.length ? await findActivitiesByIds(activityIds) : [];
-    const activityMap  = new Map(activityDocs.map(a => [String((a as any)._id), toEngineActivity(a)]));
+    const activityMap  = new Map<string, PricingTableActivity>(
+      activityDocs.map(a => [String((a as any)._id), toEngineActivity(a)])
+    );
 
     const engineForm: WorkorderForm = {
+      project:       String(projectDoc._id),
+      projectDisplayName: projectDoc.title,
       projectID:     String(projectDoc._id),
+      roundTrip:     projectDoc.roundTrip,
+      workorderNotes: req.body.workorderNotes ?? '',
       workDayHours:  req.body.workDayHours ?? 8,
       crewSize:      req.body.crewSize     ?? 1,
       lineItems:     lineItems,
@@ -118,7 +124,7 @@ workordersRouter.post(
       totalWorkorderProfit: 0, percentProfit:        0,
     };
 
-    const recalculated = recalcWorkorder(engineForm, [...activityMap.values()], toEngineProject(projectDoc));
+    const recalculated = recalcWorkorder(engineForm, activityMap, toEngineProject(projectDoc));
 
     const workorderNumber = await generateWorkorderNumber();
     const workorder = await createWorkorder({
@@ -173,10 +179,16 @@ workordersRouter.put(
     const lineItems: any[] = req.body.lineItems ?? existing.lineItems;
     const activityIds  = collectActivityIds(lineItems);
     const activityDocs = activityIds.length ? await findActivitiesByIds(activityIds) : [];
-    const activityMap  = new Map(activityDocs.map(a => [String((a as any)._id), toEngineActivity(a)]));
+    const activityMap  = new Map<string, PricingTableActivity>(
+      activityDocs.map(a => [String((a as any)._id), toEngineActivity(a)])
+    );
 
     const engineForm: WorkorderForm = {
+      project:       String(projectDoc._id),
+      projectDisplayName: projectDoc.title,
       projectID:     String(projectDoc._id),
+      roundTrip:     projectDoc.roundTrip,
+      workorderNotes: req.body.workorderNotes ?? existing.workorderNotes,
       workDayHours:  req.body.workDayHours ?? existing.workDayHours,
       crewSize:      req.body.crewSize     ?? existing.crewSize,
       lineItems,
@@ -186,7 +198,7 @@ workordersRouter.put(
       totalWorkorderCost: 0, totalWorkorderProfit: 0, percentProfit: 0,
     };
 
-    const recalculated = recalcWorkorder(engineForm, [...activityMap.values()], toEngineProject(projectDoc));
+    const recalculated = recalcWorkorder(engineForm, activityMap, toEngineProject(projectDoc));
 
     const updated = await saveWorkorder(req.params.id as string, {
       workDayHours:         recalculated.workDayHours,

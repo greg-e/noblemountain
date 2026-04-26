@@ -312,7 +312,7 @@ export const recalcContractTotals = (
  */
 export const recalcEstimateGroup = (
   group: EstimateGroup,
-  activities: Map<number, PricingTableActivity>,
+  activities: Map<string, PricingTableActivity>,
   project: Project | null,
 ): EstimateGroup => {
   const roundTrip = nz(project?.roundTrip);
@@ -427,7 +427,7 @@ export const recalcWorkorderLineItem = (
  */
 export const recalcWorkorder = (
   form: WorkorderForm,
-  activities: Map<number, PricingTableActivity>,
+  activities: Map<string, PricingTableActivity>,
   project: Project | null,
 ): WorkorderForm => {
   const roundTrip = nz(project?.roundTrip);

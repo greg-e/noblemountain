@@ -35,7 +35,7 @@ import type {
 // ── Test Fixtures ────────────────────────────────────────────
 
 const mockActivity: PricingTableActivity = {
-  id: 101,
+  id: '101',
   title: 'Mowing – Turf',
   activityCategory: 'General',
   unit: 'MSF',
@@ -47,7 +47,7 @@ const mockActivity: PricingTableActivity = {
 };
 
 const mockProject: Project = {
-  id: 1,
+  id: '1',
   title: 'Acme Corporate Campus',
   roundTrip: 1.5,  // 1.5 hours round trip travel
 };
@@ -132,7 +132,7 @@ describe('recalcTakeOffEntry() – Area', () => {
 
 describe('recalcContractLineItem()', () => {
   const baseRow: ContractLineItem = {
-    activity: 101,
+    activity: '101',
     quantity: 50,       // 50 MSF
     monthlyFrequency: { jan:1, feb:1, mar:1, apr:1, may:2, jun:2, jul:2, aug:2, sep:1, oct:1, nov:1, dec:1 },
     materialMarkup: 0.35,
@@ -199,7 +199,7 @@ describe('recalcContractTotals()', () => {
 describe('recalcWorkorderLineItem()', () => {
   // Default values from sampledata.xml: LaborCostPerManHour = 12.50, Overhead = 12.50, Markup = 0.35
   const row: WorkorderLineItem = {
-    activity: 101,
+    activity: '101',
     quantity: 20,
     plantSelection: '',
     activityNotes: '',
@@ -252,7 +252,7 @@ describe('recalcWorkorderLineItem()', () => {
 
 describe('recalcWorkorder()', () => {
   const baseLineItem: WorkorderLineItem = {
-    activity: 101,
+    activity: '101',
     quantity: 20,
     plantSelection: '',
     activityNotes: '',
@@ -271,7 +271,7 @@ describe('recalcWorkorder()', () => {
   };
 
   const form: WorkorderForm = {
-    project: 1,
+    project: '1',
     projectDisplayName: '',
     projectID: '',
     roundTrip: 0,
@@ -285,7 +285,7 @@ describe('recalcWorkorder()', () => {
     totalWorkorderCost: 0, totalWorkorderProfit: 0, percentProfit: 0,
   };
 
-  const activities = new Map([[101, mockActivity]]);
+  const activities = new Map([['101', mockActivity]]);
   const result = recalcWorkorder(form, activities, mockProject);
   // totalManHours = 2 (from single line item)
   // totalVisits = (2 / 8) / 2 = 0.125

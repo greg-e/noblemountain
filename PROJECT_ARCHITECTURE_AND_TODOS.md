@@ -98,14 +98,14 @@ The core migration goal is to preserve the original business logic and workflow 
 - Calculation engine implemented in TypeScript from the original InfoPath formulas
 - Contract, workorder, activity, project, and plant schemas created in Mongoose
 - Repository layer created for querying, persisting, and transitioning workflow state
-- Express API created for:
-  - activities
-  - projects
-  - plants
-  - contracts
-  - workorders
+- Express API created for activities, projects, plants, contracts, and workorders
 - Validation and error handling middleware added
 - Activity seed script created
+- **Type alignment (April 2026):** All domain ID fields changed from `number` to `string` to match MongoDB ObjectId strings — `PricingTableActivity.id`, `Project.id`, `PlantItem.id`, `ContractLineItem.activity`, `WorkorderLineItem.activity`, `ContractForm.projectName`, `WorkorderForm.project`
+- **Engine signature alignment (April 2026):** `recalcEstimateGroup` and `recalcWorkorder` map parameters changed from `Map<number, PricingTableActivity>` to `Map<string, PricingTableActivity>`
+- **Route recalculation fixes (April 2026):** Contract and workorder create/update routes now pass the activity map directly (was incorrectly spreading to an array) and construct fully valid `WorkorderForm` payloads with all required fields
+- **Schema typing fixes (April 2026):** Embedded subdocument array fields in `contract.schema.ts` and `workorder.schema.ts` cast to `as any` to resolve Mongoose generic incompatibility with ts-node
+- **Route param type fixes (April 2026):** `req.params.id` casts added in activities and projects routes
 
 ### Frontend completed
 
@@ -114,22 +114,31 @@ The core migration goal is to preserve the original business logic and workflow 
 - Layout shell created
 - Dashboard created
 - Contracts list page created
-- Workorders list page created
 - Contract detail and edit page created
+- Workorders list page created
+- **Workorder detail and edit page** (`WorkorderDetail.tsx`): status transitions, line item editing, metrics display
+- **Contract creation flow** (`ContractNew.tsx`): new contract form with project selection and API call
+- **Workorder creation flow** (`WorkorderNew.tsx`): new workorder form with project selection and API call
+- **Admin pages**: `ActivitiesAdmin.tsx`, `ProjectsAdmin.tsx`, `PlantsAdmin.tsx` — list, filter, create, edit, deactivate
+- **All routes registered** in `App.tsx`
+- **Frontend UI/UX test suite**: 10 test files covering dashboard, lists, detail pages, creation forms, and admin pages — 92/92 tests passing with Vitest + React Testing Library + jsdom
+- **Vite config typing fix**: `defineConfig` imported from `vitest/config` to resolve editor-level type error for the `test` block
 
-### Repository and cleanup work completed
+### Repository and CI completed
 
 - Git repository initialized and pushed to GitHub
 - Remote configured at `origin`
 - Root `.gitignore` added
 - Generated SharePoint extraction output removed from tracking and ignored going forward
+- **GitHub Actions CI workflow** (`.github/workflows/ci.yml`): runs backend Jest and frontend Vitest on every push and pull request
 
 ## Calculation Engine Status
 
-- The calculation engine is implemented in `realtimelandscape-web/src/engine/calculations.ts`
-- It is intended to reproduce the original InfoPath business logic
-- The engine is used by API create/update flows before persistence
-- Backend test status previously verified: `53/53` tests passing
+- Implemented in `realtimelandscape-web/src/engine/calculations.ts`
+- Reproduces all original InfoPath business logic
+- Used by API create/update flows before persistence; result is stored on the document
+- **Current test status: 53/53 passing**
+- Engine unit tests updated to use string-keyed activity maps and string fixture IDs to match domain type alignment
 
 ## API Status
 
@@ -182,7 +191,7 @@ Workflow transitions are enforced in the API layer using explicit transition map
 
 ## Current Validation Status
 
-### Verified backend commands
+### Backend
 
 Run from `realtimelandscape-web/`:
 
@@ -191,68 +200,76 @@ Run from `realtimelandscape-web/`:
 .\node_modules\.bin\jest.cmd --no-coverage
 ```
 
-Previously verified status:
+**Current status:**
+- TypeScript compile: clean (0 errors)
+- Jest tests: 53/53 passing
 
-- backend TypeScript compile clean
-- backend Jest tests passing
-
-### Verified frontend command
+### Frontend
 
 Run from `realtimelandscape-web-ui/`:
 
 ```powershell
 $env:PATH = [System.Environment]::GetEnvironmentVariable("PATH","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("PATH","User")
 .\node_modules\.bin\tsc.cmd --noEmit
+.\node_modules\.bin\vitest.cmd run
 ```
 
-Current verified status:
+**Current status:**
+- TypeScript compile: clean
+- Vitest tests: 92/92 passing
 
-- frontend TypeScript compile clean after the contract detail/edit page was added
+### Runtime readiness
 
-### Frontend compile fixes made during current work
+- Frontend dev server starts on `http://localhost:3000` (app shell renders, routes load)
+- Backend dev server (`npm run dev`) starts and loads schemas/routes cleanly
+- Backend fails to connect to database at startup until `MONGODB_URI` environment variable is set
+- Full end-to-end API connectivity requires MongoDB; the compile and logic layers are production-ready
 
-- Added `moduleResolution: "bundler"` to the frontend `tsconfig.json`
-- Added `src/vite-env.d.ts` for CSS module typing
-- Fixed `src/main.tsx` import to avoid `.tsx` extension import errors
+## Frontend Structure (current)
 
-## Current Working Tree Status
-
-At the time this document was created, the contract detail/edit slice exists in the working tree and has been typechecked locally, but may not yet be committed depending on when this document is read.
-
-Files touched in the current contract detail/edit slice:
-
-- `realtimelandscape-web-ui/src/App.tsx`
-- `realtimelandscape-web-ui/src/main.tsx`
-- `realtimelandscape-web-ui/src/types.ts`
-- `realtimelandscape-web-ui/tsconfig.json`
-- `realtimelandscape-web-ui/src/pages/ContractDetail.tsx`
-- `realtimelandscape-web-ui/src/vite-env.d.ts`
+- `src/api/client.ts` — typed API wrapper for activities, projects, plants, contracts, and workorders
+- `src/components/Layout.tsx` — application shell with header, sidebar, and footer
+- `src/pages/Dashboard.tsx` — status overview
+- `src/pages/ContractsList.tsx` — contract list and filtering
+- `src/pages/ContractDetail.tsx` — contract detail, edit, and workflow transitions
+- `src/pages/ContractNew.tsx` — create new contract
+- `src/pages/WorkordersList.tsx` — workorder list and filtering
+- `src/pages/WorkorderDetail.tsx` — workorder detail, line item editing, and workflow transitions
+- `src/pages/WorkorderNew.tsx` — create new workorder
+- `src/pages/ActivitiesAdmin.tsx` — activities reference data admin (list, create, edit, deactivate)
+- `src/pages/ProjectsAdmin.tsx` — projects reference data admin
+- `src/pages/PlantsAdmin.tsx` — plants reference data admin
+- `src/App.tsx` — all routes registered
+- `src/types.ts` — frontend type mirror of backend models
+- `src/__tests__/` — 10 test files, 92/92 tests passing
+- `vite.config.ts` — Vite dev/proxy/Vitest config (`defineConfig` imported from `vitest/config`)
 
 ## Outstanding Todos
 
-### Highest priority
+### Immediate environment setup
 
-- Build the workorder detail and edit page
+- Set `MONGODB_URI` environment variable locally (e.g., via `.env` file loaded by `dotenv`) to allow backend to connect
+- Optionally create a `.env.example` or document the required variables in README
+- Run seeding script (`src/db/seed/seed-activities.ts`) once MongoDB is connected to populate activities reference data
+- Verify end-to-end API calls from the frontend in browser after backend is connected
 
-### Next frontend tasks
-
-- Add route and page for workorder detail/edit
-- Support workorder line item editing
-- Support workorder workflow transitions from the detail page
-- Display recalculated workorder totals after save
-
-### Secondary frontend tasks
-
-- Implement contract creation flow for `/contracts/new`
-- Implement workorder creation flow for `/workorders/new`
-- Replace raw anchor navigation with router-native navigation where appropriate
-- Add project, activity, and plant management pages if needed
-
-### Backend and data follow-up
+### Backend follow-up
 
 - Replace seeded sample activities with full extracted production pricing data when ready
-- Verify whether additional take-off editing UI is required for the contract flow
-- Consider adding endpoint-level tests for the API surface if broader regression protection is needed
+- Consider adding API integration/endpoint tests for broader regression protection
+- Verify whether take-off editing UI is needed as part of the contract flow
+
+### Frontend follow-up
+
+- Replace any remaining raw anchor `<a>` navigation with React Router `<Link>` or `useNavigate` where appropriate
+- Add loading/error states to admin pages if not already present
+- Confirm contract and workorder detail pages correctly display recalculated totals from API responses
+
+### Production readiness
+
+- Configure `MONGODB_URI` for the deployment environment
+- Review CORS and Helmet settings in `server.ts` for production origins
+- Ensure CI workflow passes in GitHub Actions after the latest backend type fixes are pushed
 
 ## Known Decisions And Constraints
 
@@ -261,13 +278,16 @@ Files touched in the current contract detail/edit slice:
 - Preserve original workflow intent from SharePoint/InfoPath while simplifying delivery to REST + React
 - Keep generated extraction output out of source control
 - Use strict TypeScript on both backend and frontend
+- All domain IDs are MongoDB ObjectId strings — never numeric — to avoid route-to-engine type mismatches
+- Embedded subdocument arrays in Mongoose schemas require `as any` cast to satisfy TypeScript strict generics for current Mongoose version
+- Vitest config must use `defineConfig` from `vitest/config` (not from `vite`) to avoid type errors in the `test` block
 
 ## Suggested Continuation Path
 
 When work resumes, continue in this order:
 
-1. Build the workorder detail/edit page to mirror the contract detail flow
-2. Add any missing workorder-specific type support needed in the frontend
-3. Typecheck the frontend after the workorder page is added
-4. Commit the contract detail/edit slice and documentation changes if not already committed
-5. Continue with creation flows or admin/reference-data pages after both detail/edit pages exist
+1. Set `MONGODB_URI` locally and confirm backend connects and seeds cleanly
+2. Verify end-to-end flows in the browser — dashboard → contracts list → contract detail → workorder detail
+3. Push pending backend type-fix commits to GitHub and confirm CI passes
+4. Address any remaining frontend UX polish (loading states, navigation cleanup)
+5. Prepare production deployment configuration when target environment is ready

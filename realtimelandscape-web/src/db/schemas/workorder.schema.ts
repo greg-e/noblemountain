@@ -126,7 +126,7 @@ const WorkorderSchema = new Schema<IWorkorder>(
     totalWorkorderProfit: { type: Number, default: 0 },
     percentProfit:        { type: Number, default: 0 },
 
-    lineItems: { type: [WorkorderLineItemSchema], default: [] },
+    lineItems: ({ type: [WorkorderLineItemSchema], default: [] } as any),
 
     createdBy: { type: String, default: '' },
     updatedBy: { type: String, default: '' },

@@ -43,7 +43,7 @@ activitiesRouter.get(
   param('id').isMongoId(),
   validate,
   asyncHandler(async (req, res) => {
-    const activity = await findActivityById(req.params.id);
+    const activity = await findActivityById(req.params.id as string);
     if (!activity) throw httpError(404, 'Activity not found');
     res.json(activity);
   })
@@ -79,7 +79,7 @@ activitiesRouter.patch(
   ],
   validate,
   asyncHandler(async (req, res) => {
-    const updated = await updateActivity(req.params.id, req.body);
+    const updated = await updateActivity(req.params.id as string, req.body);
     if (!updated) throw httpError(404, 'Activity not found');
     res.json(updated);
   })
@@ -91,8 +91,8 @@ activitiesRouter.delete(
   param('id').isMongoId(),
   validate,
   asyncHandler(async (req, res) => {
-    const updated = await deactivateActivity(req.params.id);
+    const updated = await deactivateActivity(req.params.id as string);
     if (!updated) throw httpError(404, 'Activity not found');
-    res.json({ message: 'Activity deactivated', id: req.params.id });
+    res.json({ message: 'Activity deactivated', id: req.params.id as string });
   })
 );

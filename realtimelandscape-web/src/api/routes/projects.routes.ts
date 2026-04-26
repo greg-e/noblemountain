@@ -32,7 +32,7 @@ projectsRouter.get(
   param('id').isMongoId(),
   validate,
   asyncHandler(async (req, res) => {
-    const project = await findProjectById(req.params.id);
+    const project = await findProjectById(req.params.id as string);
     if (!project) throw httpError(404, 'Project not found');
     res.json(project);
   })
@@ -65,7 +65,7 @@ projectsRouter.patch(
   ],
   validate,
   asyncHandler(async (req, res) => {
-    const updated = await updateProject(req.params.id, req.body);
+    const updated = await updateProject(req.params.id as string, req.body);
     if (!updated) throw httpError(404, 'Project not found');
     res.json(updated);
   })
