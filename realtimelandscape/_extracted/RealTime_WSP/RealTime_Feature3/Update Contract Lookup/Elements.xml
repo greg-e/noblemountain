@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-	<WorkflowAssociation Name="Update Contract Lookup" Description="" Id="{1da74cad-e114-4bfe-82b7-ef2436d35615}" BaseTemplateId="{940c3b59-a195-402e-9bad-3d1ee6497807}" ParentContentType="List" ParentList="Lists/Maintenance Schedule" ParentWeb="TRUE" TaskList="Lists/Tasks" TaskListTitle="Tasks" HistoryList="Lists/Workflow History" HistoryListTitle="Workflow History" StatusColumnShown="FALSE" InternalNameStatusField="ows_" RequireManagePermission="EditListItems" Configuration="4177" AssociationData="" ContentTypeName="" ContentTypeId="0x" xmlns="http://schemas.microsoft.com/sharepoint/" />
-</Elements>

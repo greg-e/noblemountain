@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-	<ListInstance FeatureId="{00bfea71-1e1d-4562-b56a-f05371bb0115}" TemplateType="115" Title="Workorder Library" Description="" Url="Workorder Library" CustomSchema="Files\Workorder Library\Schema.xml" HyperlinkBaseUrl="https://realtimelandscape.sharepoint.com/sites/realtimefoundation" RootWebOnly="FALSE" xmlns="http://schemas.microsoft.com/sharepoint/" />
-</Elements>

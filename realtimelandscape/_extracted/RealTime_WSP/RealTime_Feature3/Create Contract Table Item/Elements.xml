@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-	<WorkflowAssociation Name="Create Contract Table Item" Description="" Id="{f04eaa0c-ad50-4fba-91b1-97b237a0a02a}" BaseTemplateId="{f3139d59-0c08-4a93-a5e0-bada480981bb}" ParentContentType="List" ParentList="Contract Library" ParentWeb="TRUE" TaskList="Lists/Tasks" TaskListTitle="Tasks" HistoryList="Lists/Workflow History" HistoryListTitle="Workflow History" StatusColumnShown="TRUE" InternalNameStatusField="CreateCo" RequireManagePermission="EditListItems" Configuration="6225" AssociationData="" ContentTypeName="" ContentTypeId="0x" xmlns="http://schemas.microsoft.com/sharepoint/" />
-</Elements>

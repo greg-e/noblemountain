@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-	<Module Name="Contract LibraryForms_1033\STS\doctemp\xmlforms\blank" Url="Contract Library/Forms" SetupPath="1033\STS\doctemp\xmlforms\blank" RootWebOnly="FALSE" Path="Files\58ContractLibrary\Forms" xmlns="http://schemas.microsoft.com/sharepoint/">
-		<File Url="template.xml" DocumentTemplateForList="Contract Library/Forms" Type="Ghostable" Path="template.xml" />
-	</Module>
-</Elements>

@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-	<ListInstance FeatureId="{2510d73f-7109-4ccc-8a1c-314894deeb3a}" TemplateType="433" Title="Report Library" Description="" Url="Report Library" CustomSchema="Files\Report Library\Schema.xml" HyperlinkBaseUrl="https://realtimelandscape.sharepoint.com/sites/realtimefoundation" RootWebOnly="FALSE" xmlns="http://schemas.microsoft.com/sharepoint/" />
-</Elements>

@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-	<ListInstance FeatureId="{00bfea71-de22-43b2-a848-c05709900100}" TemplateType="100" Title="Workorder Table" Description="Items are related to the Workorder Library, they are added, updated and deleted with the Workorder Library item.  This database format gives you more flexibility in working with the Workorder Data than the Library format." Url="Lists/Workorder Table" CustomSchema="Files\Lists\Workorder Table\Schema.xml" HyperlinkBaseUrl="https://realtimelandscape.sharepoint.com/sites/realtimefoundation" RootWebOnly="FALSE" xmlns="http://schemas.microsoft.com/sharepoint/" />
-</Elements>

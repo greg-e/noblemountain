@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="b094c7b2-1aa5-4bd4-8236-863f3e328cce" Scope="Site" Title="Web Template feature of exported web template Real-Time Foundation">
-  <ElementManifests>
-    <ElementFile Location="RealTime\ONet.xml" />
-    <ElementManifest Location="RealTime\Elements.xml" />
-    <ElementFile Location="Resources\resources.en-US.resx" />
-  </ElementManifests>
-</Feature>

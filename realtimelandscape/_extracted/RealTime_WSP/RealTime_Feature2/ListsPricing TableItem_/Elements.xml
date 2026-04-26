@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-	<Module Name="ListsPricing TableItem_" Url="Lists/Pricing Table/Item" RootWebOnly="FALSE" Path="Files\Lists\1PricingTable\Item" xmlns="http://schemas.microsoft.com/sharepoint/">
-		<File Url="template.xsn" Path="template.xsn" />
-	</Module>
-</Elements>

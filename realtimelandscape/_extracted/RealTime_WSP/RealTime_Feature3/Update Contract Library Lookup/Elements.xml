@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-	<WorkflowAssociation Name="Update Contract Library Lookup" Description="" Id="{8f868460-ac17-4e7d-92e8-30adbf2416e5}" BaseTemplateId="{61c7fbe3-55d1-45af-babb-dc208c73cc21}" ParentContentType="List" ParentList="Lists/Contract Table" ParentWeb="TRUE" TaskList="Lists/Tasks" TaskListTitle="Tasks" HistoryList="Lists/Workflow History" HistoryListTitle="Workflow History" StatusColumnShown="FALSE" InternalNameStatusField="ows_" RequireManagePermission="EditListItems" Configuration="4177" AssociationData="" ContentTypeName="" ContentTypeId="0x" xmlns="http://schemas.microsoft.com/sharepoint/" />
-</Elements>

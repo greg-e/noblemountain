@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="357009da-977e-492e-a1c5-bbad75d2f9f1" Scope="Web" Title="Web Events feature of exported web template &quot;Real-Time Foundation&quot;">
-  <ElementManifests>
-    <ElementManifest Location="Receivers8\Elements.xml" />
-  </ElementManifests>
-</Feature>

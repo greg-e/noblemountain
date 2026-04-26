@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-	<WorkflowAssociation Name="Update Workorder List Item" Description="" Id="{d3db41aa-2497-4029-b5ed-c451f9ac3f63}" BaseTemplateId="{fa941c3f-6795-4010-b310-643c68c430c3}" ParentContentType="List" ParentList="Workorder Library" ParentWeb="TRUE" TaskList="Lists/Tasks" TaskListTitle="Tasks" HistoryList="Lists/Workflow History" HistoryListTitle="Workflow History" StatusColumnShown="TRUE" InternalNameStatusField="UpdateWo" RequireManagePermission="EditListItems" Configuration="6226" AssociationData="" ContentTypeName="" ContentTypeId="0x" xmlns="http://schemas.microsoft.com/sharepoint/" />
-</Elements>
