@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Layout } from './components/Layout';
 import { Dashboard } from './pages/Dashboard';
 import { ContractsList } from './pages/ContractsList';
+import { ContractDetail } from './pages/ContractDetail';
 import { WorkordersList } from './pages/WorkordersList';
 
 function NotFound() {
@@ -22,6 +23,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/contracts" element={<ContractsList />} />
+        <Route path="/contracts/:id" element={<ContractDetail />} />
         <Route path="/workorders" element={<WorkordersList />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

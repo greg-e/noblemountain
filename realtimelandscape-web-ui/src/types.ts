@@ -93,10 +93,29 @@ export interface ContractTotals {
   grossProfitPercent: number;
 }
 
+export interface VisitCalculations {
+  workDayHours: number;
+  siteVisits: MonthlyValues;
+  averageCrew: MonthlyValues;
+  mhSums?: MonthlyValues;
+  generalContractHours?: number;
+  totalGeneralVisits?: number;
+  crewVisit?: MonthlyValues;
+  percentOfDailyTravel?: MonthlyValues;
+  travel?: MonthlyValues;
+  monthlyTravel?: MonthlyValues;
+  totalMonthlyTravel?: number;
+  mhOnSitePerVisit?: MonthlyValues;
+  percentMHPerMonth?: MonthlyValues;
+  totalAnnualPercent?: number;
+  travelCost?: number;
+  travelPrice?: number;
+}
+
 export interface Contract {
   _id: string;
   contractNumber: string;
-  project: string;  // ObjectId
+  project: string | Project;
   projectDisplayName: string;
   roundTrip: number;
   status: ContractStatus;
@@ -104,6 +123,7 @@ export interface Contract {
   generalOverheadAndProfit: number;
   generalLineItems: ContractLineItem[];
   technicalLineItems: TechnicalLineItem[];
+  visitCalculations: VisitCalculations;
   contractTotals: ContractTotals;
   createdBy: string;
   updatedBy: string;
