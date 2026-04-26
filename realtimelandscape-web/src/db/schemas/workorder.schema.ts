@@ -135,7 +135,7 @@ const WorkorderSchema = new Schema<IWorkorder>(
 );
 
 WorkorderSchema.index({ project: 1, status: 1 });
-WorkorderSchema.index({ contract: 1 });
+// contract field has index: true in schema definition; no duplicate needed here
 WorkorderSchema.index({ status: 1, scheduledDate: 1 });
 WorkorderSchema.index({ totalWorkorderPrice: 1 });   // for revenue reporting
 

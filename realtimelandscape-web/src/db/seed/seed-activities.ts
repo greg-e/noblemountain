@@ -10,6 +10,7 @@
  *   realtimelandscape/_extracted/RealTime_WSP/...
  */
 
+import 'dotenv/config';
 import { connectDB, disconnectDB } from '../connection';
 import { Activity } from '../schemas';
 
