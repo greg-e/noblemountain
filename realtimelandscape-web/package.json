@@ -10,7 +10,8 @@
     "build": "tsc",
     "start": "node dist/server.js",
     "dev": "ts-node src/server.ts",
-    "seed": "ts-node src/db/seed/seed-activities.ts"
+    "seed": "ts-node src/db/seed/seed-activities.ts",
+    "seed:sample": "ts-node src/db/seed/seed-sample-data.ts"
   },
   "devDependencies": {
     "@types/cors": "^2.8.19",
