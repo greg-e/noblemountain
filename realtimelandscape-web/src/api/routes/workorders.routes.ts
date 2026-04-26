@@ -41,6 +41,15 @@ function toEngineProject(doc: any): Project {
   return { id: String(doc._id), title: doc.title, roundTrip: doc.roundTrip };
 }
 
+/** Handle both ObjectId refs and populated project objects from lean() results */
+function extractProjectId(project: any): string {
+  if (!project) return '';
+  if (typeof project === 'string') return project;
+  if (project instanceof Types.ObjectId) return String(project);
+  if (project._id) return String(project._id);
+  return String(project);
+}
+
 function collectActivityIds(lineItems: any[]): string[] {
   return [...new Set(lineItems.filter(i => i.activity).map(i => String(i.activity)))];
 }
@@ -54,12 +63,18 @@ workordersRouter.get(
   '/',
   asyncHandler(async (req, res) => {
     const { project, contract, status, scheduledDateFrom, scheduledDateTo } = req.query as Record<string, string>;
+
+    const dateFrom = scheduledDateFrom ? new Date(scheduledDateFrom) : undefined;
+    const dateTo   = scheduledDateTo   ? new Date(scheduledDateTo)   : undefined;
+    if (dateFrom && isNaN(dateFrom.getTime())) throw httpError(400, 'scheduledDateFrom must be a valid date');
+    if (dateTo   && isNaN(dateTo.getTime()))   throw httpError(400, 'scheduledDateTo must be a valid date');
+
     const workorders = await findWorkorders({
       project:           project  || undefined,
       contract:          contract || undefined,
       status:            status as WorkorderWorkflowStatus || undefined,
-      scheduledDateFrom: scheduledDateFrom ? new Date(scheduledDateFrom) : undefined,
-      scheduledDateTo:   scheduledDateTo   ? new Date(scheduledDateTo)   : undefined,
+      scheduledDateFrom: dateFrom,
+      scheduledDateTo:   dateTo,
     });
     res.json(workorders);
   })
@@ -127,7 +142,9 @@ workordersRouter.post(
     const recalculated = recalcWorkorder(engineForm, activityMap, toEngineProject(projectDoc));
 
     const workorderNumber = await generateWorkorderNumber();
-    const workorder = await createWorkorder({
+    let workorder;
+    try {
+      workorder = await createWorkorder({
       workorderNumber,
       project:          new Types.ObjectId(req.body.project),
       contract:         req.body.contract ? new Types.ObjectId(req.body.contract) : null,
@@ -152,6 +169,10 @@ workordersRouter.post(
       percentProfit:        recalculated.percentProfit,
       createdBy: req.body.createdBy ?? '',
     });
+    } catch (err: any) {
+      if (err.code === 11000) throw httpError(409, 'Workorder number conflict — please retry');
+      throw err;
+    }
 
     res.status(201).json(workorder);
   })
@@ -173,7 +194,7 @@ workordersRouter.put(
       throw httpError(409, `Cannot edit a ${existing.status} workorder`);
     }
 
-    const projectDoc = await findProjectById(String(existing.project));
+    const projectDoc = await findProjectById(extractProjectId(existing.project));
     if (!projectDoc) throw httpError(404, 'Project not found');
 
     const lineItems: any[] = req.body.lineItems ?? existing.lineItems;
@@ -200,12 +221,17 @@ workordersRouter.put(
 
     const recalculated = recalcWorkorder(engineForm, activityMap, toEngineProject(projectDoc));
 
+    const scheduledDate = req.body.scheduledDate ? new Date(req.body.scheduledDate) : existing.scheduledDate;
+    if (req.body.scheduledDate && isNaN(scheduledDate!.getTime())) {
+      throw httpError(400, 'scheduledDate must be a valid date');
+    }
+
     const updated = await saveWorkorder(req.params.id as string, {
       workDayHours:         recalculated.workDayHours,
       crewSize:             recalculated.crewSize,
       lineItems:            recalculated.lineItems,
       workorderNotes:       req.body.workorderNotes ?? existing.workorderNotes,
-      scheduledDate:        req.body.scheduledDate  ? new Date(req.body.scheduledDate) : existing.scheduledDate,
+      scheduledDate,
       totalManHours:        recalculated.totalManHours,
       averageHourlyRate:    recalculated.averageHourlyRate,
       priceSubtotal:        recalculated.priceSubtotal,
@@ -220,6 +246,7 @@ workordersRouter.put(
       percentProfit:        recalculated.percentProfit,
       updatedBy: req.body.updatedBy ?? '',
     });
+    if (!updated) throw httpError(404, 'Workorder not found');
 
     res.json(updated);
   })

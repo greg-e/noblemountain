@@ -1,9 +1,12 @@
 import { useEffect, useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import { contractsApi, projectsApi } from '../api/client';
 import { Layout } from '../components/Layout';
 import type { Project } from '../types';
 
 export function ContractNew() {
+  const navigate = useNavigate();
+
   const [projects, setProjects] = useState<Project[]>([]);
   const [loadingProjects, setLoadingProjects] = useState(true);
 
@@ -39,7 +42,7 @@ export function ContractNew() {
         generalOverheadAndProfit: Number(form.generalOverheadAndProfit),
         createdBy:                form.createdBy || 'web',
       });
-      window.location.href = `/contracts/${contract._id}`;
+      navigate(`/contracts/${contract._id}`);
     } catch (err: any) {
       setError(err.error ?? 'Failed to create contract');
       setSubmitting(false);
@@ -49,7 +52,7 @@ export function ContractNew() {
   return (
     <Layout>
       <div style={wrap}>
-        <a href="/contracts" style={{ display: 'inline-block', marginBottom: '1rem' }}>← Back to contracts</a>
+        <Link to="/contracts" style={{ display: 'inline-block', marginBottom: '1rem' }}>← Back to contracts</Link>
         <h2 style={{ marginTop: 0 }}>New Contract</h2>
 
         {error && <div style={errBox}>{error}</div>}
@@ -103,10 +106,10 @@ export function ContractNew() {
           </div>
 
           <div style={{ marginTop: '1.5rem', display: 'flex', gap: '0.75rem' }}>
-            <button type="submit" disabled={submitting}>
+            <button type="submit" disabled={submitting} style={{ background: '#1e6b40', color: '#fff', borderColor: '#1e6b40' }}>
               {submitting ? 'Creating...' : 'Create Contract'}
             </button>
-            <a href="/contracts">Cancel</a>
+            <Link to="/contracts" style={{ alignSelf: 'center', color: '#5d6678' }}>Cancel</Link>
           </div>
         </form>
       </div>

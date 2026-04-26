@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { activitiesApi, contractsApi } from '../api/client';
-import { Layout } from '../components/Layout';
+import { EditLayout } from '../components/EditLayout';
 import type {
   Activity,
   Contract,
@@ -364,22 +364,21 @@ export function ContractDetail() {
 
   if (loading) {
     return (
-      <Layout>
+      <EditLayout backTo="/contracts" backLabel="Contracts">
         <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
           <p>Loading contract...</p>
         </div>
-      </Layout>
+      </EditLayout>
     );
   }
 
   if (error && !contract) {
     return (
-      <Layout>
+      <EditLayout backTo="/contracts" backLabel="Contracts">
         <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
           <p style={{ color: '#9b1c1c' }}>Error: {error}</p>
-          <a href="/contracts">Back to contracts</a>
         </div>
-      </Layout>
+      </EditLayout>
     );
   }
 
@@ -391,11 +390,10 @@ export function ContractDetail() {
   const allowedTransitions = STATUS_TRANSITIONS[contract.status];
 
   return (
-    <Layout>
+    <EditLayout backTo="/contracts" backLabel="Contracts">
       <div style={{ maxWidth: '1280px', margin: '0 auto', display: 'grid', gap: '1.5rem' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '1rem', flexWrap: 'wrap' }}>
           <div>
-            <a href="/contracts" style={{ display: 'inline-block', marginBottom: '0.75rem' }}>← Back to contracts</a>
             <h2 style={{ margin: 0 }}>{contract.contractNumber}</h2>
             <p style={{ margin: '0.5rem 0 0', color: '#5d6470' }}>{contract.projectDisplayName}</p>
           </div>
@@ -520,7 +518,7 @@ export function ContractDetail() {
           onMonthChange={updateTechnicalLineItemMonth}
         />
       </div>
-    </Layout>
+    </EditLayout>
   );
 }
 
@@ -545,7 +543,7 @@ function MonthlyValuesEditor({
   return (
     <div style={{ marginTop: '1.25rem' }}>
       <div style={{ fontWeight: 600, marginBottom: '0.6rem' }}>{label}</div>
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(6, minmax(90px, 1fr))', gap: '0.75rem' }}>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(80px, 1fr))', gap: '0.75rem' }}>
         {MONTHS.map((month) => (
           <label key={month} style={{ display: 'grid', gap: '0.35rem' }}>
             <span style={{ fontSize: '0.8rem', color: '#667085' }}>{monthLabel(month)}</span>
@@ -596,7 +594,7 @@ function LineItemsSection({
 
         return (
           <div key={item._id ?? `${title}-${index}`} style={{ border: '1px solid #d8dee8', borderRadius: '14px', padding: '1rem', marginBottom: '1rem', background: '#fbfcfe' }}>
-            <div style={{ display: 'grid', gridTemplateColumns: technical ? 'minmax(260px, 2fr) repeat(4, minmax(120px, 1fr)) auto' : 'minmax(260px, 2fr) repeat(3, minmax(120px, 1fr)) auto', gap: '0.75rem', alignItems: 'end' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(170px, 1fr))', gap: '0.75rem', alignItems: 'end' }}>
               <label style={fieldStyle}>
                 <span>Activity</span>
                 <select value={item.activity} onChange={(event) => onChange(index, 'activity', event.target.value)}>
@@ -650,41 +648,32 @@ function LineItemsSection({
                   />
                 </label>
               )}
-              <button onClick={() => onRemove(index)} style={{ alignSelf: 'center' }}>Remove</button>
+            </div>
+            <div style={{ display: 'flex', justifyContent: 'flex-end', marginTop: '0.5rem' }}>
+              <button onClick={() => onRemove(index)}>Remove</button>
             </div>
 
-            <div style={{ overflowX: 'auto', marginTop: '1rem' }}>
-              <table style={{ minWidth: '1100px', margin: 0 }}>
-                <thead>
-                  <tr>
-                    {MONTHS.map((month) => (
-                      <th key={month}>{monthLabel(month)}</th>
-                    ))}
-                    <th>Total Freq</th>
-                    <th>Total MH</th>
-                    <th>Annual Price</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    {MONTHS.map((month) => (
-                      <td key={month}>
-                        <input
-                          type="number"
-                          min="0"
-                          step="0.1"
-                          value={item.monthlyFrequency[month]}
-                          onChange={(event) => onMonthChange(index, month, Number(event.target.value))}
-                          style={{ width: '82px' }}
-                        />
-                      </td>
-                    ))}
-                    <td>{Number(item.totalFreq ?? 0).toFixed(1)}</td>
-                    <td>{Number(item.totalMH ?? 0).toFixed(2)}</td>
-                    <td>{formatCurrency(item.annualPrice)}</td>
-                  </tr>
-                </tbody>
-              </table>
+            <div style={{ marginTop: '0.75rem' }}>
+              <div style={{ fontWeight: 600, fontSize: '0.85rem', color: '#667085', marginBottom: '0.5rem' }}>Monthly frequency</div>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(72px, 1fr))', gap: '0.5rem' }}>
+                {MONTHS.map((month) => (
+                  <label key={month} style={{ display: 'grid', gap: '0.25rem' }}>
+                    <span style={{ fontSize: '0.75rem', color: '#667085' }}>{monthLabel(month)}</span>
+                    <input
+                      type="number"
+                      min="0"
+                      step="0.1"
+                      value={item.monthlyFrequency[month]}
+                      onChange={(event) => onMonthChange(index, month, Number(event.target.value))}
+                    />
+                  </label>
+                ))}
+              </div>
+              <div style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap', marginTop: '0.75rem', padding: '0.6rem 0.75rem', background: '#f5f6fa', borderRadius: '8px', fontSize: '0.85rem' }}>
+                <div><div style={{ color: '#667085', fontSize: '0.78rem' }}>Total Freq</div><strong>{Number(item.totalFreq ?? 0).toFixed(1)}</strong></div>
+                <div><div style={{ color: '#667085', fontSize: '0.78rem' }}>Total MH</div><strong>{Number(item.totalMH ?? 0).toFixed(2)}</strong></div>
+                <div><div style={{ color: '#667085', fontSize: '0.78rem' }}>Annual Price</div><strong>{formatCurrency(item.annualPrice)}</strong></div>
+              </div>
             </div>
           </div>
         );

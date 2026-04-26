@@ -101,28 +101,39 @@ The core migration goal is to preserve the original business logic and workflow 
 - Express API created for activities, projects, plants, contracts, and workorders
 - Validation and error handling middleware added
 - Activity seed script created
-- **Type alignment (April 2026):** All domain ID fields changed from `number` to `string` to match MongoDB ObjectId strings — `PricingTableActivity.id`, `Project.id`, `PlantItem.id`, `ContractLineItem.activity`, `WorkorderLineItem.activity`, `ContractForm.projectName`, `WorkorderForm.project`
+- Sample data seed script created (`seed-sample-data.ts`) with 4 projects, 3 contracts, and multiple workorders
+- **Type alignment (April 2026):** All domain ID fields changed from `number` to `string` to match MongoDB ObjectId strings
 - **Engine signature alignment (April 2026):** `recalcEstimateGroup` and `recalcWorkorder` map parameters changed from `Map<number, PricingTableActivity>` to `Map<string, PricingTableActivity>`
-- **Route recalculation fixes (April 2026):** Contract and workorder create/update routes now pass the activity map directly (was incorrectly spreading to an array) and construct fully valid `WorkorderForm` payloads with all required fields
-- **Schema typing fixes (April 2026):** Embedded subdocument array fields in `contract.schema.ts` and `workorder.schema.ts` cast to `as any` to resolve Mongoose generic incompatibility with ts-node
+- **Route recalculation fixes (April 2026):** Contract and workorder create/update routes now pass the activity map correctly and construct fully valid `WorkorderForm` payloads
+- **Schema typing fixes (April 2026):** Embedded subdocument array fields cast to `as any` to resolve Mongoose generic incompatibility
 - **Route param type fixes (April 2026):** `req.params.id` casts added in activities and projects routes
+- **annualPrice formula fix (April 2026):** `annualPrice = unitPrice × quantity × totalFreq` (was missing `× quantity`). Same fix applied to `laborAnnualCost`.
+- **Populated project ref fix (April 2026):** `extractProjectId()` helper added to contracts and workorders PUT routes to safely handle populated vs. raw `project` refs during recalculation.
+- **Seed data field names fixed (April 2026):** Seed contracts now use `generalLaborCost`/`generalOverheadAndProfit` (were incorrectly `laborRate`/`overheadAndProfit`). Quantities corrected to production units (e.g., 45 MSF not 45,000 SqFt).
+- **PUT null guard (April 2026):** `saveContract` and `saveWorkorder` return `null` if the document was deleted between read and update. Routes now throw 404 instead of returning HTTP 200 with a `null` body.
+- **Date validation (April 2026):** `scheduledDate` in workorder PUT, and `scheduledDateFrom`/`scheduledDateTo` in workorder GET, are validated before passing to MongoDB. Invalid date strings return 400 instead of silently storing `Invalid Date`.
+- **E11000 duplicate key → 409 (April 2026):** `generateContractNumber` and `generateWorkorderNumber` use non-atomic `countDocuments` and can collide under concurrent creates. The unique-index violation is now caught and mapped to a 409 Conflict with a retry message instead of an unhandled 500.
+- **CORS_ORIGIN env var (April 2026):** `cors()` previously allowed all origins unconditionally. Now reads `CORS_ORIGIN` from environment; defaults to `*` in dev, set to a domain in production.
 
 ### Frontend completed
 
 - React + Vite + TypeScript frontend scaffold created
 - Shared typed API client implemented
-- Layout shell created
-- Dashboard created
-- Contracts list page created
-- Contract detail and edit page created
-- Workorders list page created
-- **Workorder detail and edit page** (`WorkorderDetail.tsx`): status transitions, line item editing, metrics display
-- **Contract creation flow** (`ContractNew.tsx`): new contract form with project selection and API call
-- **Workorder creation flow** (`WorkorderNew.tsx`): new workorder form with project selection and API call
-- **Admin pages**: `ActivitiesAdmin.tsx`, `ProjectsAdmin.tsx`, `PlantsAdmin.tsx` — list, filter, create, edit, deactivate
-- **All routes registered** in `App.tsx`
-- **Frontend UI/UX test suite**: 10 test files covering dashboard, lists, detail pages, creation forms, and admin pages — 92/92 tests passing with Vitest + React Testing Library + jsdom
-- **Vite config typing fix**: `defineConfig` imported from `vitest/config` to resolve editor-level type error for the `test` block
+- Dashboard with clickable stat cards linking to filtered list views
+- Contracts and workorders list pages with responsive table + mobile card layouts
+- Contract detail and edit page using full-screen `EditLayout` component
+- Workorder detail and edit page with status transitions and line item editing
+- Contract and workorder creation forms
+- Admin pages for activities, projects, and plants
+- All routes registered in `App.tsx`
+- **UI/UX refactor (April 2026):** Hamburger slide-in drawer nav (replaces persistent sidebar), `EditLayout` for full-screen contract/workorder editing, responsive CSS (table on desktop, card list on mobile), CSS custom properties (`--color-primary`, `--color-bg`, etc.)
+- **Header live metrics (April 2026):** `HeaderMetrics` component in `Layout.tsx` replaces the app name with 4 real-time stat chips (Active Contracts, Scheduled, In Progress, Pending Review) fetched from the API on each page load
+- **Number input UX (April 2026):** Browser spinner arrows hidden globally via CSS (`input[type="number"]::-webkit-inner-spin-button` etc.). Users type and tab without distraction.
+- **Horizontal scroll eliminated (April 2026):** Monthly frequency section of contract line items replaced — the 1100px-wide table is gone, replaced with a `repeat(auto-fill, minmax(72px, 1fr))` responsive grid and a summary chip bar. Line item field grids in ContractDetail and WorkorderDetail switched to `repeat(auto-fit, minmax(160-170px, 1fr))` so they wrap on narrow screens. `EditLayout.main` has `overflow-x: hidden` as a safety net. `MonthlyValuesEditor` (Visit Planning section) also switched to `repeat(auto-fill, minmax(80px, 1fr))`.
+- **`useNavigate` replaces `window.location.href` (April 2026):** ContractNew and WorkorderNew forms now use React Router's `useNavigate` after successful create, preserving SPA state and history instead of forcing a full page reload.
+- **Stale-fetch cancellation (April 2026):** ContractsList and WorkordersList `useEffect` hooks now set a `cancelled` flag in cleanup so rapid filter changes no longer allow a slower earlier response to overwrite a faster later one.
+- **Frontend UI/UX test suite**: Vitest + React Testing Library + jsdom — 92/92 passing
+- **Vite config typing fix**: `defineConfig` imported from `vitest/config`
 
 ### Repository and CI completed
 
@@ -137,8 +148,11 @@ The core migration goal is to preserve the original business logic and workflow 
 - Implemented in `realtimelandscape-web/src/engine/calculations.ts`
 - Reproduces all original InfoPath business logic
 - Used by API create/update flows before persistence; result is stored on the document
-- **Current test status: 53/53 passing**
+- **Current test status: 65/65 passing**
 - Engine unit tests updated to use string-keyed activity maps and string fixture IDs to match domain type alignment
+- **Formula fix (April 2026):** `annualPrice` and `laborAnnualCost` on contract line items now correctly multiply `unitPrice × quantity × totalFreq`. Previously `quantity` was omitted, producing prices for 1 unit instead of the full quantity.
+- **Test coverage added (April 2026):** `recalcVisitCalculations()` test suite added (10 tests covering mhSums, generalContractHours, totalGeneralVisits, crewVisit, mhOnSitePerVisit, percentMHPerMonth, totalAnnualPercent).
+- **Quantity unit convention:** Line item `quantity` is always in production units (e.g., MSF for area activities with `unitMultiplier=1000`), not raw SqFt. Raw area ÷ unitMultiplier = production quantity stored on the line item.
 
 ## API Status
 
@@ -202,7 +216,7 @@ Run from `realtimelandscape-web/`:
 
 **Current status:**
 - TypeScript compile: clean (0 errors)
-- Jest tests: 53/53 passing
+- Jest tests: 65/65 passing
 
 ### Frontend
 
@@ -246,30 +260,24 @@ $env:PATH = [System.Environment]::GetEnvironmentVariable("PATH","Machine") + ";"
 
 ## Outstanding Todos
 
-### Immediate environment setup
-
-- Set `MONGODB_URI` environment variable locally (e.g., via `.env` file loaded by `dotenv`) to allow backend to connect
-- Optionally create a `.env.example` or document the required variables in README
-- Run seeding script (`src/db/seed/seed-activities.ts`) once MongoDB is connected to populate activities reference data
-- Verify end-to-end API calls from the frontend in browser after backend is connected
-
 ### Backend follow-up
 
 - Replace seeded sample activities with full extracted production pricing data when ready
-- Consider adding API integration/endpoint tests for broader regression protection
+- Add API integration/endpoint tests for broader regression protection
 - Verify whether take-off editing UI is needed as part of the contract flow
+- Add a DELETE endpoint for contracts and workorders (currently no hard-delete route exists)
 
 ### Frontend follow-up
 
-- Replace any remaining raw anchor `<a>` navigation with React Router `<Link>` or `useNavigate` where appropriate
-- Add loading/error states to admin pages if not already present
-- Confirm contract and workorder detail pages correctly display recalculated totals from API responses
+- Add loading/error states to admin pages where missing
+- Consider displaying `visitCalculations` and `contractTotals` (gross profit, cost breakdown) on the ContractDetail page
+- Validate that the line item quantity input label reflects the unit and multiplier (e.g., "Quantity (MSF)" for 1000-multiplier area activities)
 
 ### Production readiness
 
 - Configure `MONGODB_URI` for the deployment environment
-- Review CORS and Helmet settings in `server.ts` for production origins
-- Ensure CI workflow passes in GitHub Actions after the latest backend type fixes are pushed
+- Set `CORS_ORIGIN=https://yourapp.com` in production `.env` to restrict allowed origins (currently defaults to `*`)
+- Ensure CI workflow passes in GitHub Actions after the latest commits are pushed
 
 ## Known Decisions And Constraints
 
@@ -278,9 +286,14 @@ $env:PATH = [System.Environment]::GetEnvironmentVariable("PATH","Machine") + ";"
 - Preserve original workflow intent from SharePoint/InfoPath while simplifying delivery to REST + React
 - Keep generated extraction output out of source control
 - Use strict TypeScript on both backend and frontend
+- CORS defaults to `*` in development; production must set `CORS_ORIGIN` explicitly
+- Number inputs use `type="number"` (for mobile numeric keyboard) with spinner arrows hidden via CSS — users type and tab
+- Quantity unit convention: line item `quantity` is stored in production units (MSF, hundreds-of-LinFt, etc.), not raw SqFt or raw unit counts. Raw value ÷ `unitMultiplier` = stored quantity.
 - All domain IDs are MongoDB ObjectId strings — never numeric — to avoid route-to-engine type mismatches
 - Embedded subdocument arrays in Mongoose schemas require `as any` cast to satisfy TypeScript strict generics for current Mongoose version
 - Vitest config must use `defineConfig` from `vitest/config` (not from `vite`) to avoid type errors in the `test` block
+- Line item `quantity` is always in production units divided by `unitMultiplier` (e.g., enter 45 for 45,000 SqFt when `unitMultiplier=1000`). The raw area value is never stored directly on the line item.
+- `annualPrice` = `unitPrice × quantity × totalFreq`. It is the full annual cost for all units at all visit frequencies — not a per-unit or per-visit value.
 
 ## Suggested Continuation Path
 

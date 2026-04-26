@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { activitiesApi, workordersApi } from '../api/client';
-import { Layout } from '../components/Layout';
+import { EditLayout } from '../components/EditLayout';
 import type { Activity, Workorder, WorkorderLineItem, WorkorderStatus } from '../types';
 
 // ── Workflow transitions ────────────────────────────────────────────────────────
@@ -201,17 +201,16 @@ export function WorkorderDetail() {
   // ── Render ───────────────────────────────────────────────────────────────────
 
   if (loading) {
-    return <Layout><div style={wrap}><p>Loading workorder...</p></div></Layout>;
+    return <EditLayout backTo="/workorders" backLabel="Workorders"><div style={wrap}><p>Loading workorder...</p></div></EditLayout>;
   }
 
   if (error && !workorder) {
     return (
-      <Layout>
+      <EditLayout backTo="/workorders" backLabel="Workorders">
         <div style={wrap}>
           <p style={{ color: '#9b1c1c' }}>Error: {error}</p>
-          <a href="/workorders">Back to workorders</a>
         </div>
-      </Layout>
+      </EditLayout>
     );
   }
 
@@ -222,13 +221,12 @@ export function WorkorderDetail() {
   const editable = !['Completed', 'Cancelled'].includes(workorder.status);
 
   return (
-    <Layout>
+    <EditLayout backTo="/workorders" backLabel="Workorders">
       <div style={{ ...wrap, display: 'grid', gap: '1.5rem' }}>
 
-        {/* ── Header ──────────────────────────────────────────────────────── */}
+        {/* ── Header ────────────────────────────────────────────────── */}
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '1rem' }}>
           <div>
-            <a href="/workorders" style={{ display: 'inline-block', marginBottom: '0.75rem' }}>← Back to workorders</a>
             <h2 style={{ margin: 0 }}>{workorder.workorderNumber}</h2>
             <p style={{ margin: '0.5rem 0 0', color: '#5d6470' }}>{workorder.projectDisplayName}</p>
             {workorder.scheduledDate && (
@@ -370,7 +368,7 @@ export function WorkorderDetail() {
           )}
         </section>
       </div>
-    </Layout>
+    </EditLayout>
   );
 }
 
@@ -401,7 +399,7 @@ function LineItemRow({
 
   return (
     <div style={{ border: '1px solid #d8dee8', borderRadius: '14px', padding: '1rem', marginBottom: '1rem', background: '#fbfcfe' }}>
-      <div style={{ display: 'grid', gridTemplateColumns: 'minmax(240px, 2fr) repeat(4, minmax(120px, 1fr)) auto', gap: '0.75rem', alignItems: 'end' }}>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))', gap: '0.75rem', alignItems: 'end' }}>
         <label style={field}>
           <span>Activity</span>
           <select
@@ -435,11 +433,13 @@ function LineItemRow({
           <span>Material markup</span>
           <input type="number" min="0" step="0.01" value={item.materialMarkupPercent} disabled={!editable} onChange={num('materialMarkupPercent')} />
         </label>
-
-        {editable && (
-          <button onClick={() => onRemove(index)} style={{ alignSelf: 'center' }}>Remove</button>
-        )}
       </div>
+
+      {editable && (
+        <div style={{ display: 'flex', justifyContent: 'flex-end', marginTop: '0.5rem' }}>
+          <button onClick={() => onRemove(index)}>Remove</button>
+        </div>
+      )}
 
       {/* Calculated summary row */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(120px, 1fr))', gap: '0.5rem', marginTop: '0.75rem', padding: '0.6rem 0.75rem', background: '#f5f6fa', borderRadius: '8px', fontSize: '0.85rem' }}>

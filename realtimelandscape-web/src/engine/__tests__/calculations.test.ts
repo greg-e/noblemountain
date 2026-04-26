@@ -144,14 +144,17 @@ describe('recalcContractLineItem()', () => {
   };
 
   const result = recalcContractLineItem(baseRow, mockActivity, 25, 12.50);
-  // mh = 50 × 0.1 = 5
-  // totalFreq = 1+1+1+1+2+2+2+2+1+1+1+1 = 16
-  // totalMH = 16 × 5 = 80
-  // laborPrice = 25 + 12.50 = 37.50
-  // materialCost = 50 × 2.00 = 100
-  // materialUnitPrice = 2.00 × 0.35 + 2.00 = 2.70
-  // laborUnitPrice = 37.50 × 0.1 = 3.75
-  // unitPrice = 2.70 + 3.75 = 6.45
+  // mh               = quantity × productionRate       = 50 × 0.1   = 5
+  // totalFreq        = sum(monthlyFrequency)            = 1+1+1+1+2+2+2+2+1+1+1+1 = 16
+  // totalMH          = totalFreq × mh                  = 16 × 5     = 80
+  // laborPrice       = generalLaborCost + overhead      = 25 + 12.50 = 37.50
+  // materialCost     = quantity × materialRate          = 50 × 2.00  = 100
+  // materialUnitPrice = materialRate × markup + rate   = 2.00 × 0.35 + 2.00 = 2.70
+  // laborUnitPrice   = laborPrice × productionRate     = 37.50 × 0.1 = 3.75
+  // unitPrice        = materialUnitPrice + laborUnitPrice = 2.70 + 3.75 = 6.45
+  // materialAnnualCost = materialCost × totalFreq      = 100 × 16   = 1600
+  // laborAnnualCost  = laborUnitPrice × quantity × totalFreq = 3.75 × 50 × 16 = 3000
+  // annualPrice      = unitPrice × quantity × totalFreq     = 6.45 × 50 × 16 = 5160
 
   it('calculates mh = quantity × productionRate', () => expect(result.mh).toBe(5));
   it('calculates totalFreq', () => expect(result.totalFreq).toBe(16));
@@ -162,6 +165,8 @@ describe('recalcContractLineItem()', () => {
   it('calculates laborUnitPrice = laborPrice × productionRate', () => expect(result.laborUnitPrice).toBeCloseTo(3.75));
   it('calculates unitPrice = materialUnitPrice + laborUnitPrice', () => expect(result.unitPrice).toBeCloseTo(6.45));
   it('calculates materialAnnualCost = materialCost × totalFreq', () => expect(result.materialAnnualCost).toBe(1600));
+  it('calculates laborAnnualCost = laborUnitPrice × quantity × totalFreq', () => expect(result.laborAnnualCost).toBeCloseTo(3000));
+  it('calculates annualPrice = unitPrice × quantity × totalFreq', () => expect(result.annualPrice).toBeCloseTo(5160));
 
   it('calculates monthlyMH[jan] = mh × janFreq', () => expect(result.monthlyMH.jan).toBe(5));
   it('calculates monthlyMH[may] = mh × mayFreq (2)', () => expect(result.monthlyMH.may).toBe(10));
@@ -192,6 +197,72 @@ describe('recalcContractTotals()', () => {
   it('grossProfit = price - cost', () => expect(totals.grossProfit).toBe(750));
   it('grossProfitPercent = profit / price', () =>
     expect(totals.grossProfitPercent).toBeCloseTo(750 / 1650));
+});
+
+// ── Visit Calculations ───────────────────────────────────────
+
+describe('recalcVisitCalculations()', () => {
+  // One line item: 10 MH in January, nothing else.
+  // After recalcContractLineItem the item would have totalMH=10, monthlyMH.jan=10.
+  const janItem = {
+    totalMH: 10,
+    monthlyMH: { jan: 10, feb: 0, mar: 0, apr: 0, may: 0, jun: 0,
+                  jul:  0, aug: 0, sep: 0, oct: 0, nov: 0, dec: 0 },
+  } as ContractLineItem;
+
+  const allTwoCrew = () =>
+    ({ jan:2, feb:2, mar:2, apr:2, may:2, jun:2, jul:2, aug:2, sep:2, oct:2, nov:2, dec:2 });
+
+  const current: VisitCalculations = {
+    workDayHours:          8,
+    siteVisits:            { jan:2, feb:0, mar:0, apr:0, may:0, jun:0,
+                             jul:0, aug:0, sep:0, oct:0, nov:0, dec:0 },
+    averageCrew:           allTwoCrew(),
+    // calculated – will be overwritten
+    mhSums:                emptyMonthly(),
+    generalContractHours:  0,
+    totalGeneralVisits:    0,
+    crewVisit:             emptyMonthly(),
+    percentOfDailyTravel:  emptyMonthly(),
+    travel:                emptyMonthly(),
+    monthlyTravel:         emptyMonthly(),
+    totalMonthlyTravel:    0,
+    mhOnSitePerVisit:      emptyMonthly(),
+    percentMHPerMonth:     emptyMonthly(),
+    totalAnnualPercent:    0,
+    travelCost:            0,
+    travelPrice:           0,
+  };
+
+  const result = recalcVisitCalculations([janItem], current, 1.0);
+  // mhSums.jan         = round(10) = 10
+  // generalContractHours = 10
+  // totalGeneralVisits = 2
+  // crewVisit.jan      = (10 / 2) / 2 = 2.5 hrs/person
+  // mhOnSitePerVisit.jan = 10 / 2 = 5
+  // percentMHPerMonth.jan = 10 / 10 = 1.0
+  // totalAnnualPercent = 1.0
+
+  it('sums mhSums from line item monthlyMH', () =>
+    expect(result.mhSums.jan).toBe(10));
+  it('zero months stay zero in mhSums', () =>
+    expect(result.mhSums.feb).toBe(0));
+  it('calculates generalContractHours = sum of totalMH', () =>
+    expect(result.generalContractHours).toBe(10));
+  it('calculates totalGeneralVisits = sum of siteVisits', () =>
+    expect(result.totalGeneralVisits).toBe(2));
+  it('calculates crewVisit = mhSum / visits / crew', () =>
+    expect(result.crewVisit.jan).toBeCloseTo(2.5));
+  it('calculates mhOnSitePerVisit = mhSum / visits', () =>
+    expect(result.mhOnSitePerVisit.jan).toBeCloseTo(5));
+  it('calculates percentMHPerMonth', () =>
+    expect(result.percentMHPerMonth.jan).toBeCloseTo(1.0));
+  it('totalAnnualPercent = 1.0 for single active month', () =>
+    expect(result.totalAnnualPercent).toBeCloseTo(1.0));
+  it('preserves user-entered workDayHours', () =>
+    expect(result.workDayHours).toBe(8));
+  it('preserves travelCost (set by external caller)', () =>
+    expect(result.travelCost).toBe(0));
 });
 
 // ── Workorder Line Item ──────────────────────────────────────

@@ -115,17 +115,14 @@ async function main(): Promise<void> {
       contractNumber: 'CTR-2026-0001',
       project: ropProject._id,
       projectDisplayName: ropProject.title,
-      clientName: ropProject.clientName,
-      contractYear: 2026,
-      laborRate: 55,
-      overheadAndProfit: 0.30,
-      materialMarkup: 0.35,
+      generalLaborCost: 38.50,          // $/MH direct labor
+      generalOverheadAndProfit: 16.50,  // $/MH overhead+profit
       roundTrip: ropProject.roundTrip,
       status: 'Active' as const,
       generalLineItems: [
         {
           activity: mowingId,
-          quantity: 45000,
+          quantity: 45,  // 45 MSF (45,000 SqFt ÷ 1000)
           monthlyFrequency: { ...uniformMonths(1), nov: 0, dec: 0, jan: 0, feb: 0 },
           materialMarkup: 0.35,
           activityDisplayName: 'Mowing - Flat',
@@ -139,7 +136,7 @@ async function main(): Promise<void> {
         },
         {
           activity: edgingId,
-          quantity: 800,
+          quantity: 8,  // 8 hundreds of LinFt (800 LinFt ÷ 100)
           monthlyFrequency: { ...uniformMonths(1), nov: 0, dec: 0, jan: 0, feb: 0 },
           materialMarkup: 0.35,
           activityDisplayName: 'Edging - Hard',
@@ -153,7 +150,7 @@ async function main(): Promise<void> {
         },
         {
           activity: weedingId,
-          quantity: 3000,
+          quantity: 30,  // 30 hundreds of SqFt (3,000 SqFt ÷ 100)
           monthlyFrequency: uniformMonths(1),
           materialMarkup: 0.35,
           activityDisplayName: 'Hand Weeding',
@@ -183,7 +180,7 @@ async function main(): Promise<void> {
       technicalLineItems: [
         {
           activity: fertId,
-          quantity: 45000,
+          quantity: 45,  // 45 MSF (45,000 SqFt ÷ 1000)
           monthlyFrequency: { ...zeroMonths(), mar: 1, jun: 1, sep: 1 },
           materialMarkup: 0.35,
           techCrewSize: 2,
@@ -245,17 +242,14 @@ async function main(): Promise<void> {
       contractNumber: 'CTR-2026-0002',
       project: mehProject._id,
       projectDisplayName: mehProject.title,
-      clientName: mehProject.clientName,
-      contractYear: 2026,
-      laborRate: 52,
-      overheadAndProfit: 0.28,
-      materialMarkup: 0.35,
+      generalLaborCost: 36.40,          // $/MH direct labor
+      generalOverheadAndProfit: 14.56,  // $/MH overhead+profit
       roundTrip: mehProject.roundTrip,
       status: 'Active' as const,
       generalLineItems: [
         {
           activity: mowingId,
-          quantity: 28000,
+          quantity: 28,  // 28 MSF (28,000 SqFt ÷ 1000)
           monthlyFrequency: { ...uniformMonths(1), nov: 0, dec: 0, jan: 0, feb: 0 },
           materialMarkup: 0.35,
           activityDisplayName: 'Mowing - Flat',

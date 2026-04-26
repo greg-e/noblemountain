@@ -56,6 +56,15 @@ function toEngineProject(doc: any): Project {
   };
 }
 
+/** Handle both ObjectId refs and populated project objects from lean() results */
+function extractProjectId(project: any): string {
+  if (!project) return '';
+  if (typeof project === 'string') return project;
+  if (project instanceof Types.ObjectId) return String(project);
+  if (project._id) return String(project._id);
+  return String(project);
+}
+
 // ─────────────────────────────────────────────────────────────
 // Routes
 // ─────────────────────────────────────────────────────────────
@@ -130,15 +139,21 @@ contractsRouter.post(
     const recalculated = recalcEstimateGroup(estimateGroup, activityMap, toEngineProject(projectDoc));
 
     const contractNumber = await generateContractNumber();
-    const contract = await createContract({
-      contractNumber,
-      project:          new Types.ObjectId(req.body.project),
-      projectDisplayName: projectDoc.title,
-      roundTrip:        projectDoc.roundTrip,
-      status:           'Draft',
-      ...recalculated,
-      createdBy: req.body.createdBy ?? '',
-    });
+    let contract;
+    try {
+      contract = await createContract({
+        contractNumber,
+        project:          new Types.ObjectId(req.body.project),
+        projectDisplayName: projectDoc.title,
+        roundTrip:        projectDoc.roundTrip,
+        status:           'Draft',
+        ...recalculated,
+        createdBy: req.body.createdBy ?? '',
+      });
+    } catch (err: any) {
+      if (err.code === 11000) throw httpError(409, 'Contract number conflict — please retry');
+      throw err;
+    }
 
     res.status(201).json(contract);
   })
@@ -161,7 +176,7 @@ contractsRouter.put(
       throw httpError(409, `Cannot edit a ${existing.status} contract`);
     }
 
-    const projectDoc = await findProjectById(String(existing.project));
+    const projectDoc = await findProjectById(extractProjectId(existing.project));
     if (!projectDoc) throw httpError(404, 'Project not found');
 
     const estimateGroup: EstimateGroup = {
@@ -185,6 +200,7 @@ contractsRouter.put(
       ...recalculated,
       updatedBy: req.body.updatedBy ?? '',
     });
+    if (!updated) throw httpError(404, 'Contract not found');
 
     res.json(updated);
   })

@@ -1,0 +1,154 @@
+/* ── Page wrapper ─────────────────────────────────────────────── */
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ── Toolbar ──────────────────────────────────────────────────── */
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.toolbar h2 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.newBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.55rem 1rem;
+  background: #1e6b40;
+  color: #fff !important;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background 0.15s;
+  white-space: nowrap;
+}
+.newBtn:hover { background: #155130; text-decoration: none; }
+
+/* ── Filter bar ───────────────────────────────────────────────── */
+.filterBar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.25rem;
+}
+.filterBar label { font-size: 0.9rem; font-weight: 500; white-space: nowrap; }
+.filterBar select { width: auto; min-width: 160px; }
+
+/* ── Scrollable table container ───────────────────────────────── */
+.tableWrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.tableWrap table {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* ── Status badges ────────────────────────────────────────────── */
+.badge {
+  display: inline-block;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.badgeActive     { background: #e8f5ee; color: #1e6b40; }
+.badgePending    { background: #fff8e6; color: #92580a; }
+.badgeDraft      { background: #f0f2f5; color: #4b5563; }
+.badgeCompleted  { background: #e7f0ff; color: #1d4ed8; }
+.badgeCancelled  { background: #fbe7e7; color: #9b1c1c; }
+.badgeScheduled  { background: #e7f0ff; color: #1d4ed8; }
+.badgeInProgress { background: #eef5ff; color: #2563eb; }
+
+/* ── Row link ─────────────────────────────────────────────────── */
+.viewLink {
+  color: #1e6b40;
+  font-weight: 600;
+  font-size: 0.88rem;
+  white-space: nowrap;
+}
+.viewLink:hover { text-decoration: underline; }
+
+/* ── Empty state ──────────────────────────────────────────────── */
+.empty {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #6b7280;
+}
+.empty a { color: #1e6b40; font-weight: 600; }
+
+/* ── Card list (mobile view) ──────────────────────────────────── */
+.cardList {
+  display: none;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.card {
+  display: block;
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid #e8edf2;
+  transition: box-shadow 0.15s, transform 0.1s;
+}
+.card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.cardNumber {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #1a1f2e;
+}
+
+.cardProject {
+  font-size: 0.88rem;
+  color: #5d6678;
+  margin-bottom: 0.35rem;
+}
+
+.cardMeta {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  font-size: 0.82rem;
+  color: #6b7280;
+  margin-top: 0.5rem;
+}
+.cardMeta strong { color: #374151; }
+
+/* Show cards on mobile, table on desktop */
+@media (max-width: 640px) {
+  .tableWrap { display: none; }
+  .cardList   { display: flex; }
+}

@@ -1,9 +1,12 @@
 import { useEffect, useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import { contractsApi, projectsApi, workordersApi } from '../api/client';
 import { Layout } from '../components/Layout';
 import type { Contract, Project } from '../types';
 
 export function WorkorderNew() {
+  const navigate = useNavigate();
+
   const [projects, setProjects]   = useState<Project[]>([]);
   const [contracts, setContracts] = useState<Contract[]>([]);
   const [loadingProjects, setLoadingProjects] = useState(true);
@@ -55,7 +58,7 @@ export function WorkorderNew() {
         scheduledDate: form.scheduledDate || undefined,
         createdBy:     form.createdBy || 'web',
       });
-      window.location.href = `/workorders/${workorder._id}`;
+      navigate(`/workorders/${workorder._id}`);
     } catch (err: any) {
       setError(err.error ?? 'Failed to create workorder');
       setSubmitting(false);
@@ -65,7 +68,7 @@ export function WorkorderNew() {
   return (
     <Layout>
       <div style={wrap}>
-        <a href="/workorders" style={{ display: 'inline-block', marginBottom: '1rem' }}>← Back to workorders</a>
+        <Link to="/workorders" style={{ display: 'inline-block', marginBottom: '1rem' }}>← Back to workorders</Link>
         <h2 style={{ marginTop: 0 }}>New Workorder</h2>
 
         {error && <div style={errBox}>{error}</div>}
@@ -142,10 +145,10 @@ export function WorkorderNew() {
           </div>
 
           <div style={{ marginTop: '1.5rem', display: 'flex', gap: '0.75rem' }}>
-            <button type="submit" disabled={submitting}>
+            <button type="submit" disabled={submitting} style={{ background: '#1e6b40', color: '#fff', borderColor: '#1e6b40' }}>
               {submitting ? 'Creating...' : 'Create Workorder'}
             </button>
-            <a href="/workorders">Cancel</a>
+            <Link to="/workorders" style={{ alignSelf: 'center', color: '#5d6678' }}>Cancel</Link>
           </div>
         </form>
       </div>

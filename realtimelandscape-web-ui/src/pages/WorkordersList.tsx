@@ -1,7 +1,21 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { workordersApi } from '../api/client';
 import { Layout } from '../components/Layout';
+import s from '../components/ListPage.module.css';
 import type { Workorder, WorkorderStatus } from '../types';
+
+function statusClass(status: WorkorderStatus): string {
+  switch (status) {
+    case 'Completed':         return s.badgeCompleted;
+    case 'InProgress':        return s.badgeInProgress;
+    case 'Scheduled':         return s.badgeScheduled;
+    case 'Cancelled':         return s.badgeCancelled;
+    case 'PendingActivation':
+    case 'PendingCompletion': return s.badgePending;
+    default:                  return s.badgeDraft;
+  }
+}
 
 export function WorkordersList() {
   const [workorders, setWorkorders] = useState<Workorder[]>([]);
@@ -10,41 +24,30 @@ export function WorkordersList() {
   const [filterStatus, setFilterStatus] = useState<WorkorderStatus | ''>('');
 
   useEffect(() => {
-    (async () => {
-      try {
-        const data = await workordersApi.list({
-          status: filterStatus as WorkorderStatus || undefined,
-        });
-        setWorkorders(data);
-        setError(null);
-      } catch (err: any) {
-        setError(err.error ?? 'Failed to load workorders');
-      } finally {
-        setLoading(false);
-      }
-    })();
+    let cancelled = false;
+    setLoading(true);
+    workordersApi
+      .list({ status: filterStatus as WorkorderStatus || undefined })
+      .then(data => { if (!cancelled) { setWorkorders(data); setError(null); } })
+      .catch((err: any) => { if (!cancelled) setError(err.error ?? 'Failed to load workorders'); })
+      .finally(() => { if (!cancelled) setLoading(false); });
+    return () => { cancelled = true; };
   }, [filterStatus]);
 
   return (
     <Layout>
-      <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem' }}>
+      <div className={s.page}>
+        <div className={s.toolbar}>
           <h2>Workorders</h2>
-          <a href="/workorders/new" style={{
-            padding: '0.5rem 1rem',
-            background: '#00aa00',
-            color: 'white',
-            borderRadius: '4px',
-            textDecoration: 'none',
-          }}>+ New Workorder</a>
+          <Link to="/workorders/new" className={s.newBtn}>+ New Workorder</Link>
         </div>
 
-        <div style={{ marginBottom: '1rem' }}>
-          <label htmlFor="filter">Filter by Status: </label>
+        <div className={s.filterBar}>
+          <label htmlFor="filter-status">Status:</label>
           <select
-            id="filter"
+            id="filter-status"
             value={filterStatus}
-            onChange={(e) => setFilterStatus(e.target.value as WorkorderStatus | '')}
+            onChange={e => setFilterStatus(e.target.value as WorkorderStatus | '')}
           >
             <option value="">All</option>
             <option value="Draft">Draft</option>
@@ -58,53 +61,73 @@ export function WorkordersList() {
         </div>
 
         {loading && <p>Loading workorders...</p>}
-        {error && <p style={{ color: 'red' }}>Error: {error}</p>}
+        {error   && <p style={{ color: '#9b1c1c' }}>Error: {error}</p>}
 
         {!loading && workorders.length === 0 && (
-          <p>No workorders found. <a href="/workorders/new">Create one</a></p>
+          <div className={s.empty}>
+            <p>No workorders found.</p>
+            <Link to="/workorders/new">Create one &rarr;</Link>
+          </div>
         )}
 
         {workorders.length > 0 && (
-          <table>
-            <thead>
-              <tr>
-                <th>Number</th>
-                <th>Project</th>
-                <th>Status</th>
-                <th>Scheduled</th>
-                <th>Total Price</th>
-                <th>Total Hours</th>
-                <th>Created</th>
-                <th>Actions</th>
-              </tr>
-            </thead>
-            <tbody>
+          <>
+            {/* ── Desktop table ── */}
+            <div className={s.tableWrap}>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Number</th>
+                    <th>Project</th>
+                    <th>Status</th>
+                    <th>Scheduled</th>
+                    <th>Total Price</th>
+                    <th>Man Hours</th>
+                    <th>Created</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {workorders.map(w => (
+                    <tr key={w._id}>
+                      <td><strong>{w.workorderNumber}</strong></td>
+                      <td>{w.projectDisplayName}</td>
+                      <td>
+                        <span className={`${s.badge} ${statusClass(w.status)}`}>{w.status}</span>
+                      </td>
+                      <td>{w.scheduledDate ? new Date(w.scheduledDate).toLocaleDateString() : '—'}</td>
+                      <td>${w.totalWorkorderPrice.toFixed(2)}</td>
+                      <td>{w.totalManHours.toFixed(1)}</td>
+                      <td>{new Date(w.createdAt).toLocaleDateString()}</td>
+                      <td>
+                        <Link to={`/workorders/${w._id}`} className={s.viewLink}>View &rarr;</Link>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+
+            {/* ── Mobile card list ── */}
+            <div className={s.cardList}>
               {workorders.map(w => (
-                <tr key={w._id}>
-                  <td><strong>{w.workorderNumber}</strong></td>
-                  <td>{w.projectDisplayName}</td>
-                  <td>
-                    <span style={{
-                      padding: '0.25rem 0.5rem',
-                      borderRadius: '4px',
-                      fontSize: '0.85rem',
-                      background: w.status === 'Completed' ? '#e8f5e9' : '#e3f2fd',
-                      color: w.status === 'Completed' ? '#2e7d32' : '#1565c0',
-                    }}>
-                      {w.status}
-                    </span>
-                  </td>
-                  <td>{w.scheduledDate ? new Date(w.scheduledDate).toLocaleDateString() : '—'}</td>
-                  <td>${w.totalWorkorderPrice.toFixed(2)}</td>
-                  <td>{w.totalManHours.toFixed(1)}</td>
-                  <td>{new Date(w.createdAt).toLocaleDateString()}</td>
-                  <td>
-                    <a href={`/workorders/${w._id}`}>View</a>
-                  </td>
-                </tr>
+                <Link to={`/workorders/${w._id}`} key={w._id} className={s.card}>
+                  <div className={s.cardHeader}>
+                    <span className={s.cardNumber}>{w.workorderNumber}</span>
+                    <span className={`${s.badge} ${statusClass(w.status)}`}>{w.status}</span>
+                  </div>
+                  <div className={s.cardProject}>{w.projectDisplayName}</div>
+                  <div className={s.cardMeta}>
+                    <span><strong>${w.totalWorkorderPrice.toFixed(0)}</strong> total</span>
+                    <span><strong>{w.totalManHours.toFixed(1)}h</strong> labor</span>
+                    {w.scheduledDate && (
+                      <span>Sched: {new Date(w.scheduledDate).toLocaleDateString()}</span>
+                    )}
+                  </div>
+                </Link>
               ))}
-            </tbody>
-          </table>
+            </div>
+          </>
         )}
       </div>
     </Layout>

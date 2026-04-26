@@ -14,7 +14,10 @@ const app = express();
 
 // ── Security & parsing ────────────────────────────────────────
 app.use(helmet());
-app.use(cors());
+// CORS: allow all origins in dev; restrict to CORS_ORIGIN in production.
+// Set CORS_ORIGIN=https://app.example.com in .env for production.
+const corsOrigin = process.env.CORS_ORIGIN ?? '*';
+app.use(cors({ origin: corsOrigin }));
 app.use(express.json({ limit: '2mb' }));
 
 // ── Health check ──────────────────────────────────────────────

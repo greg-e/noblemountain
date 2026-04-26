@@ -159,10 +159,11 @@ export const recalcContractLineItem = (
   const materialCost   = nz(row.quantity) * materialRate;
   const materialUnitPrice = materialRate * nz(row.materialMarkup) + materialRate;
   const materialAnnualCost = materialCost * totalFreq;
+  const qty            = nz(row.quantity);
   const laborUnitPrice = laborPrice * productionRate;
   const unitPrice      = materialUnitPrice + laborUnitPrice;
-  const laborAnnualCost = laborUnitPrice * totalFreq;
-  const annualPrice    = unitPrice * totalFreq;
+  const laborAnnualCost = laborUnitPrice * qty * totalFreq;
+  const annualPrice    = unitPrice * qty * totalFreq;
 
   return {
     ...row,
