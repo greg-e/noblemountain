@@ -4,6 +4,7 @@ import { Dashboard } from './pages/Dashboard';
 import { ContractsList } from './pages/ContractsList';
 import { ContractDetail } from './pages/ContractDetail';
 import { WorkordersList } from './pages/WorkordersList';
+import { WorkorderDetail } from './pages/WorkorderDetail';
 
 function NotFound() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
         <Route path="/contracts" element={<ContractsList />} />
         <Route path="/contracts/:id" element={<ContractDetail />} />
         <Route path="/workorders" element={<WorkordersList />} />
+        <Route path="/workorders/:id" element={<WorkorderDetail />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
