@@ -134,6 +134,10 @@ The core migration goal is to preserve the original business logic and workflow 
 - **Stale-fetch cancellation (April 2026):** ContractsList and WorkordersList `useEffect` hooks now set a `cancelled` flag in cleanup so rapid filter changes no longer allow a slower earlier response to overwrite a faster later one.
 - **Frontend UI/UX test suite**: Vitest + React Testing Library + jsdom — 92/92 passing
 - **Vite config typing fix**: `defineConfig` imported from `vitest/config`
+- **Green bar header chips (April 2026):** `EditLayout` now accepts a `headerSlot` prop rendered in the sticky green bar. `ContractDetail` shows live Contract Price, Gross Profit, and Gross Margin chips; `WorkorderDetail` shows Total Price, Gross Profit, Margin, and Man Hours chips. Values update in real time as line items are added or changed.
+- **Dashboard financial rollup (April 2026):** Dashboard fetches `GET /api/contracts/financials` and `GET /api/workorders/financials` and renders two Financial Summary cards — Active/Pipeline contract value and Open/Completed workorder value with profit metrics.
+- **Draft-only editing enforcement (April 2026):** Both `ContractDetail` and `WorkorderDetail` derive an `editable` flag from `status === 'Draft'`. All inputs, line item add/remove buttons, and the Save Changes button are gated by this flag. The backend PUT and preview routes also reject non-Draft documents with HTTP 409.
+- **Brand text removed (April 2026):** "RealTime Landscape" text removed from the `EditLayout` header and the `Layout` footer.
 
 ### Repository and CI completed
 
@@ -160,18 +164,22 @@ The core migration goal is to preserve the original business logic and workflow 
 
 - `GET /api/contracts`
 - `GET /api/contracts/stats`
+- `GET /api/contracts/financials` — aggregate rollup: active count/value/profit/margin, pipeline count/value/profit
 - `GET /api/contracts/:id`
 - `POST /api/contracts`
-- `PUT /api/contracts/:id`
+- `PUT /api/contracts/:id` — rejects non-Draft with 409
+- `POST /api/contracts/:id/preview` — rejects non-Draft with 409
 - `POST /api/contracts/:id/transition`
 
 ### Workorders API
 
 - `GET /api/workorders`
 - `GET /api/workorders/stats`
+- `GET /api/workorders/financials` — aggregate rollup: open count/value/profit/hours, completed count/value/profit
 - `GET /api/workorders/:id`
 - `POST /api/workorders`
-- `PUT /api/workorders/:id`
+- `PUT /api/workorders/:id` — rejects non-Draft with 409
+- `POST /api/workorders/:id/preview` — rejects non-Draft with 409
 - `POST /api/workorders/:id/transition`
 
 ### Reference data APIs
@@ -229,7 +237,7 @@ $env:PATH = [System.Environment]::GetEnvironmentVariable("PATH","Machine") + ";"
 ```
 
 **Current status:**
-- TypeScript compile: clean
+- TypeScript compile: clean (0 errors)
 - Vitest tests: 92/92 passing
 
 ### Runtime readiness
@@ -270,7 +278,6 @@ $env:PATH = [System.Environment]::GetEnvironmentVariable("PATH","Machine") + ";"
 ### Frontend follow-up
 
 - Add loading/error states to admin pages where missing
-- Consider displaying `visitCalculations` and `contractTotals` (gross profit, cost breakdown) on the ContractDetail page
 - Validate that the line item quantity input label reflects the unit and multiplier (e.g., "Quantity (MSF)" for 1000-multiplier area activities)
 
 ### Production readiness
@@ -293,6 +300,7 @@ $env:PATH = [System.Environment]::GetEnvironmentVariable("PATH","Machine") + ";"
 - Embedded subdocument arrays in Mongoose schemas require `as any` cast to satisfy TypeScript strict generics for current Mongoose version
 - Vitest config must use `defineConfig` from `vitest/config` (not from `vite`) to avoid type errors in the `test` block
 - Line item `quantity` is always in production units divided by `unitMultiplier` (e.g., enter 45 for 45,000 SqFt when `unitMultiplier=1000`). The raw area value is never stored directly on the line item.
+- Only `Draft` contracts and workorders can be edited or previewed — the UI hides edit controls and the backend PUT/preview routes return HTTP 409 for any other status.
 - `annualPrice` = `unitPrice × quantity × totalFreq`. It is the full annual cost for all units at all visit frequencies — not a per-unit or per-visit value.
 
 ## Suggested Continuation Path

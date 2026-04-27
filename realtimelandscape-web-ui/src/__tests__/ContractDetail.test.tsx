@@ -9,6 +9,7 @@ vi.mock('../api/client', () => ({
     stats: vi.fn().mockResolvedValue({}),
     get: vi.fn(),
     create: vi.fn(),
+    preview: vi.fn(),
     update: vi.fn(),
     transition: vi.fn(),
   },
@@ -40,6 +41,7 @@ describe('ContractDetail', () => {
     vi.clearAllMocks();
     vi.restoreAllMocks();
     vi.mocked(contractsApi.get).mockResolvedValue(mockContract());
+    vi.mocked(contractsApi.preview).mockResolvedValue(mockContract());
     vi.mocked(activitiesApi.list).mockResolvedValue([mockActivity]);
   });
 
@@ -126,7 +128,7 @@ describe('ContractDetail', () => {
     vi.mocked(contractsApi.get).mockResolvedValue(mockContract({ status: 'Completed' }));
     renderWithRoute();
     await screen.findByText('CON-2024-001');
-    expect(screen.getByRole('button', { name: /save changes/i })).toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: /save changes/i })).not.toBeInTheDocument();
     expect(screen.queryByRole('button', { name: /move to/i })).not.toBeInTheDocument();
   });
 

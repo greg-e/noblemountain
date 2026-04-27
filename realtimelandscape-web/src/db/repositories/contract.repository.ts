@@ -73,6 +73,56 @@ export async function transitionContractStatus(
 
 // ── Reporting helpers ─────────────────────────────────────────
 
+export interface ContractFinancials {
+  activeCount:      number;
+  activeValue:      number;
+  activeProfit:     number;
+  activeAvgMargin:  number;
+  pipelineCount:    number;
+  pipelineValue:    number;
+  pipelineProfit:   number;
+}
+
+export async function getContractFinancials(): Promise<ContractFinancials> {
+  const ACTIVE_STATUSES   = ['Active'];
+  const PIPELINE_STATUSES = ['PendingActivation', 'Active', 'PendingCompletion'];
+
+  const [activeRows, pipelineRows] = await Promise.all([
+    Contract.aggregate<{ totalValue: number; totalProfit: number; count: number; avgMargin: number }>([
+      { $match: { status: { $in: ACTIVE_STATUSES } } },
+      { $group: {
+          _id: null,
+          totalValue:  { $sum: '$contractTotals.contractPrice' },
+          totalProfit: { $sum: '$contractTotals.grossProfit' },
+          count:       { $sum: 1 },
+          avgMargin:   { $avg: '$contractTotals.grossProfitPercent' },
+      }},
+    ]),
+    Contract.aggregate<{ totalValue: number; totalProfit: number; count: number }>([
+      { $match: { status: { $in: PIPELINE_STATUSES } } },
+      { $group: {
+          _id: null,
+          totalValue:  { $sum: '$contractTotals.contractPrice' },
+          totalProfit: { $sum: '$contractTotals.grossProfit' },
+          count:       { $sum: 1 },
+      }},
+    ]),
+  ]);
+
+  const a = activeRows[0]   ?? { totalValue: 0, totalProfit: 0, count: 0, avgMargin: 0 };
+  const p = pipelineRows[0] ?? { totalValue: 0, totalProfit: 0, count: 0 };
+
+  return {
+    activeCount:     a.count,
+    activeValue:     a.totalValue,
+    activeProfit:    a.totalProfit,
+    activeAvgMargin: a.avgMargin,
+    pipelineCount:   p.count,
+    pipelineValue:   p.totalValue,
+    pipelineProfit:  p.totalProfit,
+  };
+}
+
 export async function countContractsByStatus(): Promise<Record<ContractWorkflowStatus, number>> {
   const rows = await Contract.aggregate<{ _id: ContractWorkflowStatus; count: number }>([
     { $group: { _id: '$status', count: { $sum: 1 } } },

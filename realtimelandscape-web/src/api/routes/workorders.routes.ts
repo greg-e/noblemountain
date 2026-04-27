@@ -11,6 +11,7 @@ import {
   saveWorkorder,
   transitionWorkorderStatus,
   countWorkordersByStatus,
+  getWorkorderFinancials,
 } from '../../db/repositories';
 import { findProjectById, findActivitiesByIds } from '../../db/repositories';
 import { recalcWorkorder } from '../../engine/calculations';
@@ -86,6 +87,15 @@ workordersRouter.get(
   asyncHandler(async (_req, res) => {
     const counts = await countWorkordersByStatus();
     res.json(counts);
+  })
+);
+
+// GET /api/workorders/financials
+workordersRouter.get(
+  '/financials',
+  asyncHandler(async (_req, res) => {
+    const data = await getWorkorderFinancials();
+    res.json(data);
   })
 );
 
@@ -190,8 +200,8 @@ workordersRouter.put(
   asyncHandler(async (req, res) => {
     const existing = await findWorkorderById(req.params.id as string);
     if (!existing) throw httpError(404, 'Workorder not found');
-    if (['Completed', 'Cancelled'].includes(existing.status)) {
-      throw httpError(409, `Cannot edit a ${existing.status} workorder`);
+    if (existing.status !== 'Draft') {
+      throw httpError(409, `Cannot edit workorder in ${existing.status}; only Draft can be edited`);
     }
 
     const projectDoc = await findProjectById(extractProjectId(existing.project));
@@ -249,6 +259,74 @@ workordersRouter.put(
     if (!updated) throw httpError(404, 'Workorder not found');
 
     res.json(updated);
+  })
+);
+
+// POST /api/workorders/:id/preview
+// Non-persisting preview — recalculates totals and line item outputs
+// without saving changes to the database.
+workordersRouter.post(
+  '/:id/preview',
+  [
+    param('id').isMongoId(),
+    body('workDayHours').optional().isFloat({ min: 1 }),
+    body('crewSize').optional().isFloat({ min: 1 }),
+  ],
+  validate,
+  asyncHandler(async (req, res) => {
+    const existing = await findWorkorderById(req.params.id as string);
+    if (!existing) throw httpError(404, 'Workorder not found');
+    if (existing.status !== 'Draft') {
+      throw httpError(409, `Cannot preview workorder in ${existing.status}; only Draft can be edited`);
+    }
+
+    const projectDoc = await findProjectById(extractProjectId(existing.project));
+    if (!projectDoc) throw httpError(404, 'Project not found');
+
+    const lineItems: any[] = req.body.lineItems ?? existing.lineItems;
+    const activityIds  = collectActivityIds(lineItems);
+    const activityDocs = activityIds.length ? await findActivitiesByIds(activityIds) : [];
+    const activityMap  = new Map<string, PricingTableActivity>(
+      activityDocs.map(a => [String((a as any)._id), toEngineActivity(a)])
+    );
+
+    const engineForm: WorkorderForm = {
+      project:       String(projectDoc._id),
+      projectDisplayName: projectDoc.title,
+      projectID:     String(projectDoc._id),
+      roundTrip:     projectDoc.roundTrip,
+      workorderNotes: req.body.workorderNotes ?? existing.workorderNotes,
+      workDayHours:  req.body.workDayHours ?? existing.workDayHours,
+      crewSize:      req.body.crewSize     ?? existing.crewSize,
+      lineItems,
+      totalManHours: 0, averageHourlyRate: 0, priceSubtotal: 0,
+      totalVisits: 0, totalVisitsRoundedUp: 0, onsiteCrewHours: 0,
+      totalTravelHours: 0, travelPrice: 0, totalWorkorderPrice: 0,
+      totalWorkorderCost: 0, totalWorkorderProfit: 0, percentProfit: 0,
+    };
+
+    const recalculated = recalcWorkorder(engineForm, activityMap, toEngineProject(projectDoc));
+
+    res.json({
+      ...existing,
+      workDayHours:         recalculated.workDayHours,
+      crewSize:             recalculated.crewSize,
+      lineItems:            recalculated.lineItems,
+      workorderNotes:       req.body.workorderNotes ?? existing.workorderNotes,
+      scheduledDate:        req.body.scheduledDate ? new Date(req.body.scheduledDate) : existing.scheduledDate,
+      totalManHours:        recalculated.totalManHours,
+      averageHourlyRate:    recalculated.averageHourlyRate,
+      priceSubtotal:        recalculated.priceSubtotal,
+      totalVisits:          recalculated.totalVisits,
+      totalVisitsRoundedUp: recalculated.totalVisitsRoundedUp,
+      onsiteCrewHours:      recalculated.onsiteCrewHours,
+      totalTravelHours:     recalculated.totalTravelHours,
+      travelPrice:          recalculated.travelPrice,
+      totalWorkorderPrice:  recalculated.totalWorkorderPrice,
+      totalWorkorderCost:   recalculated.totalWorkorderCost,
+      totalWorkorderProfit: recalculated.totalWorkorderProfit,
+      percentProfit:        recalculated.percentProfit,
+    });
   })
 );
 

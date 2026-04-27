@@ -1,6 +1,7 @@
 import {
   Activity, Project, Plant, Contract, Workorder,
-  ContractStatus, WorkorderStatus, ApiError, ValidationError
+  ContractStatus, WorkorderStatus, ApiError, ValidationError,
+  ContractFinancials, WorkorderFinancials,
 } from '../types';
 
 const BASE_URL = '/api';
@@ -121,11 +122,17 @@ export const contractsApi = {
   stats: () =>
     fetchJson<Record<ContractStatus, number>>(`${BASE_URL}/contracts/stats`),
 
+  financials: () =>
+    fetchJson<ContractFinancials>(`${BASE_URL}/contracts/financials`),
+
   get: (id: string) =>
     fetchJson<Contract>(`${BASE_URL}/contracts/${id}`),
 
   create: (data: Partial<Contract> & { project: string; generalLaborCost: number; generalOverheadAndProfit: number }) =>
     fetchJson<Contract>(`${BASE_URL}/contracts`, { method: 'POST', body: JSON.stringify(data) }),
+
+  preview: (id: string, data: Partial<Contract>) =>
+    fetchJson<Contract>(`${BASE_URL}/contracts/${id}/preview`, { method: 'POST', body: JSON.stringify(data) }),
 
   update: (id: string, data: Partial<Contract>) =>
     fetchJson<Contract>(`${BASE_URL}/contracts/${id}`, { method: 'PUT', body: JSON.stringify(data) }),
@@ -158,11 +165,17 @@ export const workordersApi = {
   stats: () =>
     fetchJson<Record<WorkorderStatus, number>>(`${BASE_URL}/workorders/stats`),
 
+  financials: () =>
+    fetchJson<WorkorderFinancials>(`${BASE_URL}/workorders/financials`),
+
   get: (id: string) =>
     fetchJson<Workorder>(`${BASE_URL}/workorders/${id}`),
 
   create: (data: Partial<Workorder> & { project: string }) =>
     fetchJson<Workorder>(`${BASE_URL}/workorders`, { method: 'POST', body: JSON.stringify(data) }),
+
+  preview: (id: string, data: Partial<Workorder>) =>
+    fetchJson<Workorder>(`${BASE_URL}/workorders/${id}/preview`, { method: 'POST', body: JSON.stringify(data) }),
 
   update: (id: string, data: Partial<Workorder>) =>
     fetchJson<Workorder>(`${BASE_URL}/workorders/${id}`, { method: 'PUT', body: JSON.stringify(data) }),

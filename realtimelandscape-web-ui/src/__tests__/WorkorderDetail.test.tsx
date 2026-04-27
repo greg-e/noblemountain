@@ -9,6 +9,7 @@ vi.mock('../api/client', () => ({
     stats: vi.fn().mockResolvedValue({}),
     get: vi.fn(),
     create: vi.fn(),
+    preview: vi.fn(),
     update: vi.fn(),
     transition: vi.fn(),
   },
@@ -36,7 +37,10 @@ function renderWithRoute(workorderId = 'wo-1') {
 
 describe('WorkorderDetail', () => {
   beforeEach(() => {
+    vi.clearAllMocks();
+    vi.restoreAllMocks();
     vi.mocked(workordersApi.get).mockResolvedValue(mockWorkorder());
+    vi.mocked(workordersApi.preview).mockResolvedValue(mockWorkorder());
     vi.mocked(activitiesApi.list).mockResolvedValue([mockActivity]);
   });
 
@@ -60,10 +64,10 @@ describe('WorkorderDetail', () => {
   it('shows key metric cards', async () => {
     renderWithRoute();
     await screen.findByText('WO-2024-001');
-    expect(screen.getByText('Total Price')).toBeInTheDocument();
+    expect(screen.getAllByText('Total Price').length).toBeGreaterThanOrEqual(1);
     expect(screen.getByText('Total Cost')).toBeInTheDocument();
-    expect(screen.getByText('Profit Margin')).toBeInTheDocument();
-    expect(screen.getByText('Man Hours')).toBeInTheDocument();
+    expect(screen.getAllByText('Profit Margin').length).toBeGreaterThanOrEqual(1);
+    expect(screen.getAllByText('Man Hours').length).toBeGreaterThanOrEqual(1);
   });
 
   it('shows workorder settings fields', async () => {

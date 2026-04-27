@@ -136,7 +136,7 @@ export function Layout({ children }: LayoutProps) {
       <main className={styles.main}>{children}</main>
 
       <footer className={styles.footer}>
-        <span>© 2026 RealTime Landscape</span>
+        <span>© 2026</span>
       </footer>
     </div>
   );

@@ -11,6 +11,7 @@ import {
   saveContract,
   transitionContractStatus,
   countContractsByStatus,
+  getContractFinancials,
 } from '../../db/repositories';
 import { findProjectById, findActivitiesByIds } from '../../db/repositories';
 import { recalcEstimateGroup } from '../../engine/calculations';
@@ -88,6 +89,15 @@ contractsRouter.get(
   asyncHandler(async (_req, res) => {
     const counts = await countContractsByStatus();
     res.json(counts);
+  })
+);
+
+// GET /api/contracts/financials
+contractsRouter.get(
+  '/financials',
+  asyncHandler(async (_req, res) => {
+    const data = await getContractFinancials();
+    res.json(data);
   })
 );
 
@@ -172,8 +182,8 @@ contractsRouter.put(
   asyncHandler(async (req, res) => {
     const existing = await findContractById(req.params.id as string);
     if (!existing) throw httpError(404, 'Contract not found');
-    if (['Completed', 'Cancelled'].includes(existing.status)) {
-      throw httpError(409, `Cannot edit a ${existing.status} contract`);
+    if (existing.status !== 'Draft') {
+      throw httpError(409, `Cannot edit contract in ${existing.status}; only Draft can be edited`);
     }
 
     const projectDoc = await findProjectById(extractProjectId(existing.project));
@@ -203,6 +213,51 @@ contractsRouter.put(
     if (!updated) throw httpError(404, 'Contract not found');
 
     res.json(updated);
+  })
+);
+
+// POST /api/contracts/:id/preview
+// Non-persisting preview — re-runs the calculation engine and returns
+// recalculated values without saving to the database.
+contractsRouter.post(
+  '/:id/preview',
+  [
+    param('id').isMongoId(),
+    body('generalLaborCost').optional().isFloat({ min: 0 }),
+    body('generalOverheadAndProfit').optional().isFloat({ min: 0 }),
+  ],
+  validate,
+  asyncHandler(async (req, res) => {
+    const existing = await findContractById(req.params.id as string);
+    if (!existing) throw httpError(404, 'Contract not found');
+    if (existing.status !== 'Draft') {
+      throw httpError(409, `Cannot preview contract in ${existing.status}; only Draft can be edited`);
+    }
+
+    const projectDoc = await findProjectById(extractProjectId(existing.project));
+    if (!projectDoc) throw httpError(404, 'Project not found');
+
+    const estimateGroup: EstimateGroup = {
+      generalLaborCost:         req.body.generalLaborCost ?? existing.generalLaborCost,
+      generalOverheadAndProfit: req.body.generalOverheadAndProfit ?? existing.generalOverheadAndProfit,
+      generalLineItems:         req.body.generalLineItems  ?? existing.generalLineItems,
+      technicalLineItems:       req.body.technicalLineItems ?? existing.technicalLineItems,
+      visitCalculations:        req.body.visitCalculations  ?? existing.visitCalculations,
+      contractTotals:           existing.contractTotals,
+    };
+
+    const activityIds = collectActivityIds(estimateGroup);
+    const activityDocs = activityIds.length ? await findActivitiesByIds(activityIds) : [];
+    const activityMap = new Map<string, PricingTableActivity>(
+      activityDocs.map(a => [String((a as any)._id), toEngineActivity(a)])
+    );
+
+    const recalculated = recalcEstimateGroup(estimateGroup, activityMap, toEngineProject(projectDoc));
+
+    res.json({
+      ...existing,
+      ...recalculated,
+    });
   })
 );
 

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { activitiesApi, contractsApi } from '../api/client';
 import { EditLayout } from '../components/EditLayout';
@@ -13,6 +13,30 @@ import type {
 } from '../types';
 
 const MONTHS = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'] as const;
+
+type ContractRecalcPayload = {
+  generalLaborCost: number;
+  generalOverheadAndProfit: number;
+  generalLineItems: Array<{
+    activity: string;
+    quantity: number;
+    materialMarkup: number;
+    monthlyFrequency: MonthlyValues;
+  }>;
+  technicalLineItems: Array<{
+    activity: string;
+    quantity: number;
+    materialMarkup: number;
+    monthlyFrequency: MonthlyValues;
+    techCrewSize: number;
+    techTravelPerVisit: string;
+  }>;
+  visitCalculations: {
+    workDayHours: number;
+    siteVisits: MonthlyValues;
+    averageCrew: MonthlyValues;
+  };
+};
 
 const STATUS_TRANSITIONS: Record<ContractStatus, ContractStatus[]> = {
   Draft: ['PendingActivation', 'Cancelled'],
@@ -166,6 +190,9 @@ export function ContractDetail() {
   const [transitioningTo, setTransitioningTo] = useState<ContractStatus | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [notice, setNotice] = useState<string | null>(null);
+  const [previewing, setPreviewing] = useState(false);
+  const [hasPendingPreview, setHasPendingPreview] = useState(false);
+  const editVersionRef = useRef(0);
 
   useEffect(() => {
     if (!id) {
@@ -202,8 +229,64 @@ export function ContractDetail() {
   }, [id]);
 
   const updateContract = (updater: (current: Contract) => Contract) => {
+    editVersionRef.current += 1;
+    setHasPendingPreview(true);
     setContract((current) => (current ? updater(current) : current));
   };
+
+  const buildContractPayload = (current: Contract): ContractRecalcPayload => ({
+    generalLaborCost: current.generalLaborCost,
+    generalOverheadAndProfit: current.generalOverheadAndProfit,
+    generalLineItems: current.generalLineItems.map((item) => ({
+      activity: item.activity,
+      quantity: Number(item.quantity || 0),
+      materialMarkup: Number(item.materialMarkup || 0),
+      monthlyFrequency: normalizeMonthlyValues(item.monthlyFrequency),
+    })),
+    technicalLineItems: current.technicalLineItems.map((item) => ({
+      activity: item.activity,
+      quantity: Number(item.quantity || 0),
+      materialMarkup: Number(item.materialMarkup || 0),
+      monthlyFrequency: normalizeMonthlyValues(item.monthlyFrequency),
+      techCrewSize: Number(item.techCrewSize || 1),
+      techTravelPerVisit: item.techTravelPerVisit ?? '',
+    })),
+    visitCalculations: {
+      workDayHours: Number(current.visitCalculations.workDayHours || 0),
+      siteVisits: normalizeMonthlyValues(current.visitCalculations.siteVisits),
+      averageCrew: normalizeMonthlyValues(current.visitCalculations.averageCrew),
+    },
+  });
+
+  useEffect(() => {
+    if (!id || !contract || contract.status !== 'Draft' || !hasPendingPreview || saving || transitioningTo !== null) {
+      return;
+    }
+
+    let cancelled = false;
+    const expectedVersion = editVersionRef.current;
+
+    const timer = window.setTimeout(async () => {
+      setPreviewing(true);
+      try {
+        const preview = await contractsApi.preview(id, buildContractPayload(contract) as Partial<Contract>);
+        if (cancelled) return;
+        if (expectedVersion !== editVersionRef.current) return;
+
+        setContract(normalizeContract(preview));
+        setHasPendingPreview(false);
+      } catch {
+        // Keep local edits even if preview fails; saving still performs full recalculation.
+      } finally {
+        if (!cancelled) setPreviewing(false);
+      }
+    }, 350);
+
+    return () => {
+      cancelled = true;
+      window.clearTimeout(timer);
+    };
+  }, [contract, hasPendingPreview, id, saving, transitioningTo]);
 
   const setGeneralValue = (field: 'generalLaborCost' | 'generalOverheadAndProfit', value: number) => {
     updateContract((current) => ({
@@ -310,31 +393,10 @@ export function ContractDetail() {
     setNotice(null);
 
     try {
-      const updated = await contractsApi.update(id, {
-        generalLaborCost: contract.generalLaborCost,
-        generalOverheadAndProfit: contract.generalOverheadAndProfit,
-        generalLineItems: contract.generalLineItems.map((item) => ({
-          activity: item.activity,
-          quantity: Number(item.quantity || 0),
-          materialMarkup: Number(item.materialMarkup || 0),
-          monthlyFrequency: normalizeMonthlyValues(item.monthlyFrequency),
-        })),
-        technicalLineItems: contract.technicalLineItems.map((item) => ({
-          activity: item.activity,
-          quantity: Number(item.quantity || 0),
-          materialMarkup: Number(item.materialMarkup || 0),
-          monthlyFrequency: normalizeMonthlyValues(item.monthlyFrequency),
-          techCrewSize: Number(item.techCrewSize || 1),
-          techTravelPerVisit: item.techTravelPerVisit ?? '',
-        })),
-        visitCalculations: {
-          workDayHours: Number(contract.visitCalculations.workDayHours || 0),
-          siteVisits: normalizeMonthlyValues(contract.visitCalculations.siteVisits),
-          averageCrew: normalizeMonthlyValues(contract.visitCalculations.averageCrew),
-        },
-      } as Partial<Contract>);
+      const updated = await contractsApi.update(id, buildContractPayload(contract) as Partial<Contract>);
 
       setContract(normalizeContract(updated));
+      setHasPendingPreview(false);
       setError(null);
       setNotice('Contract saved. Totals were recalculated on the server.');
     } catch (err: any) {
@@ -388,9 +450,26 @@ export function ContractDetail() {
 
   const badge = statusColors(contract.status);
   const allowedTransitions = STATUS_TRANSITIONS[contract.status];
+  const editable = contract.status === 'Draft';
+
+  const headerSlot = contract ? (
+    <>
+      {([
+        { label: 'Contract Price', value: formatCurrency(contract.contractTotals.contractPrice) },
+        { label: 'Gross Profit',   value: formatCurrency(contract.contractTotals.grossProfit) },
+        { label: 'Gross Margin',   value: formatPercent(contract.contractTotals.grossProfitPercent) },
+      ] as const).map(({ label, value }) => (
+        <span key={label} style={{ display: 'inline-flex', flexDirection: 'column', alignItems: 'center', padding: '0.2rem 0.6rem', borderRadius: '7px', background: 'rgba(255,255,255,0.13)', whiteSpace: 'nowrap', minWidth: '52px' }}>
+          <span style={{ fontSize: '0.58rem', fontWeight: 600, color: 'rgba(255,255,255,0.7)', textTransform: 'uppercase', letterSpacing: '0.04em', lineHeight: 1, marginBottom: '1px' }}>{label}</span>
+          <strong style={{ fontSize: '0.88rem', fontWeight: 800, color: '#fff', lineHeight: 1 }}>{value}</strong>
+        </span>
+      ))}
+      {previewing && <span style={{ fontSize: '0.72rem', color: 'rgba(255,255,255,0.65)', fontStyle: 'italic', alignSelf: 'center' }}>↻</span>}
+    </>
+  ) : undefined;
 
   return (
-    <EditLayout backTo="/contracts" backLabel="Contracts">
+    <EditLayout backTo="/contracts" backLabel="Contracts" headerSlot={headerSlot}>
       <div style={{ maxWidth: '1280px', margin: '0 auto', display: 'grid', gap: '1.5rem' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '1rem', flexWrap: 'wrap' }}>
           <div>
@@ -404,9 +483,11 @@ export function ContractDetail() {
             </span>
 
             <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', justifyContent: 'flex-end' }}>
-              <button onClick={saveContract} disabled={saving || transitioningTo !== null}>
-                {saving ? 'Saving...' : 'Save Changes'}
-              </button>
+              {editable && (
+                <button onClick={saveContract} disabled={saving || transitioningTo !== null}>
+                  {saving ? 'Saving...' : 'Save Changes'}
+                </button>
+              )}
               {allowedTransitions.map((status) => (
                 <button
                   key={status}
@@ -426,6 +507,11 @@ export function ContractDetail() {
 
         {error && <div style={{ padding: '0.9rem 1rem', borderRadius: '10px', background: '#fff1f1', color: '#9b1c1c' }}>{error}</div>}
         {notice && <div style={{ padding: '0.9rem 1rem', borderRadius: '10px', background: '#edf8ee', color: '#256b3d' }}>{notice}</div>}
+        {previewing && !saving && (
+          <div style={{ padding: '0.75rem 0.9rem', borderRadius: '10px', background: '#eef4ff', color: '#1d4f91' }}>
+            Recalculating preview...
+          </div>
+        )}
 
         <section style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '1rem' }}>
           <MetricCard label="Contract Price" value={formatCurrency(contract.contractTotals.contractPrice)} />
@@ -446,6 +532,7 @@ export function ContractDetail() {
                 min="0"
                 step="0.01"
                 value={contract.generalLaborCost}
+                disabled={!editable}
                 onChange={(event) => setGeneralValue('generalLaborCost', Number(event.target.value))}
               />
             </label>
@@ -456,6 +543,7 @@ export function ContractDetail() {
                 min="0"
                 step="0.01"
                 value={contract.generalOverheadAndProfit}
+                disabled={!editable}
                 onChange={(event) => setGeneralValue('generalOverheadAndProfit', Number(event.target.value))}
               />
             </label>
@@ -480,6 +568,7 @@ export function ContractDetail() {
                 min="1"
                 step="0.5"
                 value={contract.visitCalculations.workDayHours}
+                disabled={!editable}
                 onChange={(event) => updateVisitField('workDayHours', Number(event.target.value))}
               />
             </label>
@@ -488,11 +577,13 @@ export function ContractDetail() {
           <MonthlyValuesEditor
             label="Site visits"
             values={contract.visitCalculations.siteVisits}
+            editable={editable}
             onChange={(month, value) => updateVisitMonth('siteVisits', month, value)}
           />
           <MonthlyValuesEditor
             label="Average crew"
             values={contract.visitCalculations.averageCrew}
+            editable={editable}
             onChange={(month, value) => updateVisitMonth('averageCrew', month, value)}
           />
         </section>
@@ -501,6 +592,7 @@ export function ContractDetail() {
           title="General Line Items"
           items={contract.generalLineItems}
           activities={activities}
+          editable={editable}
           onAdd={addGeneralLineItem}
           onRemove={removeGeneralLineItem}
           onChange={updateGeneralLineItem}
@@ -511,6 +603,7 @@ export function ContractDetail() {
           title="Technical Line Items"
           items={contract.technicalLineItems}
           activities={activities}
+          editable={editable}
           technical
           onAdd={addTechnicalLineItem}
           onRemove={removeTechnicalLineItem}
@@ -534,10 +627,12 @@ function MetricCard({ label, value }: { label: string; value: string }) {
 function MonthlyValuesEditor({
   label,
   values,
+  editable,
   onChange,
 }: {
   label: string;
   values: MonthlyValues;
+  editable: boolean;
   onChange: (month: (typeof MONTHS)[number], value: number) => void;
 }) {
   return (
@@ -552,6 +647,7 @@ function MonthlyValuesEditor({
               min="0"
               step="0.1"
               value={values[month]}
+              disabled={!editable}
               onChange={(event) => onChange(month, Number(event.target.value))}
             />
           </label>
@@ -565,6 +661,7 @@ function LineItemsSection({
   title,
   items,
   activities,
+  editable,
   technical,
   onAdd,
   onRemove,
@@ -574,6 +671,7 @@ function LineItemsSection({
   title: string;
   items: ContractLineItem[] | TechnicalLineItem[];
   activities: Activity[];
+  editable: boolean;
   technical?: boolean;
   onAdd: () => void;
   onRemove: (index: number) => void;
@@ -584,7 +682,7 @@ function LineItemsSection({
     <section style={cardStyle}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '1rem', marginBottom: '1rem', flexWrap: 'wrap' }}>
         <h3 style={sectionTitleStyle}>{title}</h3>
-        <button onClick={onAdd}>Add line item</button>
+        {editable && <button onClick={onAdd}>Add line item</button>}
       </div>
 
       {items.length === 0 && <p style={{ color: '#667085' }}>No line items yet.</p>}
@@ -597,7 +695,7 @@ function LineItemsSection({
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(170px, 1fr))', gap: '0.75rem', alignItems: 'end' }}>
               <label style={fieldStyle}>
                 <span>Activity</span>
-                <select value={item.activity} onChange={(event) => onChange(index, 'activity', event.target.value)}>
+                <select value={item.activity} disabled={!editable} onChange={(event) => onChange(index, 'activity', event.target.value)}>
                   <option value="">Select activity</option>
                   {activities.map((activity) => (
                     <option key={activity._id} value={activity._id}>
@@ -607,12 +705,25 @@ function LineItemsSection({
                 </select>
               </label>
               <label style={fieldStyle}>
-                <span>Quantity</span>
+                <span>
+                  Quantity
+                  {item.unit && item.unitMultiplier > 1 && (
+                    <span style={{ fontWeight: 400, color: '#667085', fontSize: '0.78rem', marginLeft: '0.4rem' }}>
+                      (× {item.unitMultiplier.toLocaleString()} {item.unit})
+                    </span>
+                  )}
+                  {item.unit && item.unitMultiplier === 1 && (
+                    <span style={{ fontWeight: 400, color: '#667085', fontSize: '0.78rem', marginLeft: '0.4rem' }}>
+                      ({item.unit})
+                    </span>
+                  )}
+                </span>
                 <input
                   type="number"
                   min="0"
                   step="0.01"
                   value={item.quantity}
+                  disabled={!editable}
                   onChange={(event) => onChange(index, 'quantity', Number(event.target.value))}
                 />
               </label>
@@ -623,6 +734,7 @@ function LineItemsSection({
                   min="0"
                   step="0.01"
                   value={item.materialMarkup}
+                  disabled={!editable}
                   onChange={(event) => onChange(index, 'materialMarkup', Number(event.target.value))}
                 />
               </label>
@@ -634,6 +746,7 @@ function LineItemsSection({
                     min="1"
                     step="1"
                     value={technicalItem.techCrewSize}
+                    disabled={!editable}
                     onChange={(event) => onChange(index, 'techCrewSize', Number(event.target.value))}
                   />
                 </label>
@@ -644,14 +757,17 @@ function LineItemsSection({
                   <input
                     type="text"
                     value={technicalItem.techTravelPerVisit ?? ''}
+                    disabled={!editable}
                     onChange={(event) => onChange(index, 'techTravelPerVisit', event.target.value)}
                   />
                 </label>
               )}
             </div>
-            <div style={{ display: 'flex', justifyContent: 'flex-end', marginTop: '0.5rem' }}>
-              <button onClick={() => onRemove(index)}>Remove</button>
-            </div>
+            {editable && (
+              <div style={{ display: 'flex', justifyContent: 'flex-end', marginTop: '0.5rem' }}>
+                <button onClick={() => onRemove(index)}>Remove</button>
+              </div>
+            )}
 
             <div style={{ marginTop: '0.75rem' }}>
               <div style={{ fontWeight: 600, fontSize: '0.85rem', color: '#667085', marginBottom: '0.5rem' }}>Monthly frequency</div>
@@ -664,6 +780,7 @@ function LineItemsSection({
                       min="0"
                       step="0.1"
                       value={item.monthlyFrequency[month]}
+                      disabled={!editable}
                       onChange={(event) => onMonthChange(index, month, Number(event.target.value))}
                     />
                   </label>

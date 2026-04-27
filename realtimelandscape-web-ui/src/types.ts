@@ -191,6 +191,26 @@ export interface Workorder {
 
 // ── API responses ─────────────────────────────────────────────
 
+export interface ContractFinancials {
+  activeCount:     number;
+  activeValue:     number;
+  activeProfit:    number;
+  activeAvgMargin: number;
+  pipelineCount:   number;
+  pipelineValue:   number;
+  pipelineProfit:  number;
+}
+
+export interface WorkorderFinancials {
+  openCount:       number;
+  openValue:       number;
+  openProfit:      number;
+  openManHours:    number;
+  completedCount:  number;
+  completedValue:  number;
+  completedProfit: number;
+}
+
 export interface ApiError {
   error: string;
 }

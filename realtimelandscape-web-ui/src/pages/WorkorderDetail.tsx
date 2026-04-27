@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { activitiesApi, workordersApi } from '../api/client';
 import { EditLayout } from '../components/EditLayout';
@@ -93,6 +93,20 @@ function statusBadge(status: WorkorderStatus): React.CSSProperties {
 export function WorkorderDetail() {
   const { id } = useParams<{ id: string }>();
 
+  type WorkorderRecalcPayload = {
+    workDayHours: number;
+    crewSize: number;
+    workorderNotes: string;
+    scheduledDate?: string;
+    lineItems: Array<{
+      activity: string;
+      quantity: number;
+      laborCostPerManHour: number;
+      overheadAndProfitPerManHour: number;
+      materialMarkupPercent: number;
+    }>;
+  };
+
   const [workorder, setWorkorder]     = useState<Workorder | null>(null);
   const [activities, setActivities]   = useState<Activity[]>([]);
   const [loading, setLoading]         = useState(true);
@@ -100,6 +114,9 @@ export function WorkorderDetail() {
   const [transitioningTo, setTransitioningTo] = useState<WorkorderStatus | null>(null);
   const [error, setError]             = useState<string | null>(null);
   const [notice, setNotice]           = useState<string | null>(null);
+  const [previewing, setPreviewing]   = useState(false);
+  const [hasPendingPreview, setHasPendingPreview] = useState(false);
+  const editVersionRef = useRef(0);
 
   // Load workorder + activities in parallel on mount
   useEffect(() => {
@@ -130,8 +147,55 @@ export function WorkorderDetail() {
 
   // ── Editors ──────────────────────────────────────────────────────────────────
 
-  const patch = (updater: (w: Workorder) => Workorder) =>
+  const patch = (updater: (w: Workorder) => Workorder) => {
+    editVersionRef.current += 1;
+    setHasPendingPreview(true);
     setWorkorder(w => (w ? updater(w) : w));
+  };
+
+  const buildWorkorderPayload = (current: Workorder): WorkorderRecalcPayload => ({
+    workDayHours:   Number(current.workDayHours),
+    crewSize:       Number(current.crewSize),
+    workorderNotes: current.workorderNotes ?? '',
+    scheduledDate:  current.scheduledDate ?? undefined,
+    lineItems:      current.lineItems.map(item => ({
+      activity:                    item.activity,
+      quantity:                    Number(item.quantity),
+      laborCostPerManHour:         Number(item.laborCostPerManHour),
+      overheadAndProfitPerManHour: Number(item.overheadAndProfitPerManHour),
+      materialMarkupPercent:       Number(item.materialMarkupPercent),
+    })),
+  });
+
+  useEffect(() => {
+    if (!id || !workorder || workorder.status !== 'Draft' || !hasPendingPreview || saving || transitioningTo !== null) {
+      return;
+    }
+
+    let cancelled = false;
+    const expectedVersion = editVersionRef.current;
+
+    const timer = window.setTimeout(async () => {
+      setPreviewing(true);
+      try {
+        const preview = await workordersApi.preview(id, buildWorkorderPayload(workorder) as Partial<Workorder>);
+        if (cancelled) return;
+        if (expectedVersion !== editVersionRef.current) return;
+
+        setWorkorder(normalizeWorkorder(preview));
+        setHasPendingPreview(false);
+      } catch {
+        // Keep local edits even if preview fails; save still recalculates server-side.
+      } finally {
+        if (!cancelled) setPreviewing(false);
+      }
+    }, 350);
+
+    return () => {
+      cancelled = true;
+      window.clearTimeout(timer);
+    };
+  }, [hasPendingPreview, id, saving, transitioningTo, workorder]);
 
   const setTopLevel = (field: keyof Workorder, value: unknown) =>
     patch(w => ({ ...w, [field]: value }));
@@ -157,20 +221,9 @@ export function WorkorderDetail() {
     setSaving(true);
     setNotice(null);
     try {
-      const updated = await workordersApi.update(id, {
-        workDayHours:   Number(workorder.workDayHours),
-        crewSize:       Number(workorder.crewSize),
-        workorderNotes: workorder.workorderNotes ?? '',
-        scheduledDate:  workorder.scheduledDate ?? undefined,
-        lineItems:      workorder.lineItems.map(item => ({
-          activity:                  item.activity,
-          quantity:                  Number(item.quantity),
-          laborCostPerManHour:       Number(item.laborCostPerManHour),
-          overheadAndProfitPerManHour: Number(item.overheadAndProfitPerManHour),
-          materialMarkupPercent:     Number(item.materialMarkupPercent),
-        })),
-      } as Partial<Workorder>);
+      const updated = await workordersApi.update(id, buildWorkorderPayload(workorder) as Partial<Workorder>);
       setWorkorder(normalizeWorkorder(updated));
+      setHasPendingPreview(false);
       setError(null);
       setNotice('Workorder saved. Totals were recalculated on the server.');
     } catch (err: any) {
@@ -218,10 +271,27 @@ export function WorkorderDetail() {
 
   const badge = statusBadge(workorder.status);
   const allowedTransitions = STATUS_TRANSITIONS[workorder.status];
-  const editable = !['Completed', 'Cancelled'].includes(workorder.status);
+  const editable = workorder.status === 'Draft';
+
+  const headerSlot = workorder ? (
+    <>
+      {([
+        { label: 'Total Price',   value: fmtCurrency(workorder.totalWorkorderPrice) },
+        { label: 'Gross Profit',  value: fmtCurrency(workorder.totalWorkorderProfit) },
+        { label: 'Margin',        value: fmtPercent(workorder.percentProfit) },
+        { label: 'Man Hours',     value: workorder.totalManHours.toFixed(1) },
+      ] as const).map(({ label, value }) => (
+        <span key={label} style={{ display: 'inline-flex', flexDirection: 'column', alignItems: 'center', padding: '0.2rem 0.6rem', borderRadius: '7px', background: 'rgba(255,255,255,0.13)', whiteSpace: 'nowrap', minWidth: '52px' }}>
+          <span style={{ fontSize: '0.58rem', fontWeight: 600, color: 'rgba(255,255,255,0.7)', textTransform: 'uppercase', letterSpacing: '0.04em', lineHeight: 1, marginBottom: '1px' }}>{label}</span>
+          <strong style={{ fontSize: '0.88rem', fontWeight: 800, color: '#fff', lineHeight: 1 }}>{value}</strong>
+        </span>
+      ))}
+      {previewing && <span style={{ fontSize: '0.72rem', color: 'rgba(255,255,255,0.65)', fontStyle: 'italic', alignSelf: 'center' }}>↻</span>}
+    </>
+  ) : undefined;
 
   return (
-    <EditLayout backTo="/workorders" backLabel="Workorders">
+    <EditLayout backTo="/workorders" backLabel="Workorders" headerSlot={headerSlot}>
       <div style={{ ...wrap, display: 'grid', gap: '1.5rem' }}>
 
         {/* ── Header ────────────────────────────────────────────────── */}
@@ -266,6 +336,11 @@ export function WorkorderDetail() {
         {/* ── Notices ─────────────────────────────────────────────────────── */}
         {error  && <div style={{ padding: '0.9rem 1rem', borderRadius: '10px', background: '#fff1f1', color: '#9b1c1c' }}>{error}</div>}
         {notice && <div style={{ padding: '0.9rem 1rem', borderRadius: '10px', background: '#edf8ee', color: '#256b3d' }}>{notice}</div>}
+        {previewing && !saving && (
+          <div style={{ padding: '0.75rem 0.9rem', borderRadius: '10px', background: '#eef4ff', color: '#1d4f91' }}>
+            Recalculating preview...
+          </div>
+        )}
 
         {/* ── Metrics ─────────────────────────────────────────────────────── */}
         <section style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))', gap: '1rem' }}>
@@ -393,6 +468,8 @@ function LineItemRow({
   onChange: <K extends keyof WorkorderLineItem>(i: number, f: K, v: WorkorderLineItem[K]) => void;
   onRemove: (i: number) => void;
 }) {
+  const selectedActivity = activities.find(a => a._id === item.activity);
+
   const num = (field: keyof WorkorderLineItem) =>
     (e: React.ChangeEvent<HTMLInputElement>) =>
       onChange(index, field, Number(e.target.value) as WorkorderLineItem[typeof field]);
@@ -415,7 +492,19 @@ function LineItemRow({
         </label>
 
         <label style={field}>
-          <span>Quantity</span>
+          <span>
+            Quantity
+            {selectedActivity?.unit && selectedActivity.unitMultiplier > 1 && (
+              <span style={{ fontWeight: 400, color: '#667085', fontSize: '0.78rem', marginLeft: '0.4rem' }}>
+                (× {selectedActivity.unitMultiplier.toLocaleString()} {selectedActivity.unit})
+              </span>
+            )}
+            {selectedActivity?.unit && selectedActivity.unitMultiplier === 1 && (
+              <span style={{ fontWeight: 400, color: '#667085', fontSize: '0.78rem', marginLeft: '0.4rem' }}>
+                ({selectedActivity.unit})
+              </span>
+            )}
+          </span>
           <input type="number" min="0" step="0.01" value={item.quantity} disabled={!editable} onChange={num('quantity')} />
         </label>
 

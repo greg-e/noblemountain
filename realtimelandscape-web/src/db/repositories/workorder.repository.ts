@@ -83,6 +83,55 @@ export async function transitionWorkorderStatus(
 
 // ── Reporting helpers ─────────────────────────────────────────
 
+export interface WorkorderFinancials {
+  openCount:       number;
+  openValue:       number;
+  openProfit:      number;
+  openManHours:    number;
+  completedCount:  number;
+  completedValue:  number;
+  completedProfit: number;
+}
+
+export async function getWorkorderFinancials(): Promise<WorkorderFinancials> {
+  const OPEN_STATUSES = ['Scheduled', 'InProgress', 'PendingCompletion'];
+
+  const [openRows, completedRows] = await Promise.all([
+    Workorder.aggregate<{ totalValue: number; totalProfit: number; totalManHours: number; count: number }>([
+      { $match: { status: { $in: OPEN_STATUSES } } },
+      { $group: {
+          _id: null,
+          totalValue:    { $sum: '$totalWorkorderPrice' },
+          totalProfit:   { $sum: '$totalWorkorderProfit' },
+          totalManHours: { $sum: '$totalManHours' },
+          count:         { $sum: 1 },
+      }},
+    ]),
+    Workorder.aggregate<{ totalValue: number; totalProfit: number; count: number }>([
+      { $match: { status: 'Completed' } },
+      { $group: {
+          _id: null,
+          totalValue:  { $sum: '$totalWorkorderPrice' },
+          totalProfit: { $sum: '$totalWorkorderProfit' },
+          count:       { $sum: 1 },
+      }},
+    ]),
+  ]);
+
+  const o = openRows[0]      ?? { totalValue: 0, totalProfit: 0, totalManHours: 0, count: 0 };
+  const c = completedRows[0] ?? { totalValue: 0, totalProfit: 0, count: 0 };
+
+  return {
+    openCount:       o.count,
+    openValue:       o.totalValue,
+    openProfit:      o.totalProfit,
+    openManHours:    o.totalManHours,
+    completedCount:  c.count,
+    completedValue:  c.totalValue,
+    completedProfit: c.totalProfit,
+  };
+}
+
 export async function countWorkordersByStatus(): Promise<Record<WorkorderWorkflowStatus, number>> {
   const rows = await Workorder.aggregate<{ _id: WorkorderWorkflowStatus; count: number }>([
     { $group: { _id: '$status', count: { $sum: 1 } } },
